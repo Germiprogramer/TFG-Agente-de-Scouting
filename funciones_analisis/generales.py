@@ -58,3 +58,13 @@ def valores_unicos_columna(df, columna, contar=False):
 
     return serie.value_counts() if contar else serie.unique()
 
+def ordenar_partidos_cronologicamente(df_partidos):
+    df = df_partidos.copy()
+    
+    # Convertir a tipo datetime (fecha y hora combinadas)
+    df['fecha_hora'] = pd.to_datetime(df['match_date'] + ' ' + df['kick_off'])
+    
+    # Ordenar por fecha y hora
+    df_ordenado = df.sort_values(by='fecha_hora').reset_index(drop=True)
+    
+    return df_ordenado
