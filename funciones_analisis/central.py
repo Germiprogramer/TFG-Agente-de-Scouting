@@ -131,6 +131,20 @@ def numero_clearances(df):
     # Contamos filas donde al menos una de las columnas de clearance tenga dato
     return df[columnas_presentes].notna().any(axis=1).sum()
 
+def duelos_aereos_ganados(df):
+    """Número total de duelos aéreos ganados (vía despejes + tiros)."""
+    despejes = df['clearance_aerial_won'].sum() if 'clearance_aerial_won' in df.columns else 0
+    tiros = df['shot_aerial_won'].sum() if 'shot_aerial_won' in df.columns else 0
+    return despejes + tiros
+
+def porcentaje_duelos_aereos_ganados(df):
+    """Porcentaje total de duelos aéreos ganados respecto al total (ganados + perdidos)."""
+    ganados = duelos_aereos_ganados(df)
+    perdidos = df['duel_type'].eq('Aerial Lost').sum() if 'duel_type' in df.columns else 0
+    total = ganados + perdidos
+    return 100 * ganados / total if total > 0 else 0
+
+
 def pases_progresivos(jugador):
     pass
 
