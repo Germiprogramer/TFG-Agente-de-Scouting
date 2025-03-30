@@ -1,0 +1,552 @@
+player_id,player,ultimo_equipo,ultimo_team_id,posiciones,partidos_jugados
+3034,Kamil Glik,Torino,241,"['Center Back', 'Right Center Back', 'Left Center Back']",33
+3103,Milan Biševac,Lazio,236,['Right Center Back'],11
+3112,Anton Ciprian Tătărușanu,Fiorentina,239,['Goalkeeper'],37
+3125,Danilo Fernando Avelar,Torino,241,"['Left Wing Back', 'Left Back']",6
+3145,Keita Baldé Diao,Lazio,236,"['Center Forward', 'Left Wing', 'Right Wing', 'Left Midfield', 'Center Attacking Midfield', 'Right Center Forward', 'Left Center Forward', 'Left Center Midfield', 'Right Midfield']",31
+3167,Antonio Rüdiger,AS Roma,229,"['Left Center Back', 'Right Center Back', 'Right Back', 'Left Back']",30
+3287,Nathaniel Chalobah,Napoli,227,['Left Center Midfield'],5
+3371,Mario Barwuah Balotelli,AC Milan,243,"['Right Center Forward', 'Left Wing', 'Left Center Forward', 'Center Forward']",20
+3412,Assane Dioussé El Hadji,Empoli,290,"['Center Defensive Midfield', 'Left Center Midfield', 'Left Defensive Midfield']",15
+3416,Gabriel Moisés Antunes da Silva,Genoa,233,"['Left Midfield', 'Left Back', 'Left Wing Back', 'Left Center Midfield', 'Left Defensive Midfield', 'Right Wing Back']",27
+3434,Stevan Jovetić,Inter Milan,238,"['Left Center Forward', 'Left Wing', 'Right Attacking Midfield', 'Center Attacking Midfield', 'Center Forward', 'Right Center Forward', 'Right Wing', 'Left Midfield']",26
+3477,Álvaro Borja Morata Martín,Juventus,224,"['Right Center Forward', 'Left Center Forward', 'Left Wing', 'Left Midfield', 'Center Forward', 'Center Attacking Midfield']",34
+3486,Fernando Llorente Torres,Juventus,224,['Right Center Forward'],1
+3531,Mohamed Salah,AS Roma,229,"['Left Wing', 'Right Wing', 'Center Attacking Midfield', 'Right Center Forward', 'Right Midfield', 'Right Attacking Midfield', 'Center Forward']",34
+3556,Serge Gakpé,Atalanta,228,"['Right Center Forward', 'Center Forward', 'Right Wing', 'Right Wing Back', 'Left Midfield', 'Right Midfield', 'Left Wing', 'Right Center Midfield']",18
+3577,Molla Wagué,Udinese,230,"['Right Center Back', 'Left Center Back', 'Center Back']",21
+3579,Roberto Maximiliano Pereyra,Juventus,224,"['Right Center Midfield', 'Center Attacking Midfield', 'Left Wing', 'Left Center Forward', 'Left Midfield', 'Right Defensive Midfield']",13
+3588,Wesley Hoedt,Lazio,236,"['Left Center Back', 'Right Center Back']",25
+3660,Davide Zappacosta,Torino,241,"['Right Wing Back', 'Right Back', 'Left Wing Back']",25
+3742,Orestis Karnezis,Udinese,230,['Goalkeeper'],38
+3949,Manolo Gabbiadini,Napoli,227,"['Right Center Forward', 'Center Forward', 'Right Wing', 'Left Wing']",23
+3951,Mario Lemina,Juventus,224,"['Center Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",10
+3964,Marcos Alonso Mendoza,Fiorentina,239,"['Left Wing Back', 'Left Center Back', 'Left Back', 'Left Midfield', 'Right Wing Back']",31
+4355,Emerson Palmieri dos Santos,AS Roma,229,"['Left Midfield', 'Right Back', 'Left Back', 'Left Wing Back', 'Left Center Midfield']",8
+4369,Issa Cissokho,Genoa,233,"['Right Wing Back', 'Right Center Back', 'Right Back', 'Left Center Back', 'Right Defensive Midfield', 'Right Center Midfield', 'Left Back']",13
+4407,Sanjin Prcić,Torino,241,"['Center Defensive Midfield', 'Left Center Midfield']",2
+4709,Pontus Jansson,Torino,241,"['Right Center Back', 'Center Back']",7
+5204,Bruno Miguel Borges Fernandes,Udinese,230,"['Left Center Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Right Midfield', 'Left Midfield', 'Right Center Forward', 'Right Wing', 'Left Wing', 'Right Defensive Midfield']",31
+5248,José Martín Cáceres Silva,Juventus,224,"['Right Center Back', 'Right Back', 'Left Center Back']",6
+5255,Matías Vecino Falero,Fiorentina,239,"['Left Center Midfield', 'Left Defensive Midfield', 'Right Wing Back', 'Right Center Back', 'Right Defensive Midfield', 'Right Center Midfield']",30
+5457,Ivan Strinić,Napoli,227,['Left Back'],5
+5461,Šime Vrsaljko,Sassuolo,232,"['Right Back', 'Right Wing Back']",35
+5465,Ante Rebić,Hellas Verona,226,"['Right Wing Back', 'Left Wing', 'Right Wing', 'Left Midfield', 'Left Center Forward', 'Right Center Forward', 'Left Center Midfield']",14
+5469,Marcelo Brozović,Inter Milan,238,"['Center Attacking Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Right Midfield', 'Right Wing', 'Left Midfield', 'Left Defensive Midfield', 'Left Attacking Midfield', 'Center Defensive Midfield', 'Left Wing']",32
+5472,Mario Mandžukić,Juventus,224,"['Right Center Forward', 'Left Center Forward', 'Center Forward']",27
+5474,Ivan Perišić,Inter Milan,238,"['Center Attacking Midfield', 'Right Wing', 'Left Wing', 'Left Attacking Midfield', 'Right Wing Back', 'Right Midfield', 'Left Midfield', 'Left Back', 'Left Center Forward', 'Right Attacking Midfield', 'Left Wing Back', 'Left Center Midfield']",34
+5497,Gonzalo Gerardo Higuaín,Napoli,227,"['Right Center Forward', 'Left Center Forward', 'Center Forward']",35
+5510,Lucas Rodrigo Biglia,Lazio,236,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield']",27
+5512,Emil Hallfreðsson,Udinese,230,"['Left Center Midfield', 'Left Defensive Midfield', 'Left Back', 'Left Midfield', 'Left Wing Back']",27
+5541,Stephan Lichtsteiner,Juventus,224,"['Right Wing Back', 'Right Back']",26
+5551,João Miranda de Souza Filho,Inter Milan,238,"['Right Center Back', 'Center Back', 'Left Center Back']",32
+5554,Blerim Džemaili,Genoa,233,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Center Defensive Midfield', 'Right Back', 'Left Center Midfield', 'Right Midfield', 'Left Wing', 'Right Center Midfield', 'Left Attacking Midfield']",27
+5558,Rafael Márquez Álvarez,Hellas Verona,226,"['Right Center Back', 'Center Back']",9
+5566,Sami Khedira,Juventus,224,"['Right Defensive Midfield', 'Right Center Midfield']",20
+5584,Giancarlo González Castro,Palermo,2256,"['Center Back', 'Right Center Back', 'Left Center Back']",35
+5587,Adem Ljajić,Inter Milan,238,"['Left Wing', 'Right Attacking Midfield', 'Left Midfield', 'Center Forward', 'Center Attacking Midfield', 'Left Center Forward', 'Right Center Forward', 'Right Center Midfield', 'Right Wing', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Midfield', 'Right Defensive Midfield']",26
+5589,Sergej Milinković-Savić,Lazio,236,"['Right Center Midfield', 'Center Attacking Midfield', 'Center Forward', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield']",25
+5605,Oscar Hiljemark,Palermo,2256,"['Left Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Right Wing', 'Right Midfield']",38
+5630,Dries Mertens,Napoli,227,"['Left Center Forward', 'Right Center Forward', 'Left Wing', 'Right Wing', 'Left Midfield', 'Right Midfield', 'Center Forward']",33
+5660,Piotr Zieliński,Empoli,290,"['Right Center Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Right Wing Back']",35
+5661,M''Baye Babacar Niang,AC Milan,243,"['Left Wing', 'Left Midfield', 'Right Center Forward', 'Left Center Forward', 'Right Midfield', 'Right Center Midfield', 'Right Wing', 'Center Forward']",16
+5662,Thiago Rangel Cionek,Palermo,2256,['Right Center Back'],5
+5663,Jakub Błaszczykowski,Fiorentina,239,"['Left Midfield', 'Right Wing', 'Right Wing Back', 'Left Wing Back', 'Right Midfield', 'Left Wing', 'Center Forward', 'Right Back', 'Left Back', 'Left Attacking Midfield']",15
+5669,Wojciech Szczęsny,AS Roma,229,['Goalkeeper'],34
+5675,Kalidou Koulibaly,Napoli,227,['Left Center Back'],33
+5683,Keisuke Honda,AC Milan,243,"['Center Attacking Midfield', 'Right Wing', 'Right Midfield', 'Left Midfield', 'Left Wing', 'Right Center Midfield']",30
+5688,Carlos Arturo Bacca Ahumada,AC Milan,243,"['Right Center Forward', 'Left Center Forward', 'Center Forward']",38
+5689,Juan Guillermo Cuadrado Bello,Juventus,224,"['Right Wing Back', 'Right Center Midfield', 'Right Wing', 'Right Midfield', 'Center Attacking Midfield', 'Right Back', 'Left Midfield', 'Left Center Forward']",28
+5690,Yuto Nagatomo,Inter Milan,238,"['Right Back', 'Right Wing Back', 'Left Back', 'Left Wing Back']",22
+5717,Diego Sebastián Laxalt Suárez,Genoa,233,"['Left Wing Back', 'Left Defensive Midfield', 'Left Back', 'Right Back', 'Right Wing', 'Right Midfield', 'Left Midfield', 'Left Wing', 'Right Wing Back']",35
+5743,Paulo Bruno Exequiel Dybala,Juventus,224,"['Left Center Forward', 'Center Attacking Midfield', 'Right Center Forward', 'Center Forward', 'Right Midfield']",34
+6305,Milan Badelj,Fiorentina,239,"['Left Defensive Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield']",27
+6334,Luis Fernando Muriel Fruto,Sampdoria,234,"['Right Center Forward', 'Center Forward', 'Right Wing', 'Left Wing', 'Left Center Forward', 'Left Midfield', 'Left Center Midfield', 'Center Attacking Midfield', 'Left Attacking Midfield', 'Right Attacking Midfield', 'Right Center Midfield']",32
+6358,Emil Krafth,Bologna,240,['Right Back'],4
+6360,Cristian Eduardo Zapata Valencia,AC Milan,243,"['Right Center Back', 'Right Back', 'Left Center Back']",16
+6577,Zdravko Kuzmanović,Udinese,230,"['Left Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Center Midfield', 'Right Wing Back', 'Right Defensive Midfield']",16
+6584,Simone Zaza,Juventus,224,"['Center Forward', 'Right Center Forward', 'Left Center Forward']",19
+6585,Jeison Fabián Murillo Cerón,Inter Milan,238,"['Left Center Back', 'Right Back', 'Right Center Back']",34
+6589,Geoffrey Kondogbia,Inter Milan,238,"['Left Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Wing', 'Right Defensive Midfield', 'Right Center Midfield']",25
+6590,Norberto Murara Neto,Juventus,224,['Goalkeeper'],3
+6593,Martín Montoya Torralbo,Inter Milan,238,"['Right Back', 'Right Wing Back', 'Right Center Back']",3
+6636,Rodrigo Ely,AC Milan,243,"['Right Center Back', 'Left Center Back']",3
+6658,Cristian Tello Herrera,Fiorentina,239,"['Left Wing Back', 'Right Wing Back', 'Left Wing', 'Left Midfield', 'Right Wing', 'Right Midfield']",15
+6686,Giampaolo Pazzini,Hellas Verona,226,"['Left Wing', 'Left Center Forward', 'Right Wing', 'Center Forward', 'Right Center Forward']",30
+6719,Franco Damián Vázquez,Palermo,2256,"['Center Attacking Midfield', 'Center Forward', 'Left Center Midfield', 'Left Center Forward', 'Right Center Forward', 'Left Wing', 'Right Attacking Midfield', 'Right Center Midfield', 'Right Wing', 'Right Midfield']",36
+6729,Guilherme dos Santos Torres,Udinese,230,"['Center Defensive Midfield', 'Right Defensive Midfield']",5
+6743,Manuel Rolando Iturra Urrutia,Udinese,230,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Left Center Midfield']",17
+6754,David López Silva,Napoli,227,"['Right Center Midfield', 'Left Center Midfield', 'Right Defensive Midfield']",25
+6759,Roberto Soriano,Sampdoria,234,"['Center Attacking Midfield', 'Left Center Midfield', 'Center Forward', 'Left Midfield', 'Right Center Midfield', 'Left Wing Back', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Left Wing', 'Right Attacking Midfield', 'Right Defensive Midfield', 'Left Attacking Midfield', 'Left Center Forward', 'Right Wing', 'Right Midfield']",37
+6768,Diego López Rodríguez,AC Milan,243,['Goalkeeper'],8
+6822,Carlos Joaquín Correa,Sampdoria,234,"['Center Attacking Midfield', 'Left Center Midfield', 'Left Midfield', 'Left Wing', 'Right Defensive Midfield', 'Left Attacking Midfield', 'Right Center Forward', 'Right Attacking Midfield', 'Left Center Forward']",25
+6830,Facundo Sebastián Roncaglia,Fiorentina,239,"['Left Center Back', 'Right Back', 'Right Center Back', 'Right Wing Back', 'Right Defensive Midfield', 'Left Back']",30
+6849,Lucas Digne,AS Roma,229,"['Left Back', 'Left Wing Back', 'Left Center Back']",33
+6859,Nicola Sansone,Sassuolo,232,"['Left Wing', 'Right Wing', 'Left Center Forward', 'Left Midfield', 'Left Center Midfield', 'Center Forward']",37
+6894,Ezequiel Muñoz,Genoa,233,"['Right Center Back', 'Center Back', 'Left Center Back', 'Right Back']",18
+6938,Felipe Dias da Silva dal Belo,Udinese,230,"['Left Center Back', 'Center Back', 'Left Back']",26
+6940,Kwadwo Asamoah,Juventus,224,"['Right Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield']",11
+6941,Jasmin Kurtič,Atalanta,228,"['Left Center Midfield', 'Left Defensive Midfield', 'Left Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Right Wing', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Right Midfield', 'Left Wing']",32
+6943,Andrea Barzagli,Juventus,224,"['Right Center Back', 'Left Center Back', 'Right Back', 'Center Back']",31
+6944,Mattia De Sciglio,AC Milan,243,"['Right Back', 'Left Back', 'Right Midfield']",22
+6945,Alex Sandro Lobo Silva,Juventus,224,"['Left Back', 'Left Wing Back', 'Left Center Midfield', 'Left Midfield', 'Left Wing']",22
+6947,Miralem Pjanić,AS Roma,229,"['Right Center Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Left Wing']",33
+6948,Sergio Floccari,Bologna,240,"['Center Forward', 'Left Wing', 'Center Attacking Midfield', 'Right Wing', 'Left Center Forward', 'Right Center Midfield', 'Right Center Forward']",25
+6949,Gianluigi Buffon,Juventus,224,['Goalkeeper'],35
+6950,Alberto Paloschi,Chievo,231,"['Right Center Forward', 'Left Center Forward', 'Center Forward']",21
+6951,Filippo Costa,Chievo,231,"['Left Center Midfield', 'Right Midfield', 'Left Back', 'Left Defensive Midfield', 'Right Back']",6
+6952,Alberto Grassi,Atalanta,228,"['Right Center Midfield', 'Right Defensive Midfield', 'Right Back', 'Right Midfield', 'Left Defensive Midfield']",13
+6953,Daniele Rugani,Juventus,224,"['Right Center Back', 'Left Center Back', 'Left Back']",17
+6954,Giorgio Chiellini,Juventus,224,['Left Center Back'],24
+6962,Radja Nainggolan,AS Roma,229,"['Left Center Midfield', 'Center Forward', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Center Attacking Midfield', 'Left Midfield', 'Left Attacking Midfield', 'Left Wing', 'Right Midfield', 'Right Attacking Midfield', 'Right Center Forward', 'Left Center Forward']",35
+6963,Lorenzo Pellegrini,Sassuolo,232,"['Right Center Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",19
+6964,Alessandro Florenzi,AS Roma,229,"['Right Back', 'Right Midfield', 'Left Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Right Wing', 'Left Wing', 'Right Wing Back', 'Center Attacking Midfield', 'Left Back']",33
+6965,Bruno da Silva Peres,Torino,241,"['Right Wing Back', 'Left Wing Back', 'Right Back']",31
+6969,Juan Guilherme Nunes Jesus,Inter Milan,238,"['Left Back', 'Left Wing Back', 'Left Center Back', 'Center Back']",19
+6973,Edin Džeko,AS Roma,229,"['Center Forward', 'Left Center Forward', 'Right Center Forward']",31
+6978,Marcello Trotta,Sassuolo,232,"['Left Center Forward', 'Center Forward', 'Right Wing', 'Right Center Forward']",8
+6979,Stephan El Shaarawy,AS Roma,229,"['Left Wing', 'Left Midfield', 'Left Wing Back', 'Left Center Forward', 'Left Center Back']",16
+6980,Kevin Strootman,AS Roma,229,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield']",5
+6983,Remo Freuler,Atalanta,228,"['Left Center Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Left Wing', 'Right Defensive Midfield']",6
+6984,Danilo D''Ambrosio,Inter Milan,238,"['Right Back', 'Right Wing Back', 'Left Back', 'Left Center Back', 'Left Wing Back', 'Right Center Back']",20
+6987,Mauro Emanuel Icardi Rivero,Inter Milan,238,"['Left Center Forward', 'Right Center Forward', 'Center Forward']",33
+6990,Milan Škriniar,Sampdoria,234,['Left Center Back'],3
+6991,Etrit Berisha,Lazio,236,['Goalkeeper'],11
+6992,Andrea Masiello,Atalanta,228,"['Right Back', 'Center Back', 'Right Center Back', 'Left Center Back']",29
+6993,Bryan Cristante,Palermo,2256,"['Left Attacking Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield']",4
+6994,Marten de Roon,Atalanta,228,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Left Defensive Midfield']",36
+6997,Borja Valero Iglesias,Fiorentina,239,"['Right Defensive Midfield', 'Right Attacking Midfield', 'Right Center Midfield', 'Left Midfield', 'Left Center Midfield', 'Center Attacking Midfield', 'Left Wing', 'Left Attacking Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Center Forward', 'Right Wing']",37
+6999,Davide Santon,Inter Milan,238,"['Right Back', 'Right Wing Back', 'Right Center Back', 'Left Wing Back', 'Left Center Back', 'Left Back']",12
+7000,Eder Citadin Martins,Inter Milan,238,"['Left Center Forward', 'Left Wing', 'Right Wing', 'Right Midfield', 'Center Attacking Midfield', 'Left Midfield', 'Center Forward', 'Right Center Forward']",33
+7001,Samir Handanovič,Inter Milan,238,['Goalkeeper'],36
+7002,Rafael Tolói,Atalanta,228,"['Right Back', 'Right Center Back', 'Left Center Back']",24
+7003,Roberto Gagliardini,Atalanta,228,"['Center Attacking Midfield', 'Right Center Midfield', 'Right Defensive Midfield']",1
+7006,Alejandro Darío Gómez,Atalanta,228,"['Left Wing', 'Left Midfield', 'Right Center Forward', 'Center Attacking Midfield', 'Left Center Midfield', 'Left Center Forward']",34
+7009,Édgar Osvaldo Barreto Cáceres,Sampdoria,234,"['Left Center Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Left Wing', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Right Midfield', 'Right Wing']",30
+7011,Fabio Quagliarella,Sampdoria,234,"['Left Center Forward', 'Right Center Forward', 'Center Forward', 'Left Wing', 'Left Center Midfield', 'Left Attacking Midfield']",32
+7012,Vasco Regini,Napoli,227,"['Left Back', 'Left Wing Back', 'Left Center Back']",15
+7013,Stefano Sturaro,Juventus,224,"['Right Center Midfield', 'Right Wing Back', 'Center Defensive Midfield', 'Left Wing Back', 'Left Center Midfield', 'Right Defensive Midfield', 'Right Back', 'Center Attacking Midfield']",19
+7017,Duván Esteban Zapata Banguera,Udinese,230,"['Right Center Forward', 'Left Center Forward', 'Center Forward']",25
+7018,Emiliano Viviano,Sampdoria,234,['Goalkeeper'],37
+7019,Matías Agustín Silvestre,Sampdoria,234,"['Right Center Back', 'Center Back', 'Left Center Back']",25
+7020,Jacopo Sala,Sampdoria,234,"['Right Center Midfield', 'Right Back', 'Right Midfield', 'Right Wing', 'Right Wing Back']",23
+7022,Jesús Joaquín Fernández Sáez de la Torre,Genoa,233,"['Center Attacking Midfield', 'Right Wing', 'Right Attacking Midfield', 'Left Center Forward', 'Right Defensive Midfield', 'Left Wing', 'Right Center Forward', 'Left Attacking Midfield']",20
+7024,Jorge Luiz Frello Filho,Napoli,227,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield']",35
+7025,Marek Hamšík,Napoli,227,"['Left Center Midfield', 'Left Defensive Midfield']",38
+7026,Giacomo Bonaventura,AC Milan,243,"['Left Center Midfield', 'Center Attacking Midfield', 'Right Midfield', 'Right Center Midfield', 'Left Midfield', 'Left Wing', 'Left Defensive Midfield']",33
+7027,Christian Maggio,Napoli,227,"['Right Back', 'Right Wing', 'Center Forward', 'Right Midfield']",8
+7028,José Manuel Reina Páez,Napoli,227,['Goalkeeper'],37
+7029,José María Callejón Bueno,Napoli,227,"['Left Center Forward', 'Right Center Forward', 'Right Wing', 'Left Wing', 'Right Midfield', 'Center Forward']",38
+7030,Raúl Albiol i Tortajada,Napoli,227,['Right Center Back'],36
+7031,Elseid Hysaj,Napoli,227,"['Left Back', 'Right Back']",37
+7032,Davide Calabria,AC Milan,243,['Right Back'],6
+7033,Nikola Kalinić,Fiorentina,239,"['Center Forward', 'Left Wing', 'Right Center Forward', 'Left Attacking Midfield', 'Right Attacking Midfield', 'Left Center Forward']",36
+7035,Allan Marques Loureiro,Napoli,227,"['Right Center Midfield', 'Right Defensive Midfield']",35
+7036,Gianluigi Donnarumma,AC Milan,243,['Goalkeeper'],30
+7037,Lorenzo Insigne,Napoli,227,"['Center Attacking Midfield', 'Left Wing', 'Right Wing', 'Left Midfield']",37
+7038,Manuel Locatelli,AC Milan,243,"['Right Center Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield']",2
+7041,Nicola Rigoni,Chievo,231,"['Right Defensive Midfield', 'Center Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Right Midfield', 'Left Defensive Midfield', 'Right Attacking Midfield', 'Center Attacking Midfield']",28
+7042,Ivan Radovanović,Chievo,231,"['Right Defensive Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield']",26
+7043,Roberto Inglese,Chievo,231,"['Right Center Forward', 'Center Forward', 'Left Center Forward']",26
+7045,Valter Birsa,Chievo,231,"['Right Midfield', 'Center Attacking Midfield', 'Left Center Forward', 'Left Center Midfield', 'Right Center Midfield', 'Left Midfield', 'Right Wing', 'Left Wing']",35
+7046,Perparim Hetemaj,Chievo,231,"['Left Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Left Midfield', 'Right Defensive Midfield', 'Left Back']",28
+7048,Konstantinos Manolas,AS Roma,229,"['Right Center Back', 'Left Center Back', 'Center Back']",37
+7049,Lucas Nahuel Castro,Chievo,231,"['Left Midfield', 'Right Center Midfield', 'Center Attacking Midfield', 'Right Wing', 'Right Defensive Midfield', 'Right Midfield', 'Left Center Midfield', 'Left Center Forward', 'Right Wing Back']",34
+7050,Fabrizio Cacciatore,Chievo,231,"['Right Center Midfield', 'Center Defensive Midfield', 'Left Back', 'Right Back', 'Right Center Back', 'Left Wing Back', 'Left Center Midfield', 'Right Wing Back']",29
+7051,Daniele De Rossi,AS Roma,229,"['Center Defensive Midfield', 'Left Center Back', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Back', 'Left Center Midfield']",23
+7052,Alessandro Gamberini,Chievo,231,"['Right Center Back', 'Left Center Back']",22
+7054,Manuel Pucciarelli,Empoli,290,"['Right Center Forward', 'Left Center Forward', 'Center Attacking Midfield', 'Right Center Midfield', 'Left Wing', 'Left Center Midfield', 'Left Midfield', 'Right Wing']",38
+7055,Stefano Sorrentino,Palermo,2256,['Goalkeeper'],35
+7056,Nenad Tomović,Fiorentina,239,"['Right Center Back', 'Right Back', 'Right Wing Back', 'Left Center Back', 'Center Back', 'Right Midfield']",24
+7079,Kamil Wilczek,Carpi,1683,"['Center Forward', 'Right Center Forward']",3
+7107,Danilo Cataldi,Lazio,236,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield']",20
+7108,Berat Djimsiti,Atalanta,228,['Left Center Back'],3
+7109,Matteo Politano,Sassuolo,232,"['Right Wing', 'Left Wing', 'Right Midfield', 'Left Center Midfield', 'Left Midfield']",28
+7113,Simone Missiroli,Sassuolo,232,"['Right Center Midfield', 'Right Back', 'Left Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Midfield', 'Right Defensive Midfield']",24
+7114,Gaetano Letizia,Carpi,1683,"['Right Back', 'Right Center Back', 'Right Wing Back', 'Right Midfield', 'Left Midfield', 'Left Back', 'Left Wing Back']",35
+7118,Federico Peluso,Sassuolo,232,"['Left Back', 'Left Wing Back', 'Left Center Back']",34
+7119,Francesco Acerbi,Sassuolo,232,"['Left Center Back', 'Right Center Forward', 'Right Center Back']",36
+7120,Claud Adjapong,Sassuolo,232,"['Right Midfield', 'Right Back']",2
+7123,Gianluca Pegolo,Sassuolo,232,['Goalkeeper'],2
+7125,Khouma El Hadji Babacar,Fiorentina,239,"['Center Forward', 'Left Center Forward', 'Left Midfield', 'Center Attacking Midfield', 'Right Center Forward', 'Left Wing']",18
+7127,Francesco Magnanelli,Sassuolo,232,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",34
+7131,Domenico Berardi,Sassuolo,232,"['Right Wing', 'Right Midfield', 'Left Wing', 'Center Forward']",29
+7132,Andrea Consigli,Sassuolo,232,['Goalkeeper'],37
+7137,Ervin Zukanović,AS Roma,229,"['Left Center Back', 'Center Back', 'Left Back', 'Left Wing Back']",25
+7139,Josip Iličić,Fiorentina,239,"['Right Attacking Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Right Defensive Midfield']",30
+7141,Giuseppe Rossi,Fiorentina,239,"['Right Attacking Midfield', 'Left Wing', 'Right Center Forward', 'Left Attacking Midfield', 'Left Center Midfield', 'Center Forward', 'Left Defensive Midfield', 'Left Center Forward', 'Center Attacking Midfield']",11
+7142,Luca Rossettini,Bologna,240,"['Left Center Back', 'Right Center Back', 'Right Back']",29
+7145,Darko Lazović,Genoa,233,"['Right Center Forward', 'Right Wing', 'Right Wing Back', 'Right Midfield', 'Left Midfield', 'Left Wing', 'Center Attacking Midfield']",15
+7146,Goran Pandev,Genoa,233,"['Left Center Forward', 'Center Forward', 'Right Wing Back', 'Right Center Forward', 'Left Attacking Midfield']",15
+7147,Andrea Bertolacci,AC Milan,243,"['Right Center Midfield', 'Left Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Center Forward', 'Right Defensive Midfield', 'Left Midfield']",27
+7148,Mattia Perin,Genoa,233,['Goalkeeper'],25
+7149,Marco Benassi,Torino,241,"['Right Center Midfield', 'Left Center Midfield', 'Right Wing Back']",32
+7150,Riccardo Saponara,Empoli,290,"['Center Attacking Midfield', 'Right Center Forward', 'Right Center Midfield', 'Left Center Midfield', 'Left Center Forward', 'Right Wing']",33
+7151,Mário Rui Silva Duarte,Empoli,290,"['Left Back', 'Left Wing Back']",36
+7155,Vincent Laurini,Empoli,290,"['Right Back', 'Right Center Back', 'Left Center Back']",25
+7157,Marco Sportiello,Atalanta,228,['Goalkeeper'],36
+7160,Lorenzo Tonelli,Empoli,290,"['Right Center Back', 'Center Back']",26
+7164,Ibrahima Mbaye,Bologna,240,"['Right Back', 'Left Wing', 'Right Wing', 'Left Back', 'Right Wing Back']",15
+7165,Rodrigo Sebastián Palacio,Inter Milan,238,"['Right Center Forward', 'Center Forward', 'Left Center Forward', 'Left Wing', 'Right Wing', 'Left Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Right Wing Back', 'Right Midfield']",27
+7166,Riccardo Montolivo,AC Milan,243,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield']",31
+7168,Andrea Poli,AC Milan,243,"['Right Center Midfield', 'Left Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Center Forward', 'Left Defensive Midfield']",18
+7169,Adam Masina,Bologna,240,"['Left Back', 'Left Wing Back', 'Left Center Back']",33
+7170,Simone Verdi,Carpi,1683,"['Right Center Midfield', 'Center Attacking Midfield', 'Left Midfield', 'Right Center Forward', 'Left Center Midfield', 'Right Midfield']",8
+7172,Simone Romagnoli,Carpi,1683,"['Center Back', 'Right Center Back', 'Left Center Back']",30
+7173,Leonardo Bonucci,Juventus,224,"['Center Back', 'Left Center Back', 'Right Center Back']",36
+7174,Antonio Mirante,Bologna,240,['Goalkeeper'],33
+7175,Erick Antonio Pulgar Farfán,Bologna,240,"['Left Center Midfield', 'Left Wing', 'Left Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Center Defensive Midfield']",13
+7176,Sebastian De Maio,Genoa,233,"['Right Center Back', 'Left Center Back', 'Right Center Forward', 'Center Back', 'Center Forward']",28
+7456,Diego Perotti,AS Roma,229,"['Left Wing', 'Left Center Forward', 'Left Midfield', 'Center Attacking Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Left Attacking Midfield', 'Right Wing', 'Center Forward', 'Right Center Forward']",31
+7457,Gregoire Defrel,Sassuolo,232,"['Center Forward', 'Right Wing', 'Right Center Forward', 'Right Midfield', 'Left Wing', 'Center Attacking Midfield', 'Left Center Forward']",33
+7458,Alessio Romagnoli,AC Milan,243,"['Left Center Back', 'Left Back']",34
+7460,Isaac Cofie,Carpi,1683,"['Center Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Center Back', 'Left Midfield']",29
+7461,Luca Rigoni,Genoa,233,"['Right Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Wing', 'Right Defensive Midfield', 'Right Wing Back', 'Center Attacking Midfield', 'Left Wing', 'Left Center Midfield']",28
+7462,Aleandro Rosi,Frosinone,291,"['Right Back', 'Right Center Back', 'Right Wing Back']",27
+7463,Ignazio Abate,AC Milan,243,['Right Back'],27
+7464,Cristian Daniel Ansaldi,Genoa,233,"['Left Center Back', 'Left Back', 'Right Center Back', 'Right Wing Back', 'Right Back', 'Right Center Midfield', 'Left Wing', 'Left Midfield']",24
+7465,Daniele Baselli,Torino,241,"['Left Center Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield']",35
+7466,Simone Edera,Torino,241,"['Center Defensive Midfield', 'Left Center Forward']",2
+7467,Nicolás Andrés Burdisso,Genoa,233,"['Center Back', 'Left Center Back', 'Right Center Back']",28
+7468,Iago Falqué Silva,AS Roma,229,"['Left Wing', 'Right Wing', 'Left Midfield', 'Right Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Left Center Midfield']",22
+7470,Joel Chukwuma Obi,Torino,241,"['Left Center Midfield', 'Left Defensive Midfield']",10
+7471,Andrea Belotti,Torino,241,"['Left Center Forward', 'Right Center Forward', 'Right Wing', 'Right Attacking Midfield', 'Left Wing']",35
+7473,Lorenzo De Silvestri,Sampdoria,234,"['Right Back', 'Right Wing Back']",17
+7474,Afriyie Acquah,Torino,241,"['Right Center Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield']",29
+7475,Tomás Eduardo Rincón Hernández,Genoa,233,"['Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Wing Back', 'Left Wing Back', 'Left Back', 'Right Wing', 'Center Defensive Midfield', 'Center Attacking Midfield']",33
+7476,Emiliano Moretti,Torino,241,"['Left Center Back', 'Left Back']",35
+7479,Cristian Molinaro,Torino,241,"['Left Center Back', 'Left Wing Back', 'Left Back', 'Right Wing Back']",27
+7694,Rômulo Souza Orestes Caldeira,Hellas Verona,226,"['Right Center Midfield', 'Right Midfield', 'Right Back', 'Left Wing', 'Left Defensive Midfield']",9
+7695,Samuel Souprayen,Hellas Verona,226,"['Left Back', 'Left Wing Back']",20
+7696,Ryder Matos Santos,Udinese,230,"['Right Midfield', 'Left Center Forward', 'Right Wing', 'Center Attacking Midfield', 'Right Attacking Midfield', 'Left Attacking Midfield', 'Left Wing', 'Left Midfield', 'Center Forward', 'Right Center Forward', 'Left Center Midfield']",26
+7698,Joseph Alfred Duncan,Sassuolo,232,"['Left Center Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Center Back', 'Left Wing']",33
+7699,Daniele Verde,Frosinone,291,"['Center Attacking Midfield', 'Right Center Forward', 'Right Wing', 'Left Midfield', 'Right Midfield', 'Right Wing Back']",5
+7701,Franco Zuculini,Bologna,240,['Right Center Midfield'],1
+7702,Alessio Cerci,Genoa,233,"['Right Center Forward', 'Right Wing', 'Right Midfield', 'Left Center Forward', 'Center Attacking Midfield']",24
+7704,Alex Ferrari,Bologna,240,"['Right Back', 'Left Back', 'Right Center Back', 'Left Center Back']",21
+7705,Mohamed Salim Fares,Hellas Verona,226,"['Left Midfield', 'Right Defensive Midfield', 'Left Back']",11
+7769,Federico Mattiello,Chievo,231,['Right Back'],1
+7770,Federico Viviani,Hellas Verona,226,"['Left Center Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",19
+7771,Dario Dainelli,Chievo,231,"['Right Center Back', 'Center Back', 'Left Center Back']",18
+7773,Federico Bonazzoli,Sampdoria,234,"['Center Forward', 'Center Attacking Midfield', 'Left Wing', 'Right Center Forward', 'Right Wing']",4
+7775,Emanuele Giaccherini,Bologna,240,"['Left Midfield', 'Left Wing', 'Left Center Midfield', 'Right Center Forward', 'Right Wing', 'Center Attacking Midfield', 'Left Center Forward']",28
+7776,Antonio Candreva,Lazio,236,"['Right Wing', 'Left Wing', 'Right Midfield', 'Right Back', 'Left Midfield']",30
+7777,Federico Bernardeschi,Fiorentina,239,"['Left Attacking Midfield', 'Right Wing', 'Right Midfield', 'Right Center Midfield', 'Right Attacking Midfield', 'Left Wing Back', 'Left Back', 'Right Wing Back', 'Center Attacking Midfield', 'Left Wing']",33
+7778,Ştefan Daniel Radu,Lazio,236,"['Left Back', 'Left Center Back']",13
+7785,Senad Lulić,Lazio,236,"['Left Center Midfield', 'Left Wing', 'Left Back', 'Left Midfield', 'Center Attacking Midfield']",30
+7787,Stefan de Vrij,Lazio,236,['Right Center Back'],2
+7788,Ciro Immobile,Torino,241,"['Left Center Forward', 'Right Center Forward', 'Left Wing', 'Left Attacking Midfield']",14
+7792,Giuseppe Pezzella,Palermo,2256,"['Left Wing', 'Left Wing Back', 'Left Back']",8
+7793,Kevin Lasagna,Carpi,1683,"['Center Forward', 'Right Center Forward', 'Center Attacking Midfield', 'Left Attacking Midfield', 'Right Attacking Midfield', 'Left Center Forward', 'Left Defensive Midfield', 'Left Midfield', 'Right Midfield', 'Right Center Midfield']",36
+7794,Samir Caetano de Souza Santos,Hellas Verona,226,['Left Center Back'],3
+7796,Silvan Widmer,Udinese,230,"['Right Wing Back', 'Right Back', 'Right Wing', 'Right Midfield']",27
+7799,Danilo Larangeira,Udinese,230,"['Center Back', 'Right Center Back', 'Left Center Back']",34
+7803,Albano Benjamín Bizzarri,Chievo,231,['Goalkeeper'],35
+7804,Alberto Brignoli,Sampdoria,234,['Goalkeeper'],1
+7805,Stipe Perica,Udinese,230,"['Left Center Forward', 'Right Center Forward', 'Center Forward']",11
+7852,Tim Matavž,Genoa,233,"['Right Defensive Midfield', 'Right Wing', 'Center Forward', 'Right Center Forward', 'Left Center Forward']",7
+7949,Artur Ioniţă,Hellas Verona,226,"['Right Center Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Right Defensive Midfield', 'Right Midfield', 'Left Midfield', 'Left Defensive Midfield', 'Left Center Midfield']",31
+7952,Simone Padoin,Juventus,224,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Right Back', 'Right Wing Back', 'Right Center Midfield', 'Left Wing Back']",12
+7961,Leandro Castán da Silva,AS Roma,229,['Left Center Back'],5
+7962,Andrea Ranocchia,Sampdoria,234,"['Center Back', 'Left Center Back', 'Right Center Back']",23
+7965,Lorenzo Crisetig,Bologna,240,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield']",5
+7966,Filip Helander,Hellas Verona,226,"['Left Center Back', 'Left Back']",24
+8093,Diego Falcinelli,Sassuolo,232,"['Center Forward', 'Left Wing', 'Left Center Forward', 'Right Center Forward', 'Right Center Midfield']",26
+8102,Edoardo Goldaniga,Palermo,2256,"['Right Wing Back', 'Right Center Back', 'Center Back']",17
+8103,Mattia Destro,Bologna,240,"['Right Center Forward', 'Center Forward', 'Left Center Forward']",27
+8104,Vassilis Torosidis,AS Roma,229,"['Left Back', 'Right Back']",11
+8172,Felipe Anderson Pereira Gomes,Lazio,236,"['Left Wing', 'Right Wing', 'Center Attacking Midfield', 'Right Midfield', 'Left Midfield', 'Left Center Midfield']",35
+8173,Marco Parolo,Lazio,236,"['Right Center Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Left Back', 'Left Center Back', 'Center Defensive Midfield']",31
+8180,Leonardo Pavoletti,Genoa,233,"['Left Center Forward', 'Center Forward', 'Right Center Forward']",25
+8184,Marco D''Alessandro,Atalanta,228,"['Right Midfield', 'Right Wing', 'Right Wing Back', 'Right Back', 'Left Wing', 'Right Center Midfield', 'Left Midfield']",23
+8187,Marcel Büchel,Empoli,290,"['Left Center Midfield', 'Right Center Midfield', 'Center Attacking Midfield', 'Center Defensive Midfield']",28
+8190,Patricio Gabarrón Gil,Lazio,236,"['Right Back', 'Right Center Midfield', 'Right Midfield', 'Left Back']",9
+8191,Ali Adnan Kadhim Al Tameemi,Udinese,230,"['Left Wing Back', 'Left Back', 'Left Center Back']",28
+8193,Maximiliano Gastón López,Torino,241,"['Right Center Forward', 'Left Center Forward', 'Center Forward', 'Left Center Midfield']",26
+8194,Mirko Valdifiori,Napoli,227,['Center Defensive Midfield'],6
+8217,Kingsley Coman,Juventus,224,['Left Center Forward'],1
+8272,Cyril Théréau,Udinese,230,"['Left Center Forward', 'Right Center Forward', 'Center Attacking Midfield', 'Left Midfield', 'Left Center Midfield', 'Center Forward', 'Right Attacking Midfield', 'Left Wing']",36
+8274,Pierluigi Gollini,Hellas Verona,226,['Goalkeeper'],26
+8275,Davide Astori,Fiorentina,239,"['Left Center Back', 'Right Center Back']",33
+8278,Nicolás Federico Spolli,Chievo,231,"['Right Center Back', 'Left Center Back']",14
+8280,Godfred Donsah,Bologna,240,"['Right Center Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Center Midfield', 'Center Defensive Midfield']",20
+8284,Amadou Diawara,Bologna,240,"['Center Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Midfield']",34
+8291,Arlind Afrim Ajeti,Frosinone,291,"['Left Center Back', 'Right Center Back', 'Center Back']",16
+8294,Claudio Marchisio,Juventus,224,"['Center Defensive Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Center Midfield']",23
+8296,Alessandro Matri,Lazio,236,"['Right Wing', 'Center Forward', 'Left Center Forward', 'Center Attacking Midfield', 'Right Center Forward']",19
+8420,Luca Cigarini,Atalanta,228,"['Right Center Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Back', 'Center Attacking Midfield']",25
+8421,Matteo Bianchetti,Hellas Verona,226,"['Right Center Back', 'Right Back', 'Left Center Back']",23
+8423,Pedro Miguel Almeida Lopes Pereira,Sampdoria,234,"['Right Back', 'Left Back', 'Right Center Back']",9
+8424,Marco Tumminello,AS Roma,229,['Center Forward'],1
+8443,Dušan Basta,Lazio,236,['Right Back'],23
+8459,Edson Braafheid,Lazio,236,['Left Back'],5
+8463,Urby Emanuelson,Hellas Verona,226,"['Left Midfield', 'Left Defensive Midfield', 'Right Midfield', 'Left Wing Back', 'Left Center Midfield', 'Left Back', 'Left Wing']",11
+8552,Robin Quaison,Palermo,2256,"['Center Forward', 'Left Wing', 'Left Center Midfield', 'Right Wing Back', 'Right Center Forward', 'Left Center Forward', 'Right Center Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Left Attacking Midfield', 'Right Wing', 'Right Midfield', 'Left Midfield']",30
+8644,Sergio Pellissier,Chievo,231,"['Left Center Forward', 'Right Center Forward', 'Center Attacking Midfield', 'Center Forward', 'Right Attacking Midfield', 'Left Attacking Midfield']",19
+8645,Massimo Gobbi,Chievo,231,"['Left Back', 'Left Wing Back', 'Left Center Back', 'Left Midfield', 'Center Attacking Midfield']",34
+8653,José Mauri,AC Milan,243,"['Left Defensive Midfield', 'Left Center Midfield']",5
+8657,Andrea Conti,Atalanta,228,"['Right Back', 'Right Wing Back', 'Right Wing', 'Right Midfield']",14
+8661,Daniel Pavlovic,Frosinone,291,"['Left Back', 'Left Center Back', 'Center Back', 'Left Wing Back']",22
+8662,Vid Belec,Carpi,1683,['Goalkeeper'],30
+8664,Andrea Costa,Empoli,290,"['Left Center Back', 'Right Center Back']",24
+8668,Kevin-Prince Boateng,AC Milan,243,"['Right Center Forward', 'Left Wing', 'Left Center Forward', 'Center Attacking Midfield', 'Right Midfield', 'Left Midfield']",11
+8675,Jonathan de Guzmán,Carpi,1683,"['Center Attacking Midfield', 'Left Center Midfield', 'Left Wing', 'Left Midfield']",5
+8717,Dominik Furman,Hellas Verona,226,"['Left Defensive Midfield', 'Right Midfield']",1
+8792,Mattia Zaccagni,Hellas Verona,226,"['Right Center Midfield', 'Right Wing', 'Center Attacking Midfield']",3
+8793,Oliver Kragl,Frosinone,291,"['Left Midfield', 'Left Center Midfield', 'Left Wing Back', 'Right Center Midfield', 'Right Wing', 'Left Wing', 'Left Back', 'Left Center Back']",15
+8847,Santiago Juan Gentiletti Selak,Lazio,236,['Left Center Back'],19
+8848,Paolo Cannavaro,Sassuolo,232,"['Right Center Back', 'Left Center Back', 'Center Back', 'Left Back']",31
+8849,Domenico Maietta,Bologna,240,"['Left Center Back', 'Center Back']",19
+8851,Saphir Sliti Taïder,Bologna,240,"['Right Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Left Defensive Midfield', 'Right Midfield', 'Right Wing', 'Left Center Back']",29
+8852,Thomas Heurtaux,Udinese,230,"['Right Center Back', 'Center Back', 'Right Back']",15
+8871,Marco Borriello,Atalanta,228,"['Center Forward', 'Right Wing', 'Left Center Forward', 'Right Center Forward', 'Center Attacking Midfield']",27
+8873,Marios Oikonomou,Bologna,240,"['Right Center Back', 'Center Back', 'Right Back', 'Left Center Back']",20
+8874,Luca Antonelli,AC Milan,243,['Left Back'],28
+8875,Ricardo Gabriel Álvarez,Sampdoria,234,"['Right Midfield', 'Right Wing', 'Right Center Midfield', 'Right Attacking Midfield', 'Left Center Forward', 'Center Attacking Midfield']",13
+8876,Faouzi Ghoulam,Napoli,227,['Left Back'],34
+8877,Boštjan Cesar,Chievo,231,['Left Center Back'],31
+9884,Niklas Moisander,Sampdoria,234,"['Center Back', 'Left Center Back', 'Right Center Back', 'Left Wing Back']",22
+9887,Rafael de Andrade Bittencourt Pinheiro,Hellas Verona,226,['Goalkeeper'],12
+9898,Aleksandar Tonev,Frosinone,291,"['Left Midfield', 'Right Midfield', 'Center Attacking Midfield', 'Left Wing Back', 'Left Wing', 'Right Wing', 'Right Center Midfield', 'Left Center Forward', 'Center Forward', 'Right Wing Back', 'Left Back']",22
+9903,Yussif Raman Chibsah,Frosinone,291,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Center Defensive Midfield']",22
+9939,Maurício dos Santos Nascimento,Lazio,236,"['Right Center Back', 'Left Center Back', 'Right Back']",24
+9940,Armando Izzo,Genoa,233,"['Left Center Back', 'Right Center Back', 'Center Back', 'Left Back', 'Right Wing Back', 'Right Back', 'Right Defensive Midfield']",33
+10030,Davide Biondini,Sassuolo,232,"['Right Center Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Left Midfield', 'Right Midfield', 'Left Wing']",22
+10031,Marcello Gazzola,Sassuolo,232,"['Right Back', 'Left Back', 'Left Wing']",9
+10032,Achraf Lazaar,Palermo,2256,"['Left Wing Back', 'Left Back', 'Left Midfield']",30
+10033,Luca Antei,Sassuolo,232,['Right Center Back'],5
+10530,Jules Olivier Ntcham,Genoa,233,"['Center Attacking Midfield', 'Right Center Forward', 'Left Center Midfield', 'Left Wing', 'Right Wing', 'Left Defensive Midfield', 'Right Midfield', 'Left Center Forward', 'Left Center Back', 'Right Defensive Midfield', 'Right Wing Back', 'Center Defensive Midfield', 'Center Forward', 'Right Center Midfield']",17
+10736,Vlad Iulian Chiricheș,Napoli,227,"['Left Center Back', 'Right Center Back']",8
+10881,Diogo José Rosário Gomes Figueiras,Genoa,233,"['Right Wing Back', 'Right Back', 'Right Center Midfield']",9
+10919,Juraj Kucka,AC Milan,243,"['Left Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Midfield', 'Center Attacking Midfield']",30
+11128,Umar Sadiq Mesbah,AS Roma,229,"['Left Wing', 'Right Wing', 'Right Center Forward', 'Center Forward', 'Right Midfield']",6
+11183,Alex Nicolao Telles,Inter Milan,238,"['Left Back', 'Left Wing Back']",21
+11339,Paweł Wszołek,Hellas Verona,226,"['Center Attacking Midfield', 'Right Wing', 'Center Forward', 'Right Center Forward', 'Right Midfield', 'Left Midfield', 'Left Wing Back', 'Right Back', 'Left Back', 'Right Center Midfield']",28
+11342,Eros Pisano,Hellas Verona,226,"['Right Back', 'Left Back', 'Right Center Back', 'Right Wing Back']",34
+11426,Andrea Seculin,Chievo,231,['Goalkeeper'],3
+11427,Filip Đorđević,Lazio,236,"['Center Forward', 'Left Center Forward', 'Left Wing', 'Right Center Forward']",27
+11494,Luca Siligardi,Hellas Verona,226,"['Right Wing', 'Right Midfield', 'Right Center Midfield', 'Right Center Forward', 'Left Wing', 'Center Forward', 'Center Attacking Midfield', 'Right Back', 'Left Midfield', 'Left Center Midfield']",28
+11497,Jonathan Ludovic Biabiany,Inter Milan,238,"['Right Wing Back', 'Right Midfield', 'Right Back', 'Right Wing', 'Left Defensive Midfield', 'Left Midfield']",20
+11499,Riccardo Gagliolo,Carpi,1683,"['Left Back', 'Left Center Back', 'Left Wing Back']",31
+11502,Antonio Di Gaudio,Carpi,1683,"['Left Midfield', 'Left Wing', 'Right Wing', 'Center Attacking Midfield', 'Left Center Forward', 'Left Center Midfield']",29
+11508,Łukasz Skorupski,Empoli,290,['Goalkeeper'],31
+11512,Rade Krunić,Empoli,290,"['Center Attacking Midfield', 'Left Center Midfield', 'Left Center Forward', 'Right Center Midfield', 'Center Defensive Midfield']",15
+11516,Manuel Pasqual,Fiorentina,239,"['Left Back', 'Left Wing Back', 'Right Attacking Midfield', 'Left Wing', 'Right Wing Back']",17
+11519,Antonino La Gumina,Palermo,2256,"['Right Center Forward', 'Center Forward']",3
+11602,Raffaele Maiello,Empoli,290,"['Center Defensive Midfield', 'Right Center Midfield', 'Center Attacking Midfield']",12
+11608,Danilo Soddimo,Frosinone,291,"['Left Midfield', 'Left Wing', 'Right Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Left Center Midfield', 'Right Wing', 'Right Defensive Midfield']",28
+11643,Riccardo Meggiorini,Chievo,231,"['Right Center Forward', 'Left Center Forward', 'Left Wing', 'Center Attacking Midfield', 'Left Midfield', 'Right Midfield', 'Right Wing', 'Left Attacking Midfield']",26
+11672,Samuele Longo,Frosinone,291,"['Right Center Forward', 'Left Wing', 'Center Forward', 'Left Center Forward', 'Right Midfield', 'Left Attacking Midfield', 'Right Wing']",18
+11722,Boukary Dramé,Atalanta,228,"['Left Back', 'Left Wing Back']",25
+11729,Luca Rizzo,Bologna,240,"['Left Midfield', 'Left Wing', 'Right Wing', 'Right Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Center Attacking Midfield', 'Right Back', 'Right Wing Back']",23
+12475,Angelo Esmael da Costa Júnior,Bologna,240,['Goalkeeper'],5
+12491,Federico Marchetti,Lazio,236,['Goalkeeper'],29
+12619,Josef Alexander Martínez Mencia,Torino,241,"['Right Center Forward', 'Left Center Forward', 'Right Wing Back', 'Left Wing', 'Left Wing Back', 'Right Wing']",20
+12759,Maximiliano Nicol Moralez,Atalanta,228,"['Right Wing', 'Center Forward', 'Left Midfield', 'Left Center Forward', 'Left Wing', 'Center Attacking Midfield']",17
+13612,Lorenzo Ariaudo,Empoli,290,"['Left Center Back', 'Right Center Back', 'Center Back']",9
+13613,Daniel Ciofani,Frosinone,291,"['Right Center Forward', 'Center Forward', 'Left Center Forward']",37
+13614,Francesco Bardi,Frosinone,291,['Goalkeeper'],2
+15161,Alexander Merkel,Udinese,230,['Right Center Midfield'],1
+15318,Lazaros Christodoulopoulos,Sampdoria,234,"['Right Back', 'Right Wing', 'Left Wing', 'Left Back', 'Right Wing Back', 'Right Midfield', 'Left Midfield', 'Left Center Midfield', 'Right Attacking Midfield', 'Left Wing Back']",10
+15415,Matteo Mancosu,Carpi,1683,"['Left Center Forward', 'Center Forward', 'Right Center Forward', 'Left Center Back', 'Left Wing']",21
+15780,Francesco Totti,AS Roma,229,"['Center Attacking Midfield', 'Center Forward', 'Left Center Forward', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Center Forward']",13
+15818,Gervais Lombe Yao Kouassi,AS Roma,229,"['Right Wing', 'Left Wing', 'Center Forward', 'Left Center Forward', 'Right Midfield']",14
+15959,Nenad Krstičić,Sampdoria,234,"['Left Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield']",10
+16061,Uroš Ćosić,Empoli,290,"['Left Center Back', 'Right Center Back']",9
+16202,Nikola Maksimović,Torino,241,"['Right Center Back', 'Right Wing Back']",16
+16308,Leandro Daniel Paredes,Empoli,290,"['Right Center Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield']",33
+16453,Gary Alexis Medel Soto,Inter Milan,238,"['Right Center Midfield', 'Center Defensive Midfield', 'Right Center Back', 'Left Center Back', 'Center Back', 'Left Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Left Back']",29
+16495,Omar El Kaddouri,Napoli,227,"['Center Attacking Midfield', 'Left Wing', 'Right Wing', 'Left Midfield', 'Center Forward', 'Center Defensive Midfield']",20
+16586,Fernando Lucas Martins,Sampdoria,234,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Center Midfield']",35
+17520,Federico Barba,Empoli,290,['Left Center Back'],10
+18027,Matteo Brighi,Bologna,240,"['Left Center Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Right Center Back', 'Center Attacking Midfield']",23
+18028,Levan Mchedlidze,Empoli,290,"['Left Center Forward', 'Right Center Forward', 'Center Forward']",13
+18237,Ionuț Andrei Radu,Inter Milan,238,['Goalkeeper'],1
+18874,Mauricio Aníbal Isla Isla,Juventus,224,['Right Wing Back'],1
+18946,Paul-José M''Poku Ebunge,Chievo,231,"['Left Center Forward', 'Right Center Forward', 'Center Attacking Midfield', 'Left Wing', 'Right Midfield', 'Left Defensive Midfield', 'Left Midfield', 'Left Center Midfield', 'Right Wing']",20
+19286,Miroslav Klose,Lazio,236,"['Center Forward', 'Right Defensive Midfield', 'Center Attacking Midfield', 'Right Center Forward', 'Left Defensive Midfield', 'Left Center Forward', 'Right Midfield']",24
+19299,Maicon Douglas Sisenando,AS Roma,229,"['Right Back', 'Right Wing Back']",15
+19846,Antonio Di Natale,Udinese,230,"['Right Center Forward', 'Right Center Back', 'Left Center Forward', 'Center Forward', 'Center Defensive Midfield']",23
+19847,Alessandro Diamanti,Atalanta,228,"['Left Center Forward', 'Center Attacking Midfield', 'Right Midfield', 'Right Wing', 'Left Midfield', 'Left Wing']",16
+19850,Antonio Cassano,Sampdoria,234,"['Center Forward', 'Right Center Forward', 'Left Center Forward', 'Left Center Midfield', 'Center Attacking Midfield', 'Left Attacking Midfield', 'Left Wing']",24
+20004,Paul Pogba,Juventus,224,"['Left Center Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Left Midfield', 'Center Attacking Midfield', 'Left Wing']",35
+20008,Patrice Evra,Juventus,224,"['Left Wing Back', 'Left Back', 'Left Center Midfield', 'Left Center Back']",26
+20043,Norbert Gyömbér,AS Roma,229,"['Right Midfield', 'Left Midfield', 'Right Center Back', 'Right Back', 'Right Center Midfield', 'Left Back']",6
+20057,Nigel de Jong,AC Milan,243,"['Center Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield']",5
+20169,Seydou Kéita,AS Roma,229,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Center Midfield']",20
+20252,Luca Toni,Hellas Verona,226,"['Center Forward', 'Right Center Forward', 'Left Center Forward']",23
+20289,Philippe Mexès,AC Milan,243,"['Right Center Back', 'Left Center Back']",5
+20300,Jérémy Ménez,AC Milan,243,"['Right Center Forward', 'Left Center Forward', 'Center Attacking Midfield', 'Right Midfield', 'Left Center Midfield']",10
+20561,Antonio Nocerino,AC Milan,243,"['Right Center Midfield', 'Left Center Midfield']",2
+20636,Mirko Gori,Frosinone,291,"['Right Defensive Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield']",28
+20637,Salih Uçan,AS Roma,229,"['Left Center Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield']",3
+20970,Nicolás Ignacio Castillo Mora,Frosinone,291,"['Left Center Forward', 'Center Attacking Midfield', 'Left Attacking Midfield', 'Center Forward', 'Right Center Forward', 'Left Midfield']",6
+21272,Luiz Adriano de Souza da Silva,AC Milan,243,"['Left Center Forward', 'Center Forward', 'Right Center Forward', 'Left Center Midfield', 'Right Center Midfield', 'Center Attacking Midfield', 'Right Midfield']",26
+22041,Marko Livaja,Empoli,290,"['Left Center Forward', 'Right Center Forward', 'Center Attacking Midfield', 'Center Forward', 'Left Wing', 'Right Wing']",18
+22271,Salvador Ichazo Fernández,Torino,241,['Goalkeeper'],3
+22822,Alejandro Miguel Rodriguez,Sampdoria,234,"['Right Center Forward', 'Center Forward', 'Center Attacking Midfield', 'Left Center Forward']",6
+22828,Ricardo Kishna,Lazio,236,"['Left Wing', 'Right Wing', 'Left Midfield']",11
+23241,William Vainqueur,AS Roma,229,"['Center Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Right Wing', 'Right Defensive Midfield']",16
+23324,Nicolas Sebastian Frey,Chievo,231,"['Right Back', 'Right Center Back', 'Left Back', 'Left Center Back', 'Right Center Midfield']",19
+23329,Abdelhamid El Kaoutari,Palermo,2256,['Left Center Back'],7
+23349,Paolo Sammarco,Frosinone,291,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Right Back', 'Center Attacking Midfield']",28
+23470,Luca Paganini,Frosinone,291,"['Right Midfield', 'Right Wing Back', 'Left Midfield', 'Right Center Midfield', 'Right Back', 'Left Wing', 'Right Wing', 'Right Center Forward']",27
+23488,Mario Suárez Mata,Fiorentina,239,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Center Back', 'Right Center Midfield']",9
+23846,Uroš Đurđević,Palermo,2256,"['Center Forward', 'Left Center Forward', 'Right Center Forward', 'Left Midfield']",14
+23987,Rey Manaj,Inter Milan,238,"['Right Wing', 'Center Attacking Midfield', 'Center Forward']",4
+24061,Aljaž Struna,Palermo,2256,"['Right Center Back', 'Right Back', 'Right Wing Back']",22
+24235,Federico Dionisi,Frosinone,291,"['Left Center Forward', 'Right Center Forward', 'Center Attacking Midfield', 'Left Midfield', 'Right Attacking Midfield', 'Left Wing', 'Center Forward', 'Right Wing']",32
+24683,Diego Ángel Capel Trinidad,Genoa,233,"['Right Center Forward', 'Right Wing', 'Left Wing', 'Center Forward', 'Left Center Midfield', 'Center Attacking Midfield', 'Left Center Forward', 'Right Attacking Midfield', 'Left Midfield']",21
+24722,Emmanuel Agyemang-Badu,Udinese,230,"['Right Center Midfield', 'Left Center Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Right Midfield']",33
+25116,Edenílson Andrade dos Santos,Udinese,230,"['Right Wing Back', 'Left Wing Back', 'Right Back', 'Right Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Left Back', 'Right Defensive Midfield', 'Right Wing', 'Left Wing']",29
+25303,Gilberto Moraes Junior,Hellas Verona,226,"['Right Wing Back', 'Center Attacking Midfield', 'Right Midfield', 'Right Back', 'Left Back', 'Left Midfield']",10
+25345,Anderson Hernanes de Carvalho Andrade,Juventus,224,"['Center Attacking Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield']",16
+25430,Felipe Melo de Carvalho,Inter Milan,238,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Right Center Back', 'Right Defensive Midfield', 'Right Center Midfield']",26
+25505,José Rodolfo Pires Ribeiro,Sampdoria,234,"['Left Midfield', 'Left Back', 'Left Wing Back']",17
+25931,Gonzalo Javier Rodríguez,Fiorentina,239,"['Center Back', 'Right Center Back', 'Right Back']",35
+25954,Enzo Maresca,Palermo,2256,"['Center Defensive Midfield', 'Center Attacking Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",15
+26192,Matías Ariel Fernández Fernández,Fiorentina,239,"['Left Attacking Midfield', 'Left Wing', 'Right Wing Back', 'Right Midfield', 'Right Attacking Midfield', 'Right Wing', 'Center Attacking Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield']",22
+26197,Christian Abbiati,AC Milan,243,['Goalkeeper'],1
+26211,Joan Verdú Fernández,Fiorentina,239,"['Right Center Midfield', 'Right Attacking Midfield', 'Left Wing', 'Left Defensive Midfield', 'Center Attacking Midfield']",5
+26220,Matuzalém Francelino da Silva,Hellas Verona,226,"['Left Center Midfield', 'Center Forward', 'Right Wing', 'Center Defensive Midfield']",7
+26442,Boško Janković,Hellas Verona,226,"['Right Wing', 'Left Wing', 'Right Wing Back', 'Left Center Forward', 'Left Midfield', 'Right Midfield']",15
+26683,Abdoulay Konko,Lazio,236,"['Right Back', 'Left Back']",18
+26707,Juan Pablo Carrizo,Inter Milan,238,['Goalkeeper'],2
+26728,Alberto Facundo Costa,Fiorentina,239,"['Right Defensive Midfield', 'Center Attacking Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield']",19
+26827,Ravel Morrison,Lazio,236,"['Center Attacking Midfield', 'Right Defensive Midfield', 'Left Center Midfield']",4
+27044,Marco Antônio De Mattos Filho,Udinese,230,"['Center Defensive Midfield', 'Left Center Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Left Center Back', 'Left Wing Back']",11
+27110,Antonio Floro Flores,Chievo,231,"['Left Wing', 'Center Forward', 'Left Midfield', 'Right Center Forward', 'Left Center Forward']",28
+27328,Alexander Farnerud,Torino,241,"['Left Center Midfield', 'Right Center Midfield']",5
+27595,Carlos Mario Carbonero Mancilla,Sampdoria,234,"['Left Center Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Right Wing', 'Right Wing Back', 'Left Midfield', 'Right Midfield', 'Left Wing', 'Right Back']",14
+27853,Mauro Matías Zárate,Fiorentina,239,"['Center Forward', 'Right Center Forward', 'Left Center Forward', 'Left Midfield', 'Left Wing', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Right Attacking Midfield', 'Left Attacking Midfield']",15
+27949,Juan Manuel Iturbe Arévalo,AS Roma,229,"['Right Wing', 'Center Forward', 'Left Wing', 'Left Center Forward']",12
+28066,Marcelo Alejandro Estigarribia Balmori,Atalanta,228,"['Left Wing', 'Left Midfield', 'Right Back', 'Left Wing Back']",4
+28289,Gastón Alexis Silva Perdomo,Torino,241,"['Left Wing Back', 'Right Center Back', 'Left Center Back']",12
+28442,Matteo Fedele,Carpi,1683,"['Left Center Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield']",8
+28974,Fabio Daprelà,Carpi,1683,"['Left Wing Back', 'Left Back', 'Left Center Back']",7
+29161,Josip Posavec,Palermo,2256,['Goalkeeper'],1
+29312,Pablo Estífer Armero,Udinese,230,"['Left Wing Back', 'Left Back']",5
+30512,Aleksandar Trajkovski,Palermo,2256,"['Right Wing', 'Center Forward', 'Right Center Midfield', 'Right Center Forward', 'Center Attacking Midfield', 'Left Center Forward', 'Left Wing', 'Left Attacking Midfield', 'Left Midfield', 'Center Defensive Midfield', 'Right Midfield', 'Left Center Midfield']",32
+30704,Gastón Brugman,Palermo,2256,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Center Attacking Midfield', 'Left Attacking Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Left Defensive Midfield']",14
+30735,Mato Jajalo,Palermo,2256,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Right Attacking Midfield', 'Right Center Forward']",28
+30745,Daniele Gastaldello,Bologna,240,"['Left Center Back', 'Right Center Back']",26
+30750,Stefano Sabelli,Carpi,1683,"['Left Wing Back', 'Right Wing Back', 'Right Back', 'Right Midfield']",7
+30767,Gabriel Vasconelos Ferreira,Napoli,227,['Goalkeeper'],1
+30769,Andrea Rispoli,Palermo,2256,"['Right Wing Back', 'Right Back', 'Left Back']",22
+30770,Filippo Falco,Bologna,240,"['Right Wing', 'Center Attacking Midfield', 'Right Midfield', 'Right Back']",9
+30772,Panagiotis Tachtsidis,Genoa,233,"['Right Defensive Midfield', 'Right Center Forward', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Left Attacking Midfield', 'Left Wing', 'Center Attacking Midfield']",24
+30829,Lorenzo Lollo,Carpi,1683,"['Right Center Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Left Center Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Left Midfield']",27
+30830,Luca Lezzerini,Fiorentina,239,['Goalkeeper'],2
+30911,Robert Gucher,Frosinone,291,"['Left Defensive Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield']",24
+30927,Massimiliano Carlini,Frosinone,291,"['Left Midfield', 'Left Center Forward', 'Right Midfield', 'Right Wing', 'Left Wing', 'Right Center Midfield', 'Left Wing Back', 'Right Wing Back', 'Left Center Midfield', 'Center Attacking Midfield']",14
+30928,Roberto Vitiello,Palermo,2256,"['Right Center Back', 'Right Wing Back', 'Right Back', 'Center Back']",10
+30941,Karim Laribi,Sassuolo,232,"['Right Wing', 'Left Center Midfield', 'Right Center Midfield', 'Left Midfield', 'Left Wing', 'Right Midfield']",11
+31172,Luca Bittante,Empoli,290,"['Right Back', 'Right Center Midfield', 'Left Center Midfield', 'Left Back', 'Left Wing Back']",16
+31231,Davide Brivio,Atalanta,228,"['Left Back', 'Left Center Back', 'Left Wing']",14
+31265,Michele Rocca,Sampdoria,234,['Right Wing Back'],1
+31268,Michel Morganella,Palermo,2256,"['Right Back', 'Right Wing Back', 'Right Midfield', 'Left Wing Back']",14
+31273,Marco Crimi,Carpi,1683,"['Right Center Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Right Midfield', 'Right Wing', 'Center Attacking Midfield', 'Left Center Midfield', 'Left Defensive Midfield']",20
+31335,Giuseppe Panico,Genoa,233,['Right Center Forward'],1
+31383,Nikola Ninković,Chievo,231,['Left Center Midfield'],1
+31488,Vangelis Moras,Hellas Verona,226,"['Left Center Back', 'Center Back', 'Right Center Back']",31
+31572,Luca Marrone,Hellas Verona,226,"['Left Defensive Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield']",21
+31721,Matteo Ciofani,Frosinone,291,"['Right Back', 'Right Center Back', 'Right Wing Back', 'Left Wing Back']",18
+31725,Gaetano Monachello,Atalanta,228,"['Center Forward', 'Right Center Midfield', 'Right Midfield', 'Right Center Forward', 'Left Center Forward', 'Center Attacking Midfield']",10
+31737,Michele Camporese,Empoli,290,['Left Center Back'],2
+32037,Nicola Leali,Frosinone,291,['Goalkeeper'],33
+32119,Leandro Greco,Hellas Verona,226,"['Center Defensive Midfield', 'Left Center Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Right Wing', 'Left Wing', 'Right Defensive Midfield']",26
+32525,Fabrizio Poli,Carpi,1683,"['Left Back', 'Right Center Back', 'Right Back', 'Left Center Back', 'Left Wing Back']",10
+32608,Jerry Uche Mbakogu,Carpi,1683,"['Center Forward', 'Right Wing', 'Right Center Forward', 'Left Center Forward']",24
+32722,Norbert Sándor Balogh,Palermo,2256,"['Right Center Forward', 'Left Midfield', 'Center Attacking Midfield']",4
+32807,Fredy Alejandro Guarín Vásquez,Inter Milan,238,"['Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Wing', 'Right Midfield', 'Left Center Midfield']",16
+32903,Emanuele Terranova,Sassuolo,232,"['Right Center Back', 'Right Midfield']",6
+33311,Ogenyi Eddy Onazi,Lazio,236,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Right Midfield']",15
+33529,Panagiotis Giorgios Kone,Fiorentina,239,"['Right Center Midfield', 'Left Center Midfield', 'Center Attacking Midfield']",6
+34315,Simone Colombi,Carpi,1683,['Goalkeeper'],2
+34355,Riccardo Fiamozzi,Genoa,233,"['Right Wing Back', 'Right Back', 'Right Center Back', 'Left Center Back', 'Left Defensive Midfield']",8
+34565,Anthony Mounier,Bologna,240,"['Right Midfield', 'Right Center Midfield', 'Left Wing', 'Right Wing', 'Left Center Forward', 'Left Attacking Midfield', 'Left Midfield', 'Right Wing Back']",30
+34881,Daniele Padelli,Torino,241,['Goalkeeper'],35
+35923,Carlos Emilio Carmona Tello,Atalanta,228,"['Right Center Midfield', 'Right Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield']",8
+36364,Dávid Ivan,Sampdoria,234,"['Right Center Midfield', 'Right Wing', 'Left Center Midfield', 'Right Midfield', 'Left Wing', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Wing Back']",21
+36465,Fabrizio Alastra,Palermo,2256,['Goalkeeper'],2
+36770,Mauricio Ricardo Pinilla Ferreira,Atalanta,228,"['Center Forward', 'Right Center Forward', 'Left Center Forward']",20
+36927,Boris Radunović,Atalanta,228,['Goalkeeper'],1
+37999,Rodrigo Sebastián Aguirre Soto,Udinese,230,"['Left Midfield', 'Right Center Forward', 'Left Center Forward', 'Right Defensive Midfield', 'Right Midfield']",10
+38237,Gabriel Alejandro Paletta,Atalanta,228,"['Right Center Back', 'Left Center Back', 'Center Back']",24
+38312,Eugenio Lamanna,Genoa,233,['Goalkeeper'],13
+38326,Ferdinando Coppola,Hellas Verona,226,['Goalkeeper'],1
+38389,Alberto Gilardino,Palermo,2256,"['Center Forward', 'Left Center Forward', 'Right Center Forward', 'Right Attacking Midfield']",33
+40119,Juan Camilo Zúñiga Mosquera,Bologna,240,"['Left Back', 'Right Back', 'Right Midfield', 'Right Wing', 'Left Midfield', 'Right Wing Back']",9
+40247,Simone Pepe,Chievo,231,"['Left Center Midfield', 'Right Midfield', 'Right Defensive Midfield', 'Right Wing', 'Center Attacking Midfield', 'Left Midfield', 'Right Wing Back', 'Center Forward']",22
+40250,Marco Zambelli,Empoli,290,"['Right Back', 'Right Wing Back', 'Left Back']",19
+40251,Daniele Croce,Empoli,290,"['Left Center Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Left Back']",28
+40252,Massimo Maccarone,Empoli,290,"['Left Center Forward', 'Right Center Forward', 'Center Attacking Midfield', 'Center Forward', 'Center Defensive Midfield']",37
+40321,Andrea Coda,Sampdoria,234,"['Left Center Back', 'Center Back']",4
+40332,Alberto Pelagotti,Empoli,290,['Goalkeeper'],6
+40333,Cristian Raimondi,Atalanta,228,"['Right Midfield', 'Right Back', 'Left Center Midfield', 'Left Back', 'Center Attacking Midfield', 'Right Center Midfield', 'Right Wing', 'Right Wing Back', 'Left Wing', 'Right Center Forward']",18
+40348,Assane Demoya Gnoukouri,Inter Milan,238,"['Center Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield']",2
+40349,Ivaylo Chochev,Palermo,2256,"['Left Center Midfield', 'Left Defensive Midfield', 'Left Wing Back', 'Left Midfield', 'Left Back', 'Left Attacking Midfield']",26
+40350,Siniša Anđelković,Palermo,2256,"['Left Center Back', 'Right Back', 'Right Center Back', 'Left Back']",23
+40351,Alessandro Gazzi,Torino,241,"['Center Defensive Midfield', 'Left Center Midfield', 'Left Defensive Midfield']",15
+40367,Francesco Lodi,Udinese,230,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Right Defensive Midfield']",24
+40394,Djamel Eddine Mesbah,Sampdoria,234,"['Left Back', 'Left Wing Back', 'Left Center Back']",7
+40419,Accursio Bentivegna,Palermo,2256,['Left Midfield'],1
+40426,Guglielmo Stendardo,Atalanta,228,"['Right Center Back', 'Left Center Forward', 'Left Center Back']",15
+40427,Cesare Bovo,Torino,241,"['Right Center Back', 'Left Center Back', 'Right Back']",21
+40428,Archimede Morleo,Bologna,240,['Left Back'],5
+40429,Angelo Palombo,Sampdoria,234,"['Center Attacking Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield']",7
+40430,Giuseppe Vives,Torino,241,"['Left Center Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield']",33
+40447,Gennaro Sardo,Chievo,231,"['Right Center Back', 'Right Back']",6
+40453,Segundo Víctor Ibarbo Guerrero,AS Roma,229,"['Right Wing', 'Center Forward']",2
+40455,Giulio Migliaccio,Atalanta,228,"['Left Defensive Midfield', 'Center Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Center Back']",18
+40457,Giovanni Marchese,Genoa,233,"['Left Center Back', 'Center Back', 'Left Wing Back', 'Left Back', 'Left Defensive Midfield', 'Left Attacking Midfield']",11
+40458,Rubens Fernando Moedim,Juventus,224,['Substitute'],1
+40529,Morgan De Sanctis,AS Roma,229,['Goalkeeper'],4
+40945,Alex Rodrigo Dias da Costa,AC Milan,243,['Right Center Back'],25
+41063,Aaron Mattia Tabacchi,Bologna,240,['Left Wing'],1
+41067,Davide Bassi,Atalanta,228,['Goalkeeper'],1
+41231,Maurizio Pugliesi,Empoli,290,['Goalkeeper'],1
+41948,Franco Signorelli,Empoli,290,['Left Center Midfield'],1
+42271,Fabio Della Giovanna,Inter Milan,238,['Left Center Back'],1
+44395,Andrés Fabián Ponce Núñez,Sampdoria,234,['Center Forward'],1
+45508,Emanuele Suagher,Carpi,1683,"['Left Center Forward', 'Left Center Back', 'Center Back', 'Right Center Back']",9
+45590,Nicolò Cherubin,Atalanta,228,"['Left Center Back', 'Left Back']",14
+45591,Franco Brienza,Bologna,240,"['Center Attacking Midfield', 'Left Wing', 'Right Center Forward', 'Right Wing', 'Left Center Forward', 'Right Attacking Midfield', 'Right Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Wing Back']",29
+46670,Iván Rodrigo Piris Leguizamón,Udinese,230,"['Left Center Back', 'Right Back', 'Right Center Back', 'Left Back', 'Left Wing Back', 'Right Wing Back']",27
+49439,Germán Gustavo Denis,Atalanta,228,"['Center Forward', 'Right Center Forward', 'Left Center Forward']",15
+49440,Davide Bertoncini,Frosinone,291,"['Right Center Back', 'Center Back', 'Left Center Back']",5
+57655,Željko Brkić,Carpi,1683,['Goalkeeper'],4
+174418,Modibo Diakité,Sampdoria,234,"['Left Center Back', 'Right Center Back', 'Center Back', 'Right Back']",26
+296873,Roberto Crivello,Frosinone,291,"['Left Back', 'Left Wing Back']",17
+352172,Raffaele Bianco,Carpi,1683,"['Center Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",26
+386509,Adriano Russo,Frosinone,291,"['Right Center Back', 'Center Back']",10
+386510,Massimo Zenildo Zappino,Frosinone,291,['Goalkeeper'],4
+386512,Alessandro Frara,Frosinone,291,"['Right Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Left Center Midfield', 'Left Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Back', 'Left Wing']",20
+386514,Luca Martinelli,Empoli,290,['Right Center Back'],1
+386515,Ronaldo Pompeu da Silva,Empoli,290,['Center Defensive Midfield'],3
+386516,Alessandro Piu,Empoli,290,"['Right Center Forward', 'Left Center Forward', 'Right Wing', 'Right Center Midfield', 'Right Midfield']",10
+386606,Luigi Giorgi,Atalanta,228,"['Left Center Midfield', 'Right Center Midfield']",1
+386607,Gianpaolo Bellini,Atalanta,228,"['Right Back', 'Left Back', 'Right Center Back', 'Right Wing Back']",15
+386640,Robert Acquafresca,Bologna,240,"['Right Center Forward', 'Left Midfield', 'Center Forward', 'Right Midfield', 'Left Center Midfield']",6
+386641,Stefano Mauri,Lazio,236,"['Center Attacking Midfield', 'Center Forward', 'Left Wing', 'Right Midfield', 'Right Wing', 'Left Center Midfield']",12
+386650,Michelangelo Albertazzi,Hellas Verona,226,"['Left Wing Back', 'Left Back']",10
+386651,Juan Ignacio Gómez Taleb,Hellas Verona,226,"['Left Wing', 'Left Midfield', 'Right Wing', 'Center Attacking Midfield', 'Left Center Forward', 'Center Forward', 'Right Center Forward', 'Left Defensive Midfield', 'Right Midfield']",33
+386652,Luca Checchin,Hellas Verona,226,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Left Midfield']",4
+386654,Maurizio Domizzi,Udinese,230,"['Center Back', 'Left Center Back', 'Right Wing Back']",4
+386656,Giovanni Pasquale,Udinese,230,"['Left Back', 'Left Wing Back', 'Right Back']",6
+386657,Giampiero Pinzi,Chievo,231,"['Left Defensive Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Left Center Midfield', 'Center Attacking Midfield', 'Right Defensive Midfield']",18
+387300,Cristian Zaccardo,Carpi,1683,"['Right Center Back', 'Right Back', 'Center Back']",27
+387417,Mattia Cassani,Sampdoria,234,"['Right Back', 'Right Wing Back', 'Right Center Back', 'Left Back', 'Left Center Back', 'Left Wing Back']",25
+387420,Alessandro Longhi,Sassuolo,232,"['Left Back', 'Left Wing']",6
+387428,Amauri Carvalho de Oliveira,Torino,241,"['Left Center Forward', 'Left Center Midfield']",1
+387472,Lorenzo Pasciuti,Carpi,1683,"['Left Midfield', 'Right Midfield', 'Center Attacking Midfield', 'Right Wing Back', 'Left Wing Back', 'Right Wing', 'Left Center Midfield']",21
+387473,Wallace Oliveira dos Santos,Carpi,1683,"['Right Back', 'Right Wing Back', 'Right Wing', 'Right Midfield']",6
+387474,Igor Bubnjić,Carpi,1683,"['Left Center Back', 'Center Back', 'Right Center Back']",9
+387475,Andrea Lazzari,Carpi,1683,"['Center Attacking Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield']",8
+387476,Raphael Martinho Alves de Lima,Carpi,1683,"['Left Center Midfield', 'Left Midfield', 'Right Center Forward', 'Right Midfield']",11
+387477,Francesco Benussi,Carpi,1683,['Goalkeeper'],4
+387832,Filippo Porcari,Carpi,1683,"['Right Defensive Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Right Center Midfield']",4
+387847,Leonardo Blanchard,Frosinone,291,"['Left Center Back', 'Center Back', 'Right Center Back']",28
+390310,Lorenzo Di Livio,AS Roma,229,['Right Wing'],1
+398941,Vasyl Pryyma,Frosinone,291,"['Left Center Back', 'Right Back', 'Left Back']",5
+399299,Kévin Constant,Bologna,240,"['Left Back', 'Left Wing']",7

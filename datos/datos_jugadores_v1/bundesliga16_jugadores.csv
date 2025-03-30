@@ -1,0 +1,476 @@
+player_id,player,ultimo_equipo,ultimo_team_id,posiciones,partidos_jugados
+2968,Elias Kachunga,Ingolstadt,189,"['Right Wing', 'Right Center Forward', 'Left Wing', 'Center Forward', 'Left Center Midfield']",10
+3016,Allan Saint-Maximin,Hannover 96,178,"['Center Attacking Midfield', 'Right Center Forward', 'Left Midfield', 'Right Midfield', 'Left Wing', 'Right Wing', 'Right Wing Back', 'Center Forward', 'Left Center Forward']",16
+3053,Leroy Sané,Schalke 04,181,"['Left Wing', 'Right Midfield', 'Left Midfield', 'Right Wing', 'Left Center Midfield', 'Left Wing Back', 'Right Center Midfield', 'Right Wing Back', 'Right Center Forward', 'Left Attacking Midfield', 'Right Attacking Midfield', 'Center Attacking Midfield']",33
+3058,Javier Hernández Balcázar,Bayer Leverkusen,904,"['Center Attacking Midfield', 'Right Center Forward', 'Center Forward', 'Left Center Forward']",28
+3083,Heung-Min Son,Bayer Leverkusen,904,"['Left Wing', 'Left Midfield']",1
+3089,Kevin De Bruyne,Wolfsburg,179,"['Left Wing', 'Center Attacking Midfield', 'Right Midfield', 'Right Center Midfield', 'Left Center Midfield']",2
+3097,Pascal Groß,Ingolstadt,189,"['Right Center Midfield', 'Right Midfield', 'Left Wing', 'Center Attacking Midfield', 'Left Center Midfield', 'Center Forward', 'Right Defensive Midfield', 'Left Center Forward']",32
+3164,Marcelo Antônio Guedes Filho,Hannover 96,178,"['Right Center Back', 'Center Back']",19
+3186,Julian Draxler,Wolfsburg,179,"['Left Midfield', 'Left Wing', 'Center Attacking Midfield', 'Right Center Midfield', 'Right Center Forward', 'Right Midfield', 'Left Center Midfield', 'Left Center Forward', 'Center Forward']",24
+3197,Dante Bonfim da Costa Santos,Wolfsburg,179,"['Center Back', 'Left Center Back']",24
+3221,Markus Suttner,Ingolstadt,189,['Left Back'],18
+3275,Henrikh Mkhitaryan,Borussia Dortmund,180,"['Left Wing', 'Right Wing', 'Left Center Forward', 'Center Attacking Midfield', 'Right Midfield', 'Left Midfield', 'Left Wing Back', 'Right Center Midfield', 'Left Center Back', 'Right Wing Back', 'Left Center Midfield']",31
+3499,Jean-Eric Maxim Choupo-Moting,Schalke 04,181,"['Right Midfield', 'Right Wing', 'Left Center Forward', 'Left Wing', 'Left Midfield', 'Right Center Midfield', 'Right Wing Back', 'Right Center Forward', 'Right Attacking Midfield', 'Left Wing Back', 'Left Defensive Midfield', 'Center Forward']",28
+3500,Granit Xhaka,Borussia Mönchengladbach,185,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield']",28
+3502,Joël Andre Job Matip,Schalke 04,181,"['Right Center Back', 'Center Back', 'Left Center Back', 'Left Center Forward']",34
+3510,Sead Kolašinac,Schalke 04,181,"['Left Back', 'Left Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Back', 'Left Wing', 'Left Wing Back']",23
+3530,Hiroki Sakai,Hannover 96,178,['Right Back'],26
+3545,Luiz Gustavo Dias,Wolfsburg,179,"['Left Defensive Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield']",22
+3570,Pierre-Emile Højbjerg,Schalke 04,181,"['Left Center Forward', 'Center Forward', 'Left Defensive Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Left Center Back', 'Center Attacking Midfield', 'Center Defensive Midfield']",23
+3630,Loris Karius,FSV Mainz 05,177,['Goalkeeper'],34
+3712,Pierre-Emerick Aubameyang,Borussia Dortmund,180,"['Center Forward', 'Right Wing', 'Left Center Forward', 'Right Center Forward', 'Right Defensive Midfield']",31
+3774,Papiss Mison Djilobodji,Werder Bremen,176,['Left Center Back'],14
+3959,Andreas Christensen,Borussia Mönchengladbach,185,"['Left Center Back', 'Right Center Back', 'Center Back', 'Right Back', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield']",31
+4174,Ragnar Klavan,Augsburg,172,['Left Center Back'],31
+4279,Konstantinos Stafylidis,Augsburg,172,"['Left Back', 'Left Defensive Midfield', 'Left Wing Back']",11
+4430,Neven Subotić,Borussia Dortmund,180,['Right Center Back'],6
+4600,Diego Orlando Benaglio,Wolfsburg,179,['Goalkeeper'],21
+4683,Adam Hloušek,VfB Stuttgart,174,"['Left Center Back', 'Right Center Midfield', 'Left Center Forward', 'Left Wing']",7
+5208,Thiago Alcântara do Nascimento,Bayern Munich,169,"['Center Defensive Midfield', 'Right Wing Back', 'Left Center Midfield', 'Left Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Left Wing', 'Right Defensive Midfield', 'Center Attacking Midfield']",27
+5242,Younès Belhanda,Schalke 04,181,"['Center Attacking Midfield', 'Right Defensive Midfield', 'Left Wing', 'Left Center Midfield', 'Left Midfield', 'Left Defensive Midfield', 'Right Midfield']",15
+5244,Medhi Amine El Mouttaqi Benatia,Bayern Munich,169,"['Left Center Back', 'Right Center Back', 'Center Back']",14
+5460,Andrej Kramarić,Hoffenheim,175,"['Center Forward', 'Left Center Forward', 'Center Attacking Midfield', 'Left Center Back', 'Right Wing', 'Right Center Forward', 'Left Wing']",15
+5467,Leon Aderemi Balogun,FSV Mainz 05,177,"['Right Center Forward', 'Right Back', 'Right Center Back', 'Center Forward', 'Left Center Back']",21
+5474,Ivan Perišić,Wolfsburg,179,"['Right Wing', 'Left Wing', 'Left Midfield', 'Right Center Forward', 'Right Center Midfield']",2
+5481,Mathew Leckie,Ingolstadt,189,"['Left Wing', 'Left Midfield', 'Center Forward', 'Right Midfield', 'Right Wing', 'Right Center Forward', 'Left Center Forward', 'Right Center Midfield', 'Left Center Midfield']",32
+5494,Robbie Kruse,Bayer Leverkusen,904,"['Center Attacking Midfield', 'Left Wing', 'Left Center Forward', 'Right Midfield', 'Right Wing', 'Left Midfield']",12
+5514,Alfreð Finnbogason,Augsburg,172,"['Center Forward', 'Right Wing', 'Right Center Forward', 'Right Attacking Midfield']",14
+5537,Fabian Lukas Schär,Hoffenheim,175,"['Right Center Back', 'Center Back', 'Left Center Forward', 'Left Center Back', 'Right Defensive Midfield', 'Center Defensive Midfield']",24
+5543,Haris Seferović,Eintracht Frankfurt,184,"['Right Center Forward', 'Center Forward', 'Left Center Forward', 'Left Midfield', 'Right Wing', 'Center Defensive Midfield', 'Left Wing']",29
+5544,Ricardo Iván Rodríguez Araya,Wolfsburg,179,['Left Back'],24
+5548,Steven Zuber,Hoffenheim,175,"['Center Attacking Midfield', 'Right Center Forward', 'Left Attacking Midfield', 'Left Midfield', 'Right Center Midfield', 'Right Midfield', 'Left Wing', 'Center Forward', 'Right Center Back', 'Left Wing Back']",12
+5550,Yann Sommer,Borussia Mönchengladbach,185,['Goalkeeper'],32
+5555,Julian Brandt,Bayer Leverkusen,904,"['Left Midfield', 'Left Wing', 'Right Wing', 'Right Midfield', 'Right Center Forward', 'Left Wing Back', 'Center Attacking Midfield', 'Left Center Forward']",29
+5557,Timo Werner,VfB Stuttgart,174,"['Right Wing Back', 'Left Midfield', 'Right Center Forward', 'Left Center Forward', 'Center Forward', 'Right Midfield', 'Right Wing']",33
+5559,Marco Reus,Borussia Dortmund,180,"['Right Wing', 'Left Wing', 'Center Forward', 'Center Attacking Midfield', 'Left Center Midfield', 'Left Midfield', 'Left Center Forward']",26
+5562,Thomas Müller,Bayern Munich,169,"['Right Center Midfield', 'Center Forward', 'Center Attacking Midfield', 'Right Wing Back', 'Right Wing', 'Right Midfield', 'Left Center Midfield', 'Right Attacking Midfield', 'Left Wing', 'Right Center Forward', 'Left Center Forward']",31
+5569,Marvin Plattenhardt,Hertha Berlin,173,"['Left Back', 'Left Wing Back']",33
+5570,Manuel Neuer,Bayern Munich,169,['Goalkeeper'],34
+5572,Mats Hummels,Borussia Dortmund,180,"['Left Center Back', 'Right Defensive Midfield']",30
+5578,Jérôme Boateng,Bayern Munich,169,"['Right Center Back', 'Center Back', 'Left Center Back', 'Right Center Midfield']",19
+5579,Joshua Kimmich,Bayern Munich,169,"['Center Defensive Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Right Midfield', 'Left Back', 'Right Back', 'Right Center Back', 'Left Center Back']",22
+5591,Filip Kostić,VfB Stuttgart,174,"['Left Midfield', 'Left Wing Back', 'Right Midfield', 'Left Center Midfield', 'Left Center Forward', 'Left Wing']",30
+5609,Joo-Ho Park,Borussia Dortmund,180,"['Left Back', 'Left Center Midfield']",6
+5624,Albin Ekdal,Hamburger SV,171,"['Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield']",14
+5627,Ja-Cheol Koo,Augsburg,172,"['Left Wing', 'Left Wing Back', 'Center Forward', 'Center Attacking Midfield', 'Right Midfield', 'Right Defensive Midfield', 'Right Wing', 'Right Center Midfield', 'Left Defensive Midfield']",29
+5632,Thorgan Hazard,Borussia Mönchengladbach,185,"['Left Center Forward', 'Right Center Forward', 'Left Midfield', 'Right Midfield', 'Left Center Midfield', 'Center Attacking Midfield', 'Right Wing', 'Right Center Midfield', 'Left Wing', 'Left Wing Back', 'Center Forward']",29
+5658,Łukasz Piszczek,Borussia Dortmund,180,"['Right Back', 'Center Forward', 'Left Back', 'Right Wing Back', 'Right Center Back']",20
+5664,Salif Sané,Hannover 96,178,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Right Center Midfield', 'Right Center Back', 'Left Center Back']",31
+5668,Robert Lewandowski,Bayern Munich,169,"['Center Forward', 'Left Center Forward', 'Right Center Forward']",32
+5679,Yūya Ōsako,FC Köln,186,"['Center Attacking Midfield', 'Left Midfield', 'Left Center Midfield', 'Right Center Forward', 'Left Center Forward', 'Right Center Midfield', 'Right Wing', 'Right Midfield', 'Center Forward', 'Left Wing', 'Left Defensive Midfield']",25
+5681,Makoto Hasebe,Eintracht Frankfurt,184,"['Right Back', 'Right Center Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Left Back', 'Left Center Midfield']",32
+5684,Shinji Kagawa,Borussia Dortmund,180,"['Center Attacking Midfield', 'Left Center Midfield', 'Right Wing', 'Right Center Midfield', 'Left Midfield', 'Left Wing']",29
+5687,Takashi Inui,Eintracht Frankfurt,184,['Left Midfield'],1
+5694,Hotaru Yamaguchi,Hannover 96,178,"['Right Center Midfield', 'Right Defensive Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield']",6
+5697,Genki Haraguchi,Hertha Berlin,173,"['Right Midfield', 'Left Midfield', 'Center Forward', 'Right Center Forward', 'Right Wing', 'Left Wing']",32
+5835,Josip Drmic,Hamburger SV,171,"['Left Center Forward', 'Right Defensive Midfield', 'Center Forward', 'Right Center Forward', 'Right Center Midfield', 'Left Wing', 'Right Wing', 'Left Center Midfield']",19
+5837,Douglas Costa de Souza,Bayern Munich,169,"['Left Midfield', 'Right Midfield', 'Left Wing Back', 'Left Wing', 'Right Wing Back', 'Right Wing', 'Left Center Midfield', 'Right Defensive Midfield', 'Left Attacking Midfield', 'Right Center Midfield', 'Center Attacking Midfield', 'Center Forward']",27
+6039,Sebastian Rudy,Hoffenheim,175,"['Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Midfield', 'Left Center Midfield', 'Right Wing Back', 'Right Back']",24
+6040,Jonas Hector,FC Köln,186,"['Left Back', 'Left Wing Back', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Back', 'Center Attacking Midfield', 'Left Center Midfield']",32
+6309,Tin Jedvaj,Bayer Leverkusen,904,"['Left Defensive Midfield', 'Right Back', 'Right Center Back']",15
+6317,Marco Jhonfai Fabián De La Mora,Eintracht Frankfurt,184,"['Center Attacking Midfield', 'Right Wing', 'Left Center Midfield', 'Left Midfield', 'Left Wing', 'Right Center Midfield', 'Left Center Forward', 'Center Forward']",11
+6321,Milos Veljkovic,Werder Bremen,176,"['Left Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",3
+6322,Niklas Süle,Hoffenheim,175,"['Left Center Back', 'Center Back', 'Right Center Back']",33
+6324,Leon Goretzka,Schalke 04,181,"['Left Defensive Midfield', 'Center Attacking Midfield', 'Right Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Right Wing', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Right Wing Back', 'Left Center Back']",25
+6330,Adnan Januzaj,Borussia Dortmund,180,"['Right Wing', 'Left Wing', 'Center Forward', 'Right Midfield']",6
+6337,Yoshinori Muto,FSV Mainz 05,177,"['Left Center Forward', 'Center Forward', 'Right Center Forward', 'Left Midfield', 'Left Wing', 'Center Attacking Midfield']",20
+6339,Gotoku Sakai,Hamburger SV,171,"['Left Back', 'Right Back']",22
+6359,Johan Danon Djourou-Gbadjere,Hamburger SV,171,['Right Center Back'],26
+6717,Johannes Geis,Schalke 04,181,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Left Center Midfield']",28
+6924,Alejandro Gálvez Jimena,Werder Bremen,176,"['Left Center Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Right Center Back', 'Left Center Back', 'Center Back', 'Right Center Midfield']",21
+6925,Jairo Samperio Bustara,FSV Mainz 05,177,"['Left Wing', 'Left Midfield', 'Right Center Forward', 'Right Wing', 'Center Forward', 'Left Wing Back', 'Right Midfield', 'Right Wing Back', 'Left Attacking Midfield', 'Center Attacking Midfield']",31
+7016,Benedikt Höwedes,Schalke 04,181,"['Center Defensive Midfield', 'Right Center Back', 'Center Back', 'Left Center Back', 'Left Center Forward', 'Right Back']",15
+7039,Hakan Çalhanoğlu,Bayer Leverkusen,904,"['Center Attacking Midfield', 'Right Defensive Midfield', 'Right Wing', 'Left Wing', 'Left Midfield', 'Left Center Forward', 'Right Midfield', 'Left Defensive Midfield', 'Right Wing Back', 'Right Attacking Midfield', 'Center Forward', 'Right Center Forward', 'Left Center Midfield']",31
+7594,Mart Ristl,VfB Stuttgart,174,"['Left Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",3
+7846,Luc Castaignos,Eintracht Frankfurt,184,"['Left Center Forward', 'Left Midfield', 'Center Forward', 'Right Center Forward', 'Left Wing']",19
+7852,Tim Matavž,Augsburg,172,"['Center Forward', 'Right Center Forward', 'Right Defensive Midfield', 'Center Attacking Midfield']",11
+7993,Filip Mladenović,FC Köln,186,"['Left Wing', 'Left Back', 'Left Wing Back', 'Left Midfield', 'Right Defensive Midfield']",14
+8060,Klaas-Jan Huntelaar,Schalke 04,181,"['Left Center Forward', 'Center Forward', 'Right Center Forward', 'Center Attacking Midfield']",31
+8206,Arturo Erasmo Vidal Pardo,Bayern Munich,169,"['Left Center Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Center Defensive Midfield', 'Right Back', 'Left Midfield']",30
+8207,Dominik Kohr,Augsburg,172,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Right Wing Back', 'Right Back']",31
+8208,Sven Ulreich,Bayern Munich,169,['Goalkeeper'],1
+8209,Márcio Rafael Ferreira de Souza,Bayern Munich,169,"['Right Back', 'Right Center Back', 'Left Back', 'Left Center Back', 'Right Wing Back']",25
+8210,Charles Mariano Aránguiz Sandoval,Bayer Leverkusen,904,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Right Center Midfield']",7
+8211,Benjamin Henrichs,Bayer Leverkusen,904,"['Center Attacking Midfield', 'Left Wing', 'Right Back', 'Left Back']",9
+8212,Wendell Nascimento Borges,Bayer Leverkusen,904,"['Left Back', 'Right Back']",28
+8213,Karim Bellarabi,Bayer Leverkusen,904,"['Right Wing', 'Right Midfield', 'Left Midfield', 'Left Center Forward', 'Right Center Forward', 'Left Wing']",33
+8215,Kevin Volland,Hoffenheim,175,"['Left Center Forward', 'Right Center Forward', 'Right Wing Back', 'Center Attacking Midfield', 'Right Midfield', 'Right Wing', 'Center Forward', 'Right Center Midfield', 'Left Midfield', 'Left Wing', 'Left Wing Back', 'Left Attacking Midfield']",33
+8216,Sven Bender,Borussia Dortmund,180,"['Center Defensive Midfield', 'Center Attacking Midfield', 'Right Center Back', 'Left Defensive Midfield', 'Left Center Back', 'Center Back', 'Right Back']",19
+8217,Kingsley Coman,Bayern Munich,169,"['Right Center Midfield', 'Left Wing Back', 'Right Wing Back', 'Right Wing', 'Left Wing', 'Right Midfield', 'Left Midfield', 'Left Center Forward']",23
+8218,Arjen Robben,Bayern Munich,169,"['Right Midfield', 'Right Wing Back', 'Right Center Midfield', 'Left Center Midfield', 'Right Wing']",15
+8219,Admir Mehmedi,Bayer Leverkusen,904,"['Left Center Forward', 'Center Attacking Midfield', 'Right Center Forward', 'Left Midfield', 'Right Midfield', 'Left Wing', 'Right Wing']",28
+8220,David Olatukunbo Alaba,Bayern Munich,169,"['Left Back', 'Left Center Back', 'Center Back']",30
+8221,Jonathan Tah,Bayer Leverkusen,904,['Right Center Back'],29
+8222,Kevin Kampl,Bayer Leverkusen,904,"['Right Wing', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Midfield', 'Left Midfield', 'Center Attacking Midfield', 'Left Attacking Midfield', 'Right Center Midfield', 'Left Center Midfield']",23
+8223,Franck Bilal Ribéry,Bayern Munich,169,"['Left Wing', 'Left Midfield', 'Left Center Midfield', 'Left Attacking Midfield', 'Right Wing']",13
+8225,Roman Bürki,Borussia Dortmund,180,['Goalkeeper'],33
+8227,Mario Götze,Bayern Munich,169,"['Left Midfield', 'Center Attacking Midfield', 'Right Wing Back', 'Right Center Midfield', 'Center Forward', 'Left Wing', 'Right Wing', 'Left Center Midfield', 'Right Attacking Midfield', 'Right Defensive Midfield', 'Right Midfield']",14
+8230,Josuha Guilavogui,Wolfsburg,179,"['Right Defensive Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Left Back']",30
+8231,Yannick Gerhardt,FC Köln,186,"['Left Center Midfield', 'Left Midfield', 'Left Wing', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Left Center Forward', 'Center Attacking Midfield', 'Right Center Midfield', 'Left Attacking Midfield', 'Left Wing Back']",29
+8232,Nuri Şahin,Borussia Dortmund,180,"['Left Defensive Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield']",9
+8233,Gonzalo Castro Randon,Borussia Dortmund,180,"['Left Center Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Right Wing', 'Right Defensive Midfield', 'Left Wing', 'Center Attacking Midfield']",25
+8235,Maximilian Arnold,Wolfsburg,179,"['Left Defensive Midfield', 'Center Attacking Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Center Forward', 'Left Midfield']",31
+8237,Paul Verhaegh,Augsburg,172,"['Right Back', 'Right Wing Back']",25
+8238,Mahmoud Dahoud,Borussia Mönchengladbach,185,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Right Center Midfield']",32
+8239,Robin Knoche,Wolfsburg,179,"['Left Center Back', 'Right Defensive Midfield', 'Right Center Back']",11
+8240,Koen Casteels,Wolfsburg,179,['Goalkeeper'],13
+8241,Felix Passlack,Borussia Dortmund,180,"['Right Center Midfield', 'Right Wing', 'Left Back', 'Right Back']",3
+8243,Daniel Didavi,VfB Stuttgart,174,"['Right Midfield', 'Center Attacking Midfield', 'Left Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Center Forward', 'Right Center Midfield', 'Left Center Forward', 'Right Wing', 'Left Defensive Midfield', 'Center Forward']",31
+8244,Sokratis Papastathopoulos,Borussia Dortmund,180,"['Right Center Back', 'Right Back', 'Center Back', 'Left Center Back']",25
+8246,Christian Pulisic,Borussia Dortmund,180,"['Left Wing', 'Right Center Midfield', 'Center Forward', 'Right Wing Back', 'Right Wing', 'Left Center Midfield', 'Left Midfield', 'Right Midfield', 'Left Wing Back']",9
+8270,Daniel Schwaab,VfB Stuttgart,174,"['Right Back', 'Right Center Back', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Center Back', 'Left Defensive Midfield']",29
+8302,Nicolai Müller,Hamburger SV,171,"['Right Midfield', 'Right Wing', 'Center Attacking Midfield', 'Left Center Midfield', 'Left Wing', 'Left Midfield', 'Right Center Midfield']",29
+8303,Caiuby Francisco da Silva,Augsburg,172,"['Center Forward', 'Left Wing', 'Left Center Forward', 'Right Wing', 'Left Midfield', 'Right Center Forward', 'Right Midfield', 'Left Attacking Midfield']",26
+8306,Christian Mathenia,Darmstadt 98,872,['Goalkeeper'],33
+8307,Martin Hinteregger,Borussia Mönchengladbach,185,"['Left Center Back', 'Left Back', 'Left Wing Back']",10
+8308,Aaron Hunt,Hamburger SV,171,"['Center Attacking Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Left Wing', 'Right Wing', 'Right Center Forward']",23
+8309,Michael Gregoritsch,Hamburger SV,171,"['Right Midfield', 'Right Wing', 'Center Attacking Midfield', 'Left Wing', 'Left Midfield', 'Left Defensive Midfield', 'Center Forward', 'Left Center Midfield']",25
+8311,Jonathan Schmid,Hoffenheim,175,"['Right Center Midfield', 'Center Attacking Midfield', 'Left Midfield', 'Left Wing', 'Right Center Forward', 'Right Midfield', 'Right Wing', 'Right Wing Back', 'Left Wing Back', 'Right Back']",23
+8313,Kyriakos Papadopoulos,Bayer Leverkusen,904,"['Left Center Back', 'Center Defensive Midfield', 'Left Wing', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Midfield']",16
+8314,Marwin Hitz,Augsburg,172,['Goalkeeper'],33
+8316,Dennis Diekmeier,Hamburger SV,171,"['Right Back', 'Right Midfield', 'Right Wing', 'Center Attacking Midfield']",22
+8317,Daniel Baier,Augsburg,172,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield']",28
+8318,Jeffrey Gouweleeuw,Augsburg,172,"['Left Defensive Midfield', 'Right Center Back']",11
+8319,Philipp Max,Augsburg,172,"['Left Back', 'Left Wing', 'Right Wing', 'Left Wing Back']",26
+8320,Gian-Luca Waldschmidt,Eintracht Frankfurt,184,"['Left Center Forward', 'Left Midfield', 'Right Center Forward', 'Left Wing', 'Center Attacking Midfield', 'Center Forward']",12
+8321,Sven Schipplock,Hamburger SV,171,"['Center Forward', 'Left Center Forward', 'Right Center Forward', 'Center Attacking Midfield', 'Left Wing']",20
+8322,André Hahn,Borussia Mönchengladbach,185,"['Right Center Forward', 'Left Midfield', 'Right Midfield', 'Right Center Midfield', 'Right Back', 'Left Center Forward', 'Left Attacking Midfield', 'Center Forward', 'Center Back', 'Right Attacking Midfield']",15
+8323,Gideon Jung,Hamburger SV,171,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",18
+8369,Melvyn Lorenzen,Werder Bremen,176,"['Left Midfield', 'Right Wing Back', 'Left Center Forward', 'Right Midfield', 'Right Wing', 'Left Wing', 'Right Center Forward']",9
+8386,Max Kruse,Wolfsburg,179,"['Center Attacking Midfield', 'Right Wing', 'Left Wing', 'Right Center Forward', 'Left Midfield', 'Left Center Midfield', 'Left Center Forward', 'Center Forward', 'Right Center Midfield', 'Left Attacking Midfield']",32
+8387,Mark Uth,Hoffenheim,175,"['Center Attacking Midfield', 'Right Center Forward', 'Left Center Forward', 'Center Forward', 'Right Midfield', 'Left Back', 'Left Midfield', 'Left Center Midfield', 'Right Wing', 'Right Wing Back', 'Left Wing', 'Right Attacking Midfield']",25
+8388,Jérôme Gondorf,Darmstadt 98,872,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Midfield', 'Center Attacking Midfield']",33
+8389,Fin Bartels,Werder Bremen,176,"['Left Defensive Midfield', 'Center Attacking Midfield', 'Left Midfield', 'Right Center Forward', 'Right Midfield', 'Left Center Midfield', 'Right Wing Back', 'Right Center Midfield', 'Left Center Forward', 'Right Defensive Midfield', 'Left Wing']",30
+8390,Philipp Bargfrede,Werder Bremen,176,"['Right Defensive Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield']",14
+8392,Jeremy Toljan,Hoffenheim,175,"['Left Back', 'Left Wing Back', 'Right Back', 'Left Center Back', 'Right Wing Back']",18
+8393,Oliver Baumann,Hoffenheim,175,['Goalkeeper'],33
+8394,Robert Bauer,Ingolstadt,189,"['Right Center Midfield', 'Left Back', 'Left Wing', 'Right Back', 'Left Center Midfield', 'Center Defensive Midfield']",24
+8395,Håvard Nordtveit,Borussia Mönchengladbach,185,"['Right Defensive Midfield', 'Right Center Back', 'Left Defensive Midfield', 'Left Center Back', 'Right Back', 'Center Defensive Midfield', 'Center Back', 'Left Wing Back']",31
+8396,Theodor Gebre Selassie,Werder Bremen,176,"['Right Back', 'Right Center Back', 'Right Wing Back']",33
+8397,Kevin Vogt,FC Köln,186,"['Left Defensive Midfield', 'Center Defensive Midfield', 'Center Back', 'Center Attacking Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield']",23
+8401,Maximilian Eggestein,Werder Bremen,176,"['Center Attacking Midfield', 'Right Center Midfield', 'Left Center Forward', 'Left Defensive Midfield', 'Left Midfield', 'Left Wing']",7
+8402,Aron Jóhannsson,Werder Bremen,176,"['Left Center Forward', 'Right Center Forward', 'Center Attacking Midfield']",6
+8403,Nadiem Amiri,Hoffenheim,175,"['Center Attacking Midfield', 'Left Center Forward', 'Right Defensive Midfield', 'Left Wing', 'Left Center Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Left Midfield']",25
+8404,Eugen Polanski,Hoffenheim,175,"['Left Center Midfield', 'Left Wing Back', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Midfield', 'Right Wing', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Right Center Midfield']",27
+8405,Benjamin Hübner,Ingolstadt,189,['Left Center Back'],30
+8407,Ádám Szalai,Hannover 96,178,"['Right Center Forward', 'Center Attacking Midfield', 'Left Center Forward', 'Center Forward']",16
+8478,Ismail Azzaoui,Wolfsburg,179,['Right Wing'],2
+8504,Bastian Oczipka,Eintracht Frankfurt,184,"['Left Back', 'Left Center Midfield', 'Left Midfield', 'Left Center Back', 'Left Wing Back']",30
+8508,Max Meyer,Schalke 04,181,"['Center Attacking Midfield', 'Left Defensive Midfield', 'Left Midfield', 'Left Center Forward', 'Left Attacking Midfield', 'Left Wing', 'Right Defensive Midfield', 'Right Midfield', 'Left Wing Back', 'Right Wing', 'Right Wing Back', 'Center Forward', 'Right Center Midfield']",32
+8511,Thilo Kehrer,Schalke 04,181,['Right Defensive Midfield'],1
+8512,Franco Matías Di Santo,Schalke 04,181,"['Right Center Forward', 'Left Center Forward', 'Right Wing', 'Right Midfield', 'Left Wing', 'Center Forward', 'Right Center Midfield']",25
+8514,Matija Nastasić,Schalke 04,181,['Left Center Back'],1
+8516,Ronaldo Aparecido Rodrigues,Wolfsburg,179,"['Right Center Back', 'Center Forward']",29
+8517,Ralf Fährmann,Schalke 04,181,['Goalkeeper'],34
+8521,Daniel Caligiuri,Wolfsburg,179,"['Left Center Midfield', 'Right Center Midfield', 'Left Wing', 'Right Wing', 'Right Midfield', 'Left Midfield', 'Left Wing Back']",29
+8538,Waldemar Anton,Hannover 96,178,"['Right Center Forward', 'Left Center Back', 'Right Defensive Midfield', 'Right Wing', 'Right Center Back']",8
+8539,Danny Latza,FSV Mainz 05,177,"['Center Attacking Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Right Center Back']",27
+8541,Kenan Karaman,Hannover 96,178,"['Right Wing', 'Left Wing', 'Right Midfield', 'Left Midfield', 'Right Attacking Midfield', 'Center Attacking Midfield', 'Left Center Midfield']",23
+8542,Felipe Trevizan Martins,Hannover 96,178,"['Left Center Back', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Right Center Forward', 'Right Defensive Midfield']",8
+8543,Manuel Schmiedebach,Hannover 96,178,"['Right Defensive Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Center Defensive Midfield']",22
+8545,Julian Korb,Borussia Mönchengladbach,185,"['Right Back', 'Right Wing Back', 'Left Wing Back']",17
+8547,Matthias Ostrzolek,Hamburger SV,171,['Left Back'],32
+8548,Daniel Brosinski,FSV Mainz 05,177,"['Right Back', 'Right Center Back', 'Right Wing', 'Right Wing Back', 'Right Midfield', 'Left Midfield']",30
+8549,Giulio Donati,FSV Mainz 05,177,"['Right Back', 'Right Wing Back', 'Left Back']",23
+8550,Alexandru Iulian Maxim,VfB Stuttgart,174,"['Right Defensive Midfield', 'Left Midfield', 'Left Center Midfield', 'Right Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Left Wing', 'Right Wing', 'Right Center Forward', 'Center Defensive Midfield']",25
+8551,Felix Klaus,Hannover 96,178,"['Left Wing', 'Right Wing', 'Left Midfield', 'Left Center Midfield', 'Right Midfield', 'Center Attacking Midfield']",18
+8554,Levin Mete Öztunali,Werder Bremen,176,"['Left Center Forward', 'Right Midfield', 'Center Attacking Midfield', 'Left Center Midfield', 'Left Midfield', 'Right Wing', 'Left Wing', 'Left Wing Back']",25
+8555,Pablo Ezequiel De Blasis,FSV Mainz 05,177,"['Left Wing', 'Left Wing Back', 'Left Midfield', 'Right Center Forward', 'Right Wing', 'Right Attacking Midfield', 'Right Midfield', 'Center Attacking Midfield', 'Right Wing Back']",26
+8556,Pirmin Schwegler,Hoffenheim,175,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Center Attacking Midfield', 'Right Center Forward', 'Left Center Midfield']",21
+8557,Martin Harnik,VfB Stuttgart,174,"['Right Center Forward', 'Right Midfield', 'Right Wing Back', 'Right Wing', 'Right Center Midfield', 'Left Center Forward', 'Left Midfield', 'Center Defensive Midfield', 'Center Forward']",19
+8558,Charlison Benschop,Hannover 96,178,"['Right Center Forward', 'Center Attacking Midfield', 'Center Forward', 'Left Center Forward', 'Right Attacking Midfield', 'Right Midfield', 'Right Wing']",9
+8559,Stefan Bell,FSV Mainz 05,177,"['Left Center Back', 'Center Back', 'Right Center Back']",30
+8560,René Adler,Hamburger SV,171,['Goalkeeper'],24
+8561,Fabian Frei,FSV Mainz 05,177,"['Left Defensive Midfield', 'Right Center Forward', 'Center Attacking Midfield', 'Center Defensive Midfield', 'Center Back', 'Right Center Back', 'Right Defensive Midfield']",17
+8570,Niklas Stark,Hertha Berlin,173,"['Left Defensive Midfield', 'Right Center Back', 'Right Defensive Midfield', 'Left Center Back', 'Center Defensive Midfield']",21
+8571,Vedad Ibišević,Hertha Berlin,173,"['Right Center Forward', 'Center Forward', 'Left Center Forward']",26
+8573,Ömer Toprak,Bayer Leverkusen,904,"['Right Defensive Midfield', 'Left Center Back', 'Center Back', 'Center Forward', 'Center Defensive Midfield']",19
+8574,Alexander Esswein,Augsburg,172,"['Right Wing', 'Right Midfield', 'Right Center Midfield', 'Right Center Forward', 'Left Wing', 'Right Back']",29
+8575,Salomon Armand Magloire Kalou,Hertha Berlin,173,"['Center Forward', 'Right Center Forward', 'Left Center Forward', 'Left Midfield', 'Left Wing', 'Right Wing', 'Center Attacking Midfield', 'Right Midfield']",32
+8576,Mitchell Weiser,Hertha Berlin,173,"['Left Center Forward', 'Right Midfield', 'Right Wing', 'Left Midfield', 'Right Back', 'Left Wing', 'Right Center Midfield']",29
+8577,Rune Almenning Jarstein,Hertha Berlin,173,['Goalkeeper'],29
+8578,Per Ciljan Skjelbred,Hertha Berlin,173,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Forward', 'Right Midfield', 'Right Center Midfield', 'Left Center Midfield']",31
+8579,Vladimír Darida,Hertha Berlin,173,"['Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Left Center Midfield', 'Right Center Forward']",31
+8580,Sebastian Langkamp,Hertha Berlin,173,['Right Center Back'],22
+8582,Fabian Reese,Schalke 04,181,['Left Center Forward'],1
+8667,Lukáš Hrádecký,Eintracht Frankfurt,184,['Goalkeeper'],34
+8669,Mijat Gaćinović,Eintracht Frankfurt,184,"['Left Midfield', 'Left Wing', 'Right Back', 'Right Wing', 'Center Attacking Midfield']",7
+8670,Timothy Chandler,Eintracht Frankfurt,184,"['Right Back', 'Right Midfield', 'Right Wing Back', 'Right Center Back', 'Right Wing']",12
+8671,Branimir Hrgota,Borussia Mönchengladbach,185,"['Right Center Forward', 'Right Attacking Midfield', 'Right Midfield', 'Left Center Forward']",9
+8676,Danny Vieira da Costa,Ingolstadt,189,"['Center Forward', 'Right Back']",19
+8678,David Ángel Abraham,Eintracht Frankfurt,184,"['Left Center Back', 'Right Center Back', 'Center Back', 'Left Defensive Midfield']",31
+8679,Yunus Mallı,FSV Mainz 05,177,"['Center Attacking Midfield', 'Right Center Forward', 'Right Wing', 'Left Attacking Midfield', 'Left Center Forward', 'Left Defensive Midfield', 'Right Midfield', 'Center Forward']",34
+8762,Zlatko Junuzović,Werder Bremen,176,"['Left Midfield', 'Center Attacking Midfield', 'Left Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Left Wing', 'Right Midfield', 'Right Center Midfield', 'Left Attacking Midfield', 'Center Forward', 'Right Defensive Midfield']",30
+8804,Jonas Hofmann,Borussia Mönchengladbach,185,"['Right Wing', 'Right Midfield', 'Left Wing', 'Left Midfield', 'Right Defensive Midfield', 'Right Center Forward', 'Left Center Forward', 'Center Attacking Midfield']",15
+8805,Christoph Kramer,Bayer Leverkusen,904,"['Left Defensive Midfield', 'Right Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Center Back', 'Left Center Back']",28
+8806,Lars Edi Stindl,Borussia Mönchengladbach,185,"['Right Defensive Midfield', 'Right Center Forward', 'Right Midfield', 'Right Center Midfield', 'Center Forward', 'Left Center Forward', 'Left Center Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Right Attacking Midfield']",30
+8807,Raúl Marcelo Bobadilla,Augsburg,172,"['Center Forward', 'Right Wing', 'Center Attacking Midfield', 'Left Center Forward', 'Right Center Forward', 'Left Wing', 'Right Midfield']",27
+8808,Matthias Ginter,Borussia Dortmund,180,"['Right Back', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Center Attacking Midfield', 'Right Center Back', 'Center Back', 'Right Wing Back', 'Left Back', 'Left Center Back']",24
+8809,Oscar Wendt,Borussia Mönchengladbach,185,"['Left Back', 'Left Midfield', 'Left Wing Back', 'Left Center Midfield', 'Left Defensive Midfield', 'Left Center Back']",30
+8810,Raffael Caetano de Araújo,Borussia Mönchengladbach,185,"['Right Center Forward', 'Left Center Forward', 'Left Defensive Midfield', 'Left Midfield', 'Left Attacking Midfield', 'Right Center Midfield', 'Center Attacking Midfield', 'Center Forward', 'Left Center Midfield', 'Left Wing', 'Right Wing', 'Right Attacking Midfield']",31
+8812,Marco Russ,Eintracht Frankfurt,184,"['Right Defensive Midfield', 'Center Defensive Midfield', 'Left Center Back', 'Right Center Back', 'Left Defensive Midfield']",28
+8813,Patrick Herrmann,Borussia Mönchengladbach,185,"['Right Midfield', 'Left Midfield', 'Left Wing', 'Right Center Forward', 'Right Wing Back', 'Right Wing', 'Left Wing Back', 'Left Center Forward']",18
+8814,Nico Elvedi,Borussia Mönchengladbach,185,"['Right Back', 'Left Back', 'Right Center Back', 'Left Center Back', 'Right Wing Back']",21
+8815,Jannik Vestergaard,Werder Bremen,176,"['Left Center Back', 'Right Center Back', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Center Back']",33
+8816,Julian Weigl,Borussia Dortmund,180,"['Left Defensive Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield']",30
+8817,Jhon Andrés Córdoba Copete,FSV Mainz 05,177,"['Center Forward', 'Right Center Forward', 'Left Center Forward']",22
+8821,Timo Horn,FC Köln,186,['Goalkeeper'],33
+8822,Simon Zoller,FC Köln,186,"['Right Midfield', 'Left Center Forward', 'Right Center Forward', 'Left Midfield', 'Right Wing', 'Right Center Midfield', 'Right Back', 'Center Forward', 'Center Attacking Midfield', 'Left Wing Back', 'Right Attacking Midfield', 'Left Wing']",24
+8823,Marcel Risse,FC Köln,186,"['Right Midfield', 'Right Back', 'Right Wing', 'Right Center Midfield', 'Right Wing Back', 'Left Center Forward', 'Left Wing']",33
+8824,Marco Höger,Schalke 04,181,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield']",5
+8825,Miloš Jojić,FC Köln,186,"['Right Center Midfield', 'Center Attacking Midfield', 'Left Center Midfield', 'Right Midfield', 'Left Defensive Midfield', 'Right Wing', 'Right Defensive Midfield', 'Left Wing', 'Left Midfield']",15
+8826,Leonardo Bittencourt,FC Köln,186,"['Left Midfield', 'Left Center Midfield', 'Center Attacking Midfield', 'Left Wing', 'Right Midfield', 'Right Wing', 'Left Center Forward', 'Right Attacking Midfield', 'Left Attacking Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Right Center Forward']",29
+8827,Matthias Lehmann,FC Köln,186,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield']",32
+8828,Dominique Heintz,FC Köln,186,"['Left Center Back', 'Left Back']",33
+8829,Frederik Hillesborg Sørensen,FC Köln,186,"['Right Center Back', 'Center Back', 'Right Back', 'Right Wing Back']",22
+8831,Lukas Klünter,FC Köln,186,['Right Midfield'],1
+8883,Johannes van den Bergh,Hertha Berlin,173,"['Left Wing', 'Left Midfield', 'Right Wing', 'Center Forward', 'Center Attacking Midfield']",13
+8890,Christoph Moritz,FSV Mainz 05,177,"['Left Defensive Midfield', 'Center Attacking Midfield', 'Right Wing', 'Left Center Midfield']",8
+8891,Lewis Harry Holtby,Hamburger SV,171,"['Left Center Midfield', 'Left Defensive Midfield', 'Left Midfield', 'Center Attacking Midfield', 'Right Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Right Wing', 'Left Wing']",34
+8893,David Kinsombi,Eintracht Frankfurt,184,"['Right Center Back', 'Center Back']",1
+8895,Pierre-Michel Lasogga,Hamburger SV,171,"['Left Center Forward', 'Center Forward', 'Right Center Forward', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Left Wing']",30
+8900,Mërgim Mavraj,FC Köln,186,"['Left Center Back', 'Center Back', 'Right Center Back']",11
+8918,Roberto Hilbert,Bayer Leverkusen,904,['Right Back'],12
+8943,Florian Niederlechner,FSV Mainz 05,177,"['Center Forward', 'Left Center Forward', 'Left Defensive Midfield', 'Center Attacking Midfield']",12
+8947,Ron-Robert Zieler,Hannover 96,178,['Goalkeeper'],34
+8956,Timo Baumgartl,VfB Stuttgart,174,"['Right Center Back', 'Center Back', 'Left Center Back', 'Left Center Midfield']",19
+8958,Dennis Aogo,Schalke 04,181,"['Left Back', 'Left Defensive Midfield', 'Left Center Back', 'Left Wing Back']",23
+8959,Christian Gentner,VfB Stuttgart,174,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Left Center Midfield', 'Center Attacking Midfield']",29
+8965,Fabian Lustenberger,Hertha Berlin,173,"['Left Center Back', 'Center Back', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Center Back']",30
+8969,Lars Bender,Bayer Leverkusen,904,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Right Back', 'Right Center Back']",11
+9082,Przemysław Tytoń,VfB Stuttgart,174,['Goalkeeper'],30
+9088,Danilo Teodoro Soares,Ingolstadt,189,['Left Back'],1
+9091,Miloš Pantović,Bayern Munich,169,['Left Center Midfield'],1
+9097,Sidney Sam,Schalke 04,181,"['Center Attacking Midfield', 'Left Center Midfield']",2
+9098,Christian Clemens,FSV Mainz 05,177,"['Right Wing', 'Right Wing Back', 'Right Midfield', 'Left Wing', 'Right Attacking Midfield', 'Center Attacking Midfield']",28
+9103,Lukas Hinterseer,Ingolstadt,189,"['Center Forward', 'Left Midfield', 'Right Wing', 'Right Center Forward', 'Left Center Forward', 'Left Wing']",28
+9106,Marvin Matip,Ingolstadt,189,"['Right Center Back', 'Left Center Back']",33
+9113,Dario Lezcano,Ingolstadt,189,"['Center Forward', 'Right Wing', 'Left Wing', 'Left Center Forward']",17
+9134,Aleksandar Ignjovski,Eintracht Frankfurt,184,"['Right Back', 'Right Center Midfield', 'Right Defensive Midfield', 'Right Midfield', 'Left Midfield', 'Right Wing Back', 'Right Wing', 'Center Attacking Midfield', 'Left Defensive Midfield']",18
+9140,Luca-Milan Zander,Werder Bremen,176,"['Right Center Midfield', 'Right Back']",2
+9148,Johannes Flum,Eintracht Frankfurt,184,"['Left Center Forward', 'Left Center Midfield', 'Right Center Midfield', 'Right Defensive Midfield']",5
+9174,Marvin Friedrich,Schalke 04,181,"['Center Forward', 'Right Center Back']",2
+9178,Felix Kroos,Werder Bremen,176,"['Left Center Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Left Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Right Midfield']",8
+9184,Marcel Hartel,FC Köln,186,"['Left Wing', 'Left Midfield', 'Right Midfield']",6
+9216,Slobodan Medojević,Eintracht Frankfurt,184,"['Left Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Left Center Back', 'Center Attacking Midfield']",12
+9217,Aytac Sulu,Darmstadt 98,872,"['Right Center Back', 'Right Attacking Midfield', 'Center Back']",33
+9219,Tobias Kempe,Darmstadt 98,872,"['Right Midfield', 'Right Wing', 'Left Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Right Center Midfield', 'Left Wing', 'Right Defensive Midfield', 'Left Attacking Midfield']",31
+9222,Fabian Holland,Darmstadt 98,872,"['Left Back', 'Left Defensive Midfield', 'Left Midfield', 'Left Wing Back']",18
+9223,Phillipp Klement,FSV Mainz 05,177,"['Left Defensive Midfield', 'Center Attacking Midfield', 'Right Defensive Midfield']",2
+9224,Sandro Sirigu,Darmstadt 98,872,"['Right Midfield', 'Right Back', 'Right Wing Back', 'Right Wing']",5
+9257,Lukas Fröde,Werder Bremen,176,"['Right Defensive Midfield', 'Left Center Forward', 'Left Defensive Midfield', 'Left Midfield', 'Center Defensive Midfield', 'Left Center Midfield']",6
+9262,Philip Heise,VfB Stuttgart,174,"['Left Wing', 'Left Midfield', 'Right Center Back', 'Left Back']",5
+9266,Borys Tashchy,VfB Stuttgart,174,"['Center Forward', 'Center Attacking Midfield', 'Right Wing', 'Right Center Forward', 'Right Defensive Midfield', 'Left Center Forward', 'Right Center Midfield']",9
+9363,André Ramalho Silva,Bayer Leverkusen,904,"['Left Defensive Midfield', 'Left Center Back', 'Right Defensive Midfield', 'Right Center Forward', 'Right Center Back']",19
+9396,Ermin Bičakčić,Hoffenheim,175,"['Right Center Back', 'Left Center Back', 'Center Back', 'Left Back']",21
+9397,Pavel Kadeřábek,Hoffenheim,175,"['Right Back', 'Right Center Back', 'Right Wing Back']",28
+9398,Nico Schulz,Borussia Mönchengladbach,185,"['Left Midfield', 'Left Center Midfield']",2
+9399,Javier Martínez Aginaga,Bayern Munich,169,"['Left Center Midfield', 'Right Center Back', 'Center Back', 'Left Center Back', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield']",16
+9400,Daniel Tawiah Opare,Augsburg,172,"['Right Back', 'Right Wing Back', 'Right Midfield']",4
+9401,Marcel Heller,Darmstadt 98,872,"['Right Midfield', 'Left Midfield', 'Left Wing', 'Right Wing', 'Left Attacking Midfield', 'Center Attacking Midfield']",33
+9404,Luca Caldirola,Darmstadt 98,872,"['Left Center Back', 'Left Back', 'Right Center Back']",34
+9406,Holger Badstuber,Bayern Munich,169,"['Left Center Back', 'Left Back']",7
+9407,Gojko Kačar,Hamburger SV,171,"['Right Defensive Midfield', 'Left Center Back', 'Right Center Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Center Attacking Midfield', 'Center Defensive Midfield']",19
+9408,Jan Morávek,Augsburg,172,"['Center Attacking Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Wing']",11
+9409,Daniel Ginczek,VfB Stuttgart,174,"['Left Center Forward', 'Right Center Forward', 'Center Forward']",7
+9410,Marius Wolf,Hannover 96,178,['Left Midfield'],2
+9459,Paweł Olkowski,FC Köln,186,"['Right Back', 'Right Wing Back', 'Right Center Forward', 'Left Center Midfield', 'Center Attacking Midfield', 'Right Midfield']",19
+9461,Timm Klose,Wolfsburg,179,"['Left Center Back', 'Center Back']",8
+9475,Moritz Leitner,Borussia Dortmund,180,"['Right Center Midfield', 'Left Center Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Right Defensive Midfield']",9
+9720,Philipp Ochs,Hoffenheim,175,"['Left Center Midfield', 'Right Attacking Midfield', 'Left Wing Back', 'Left Back', 'Right Center Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield']",13
+9721,Valentin Stocker,Hertha Berlin,173,"['Left Midfield', 'Right Midfield', 'Right Center Forward', 'Right Wing', 'Left Wing', 'Center Attacking Midfield', 'Left Defensive Midfield']",20
+9722,Peter Pekarík,Hertha Berlin,173,"['Right Back', 'Right Wing Back']",12
+9723,Sandro Wagner,Darmstadt 98,872,"['Center Forward', 'Left Center Forward', 'Right Center Forward']",32
+9728,Florian Klein,VfB Stuttgart,174,"['Right Back', 'Right Center Back', 'Right Center Midfield', 'Right Midfield', 'Right Wing', 'Right Wing Back']",22
+10281,André Schürrle,Wolfsburg,179,"['Left Wing', 'Left Midfield', 'Right Midfield', 'Center Forward', 'Left Center Forward', 'Right Center Midfield', 'Center Attacking Midfield', 'Right Center Forward', 'Left Center Midfield', 'Right Wing']",29
+10287,İlkay Gündoğan,Borussia Dortmund,180,"['Right Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Right Wing', 'Left Wing', 'Center Attacking Midfield', 'Left Defensive Midfield']",25
+10332,Odisseas Vlachodimos,VfB Stuttgart,174,['Goalkeeper'],3
+10435,Łukasz Załuska,Darmstadt 98,872,['Goalkeeper'],1
+10483,Ørjan Håskjold Nyland,Ingolstadt,189,['Goalkeeper'],6
+10594,Bas Dost,Wolfsburg,179,"['Center Forward', 'Left Center Forward', 'Right Center Forward', 'Right Attacking Midfield']",22
+10790,Adelino André Vieira Freitas,Wolfsburg,179,"['Right Back', 'Right Wing', 'Right Midfield', 'Left Midfield', 'Right Center Midfield', 'Left Back']",26
+10822,Sonny Kittel,Eintracht Frankfurt,184,"['Left Center Midfield', 'Left Wing', 'Left Defensive Midfield', 'Center Forward', 'Center Attacking Midfield', 'Right Midfield', 'Right Wing']",8
+10896,Marc Stendera,Eintracht Frankfurt,184,"['Left Midfield', 'Left Center Midfield', 'Right Center Forward', 'Right Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Left Wing']",26
+10902,Philipp Hosiner,FC Köln,186,"['Right Center Midfield', 'Left Midfield', 'Left Center Forward', 'Right Center Forward', 'Center Forward', 'Left Wing', 'Right Defensive Midfield']",15
+10918,Dušan Švento,FC Köln,186,"['Left Center Midfield', 'Left Center Forward', 'Left Midfield', 'Left Wing', 'Left Wing Back']",7
+11131,Julian Schieber,Hertha Berlin,173,"['Left Defensive Midfield', 'Right Center Forward', 'Left Center Forward', 'Center Forward', 'Left Midfield', 'Right Wing', 'Left Wing']",6
+11132,Claudio Miguel Pizarro Bossio,Werder Bremen,176,"['Center Attacking Midfield', 'Right Center Forward', 'Left Center Forward', 'Center Forward', 'Left Midfield', 'Right Center Midfield']",28
+11134,Konstantin Rausch,Darmstadt 98,872,"['Left Midfield', 'Right Midfield', 'Left Wing', 'Left Back']",31
+11278,Karim Onisiwo,FSV Mainz 05,177,"['Left Wing', 'Center Forward', 'Center Attacking Midfield', 'Right Wing', 'Right Center Forward']",9
+11281,Alessandro Schöpf,Schalke 04,181,"['Right Wing', 'Left Wing', 'Right Defensive Midfield', 'Right Wing Back', 'Right Attacking Midfield', 'Left Attacking Midfield', 'Left Midfield', 'Center Forward', 'Center Attacking Midfield', 'Right Midfield']",13
+11283,Fabian Johnson,Borussia Mönchengladbach,185,"['Left Midfield', 'Right Back', 'Left Center Midfield', 'Left Wing', 'Right Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Wing Back', 'Left Wing Back', 'Right Wing']",26
+11285,Ibrahima Traoré,Borussia Mönchengladbach,185,"['Right Midfield', 'Left Midfield', 'Right Wing', 'Right Center Midfield', 'Left Center Midfield', 'Right Center Forward', 'Left Wing Back', 'Left Center Forward', 'Left Wing', 'Right Wing Back']",24
+11286,Dominik Maroh,FC Köln,186,"['Center Back', 'Right Center Back']",25
+11370,Matthias Zimmermann,VfB Stuttgart,174,['Right Back'],2
+11394,Stefan Kießling,Bayer Leverkusen,904,"['Center Forward', 'Right Center Forward', 'Left Center Forward', 'Center Attacking Midfield', 'Right Wing', 'Left Wing']",30
+11395,Lukas Rupp,VfB Stuttgart,174,"['Right Defensive Midfield', 'Right Back', 'Right Center Midfield', 'Left Back', 'Left Defensive Midfield', 'Left Center Midfield', 'Right Midfield', 'Right Wing', 'Center Defensive Midfield']",29
+11396,Florian Grillitsch,Werder Bremen,176,"['Right Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Left Midfield', 'Left Defensive Midfield', 'Left Wing', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Center Attacking Midfield']",25
+11397,Suat Serdar,FSV Mainz 05,177,"['Center Attacking Midfield', 'Left Midfield', 'Right Defensive Midfield', 'Right Wing', 'Left Defensive Midfield']",12
+11398,Tobias Sippel,Borussia Mönchengladbach,185,['Goalkeeper'],2
+11458,Marcel Schmelzer,Borussia Dortmund,180,"['Left Back', 'Left Center Back', 'Left Wing Back', 'Left Midfield']",26
+11845,Artur Sobiech,Hannover 96,178,"['Left Center Forward', 'Center Forward', 'Right Center Forward', 'Left Attacking Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Left Center Back', 'Center Defensive Midfield', 'Left Center Midfield']",25
+12293,Kaan Ayhan,Eintracht Frankfurt,184,['Left Center Back'],2
+12294,Andre Hoffmann,Hannover 96,178,"['Center Defensive Midfield', 'Left Center Back', 'Left Defensive Midfield', 'Right Defensive Midfield']",8
+12302,Dong-Won Ji,Augsburg,172,"['Center Attacking Midfield', 'Left Center Forward', 'Left Wing', 'Right Wing', 'Center Forward', 'Right Center Forward', 'Left Midfield', 'Right Defensive Midfield']",21
+12304,Alfredo Morales,Ingolstadt,189,"['Left Center Midfield', 'Left Midfield', 'Left Defensive Midfield', 'Right Wing', 'Left Wing', 'Right Center Midfield']",24
+12316,Oliver Sorg,Hannover 96,178,"['Right Back', 'Left Back', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Left Wing', 'Right Center Back']",20
+12319,Ramazan Özcan,Ingolstadt,189,['Goalkeeper'],28
+12320,Tony Jantschke,Borussia Mönchengladbach,185,"['Right Back', 'Left Center Back', 'Left Defensive Midfield', 'Right Center Back', 'Right Defensive Midfield']",12
+12321,Tobias Strobl,Hoffenheim,175,"['Right Center Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Right Back', 'Right Center Back', 'Center Defensive Midfield', 'Left Center Back', 'Left Back', 'Left Center Midfield']",26
+12327,John Anthony Brooks,Hertha Berlin,173,"['Center Forward', 'Right Center Forward', 'Left Center Back']",22
+12383,Florian Jungwirth,Darmstadt 98,872,"['Right Back', 'Right Defensive Midfield', 'Center Midfield', 'Left Defensive Midfield', 'Right Center Back']",19
+12407,Maximilian Mittelstädt,Hertha Berlin,173,"['Left Midfield', 'Right Midfield', 'Left Back']",3
+12424,Roman Weidenfeller,Borussia Dortmund,180,['Goalkeeper'],1
+12551,Max Christiansen,Ingolstadt,189,"['Left Center Midfield', 'Right Center Midfield', 'Right Midfield', 'Right Wing']",18
+12583,Carlos Armando Gruezo Arboleda,VfB Stuttgart,174,"['Left Defensive Midfield', 'Right Center Midfield']",2
+12599,Carlos Antonio Ascues Ávila,Wolfsburg,179,['Right Center Back'],1
+12624,Anthony Ujah,Werder Bremen,176,"['Right Center Forward', 'Center Forward', 'Left Center Forward', 'Right Wing', 'Left Wing']",32
+12626,Emiliano Adrián Insúa Zapata,VfB Stuttgart,174,"['Left Back', 'Left Center Back', 'Left Wing Back']",33
+13125,Iver Tobias Rørvik Fossum,Hannover 96,178,"['Left Center Forward', 'Right Center Forward', 'Left Defensive Midfield', 'Left Wing', 'Left Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Center Attacking Midfield', 'Right Midfield', 'Right Wing']",9
+13126,Miiko Martín Albornoz Inola,Hannover 96,178,['Left Back'],23
+13206,Erik Durm,Borussia Dortmund,180,"['Left Wing', 'Left Back', 'Right Wing', 'Right Wing Back', 'Right Back', 'Left Wing Back']",14
+13291,Joelinton Cassio Apolinário de Lira,Hoffenheim,175,['Center Attacking Midfield'],1
+13319,Niko Bungert,FSV Mainz 05,177,"['Right Center Back', 'Center Back', 'Right Defensive Midfield', 'Left Center Back']",20
+13332,Romain Brégerie,Ingolstadt,189,"['Center Forward', 'Right Center Back', 'Left Center Back', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Left Wing', 'Left Center Midfield']",21
+13369,Russell Canouse,Hoffenheim,175,['Center Defensive Midfield'],1
+13370,Zoltán Stieber,Hamburger SV,171,['Right Wing'],1
+13675,Mario Vrančić,Darmstadt 98,872,"['Center Attacking Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Left Midfield', 'Right Center Midfield', 'Left Defensive Midfield']",22
+15146,Mike-Steven Bähre,Hannover 96,178,['Right Wing'],1
+15370,Leon Guwara,Werder Bremen,176,['Left Back'],1
+15543,Roy Beerens,Hertha Berlin,173,['Right Midfield'],2
+15581,Bernd Leno,Bayer Leverkusen,904,['Goalkeeper'],33
+15651,Juan Bernat Velasco,Bayern Munich,169,"['Left Center Back', 'Left Back', 'Left Midfield', 'Left Wing Back']",16
+15847,Alexander Hack,FSV Mainz 05,177,"['Left Center Back', 'Center Back']",7
+16502,László Kleinheisler,Werder Bremen,176,"['Right Center Midfield', 'Left Midfield']",6
+16534,Roman Neustädter,Schalke 04,181,"['Left Center Back', 'Right Center Forward', 'Left Defensive Midfield', 'Right Center Back', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Center Back']",30
+17313,Thomas Kraft,Hertha Berlin,173,['Goalkeeper'],6
+17520,Federico Barba,VfB Stuttgart,174,"['Left Center Back', 'Left Back']",2
+18399,Gaëtan Bussmann,FSV Mainz 05,177,"['Left Back', 'Left Center Back', 'Left Wing Back']",13
+18888,Szabolcs Huszti,Eintracht Frankfurt,184,"['Left Midfield', 'Left Wing', 'Left Defensive Midfield', 'Left Center Midfield', 'Center Attacking Midfield']",15
+19289,Ivica Olić,Hamburger SV,171,"['Right Center Forward', 'Left Wing', 'Left Midfield', 'Left Center Forward', 'Right Wing', 'Center Forward']",9
+19295,Philipp Lahm,Bayern Munich,169,"['Right Back', 'Center Defensive Midfield', 'Right Center Midfield', 'Right Wing Back', 'Right Center Back', 'Right Midfield', 'Left Back', 'Right Defensive Midfield']",26
+19836,Kevin Kuranyi,Hoffenheim,175,"['Right Center Forward', 'Left Center Forward', 'Center Forward']",14
+20010,Clemens Fritz,Werder Bremen,176,"['Right Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Back', 'Left Defensive Midfield']",29
+20027,Mevlüt Erdinç,Hannover 96,178,"['Center Forward', 'Left Center Forward', 'Left Attacking Midfield', 'Right Center Forward']",11
+20037,Julian Baumgartlinger,FSV Mainz 05,177,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield']",31
+20133,Xabier Alonso Olano,Bayern Munich,169,"['Center Defensive Midfield', 'Center Back', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield']",26
+20200,Nicklas Bendtner,Wolfsburg,179,"['Center Forward', 'Right Center Forward', 'Left Center Forward', 'Left Midfield', 'Left Defensive Midfield']",13
+20355,Tomáš Pekhart,Ingolstadt,189,"['Center Forward', 'Left Center Forward']",4
+20359,Hugo Miguel Pereira de Almeida,Hannover 96,178,"['Left Center Forward', 'Right Center Forward', 'Right Center Back']",7
+20415,Sebastian Boenisch,Bayer Leverkusen,904,"['Left Back', 'Right Back', 'Left Center Back']",8
+20485,Almog Cohen,Ingolstadt,189,"['Left Defensive Midfield', 'Left Wing', 'Left Center Midfield', 'Center Forward', 'Right Center Midfield', 'Right Wing', 'Center Attacking Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield']",20
+20499,Martin Stranzl,Borussia Mönchengladbach,185,['Right Center Back'],3
+20522,György Garics,Darmstadt 98,872,['Right Back'],21
+20665,Kevin Großkreutz,VfB Stuttgart,174,['Right Back'],10
+20871,Pierre Bengtsson,FSV Mainz 05,177,"['Left Back', 'Left Center Back', 'Center Forward']",16
+20950,Yanni Regäsel,Eintracht Frankfurt,184,"['Right Back', 'Right Wing Back', 'Right Center Back']",16
+20959,Maurice Multhaup,Ingolstadt,189,"['Left Midfield', 'Center Forward', 'Left Wing', 'Right Wing']",4
+21156,Stefan Aigner,Eintracht Frankfurt,184,"['Right Midfield', 'Center Attacking Midfield', 'Left Center Forward', 'Right Center Forward', 'Right Wing', 'Left Wing', 'Right Center Midfield']",31
+21168,Marlon Frey,Bayer Leverkusen,904,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Right Back']",9
+21311,Noah-Joel Sarenren-Bazee,Hannover 96,178,"['Right Wing', 'Left Wing']",5
+22017,Felix Platte,Darmstadt 98,872,"['Right Center Forward', 'Center Forward', 'Left Defensive Midfield', 'Left Center Forward', 'Right Wing', 'Center Attacking Midfield', 'Left Wing', 'Right Attacking Midfield']",12
+22043,Ulisses Alexandre Garcia Lopes,Werder Bremen,176,"['Left Back', 'Left Center Midfield', 'Left Midfield', 'Left Defensive Midfield']",11
+22824,Sebastian Rode,Bayern Munich,169,"['Left Center Midfield', 'Right Center Midfield', 'Right Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield']",15
+22826,Jan-Ingwer Callsen-Bracker,Augsburg,172,"['Right Center Back', 'Right Defensive Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield']",10
+23198,Michael Zetterer,Werder Bremen,176,['Substitute'],1
+23242,Tim Dierßen,Hannover 96,178,['Center Attacking Midfield'],1
+23266,Christian Träsch,Wolfsburg,179,"['Left Defensive Midfield', 'Right Back', 'Right Defensive Midfield', 'Right Center Back']",29
+23267,Paul Seguin,Wolfsburg,179,"['Right Center Midfield', 'Center Attacking Midfield', 'Right Defensive Midfield', 'Right Back']",4
+23268,Alexander Meier,Eintracht Frankfurt,184,"['Center Attacking Midfield', 'Left Center Forward', 'Right Center Forward', 'Center Forward', 'Left Center Midfield']",19
+23269,Felix Wiedwald,Werder Bremen,176,['Goalkeeper'],34
+23341,Alexander Milosevic,Hannover 96,178,"['Right Center Back', 'Left Center Back']",10
+23486,Anthony Modeste,FC Köln,186,"['Center Forward', 'Right Center Forward', 'Left Center Forward']",34
+23499,Jaroslav Drobný,Hamburger SV,171,['Goalkeeper'],10
+23660,Sambou Yatabaré,Werder Bremen,176,"['Right Wing', 'Right Center Midfield', 'Left Wing', 'Right Attacking Midfield', 'Right Midfield']",8
+23702,Tom Mickel,Hamburger SV,171,['Goalkeeper'],1
+24117,Christoph Janker,Augsburg,172,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Left Center Back']",11
+24205,Nabil Bahoui,Hamburger SV,171,"['Right Wing', 'Right Center Midfield', 'Left Wing']",6
+24244,Uffe Manich Bech,Hannover 96,178,"['Right Midfield', 'Right Wing', 'Center Attacking Midfield', 'Left Center Midfield', 'Left Midfield', 'Right Center Midfield', 'Left Wing']",11
+24324,Gustavo Adrián Ramos Vásquez,Borussia Dortmund,180,"['Center Forward', 'Left Wing', 'Right Center Midfield', 'Right Wing', 'Right Center Forward', 'Left Center Midfield', 'Left Center Forward', 'Left Midfield', 'Right Midfield']",27
+24428,Vladlen Yurchenko,Bayer Leverkusen,904,"['Right Center Forward', 'Left Wing', 'Left Center Forward', 'Left Defensive Midfield', 'Right Defensive Midfield', 'Center Attacking Midfield', 'Right Midfield']",7
+24740,Ivo Iličević,Hamburger SV,171,"['Left Midfield', 'Left Wing', 'Right Center Midfield', 'Left Defensive Midfield', 'Right Wing', 'Left Center Midfield']",31
+24914,Edgar Prib,Hannover 96,178,"['Center Attacking Midfield', 'Left Midfield', 'Right Midfield', 'Left Wing', 'Left Center Midfield', 'Right Wing', 'Left Back', 'Right Center Midfield', 'Left Defensive Midfield']",20
+24919,Sebastian Jung,Wolfsburg,179,"['Left Midfield', 'Right Back', 'Right Midfield', 'Right Center Midfield', 'Right Wing Back', 'Right Defensive Midfield']",11
+25002,Thomas Kessler,FC Köln,186,['Goalkeeper'],1
+25003,Sascha Riether,Schalke 04,181,"['Right Back', 'Right Defensive Midfield', 'Right Wing Back', 'Right Center Back', 'Right Wing']",17
+25152,Bruno Henrique Pinto,Wolfsburg,179,"['Left Wing', 'Center Attacking Midfield', 'Left Midfield', 'Right Center Forward', 'Right Wing']",7
+26359,Santiago García,Werder Bremen,176,"['Left Back', 'Left Wing Back', 'Left Center Back']",29
+26677,Álvaro Domínguez Soto,Borussia Mönchengladbach,185,['Left Center Back'],6
+26790,Piotr Trochowski,Augsburg,172,"['Right Defensive Midfield', 'Left Center Midfield', 'Center Attacking Midfield']",5
+26791,Emir Spahić,Hamburger SV,171,['Left Center Back'],26
+26832,Tarik Elyounoussi,Hoffenheim,175,"['Right Midfield', 'Left Midfield', 'Center Forward', 'Left Wing Back', 'Left Center Midfield', 'Left Back']",6
+27317,Eduardo Jesús Vargas Rojas,Hoffenheim,175,"['Right Midfield', 'Left Center Forward', 'Center Forward', 'Left Wing Back', 'Right Center Forward', 'Left Wing', 'Center Attacking Midfield', 'Right Center Midfield', 'Right Wing']",24
+27341,Marcelo Alfonso Díaz Rojas,Hamburger SV,171,"['Left Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield']",11
+27639,Artem Kravets,VfB Stuttgart,174,"['Right Center Forward', 'Center Forward', 'Left Center Forward', 'Center Defensive Midfield']",15
+28571,Oliver Hüsing,Werder Bremen,176,['Left Center Back'],1
+28601,Marvin Wanitzek,VfB Stuttgart,174,['Right Defensive Midfield'],1
+28976,Francisco José Rodriguez Araya,Wolfsburg,179,['Right Defensive Midfield'],1
+29001,Albian Afrim Ajeti,Augsburg,172,"['Center Attacking Midfield', 'Right Wing']",1
+29245,Marvin Schulz,Borussia Mönchengladbach,185,"['Right Center Back', 'Left Center Back', 'Center Attacking Midfield', 'Right Defensive Midfield', 'Center Defensive Midfield', 'Left Defensive Midfield', 'Left Wing Back']",8
+30287,Ceyhun Gülselam,Hannover 96,178,"['Center Attacking Midfield', 'Right Defensive Midfield', 'Right Center Forward', 'Left Center Back', 'Right Center Back', 'Left Defensive Midfield', 'Center Defensive Midfield']",13
+30312,Uilson de Souza Paula Júnior,Schalke 04,181,"['Right Back', 'Right Center Back', 'Right Wing', 'Right Wing Back']",23
+30439,Tolga Ciğerci,Hertha Berlin,173,"['Left Defensive Midfield', 'Right Midfield', 'Center Attacking Midfield', 'Left Midfield', 'Right Wing', 'Left Wing', 'Right Center Midfield', 'Left Center Midfield']",18
+30551,Gonzalo Alejandro Jara Reyes,FSV Mainz 05,177,"['Left Back', 'Left Defensive Midfield', 'Center Attacking Midfield']",6
+30847,Jiloan Hamad,Hoffenheim,175,"['Center Attacking Midfield', 'Left Defensive Midfield', 'Center Forward', 'Left Center Forward', 'Right Center Midfield']",7
+31437,Andreas Hirzel,Hamburger SV,171,['Goalkeeper'],1
+33459,Alexander Baumjohann,Hertha Berlin,173,"['Left Center Forward', 'Right Defensive Midfield', 'Right Center Forward', 'Center Attacking Midfield', 'Center Forward', 'Left Wing', 'Right Wing']",24
+34558,Sereso Geoffroy Gonzaroua Dié,VfB Stuttgart,174,"['Left Defensive Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Left Midfield']",23
+35033,Slobodan Rajković,Darmstadt 98,872,"['Right Center Back', 'Left Defensive Midfield', 'Left Center Back']",14
+35240,Änis Ben-Hatira,Eintracht Frankfurt,184,"['Left Wing', 'Left Midfield', 'Center Attacking Midfield']",9
+35496,Jan Kliment,VfB Stuttgart,174,"['Right Center Forward', 'Left Center Forward', 'Center Attacking Midfield', 'Right Center Midfield', 'Left Wing', 'Right Wing', 'Right Midfield']",8
+36359,Carlos Augusto Zambrano Ochandarte,Eintracht Frankfurt,184,"['Right Center Back', 'Left Center Back']",24
+36641,Konstantin Engel,Ingolstadt,189,"['Left Back', 'Right Center Midfield', 'Left Center Midfield']",4
+37112,Mitchell James Langerak,VfB Stuttgart,174,['Goalkeeper'],2
+37264,Kazuki Nagasawa,FC Köln,186,['Left Midfield'],1
+37972,Jens Grahl,Hoffenheim,175,['Goalkeeper'],1
+38172,Toni Šunjić,VfB Stuttgart,174,"['Right Center Back', 'Center Back', 'Right Defensive Midfield', 'Left Center Back']",19
+38524,Hiroshi Kiyotake,Hannover 96,178,"['Left Attacking Midfield', 'Center Attacking Midfield', 'Right Midfield', 'Right Defensive Midfield', 'Center Forward', 'Left Center Forward', 'Left Midfield', 'Left Defensive Midfield', 'Right Center Forward', 'Left Center Midfield', 'Right Center Midfield']",21
+40459,Roger de Oliveira Bernardo,Ingolstadt,189,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Left Center Back', 'Right Center Back']",29
+40460,Tobias Levels,Ingolstadt,189,"['Right Back', 'Left Back']",16
+40462,Halil Altıntop,Augsburg,172,"['Center Attacking Midfield', 'Center Forward', 'Right Center Forward', 'Right Defensive Midfield']",19
+40463,Stefan Lex,Ingolstadt,189,"['Left Midfield', 'Right Wing', 'Left Center Forward', 'Left Wing', 'Center Forward', 'Right Midfield', 'Center Defensive Midfield']",20
+40464,Moritz Hartmann,Ingolstadt,189,"['Right Wing', 'Right Midfield', 'Left Wing', 'Center Forward', 'Right Center Forward']",30
+40467,Peter Niemeyer,Darmstadt 98,872,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Center Midfield', 'Center Defensive Midfield', 'Right Center Midfield']",31
+40468,Cleber Janderson Pereira Reis,Hamburger SV,171,"['Right Center Back', 'Center Defensive Midfield', 'Left Center Back', 'Left Defensive Midfield', 'Left Wing', 'Right Defensive Midfield', 'Left Center Forward']",23
+40469,Marcel Schäfer,Wolfsburg,179,"['Left Back', 'Left Midfield', 'Left Center Back', 'Left Defensive Midfield', 'Left Wing', 'Left Center Midfield']",21
+40470,Georg Niedermeier,VfB Stuttgart,174,"['Left Center Back', 'Left Midfield', 'Left Back', 'Right Center Back']",18
+40473,Artoms Rudņevs,Hamburger SV,171,"['Center Forward', 'Left Center Forward', 'Center Attacking Midfield']",11
+40474,Jens Hegeler,Hertha Berlin,173,"['Left Center Midfield', 'Right Midfield', 'Center Forward', 'Left Center Forward', 'Right Center Back', 'Left Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield']",15
+40477,Jan Rosenthal,Darmstadt 98,872,"['Center Attacking Midfield', 'Right Center Midfield', 'Right Center Forward', 'Left Defensive Midfield', 'Right Midfield', 'Right Wing']",23
+40479,Janek Sternberg,Werder Bremen,176,"['Left Midfield', 'Left Back', 'Left Wing Back', 'Left Center Back']",9
+40480,Markus Feulner,Augsburg,172,"['Left Back', 'Right Wing', 'Right Defensive Midfield', 'Center Attacking Midfield', 'Left Wing', 'Right Back', 'Substitute', 'Left Defensive Midfield']",19
+40481,Dominik Stroh-Engel,Darmstadt 98,872,"['Center Forward', 'Center Attacking Midfield', 'Left Center Midfield', 'Right Midfield', 'Left Center Forward', 'Right Center Forward']",15
+40483,Benjamin Gorka,Darmstadt 98,872,"['Left Defensive Midfield', 'Center Defensive Midfield', 'Right Wing']",4
+40538,Jin-Su Kim,Hoffenheim,175,"['Left Back', 'Left Center Back', 'Right Back']",15
+40543,Jeong-Ho Hong,Augsburg,172,"['Right Center Back', 'Left Center Back', 'Center Back', 'Right Defensive Midfield']",23
+42301,Maximilian Beister,FSV Mainz 05,177,['Left Wing'],1
+42462,Alexander Manninger,Augsburg,172,['Goalkeeper'],2
+43055,Arianit Ferati,VfB Stuttgart,174,"['Left Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield']",3
+47881,Marcel  Hilßner,Werder Bremen,176,['Left Center Midfield'],1
+48718,Ahmet Metin Arslan,Hamburger SV,171,['Left Wing'],1
+49010,Valmir Sulejmani,Hannover 96,178,"['Right Wing', 'Left Wing', 'Left Center Midfield', 'Right Center Forward']",4
+49081,Sascha Mölders,Augsburg,172,"['Right Defensive Midfield', 'Center Forward', 'Left Wing', 'Left Center Forward', 'Center Attacking Midfield']",4
+51388,Assani Lukimya-Mulongoti,Werder Bremen,176,"['Right Center Back', 'Right Back']",12
+55966,Leandro Putaro,Wolfsburg,179,"['Center Forward', 'Center Attacking Midfield', 'Right Center Forward']",4
+108336,Júnior Enrique Díaz Campbell,Darmstadt 98,872,"['Left Back', 'Center Attacking Midfield']",12
+131141,Fynn Arkenberg,Hannover 96,178,['Right Back'],2
+155655,Václav Kadlec,Eintracht Frankfurt,184,"['Center Attacking Midfield', 'Left Center Forward', 'Right Defensive Midfield', 'Left Midfield']",5
+352950,Florian Kohls,Hertha Berlin,173,['Left Center Midfield'],1
+400612,Marco Sailer,Darmstadt 98,872,"['Center Attacking Midfield', 'Right Midfield', 'Right Center Forward', 'Left Defensive Midfield']",14
+400613,Leon Andreasen,Hannover 96,178,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Right Attacking Midfield', 'Right Center Midfield', 'Right Wing', 'Left Center Midfield', 'Right Midfield', 'Center Attacking Midfield']",15
+400614,Christian Schulz,Hannover 96,178,"['Left Center Back', 'Center Defensive Midfield']",25
+400619,Stefan Reinartz,Eintracht Frankfurt,184,"['Left Defensive Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Center Midfield']",15
+400620,Tobias Werner,Augsburg,172,"['Left Wing', 'Left Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Right Wing', 'Center Attacking Midfield', 'Right Midfield']",13
+400621,Tohouri Zahoui Constant Djakpa,Eintracht Frankfurt,184,"['Left Back', 'Left Wing Back', 'Left Midfield', 'Left Wing']",11
+400622,Joel Gerezgiher,Eintracht Frankfurt,184,['Left Midfield'],3
+400623,Ronny Heberson Furtado de Araújo,Hertha Berlin,173,"['Right Wing', 'Center Forward']",1
+400627,Dario Kresic,Bayer Leverkusen,904,['Goalkeeper'],1
+400654,Roel Brouwers,Borussia Mönchengladbach,185,"['Right Center Back', 'Left Center Back', 'Right Defensive Midfield', 'Center Back']",8
+400805,Stefan Wannenwetsch,Ingolstadt,189,"['Left Center Midfield', 'Center Forward']",1
+400873,Mustafa Batuhan Altıntaş,Hamburger SV,171,['Center Forward'],1
+400983,Devante James Parker,FSV Mainz 05,177,['Left Wing'],1
+400984,Serdar Taşçı,Bayern Munich,169,"['Left Center Back', 'Center Back']",3
+401018,Nico Rinderknecht,Eintracht Frankfurt,184,['Right Center Midfield'],1
+401376,Özkan Yıldırım,Werder Bremen,176,['Right Wing'],1
+401501,David Yelldell,Bayer Leverkusen,904,['Goalkeeper'],1
