@@ -6,22 +6,7 @@ def filtrar_partidos_por_equipo(df_matches, nombre_equipo):
     return df_matches[(df_matches['home_team'] == nombre_equipo) | (df_matches['away_team'] == nombre_equipo)]
 
 
-def obtener_eventos_por_partidos(lista_match_ids):
-    """
-    Descarga y concatena todos los eventos de los partidos dados.
-    """
-    eventos_todos = []
 
-    for match_id in lista_match_ids:
-        try:
-            eventos = sb.events(match_id=match_id)
-            eventos['match_id'] = match_id
-            eventos_todos.append(eventos)
-        except Exception as e:
-            print(f"❌ Error en partido {match_id}: {e}")
-            continue
-
-    return pd.concat(eventos_todos, ignore_index=True) if eventos_todos else pd.DataFrame()
 
 def filtrar_eventos_por_columna_util(df_eventos, jugador, columna):
     # Filtrar por jugador
