@@ -1,0 +1,99 @@
+team_id,team,presupuesto_fichajes,presupuesto_sueldos,competicion
+169,Bayern Munich,80000000,4115000,
+171,Hamburger SV,6000000,934000,
+172,Augsburg,6000000,852000,
+173,Hertha Berlin,8000000,1029000,
+904,Bayer Leverkusen,80000000,4115000,
+175,Hoffenheim,15000000,1022000,
+176,Werder Bremen,4500000,811000,
+181,Schalke 04,21500000,1897000,
+872,Darmstadt 98,2200000,437000,
+178,Hannover 96,10000000,877000,
+177,FSV Mainz 05,7000000,943000,
+189,Ingolstadt,4000000,493000,
+180,Borussia Dortmund,30000000,2150000,
+185,Borussia Mönchengladbach,20000000,1177000,
+179,Wolfsburg,50000000,2138000,
+184,Eintracht Frankfurt,6000000,1020000,
+174,VfB Stuttgart,11000000,931000,
+186,FC Köln,8000000,788000,
+223,Málaga,7000000,979000,Spain - La Liga
+213,Sevilla,34500000,2120000,Spain - La Liga
+219,RC Deportivo La Coruña,5000000,965000,Spain - La Liga
+210,Real Sociedad,9000000,1770000,Spain - La Liga
+214,Espanyol,6500000,858000,Spain - La Liga
+216,Getafe,6000000,842000,Spain - La Liga
+212,Atlético Madrid,60000000,2485000,Spain - La Liga
+208,Las Palmas,3500000,610000,Spain - La Liga
+360,Rayo Vallecano,4000000,871000,Spain - La Liga
+207,Valencia,70000000,1849000,Spain - La Liga
+215,Athletic Club,12000000,1727000,Spain - La Liga
+217,Barcelona,100000000,4191000,Spain - La Liga
+1041,Sporting Gijón,2700000,618000,Spain - La Liga
+220,Real Madrid,100000000,3823000,Spain - La Liga
+221,Levante UD,6500000,857000,Spain - La Liga
+209,Celta Vigo,7000000,936000,Spain - La Liga
+218,Real Betis,6500000,960000,Spain - La Liga
+222,Villarreal,10000000,1201000,Spain - La Liga
+1049,Granada,6000000,790000,Spain - La Liga
+322,Eibar,2000000,312000,Spain - La Liga
+143,Lille,10500000,806000,France - Ligue 1
+131,Paris Saint-Germain,9000000,963250,France - Ligue 1
+147,Marseille,18000000,1311000,France - Ligue 1
+140,Caen,3500000,471250,France - Ligue 1
+133,Troyes,2200000,390500,France - Ligue 1
+160,Gazélec Ajaccio,2000000,261250,France - Ligue 1
+144,Nantes,5000000,613750,France - Ligue 1
+142,Guingamp,3200000,597000,France - Ligue 1
+136,OGC Nice,4500000,607500,France - Ligue 1
+129,AS Monaco,55000000,1458000,France - Ligue 1
+139,Montpellier,7500000,773500,France - Ligue 1
+145,Angers,2400000,333500,France - Ligue 1
+2736,Bastia,2800000,377500,France - Ligue 1
+134,Rennes,9000000,963250,France - Ligue 1
+146,Bordeaux,7000000,882250,France - Ligue 1
+156,Stade de Reims,3000000,579500,France - Ligue 1
+130,Toulouse,5500000,789250,France - Ligue 1
+135,Saint-Étienne,5000000,613750,France - Ligue 1
+137,Lyon,17000000,1733750,France - Ligue 1
+165,Lorient,3700000,586000,France - Ligue 1
+39,Manchester United,80000000,2994250,England - Premier League
+38,Tottenham Hotspur,45000000,1944750,England - Premier League
+22,Leicester City,27000000,869250,England - Premier League
+41,Sunderland,28000000,1154750,England - Premier League
+28,AFC Bournemouth,16000000,683250,England - Premier League
+59,Aston Villa,29000000,1109750,England - Premier League
+56,Norwich City,22000000,907000,England - Premier League
+31,Crystal Palace,23500000,1251250,England - Premier League
+29,Everton,25000000,1697000,England - Premier League
+23,Watford,19000000,1032750,England - Premier League
+33,Chelsea,85000000,3346750,England - Premier League
+26,Swansea City,25000000,1289250,England - Premier League
+37,Newcastle United,35000000,1528750,England - Premier League
+25,Southampton,32000000,1208500,England - Premier League
+1,Arsenal,70000000,3076750,England - Premier League
+40,West Ham United,30000000,1125750,England - Premier League
+30,Stoke City,30000000,1231750,England - Premier League
+24,Liverpool,55000000,2595500,England - Premier League
+27,West Bromwich Albion,22000000,1079750,England - Premier League
+36,Manchester City,100000000,3119500,England - Premier League
+226,Hellas Verona,5500000,862000,Italy - Serie A
+229,AS Roma,34000000,2290000,Italy - Serie A
+236,Lazio,17500000,2048000,Italy - Serie A
+240,Bologna,12000000,604000,Italy - Serie A
+224,Juventus,60000000,3309000,Italy - Serie A
+230,Udinese,17500000,985000,Italy - Serie A
+291,Frosinone,1800000,181000,Italy - Serie A
+241,Torino,14000000,1131000,Italy - Serie A
+232,Sassuolo,10000000,683000,Italy - Serie A
+227,Napoli,27500000,2251000,Italy - Serie A
+290,Empoli,3400000,493000,Italy - Serie A
+231,Chievo,4600000,851000,Italy - Serie A
+2256,Palermo,9000000,641000,Italy - Serie A
+233,Genoa,12000000,1060000,Italy - Serie A
+238,Inter Milan,37500000,2132000,Italy - Serie A
+228,Atalanta,7000000,986000,Italy - Serie A
+239,Fiorentina,19500000,1257000,Italy - Serie A
+243,AC Milan,40000000,2269000,Italy - Serie A
+234,Sampdoria,10500000,850000,Italy - Serie A
+1683,Carpi,1900000,597000,Italy - Serie A
