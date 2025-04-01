@@ -1,21 +1,21 @@
-team_id,team,presupuesto_fichajes,presupuesto_sueldos
-39,Manchester United,80000000,2994250
-38,Tottenham Hotspur,45000000,1944750
-22,Leicester City,27000000,869250
-41,Sunderland,28000000,1154750
-28,AFC Bournemouth,16000000,683250
-59,Aston Villa,29000000,1109750
-56,Norwich City,22000000,907000
-31,Crystal Palace,23500000,1251250
-29,Everton,25000000,1697000
-23,Watford,19000000,1032750
-33,Chelsea,85000000,3346750
-26,Swansea City,25000000,1289250
-37,Newcastle United,35000000,1528750
-25,Southampton,32000000,1208500
-1,Arsenal,70000000,3076750
-40,West Ham United,30000000,1125750
-30,Stoke City,30000000,1231750
-24,Liverpool,55000000,2595500
-27,West Bromwich Albion,22000000,1079750
-36,Manchester City,100000000,3119500
+team_id,team,presupuesto_fichajes,presupuesto_sueldos,competicion
+39,Manchester United,80000000,2994250,England - Premier League
+38,Tottenham Hotspur,45000000,1944750,England - Premier League
+22,Leicester City,27000000,869250,England - Premier League
+41,Sunderland,28000000,1154750,England - Premier League
+28,AFC Bournemouth,16000000,683250,England - Premier League
+59,Aston Villa,29000000,1109750,England - Premier League
+56,Norwich City,22000000,907000,England - Premier League
+31,Crystal Palace,23500000,1251250,England - Premier League
+29,Everton,25000000,1697000,England - Premier League
+23,Watford,19000000,1032750,England - Premier League
+33,Chelsea,85000000,3346750,England - Premier League
+26,Swansea City,25000000,1289250,England - Premier League
+37,Newcastle United,35000000,1528750,England - Premier League
+25,Southampton,32000000,1208500,England - Premier League
+1,Arsenal,70000000,3076750,England - Premier League
+40,West Ham United,30000000,1125750,England - Premier League
+30,Stoke City,30000000,1231750,England - Premier League
+24,Liverpool,55000000,2595500,England - Premier League
+27,West Bromwich Albion,22000000,1079750,England - Premier League
+36,Manchester City,100000000,3119500,England - Premier League

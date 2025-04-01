@@ -1,2 +1,2 @@
 from .generales import *
-from. central import *
+from .estadisticas import *

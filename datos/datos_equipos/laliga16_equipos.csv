@@ -1,21 +1,21 @@
-team_id,team,presupuesto_fichajes,presupuesto_sueldos
-223,Málaga,7000000,979000
-213,Sevilla,34500000,2120000
-219,RC Deportivo La Coruña,5000000,965000
-210,Real Sociedad,9000000,1770000
-214,Espanyol,6500000,858000
-216,Getafe,6000000,842000
-212,Atlético Madrid,60000000,2485000
-208,Las Palmas,3500000,610000
-360,Rayo Vallecano,4000000,871000
-207,Valencia,70000000,1849000
-215,Athletic Club,12000000,1727000
-217,Barcelona,100000000,4191000
-1041,Sporting Gijón,2700000,618000
-220,Real Madrid,100000000,3823000
-221,Levante UD,6500000,857000
-209,Celta Vigo,7000000,936000
-218,Real Betis,6500000,960000
-222,Villarreal,10000000,1201000
-1049,Granada,6000000,790000
-322,Eibar,2000000,312000
+team_id,team,presupuesto_fichajes,presupuesto_sueldos,competicion
+223,Málaga,7000000,979000,Spain - La Liga
+213,Sevilla,34500000,2120000,Spain - La Liga
+219,RC Deportivo La Coruña,5000000,965000,Spain - La Liga
+210,Real Sociedad,9000000,1770000,Spain - La Liga
+214,Espanyol,6500000,858000,Spain - La Liga
+216,Getafe,6000000,842000,Spain - La Liga
+212,Atlético Madrid,60000000,2485000,Spain - La Liga
+208,Las Palmas,3500000,610000,Spain - La Liga
+360,Rayo Vallecano,4000000,871000,Spain - La Liga
+207,Valencia,70000000,1849000,Spain - La Liga
+215,Athletic Club,12000000,1727000,Spain - La Liga
+217,Barcelona,100000000,4191000,Spain - La Liga
+1041,Sporting Gijón,2700000,618000,Spain - La Liga
+220,Real Madrid,100000000,3823000,Spain - La Liga
+221,Levante UD,6500000,857000,Spain - La Liga
+209,Celta Vigo,7000000,936000,Spain - La Liga
+218,Real Betis,6500000,960000,Spain - La Liga
+222,Villarreal,10000000,1201000,Spain - La Liga
+1049,Granada,6000000,790000,Spain - La Liga
+322,Eibar,2000000,312000,Spain - La Liga
