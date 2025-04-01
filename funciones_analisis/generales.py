@@ -6,8 +6,6 @@ def filtrar_partidos_por_equipo(df_matches, nombre_equipo):
     return df_matches[(df_matches['home_team'] == nombre_equipo) | (df_matches['away_team'] == nombre_equipo)]
 
 
-
-
 def filtrar_eventos_por_columna_util(df_eventos, jugador, columna):
     # Filtrar por jugador
     df_jugador = df_eventos[df_eventos['player'] == jugador]
