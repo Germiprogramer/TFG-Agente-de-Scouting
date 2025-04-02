@@ -84,11 +84,6 @@ def intercepciones_exitosas_totales(df_eventos):
     exitosas = ['Won', 'Success In Play']
     return df['interception_outcome'].isin(exitosas).sum()
 
-#bloqueos
-def bloqueos_totales(df):
-    """Devuelve el número total de eventos de tipo bloqueo."""
-    return df['block_deflection'].notna().sum()
-
 def numero_bloqueos(df):
     """Cuenta el número de eventos donde hay al menos un tipo de bloqueo (deflection, offensive, etc.)."""
     columnas_bloqueo = [
