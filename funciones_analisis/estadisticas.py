@@ -316,8 +316,3 @@ def estadisticas_pases_por_jugador(df_eventos, df_jugadores):
 
     return df_jugadores
 
-def holaa():
-    """
-    Función de prueba para verificar que el módulo de estadísticas se carga correctamente.
-    """
-    return "Hola desde el módulo de estadísticas."
