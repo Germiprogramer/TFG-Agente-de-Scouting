@@ -316,3 +316,112 @@ def estadisticas_pases_por_jugador(df_eventos, df_jugadores):
 
     return df_jugadores
 
+def estadisticas_pases_avanzadas_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade columnas al DataFrame de jugadores con estadísticas avanzadas de pase.
+    """
+    df_jugadores = df_jugadores.copy()
+    df = df_eventos[df_eventos['type'] == 'Pass'].copy()
+
+    # Inicializar columnas
+    columnas = [
+        'media_longitud_pase',
+        'media_angulo_pase',
+        'ground_passes',
+        'low_passes',
+        'high_passes',
+        'porcentaje_ground',
+        'porcentaje_low',
+        'porcentaje_high',
+        'total_crosses',
+        'crosses_completados',
+        'cutbacks',
+        'cutbacks_completados',
+        'switches',
+        'switches_completados',
+        'pases_miscommunication',
+        'pases_deflected'
+    ]
+    for col in columnas:
+        df_jugadores[col] = 0.0
+
+    def filtrar_pases_completados(df):
+        df_filtrado = df[~df['pass_outcome'].isin(['Unknown', 'Injury Clearance'])]
+        return df_filtrado[df_filtrado['pass_outcome'].isnull()]
+
+    for jugador in df_jugadores['player']:
+        df_player = df[df['player'] == jugador]
+
+        df_completados = filtrar_pases_completados(df_player)
+        df_altura = df_player[df_player['pass_height'].notnull()]
+
+        media_longitud = df_completados['pass_length'].mean()
+        media_angulo = df_completados['pass_angle'].mean()
+
+        ground = df_altura[df_altura['pass_height'] == 'Ground Pass'].shape[0]
+        low = df_altura[df_altura['pass_height'] == 'Low Pass'].shape[0]
+        high = df_altura[df_altura['pass_height'] == 'High Pass'].shape[0]
+        total_altura = df_altura.shape[0]
+
+        porcentaje_ground = 100 * ground / total_altura if total_altura > 0 else 0
+        porcentaje_low = 100 * low / total_altura if total_altura > 0 else 0
+        porcentaje_high = 100 * high / total_altura if total_altura > 0 else 0
+
+        crosses = df_player[df_player['pass_cross'] == True].shape[0]
+        crosses_ok = df_completados[df_completados['pass_cross'] == True].shape[0]
+
+        cutbacks = df_player[df_player['pass_cut_back'] == True].shape[0]
+        cutbacks_ok = df_completados[df_completados['pass_cut_back'] == True].shape[0]
+
+        switches = df_player[df_player['pass_switch'] == True].shape[0]
+        switches_ok = df_completados[df_completados['pass_switch'] == True].shape[0]
+
+        miscomm = df_player[df_player['pass_miscommunication'] == True].shape[0]
+        deflected = df_player[df_player['pass_deflected'] == True].shape[0]
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'media_longitud_pase'] = media_longitud
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'media_angulo_pase'] = media_angulo
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'ground_passes'] = ground
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'low_passes'] = low
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'high_passes'] = high
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_ground'] = porcentaje_ground
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_low'] = porcentaje_low
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_high'] = porcentaje_high
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'total_crosses'] = crosses
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'crosses_completados'] = crosses_ok
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'cutbacks'] = cutbacks
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'cutbacks_completados'] = cutbacks_ok
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'switches'] = switches
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'switches_completados'] = switches_ok
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_miscommunication'] = miscomm
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_deflected'] = deflected
+
+    return df_jugadores
+
+def estadisticas_creacion_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade columnas al DataFrame de jugadores con datos de creación ofensiva:
+    - Asistencias de gol
+    - Asistencias a tiro (key passes)
+    - Ocasiones creadas totales
+    """
+    df_jugadores = df_jugadores.copy()
+    df = df_eventos[df_eventos['type'] == 'Pass'].copy()
+
+    # Inicializar columnas
+    df_jugadores['goal_assists'] = 0
+    df_jugadores['key_passes'] = 0
+    df_jugadores['chances_created'] = 0
+
+    for jugador in df_jugadores['player']:
+        df_player = df[df['player'] == jugador]
+
+        asistencias_gol = df_player[df_player['pass_goal_assist'] == True].shape[0]
+        asistencias_tiro = df_player[df_player['pass_shot_assist'] == True].shape[0]
+        total_chances = asistencias_gol + asistencias_tiro
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'goal_assists'] = asistencias_gol
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'key_passes'] = asistencias_tiro
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'chances_created'] = total_chances
+
+    return df_jugadores
