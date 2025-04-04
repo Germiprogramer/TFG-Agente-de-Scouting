@@ -425,3 +425,223 @@ def estadisticas_creacion_por_jugador(df_eventos, df_jugadores):
         df_jugadores.loc[df_jugadores['player'] == jugador, 'chances_created'] = total_chances
 
     return df_jugadores
+
+
+def estadisticas_tecnicas_pase_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade al DataFrame de jugadores estadísticas técnicas de pase:
+    - Through balls (completados y totales)
+    - Uso del pie derecho, izquierdo, cabeza (y precisión)
+    - Pases en campo propio vs rival
+    """
+    df_jugadores = df_jugadores.copy()
+    df = df_eventos[df_eventos['type'] == 'Pass'].copy()
+
+    # Inicializar columnas
+    columnas = [
+        'through_balls', 'through_balls_completados',
+        'total_pases_con_body_part',
+        'porcentaje_cabeza', 'porcentaje_derecho', 'porcentaje_izquierdo',
+        'porcentaje_derecho_acertado', 'porcentaje_izquierdo_acertado',
+        'pases_campo_propio', 'pases_campo_rival',
+        'porcentaje_pases_campo_rival'
+    ]
+    for col in columnas:
+        df_jugadores[col] = 0.0
+
+    def filtrar_pases_completados(df_):
+        df_filtrado = df_[~df_['pass_outcome'].isin(['Unknown', 'Injury Clearance'])]
+        return df_filtrado[df_filtrado['pass_outcome'].isnull()]
+
+    for jugador in df_jugadores['player']:
+        df_player = df[df['player'] == jugador]
+        df_completados = filtrar_pases_completados(df_player)
+
+        # Through balls
+        total_through = df_player[df_player['pass_technique'] == 'Through Ball'].shape[0]
+        through_ok = df_completados[df_completados['pass_technique'] == 'Through Ball'].shape[0]
+
+        # Partes del cuerpo
+        con_body_part = df_player['pass_body_part'].notnull().sum()
+        cabeza = df_player[df_player['pass_body_part'] == 'Head'].shape[0]
+        derecho_df = df_player[df_player['pass_body_part'] == 'Right Foot']
+        izquierdo_df = df_player[df_player['pass_body_part'] == 'Left Foot']
+
+        derecho_total = derecho_df.shape[0]
+        izquierdo_total = izquierdo_df.shape[0]
+        derecho_ok = filtrar_pases_completados(derecho_df).shape[0]
+        izquierdo_ok = filtrar_pases_completados(izquierdo_df).shape[0]
+
+        pct_cabeza = 100 * cabeza / con_body_part if con_body_part > 0 else 0
+        pct_derecho = 100 * derecho_total / con_body_part if con_body_part > 0 else 0
+        pct_izquierdo = 100 * izquierdo_total / con_body_part if con_body_part > 0 else 0
+        pct_derecho_ok = 100 * derecho_ok / derecho_total if derecho_total > 0 else 0
+        pct_izquierdo_ok = 100 * izquierdo_ok / izquierdo_total if izquierdo_total > 0 else 0
+
+        # Campo propio/rival
+        pases_validos = df_player[~df_player['pass_outcome'].isin(['Unknown', 'Injury Clearance'])]
+        campo_propio = pases_validos[pases_validos['location'].apply(lambda loc: isinstance(loc, list) and loc[0] < 60)].shape[0]
+        campo_rival = pases_validos[pases_validos['location'].apply(lambda loc: isinstance(loc, list) and loc[0] >= 60)].shape[0]
+        total_validos = pases_validos.shape[0]
+        pct_rival = 100 * campo_rival / total_validos if total_validos > 0 else 0
+
+        # Asignar al DataFrame
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'through_balls'] = total_through
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'through_balls_completados'] = through_ok
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'total_pases_con_body_part'] = con_body_part
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_cabeza'] = pct_cabeza
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_derecho'] = pct_derecho
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_izquierdo'] = pct_izquierdo
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_derecho_acertado'] = pct_derecho_ok
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_izquierdo_acertado'] = pct_izquierdo_ok
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_campo_propio'] = campo_propio
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_campo_rival'] = campo_rival
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_pases_campo_rival'] = pct_rival
+
+    return df_jugadores
+
+def estadisticas_pases_progresivos_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade columnas al DataFrame de jugadores con estadísticas de pases progresivos tipo Wyscout.
+    """
+    df_jugadores = df_jugadores.copy()
+    df = df_eventos[df_eventos['type'] == 'Pass'].copy()
+
+    # Inicializar columnas
+    df_jugadores['pases_progresivos_wyscout'] = 0
+    df_jugadores['pases_progresivos_completados_wyscout'] = 0
+    df_jugadores['porcentaje_pases_progresivos_completados'] = 0.0
+
+    def filtrar_pases_completados(df_):
+        df_filtrado = df_[~df_['pass_outcome'].isin(['Unknown', 'Injury Clearance'])]
+        return df_filtrado[df_filtrado['pass_outcome'].isnull()]
+
+    def es_progresivo_wyscout(start, end):
+        if not (isinstance(start, list) and isinstance(end, list)):
+            return False
+
+        inicio = 120 - start[0]
+        fin = 120 - end[0]
+        ganancia = inicio - fin
+
+        en_propio = start[0] < 60 and end[0] < 60
+        cambia_de_mitad = start[0] < 60 and end[0] >= 60
+        en_rival = start[0] >= 60 and end[0] >= 60
+
+        if en_propio and ganancia >= 30:
+            return True
+        elif cambia_de_mitad and ganancia >= 15:
+            return True
+        elif en_rival and ganancia >= 10:
+            return True
+        else:
+            return False
+
+    for jugador in df_jugadores['player']:
+        df_player = df[df['player'] == jugador]
+        df_completados = filtrar_pases_completados(df_player)
+
+        progresivos = df_player.apply(lambda row: es_progresivo_wyscout(row['location'], row['pass_end_location']), axis=1).sum()
+        progresivos_ok = df_completados.apply(lambda row: es_progresivo_wyscout(row['location'], row['pass_end_location']), axis=1).sum()
+        porcentaje = 100 * progresivos_ok / progresivos if progresivos > 0 else 0
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_progresivos_wyscout'] = progresivos
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_progresivos_completados_wyscout'] = progresivos_ok
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_pases_progresivos_completados'] = round(porcentaje, 2)
+
+    return df_jugadores
+
+def estadisticas_pases_zonas_peligrosas_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade estadísticas de pases al tercio final y al área rival al DataFrame de jugadores.
+    """
+    df_jugadores = df_jugadores.copy()
+    df = df_eventos[df_eventos['type'] == 'Pass'].copy()
+
+    # Inicializar columnas
+    df_jugadores['pases_tercio_final'] = 0
+    df_jugadores['porcentaje_tercio_final_completados'] = 0.0
+    df_jugadores['pases_al_area'] = 0
+    df_jugadores['porcentaje_pases_area_completados'] = 0.0
+
+    def es_en_area(loc):
+        if not isinstance(loc, list):
+            return False
+        x, y = loc
+        return x >= 102 and 18 <= y <= 62
+
+    for jugador in df_jugadores['player']:
+        df_player = df[df['player'] == jugador]
+
+        # Tercio final
+        en_tercio = df_player[df_player['pass_end_location'].apply(lambda loc: isinstance(loc, list) and loc[0] >= 80)]
+        total_tercio = en_tercio.shape[0]
+        completados_tercio = en_tercio['pass_outcome'].isnull().sum()
+        porcentaje_tercio = 100 * completados_tercio / total_tercio if total_tercio > 0 else 0
+
+        # Área rival
+        en_area = df_player[df_player['pass_end_location'].apply(es_en_area)]
+        total_area = en_area.shape[0]
+        completados_area = en_area['pass_outcome'].isnull().sum()
+        porcentaje_area = 100 * completados_area / total_area if total_area > 0 else 0
+
+        # Asignar al jugador
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_tercio_final'] = total_tercio
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_tercio_final_completados'] = round(porcentaje_tercio, 2)
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_al_area'] = total_area
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_pases_area_completados'] = round(porcentaje_area, 2)
+
+    return df_jugadores
+
+import numpy as np
+
+def estadisticas_carries_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade estadísticas de carries por jugador:
+    - Carries válidos (≥5m)
+    - Distancia media por carry
+    - Carries progresivos
+    - Porcentaje de carries progresivos (directness)
+    """
+    df_jugadores = df_jugadores.copy()
+    df = df_eventos[df_eventos['type'] == 'Carry'].copy()
+
+    # Inicializar columnas
+    df_jugadores['carries'] = 0
+    df_jugadores['carries_progresivos'] = 0
+    df_jugadores['porcentaje_carries_progresivos'] = 0.0
+    df_jugadores['distancia_media_carries'] = 0.0
+
+    def es_valido(row):
+        return isinstance(row['location'], list) and isinstance(row['carry_end_location'], list)
+
+    def distancia(row):
+        return np.linalg.norm(np.array(row['carry_end_location']) - np.array(row['location']))
+
+    for jugador in df_jugadores['player']:
+        df_player = df[df['player'] == jugador]
+        df_player = df_player[df_player.apply(es_valido, axis=1)]
+
+        # Carries válidos: distancia ≥ 5 metros
+        df_carries = df_player[df_player.apply(lambda row: distancia(row) >= 5, axis=1)]
+        total_carries = df_carries.shape[0]
+
+        # Carries progresivos: ganancia horizontal ≥ 5 metros (hacia portería rival)
+        carries_progresivos = df_carries[df_carries.apply(lambda row: row['carry_end_location'][0] - row['location'][0] >= 5, axis=1)].shape[0]
+
+        # Distancia media
+        if total_carries > 0:
+            distancia_media = df_carries.apply(distancia, axis=1).mean()
+        else:
+            distancia_media = 0.0
+
+        # Porcentaje progresivos
+        pct_progresivos = 100 * carries_progresivos / total_carries if total_carries > 0 else 0
+
+        # Guardar
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'carries'] = total_carries
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'carries_progresivos'] = carries_progresivos
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_carries_progresivos'] = round(pct_progresivos, 2)
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'distancia_media_carries'] = round(distancia_media, 2)
+
+    return df_jugadores
