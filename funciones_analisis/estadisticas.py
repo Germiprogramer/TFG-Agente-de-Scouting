@@ -645,3 +645,102 @@ def estadisticas_carries_por_jugador(df_eventos, df_jugadores):
         df_jugadores.loc[df_jugadores['player'] == jugador, 'distancia_media_carries'] = round(distancia_media, 2)
 
     return df_jugadores
+
+def estadisticas_duelos_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade columnas con estadísticas de duelos por jugador:
+    - duelos_totales
+    - duelos_ganados
+    - porcentaje_duelos_ganados
+    """
+    df_jugadores = df_jugadores.copy()
+    df = df_eventos[df_eventos['type'] == 'Duel'].copy()
+
+    df_jugadores['duelos_totales'] = 0
+    df_jugadores['duelos_ganados'] = 0
+    df_jugadores['porcentaje_duelos_ganados'] = 0.0
+
+    for jugador in df_jugadores['player']:
+        df_player = df[df['player'] == jugador]
+        df_validos = df_player[df_player['duel_outcome'].notnull()]
+        total = df_validos.shape[0]
+        ganados = df_validos['duel_outcome'].isin(['Won', 'Success In Play']).sum()
+        porcentaje = 100 * ganados / total if total > 0 else 0
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'duelos_totales'] = total
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'duelos_ganados'] = ganados
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_duelos_ganados'] = round(porcentaje, 2)
+
+    return df_jugadores
+
+def estadisticas_tarjetas_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade columnas con estadísticas disciplinarias:
+    - tarjetas_amarillas
+    - expulsiones
+    """
+    df_jugadores = df_jugadores.copy()
+
+    df_jugadores['tarjetas_amarillas'] = 0
+    df_jugadores['expulsiones'] = 0
+
+    for jugador in df_jugadores['player']:
+        df_player = df_eventos[df_eventos['player'] == jugador]
+
+        amarillas_foul = df_player[df_player['foul_committed_card'] == 'Yellow Card'].shape[0]
+        amarillas_behaviour = df_player[df_player['bad_behaviour_card'] == 'Yellow Card'].shape[0]
+
+        rojas_foul = df_player[df_player['foul_committed_card'].isin(['Red Card', 'Second Yellow'])].shape[0]
+        rojas_behaviour = df_player[df_player['bad_behaviour_card'].isin(['Red Card', 'Second Yellow'])].shape[0]
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'tarjetas_amarillas'] = amarillas_foul + amarillas_behaviour
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'expulsiones'] = rojas_foul + rojas_behaviour
+
+    return df_jugadores
+
+def estadisticas_defensivas_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade columnas con métricas defensivas:
+    - veces_regateado
+    - recuperaciones
+    - recuperaciones_ofensivas
+    - presiones
+    - counterpress
+    """
+    df_jugadores = df_jugadores.copy()
+
+    df_jugadores['veces_regateado'] = 0
+    df_jugadores['recuperaciones'] = 0
+    df_jugadores['recuperaciones_ofensivas'] = 0
+    df_jugadores['presiones'] = 0
+    df_jugadores['counterpress'] = 0
+
+    for jugador in df_jugadores['player']:
+        df_player = df_eventos[df_eventos['player'] == jugador]
+
+        regateado = df_player[df_player['type'] == 'Dribbled Past'].shape[0]
+
+        recuperaciones = df_player[
+            (df_player['type'] == 'Ball Recovery') & 
+            (df_player['ball_recovery_recovery_failure'] != True)
+        ].shape[0]
+
+        ofensivas = df_player[
+            (df_player['type'] == 'Ball Recovery') & 
+            (df_player['ball_recovery_offensive'] == True)
+        ].shape[0]
+
+        presiones = df_player[df_player['type'] == 'Pressure'].shape[0]
+
+        counterpress = df_player[
+            (df_player['type'] == 'Pressure') & 
+            (df_player['counterpress'] == True)
+        ].shape[0]
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'veces_regateado'] = regateado
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'recuperaciones'] = recuperaciones
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'recuperaciones_ofensivas'] = ofensivas
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'presiones'] = presiones
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'counterpress'] = counterpress
+
+    return df_jugadores
