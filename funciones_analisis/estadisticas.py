@@ -744,3 +744,64 @@ def estadisticas_defensivas_por_jugador(df_eventos, df_jugadores):
         df_jugadores.loc[df_jugadores['player'] == jugador, 'counterpress'] = counterpress
 
     return df_jugadores
+
+def estadisticas_regates_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade estadísticas de regates al DataFrame de jugadores:
+    - regates_completados
+    - porcentaje_regates_completados
+    """
+    df_jugadores = df_jugadores.copy()
+    df = df_eventos[df_eventos['type'] == 'Dribble'].copy()
+
+    df_jugadores['regates_completados'] = 0
+    df_jugadores['porcentaje_regates_completados'] = 0.0
+
+    for jugador in df_jugadores['player']:
+        df_player = df[df['player'] == jugador]
+        df_validos = df_player[df_player['dribble_outcome'].notnull()]
+        total = df_validos.shape[0]
+        completados = df_validos[df_validos['dribble_outcome'] == 'Complete'].shape[0]
+        porcentaje = 100 * completados / total if total > 0 else 0
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'regates_completados'] = completados
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_regates_completados'] = round(porcentaje, 2)
+
+    return df_jugadores
+
+def estadisticas_faltas_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade columnas de faltas al DataFrame de jugadores:
+    - faltas_provocadas
+    - penaltis_provocados
+    - faltas_cometidas
+    - penaltis_cometidos
+    """
+    df_jugadores = df_jugadores.copy()
+
+    df_jugadores['faltas_provocadas'] = 0
+    df_jugadores['penaltis_provocados'] = 0
+    df_jugadores['faltas_cometidas'] = 0
+    df_jugadores['penaltis_cometidos'] = 0
+
+    for jugador in df_jugadores['player']:
+        df_player = df_eventos[df_eventos['player'] == jugador]
+
+        provocadas = df_player[df_player['type'] == 'Foul Won'].shape[0]
+        penales_provocados = df_player[
+            (df_player['type'] == 'Foul Won') & 
+            (df_player['foul_won_penalty'] == True)
+        ].shape[0]
+
+        cometidas = df_player[df_player['type'] == 'Foul Committed'].shape[0]
+        penales_cometidos = df_player[
+            (df_player['type'] == 'Foul Committed') & 
+            (df_player['foul_committed_penalty'] == True)
+        ].shape[0]
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'faltas_provocadas'] = provocadas
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'penaltis_provocados'] = penales_provocados
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'faltas_cometidas'] = cometidas
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'penaltis_cometidos'] = penales_cometidos
+
+    return df_jugadores
