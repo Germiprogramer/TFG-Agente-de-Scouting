@@ -1,3 +1,5 @@
+from statsbombpy import sb
+
 def porcentaje_tackles_exitosos_por_jugador(df_eventos, df_jugadores):
     """
     Añade una columna 'porcentaje_tackles_exitosos' al DataFrame de jugadores.
@@ -803,5 +805,243 @@ def estadisticas_faltas_por_jugador(df_eventos, df_jugadores):
         df_jugadores.loc[df_jugadores['player'] == jugador, 'penaltis_provocados'] = penales_provocados
         df_jugadores.loc[df_jugadores['player'] == jugador, 'faltas_cometidas'] = cometidas
         df_jugadores.loc[df_jugadores['player'] == jugador, 'penaltis_cometidos'] = penales_cometidos
+
+    return df_jugadores
+
+def calcular_minutos_jugados_en_df(lista_partidos, df_jugadores):
+    """
+    Calcula los minutos jugados por cada jugador en el dataset de jugadores.
+
+    Parámetros:
+    - lista_partidos: lista de IDs de partidos
+    - df_jugadores: DataFrame con al menos las columnas 'player_id' y 'player'
+
+    Retorna:
+    - df_jugadores con una nueva columna 'minutos_jugados'
+    """
+    minutos_totales = {}
+
+    for i, match_id in enumerate(lista_partidos):
+        try:
+            partido = sb.events(match_id=match_id)
+
+            jugadores_partido = []
+
+            # Alineaciones iniciales
+            alineaciones = partido[partido['type'] == 'Starting XI']
+            for _, row in alineaciones.iterrows():
+                tactics = row.get('tactics', {})
+                lineup = tactics.get('lineup', [])
+                if isinstance(lineup, list):
+                    for jugador in lineup:
+                        if isinstance(jugador, dict) and 'player' in jugador:
+                            jugadores_partido.append({
+                                'player_id': jugador['player']['id'],
+                                'minuto_inicio': 0,
+                                'minuto_fin': 90
+                            })
+
+            # Sustituciones
+            sustituciones = partido[partido['type'] == 'Substitution']
+            for _, row in sustituciones.iterrows():
+                jugador_fuera = row.get('player')
+                sustitucion = row.get('substitution', {})
+                jugador_dentro = sustitucion.get('replacement')
+                minuto_sustitucion = row.get('minute', 0)
+
+                if isinstance(jugador_fuera, dict) and isinstance(jugador_dentro, dict):
+                    for jugador in jugadores_partido:
+                        if jugador['player_id'] == jugador_fuera['id']:
+                            jugador['minuto_fin'] = minuto_sustitucion
+
+                    jugadores_partido.append({
+                        'player_id': jugador_dentro['id'],
+                        'minuto_inicio': minuto_sustitucion,
+                        'minuto_fin': 90
+                    })
+
+            for jugador in jugadores_partido:
+                minutos = jugador['minuto_fin'] - jugador['minuto_inicio']
+                pid = jugador['player_id']
+
+                if pid not in minutos_totales:
+                    minutos_totales[pid] = 0
+                minutos_totales[pid] += minutos
+
+            if (i + 1) % 20 == 0:
+                print(f"✅ Procesados {i+1}/{len(lista_partidos)} partidos")
+
+        except Exception as e:
+            print(f"❌ Error en partido {match_id}: {e}")
+            continue
+
+    # Añadir los minutos al dataframe original de jugadores
+    df_jugadores = df_jugadores.copy()
+    df_jugadores["minutos_jugados"] = df_jugadores["player_id"].map(minutos_totales).fillna(0).astype(int)
+
+    return df_jugadores
+
+def estadisticas_tiro_basicas_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade estadísticas de tiro básicas por jugador:
+    - goles_marcados
+    - tiros_intentados
+    - tiros_utiles
+    - tiros_a_puerta
+    - tiros_fuera
+    - tiros_bloqueados
+    - porcentaje_tiros_a_puerta
+    """
+    df_jugadores = df_jugadores.copy()
+
+    df_jugadores['goles_marcados'] = 0
+    df_jugadores['tiros_intentados'] = 0
+    df_jugadores['tiros_utiles'] = 0
+    df_jugadores['tiros_a_puerta'] = 0
+    df_jugadores['tiros_fuera'] = 0
+    df_jugadores['tiros_bloqueados'] = 0
+    df_jugadores['porcentaje_tiros_a_puerta'] = 0.0
+
+    for jugador in df_jugadores['player']:
+        df_player = df_eventos[df_eventos['player'] == jugador]
+
+        # Asegurarse de que existan las columnas necesarias
+        if 'shot_outcome' not in df_player.columns:
+            continue
+
+        df_shots = df_player[df_player['type'] == 'Shot']
+
+        goles = df_shots[df_shots['shot_outcome'] == 'Goal'].shape[0]
+        intentos = df_shots.shape[0]
+        utiles = df_shots[df_shots['shot_outcome'] != 'Blocked'].shape[0]
+        a_puerta = df_shots[df_shots['shot_outcome'].isin(['Goal', 'Saved', 'Saved To Post'])].shape[0]
+        fuera = df_shots[df_shots['shot_outcome'].isin(['Off T', 'Wayward', 'Post'])].shape[0]
+        bloqueados = df_shots[df_shots['shot_outcome'] == 'Blocked'].shape[0]
+        porcentaje = round(100 * a_puerta / utiles, 2) if utiles > 0 else 0.0
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'goles_marcados'] = goles
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'tiros_intentados'] = intentos
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'tiros_utiles'] = utiles
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'tiros_a_puerta'] = a_puerta
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'tiros_fuera'] = fuera
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'tiros_bloqueados'] = bloqueados
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_tiros_a_puerta'] = porcentaje
+
+    return df_jugadores
+
+def estadisticas_xg_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade columnas de estadísticas de expected goals (xG) al DataFrame de jugadores:
+    - xg_total
+    - xg_promedio
+    - diferencia_goles_xg
+    """
+    df_jugadores = df_jugadores.copy()
+    df_jugadores['xg_total'] = 0.0
+    df_jugadores['xg_promedio'] = 0.0
+    df_jugadores['diferencia_goles_xg'] = 0.0
+
+    for jugador in df_jugadores['player']:
+        df_player = df_eventos[df_eventos['player'] == jugador]
+        df_shots = df_player[df_player['type'] == 'Shot']
+
+        if df_shots.empty or 'shot_statsbomb_xg' not in df_shots.columns:
+            continue
+
+        xg_total = df_shots['shot_statsbomb_xg'].sum()
+        xg_promedio = df_shots['shot_statsbomb_xg'].mean()
+        goles_reales = df_shots[df_shots['shot_outcome'] == 'Goal'].shape[0]
+        diferencia = round(goles_reales - xg_total, 2)
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'xg_total'] = xg_total
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'xg_promedio'] = xg_promedio
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'diferencia_goles_xg'] = diferencia
+
+    return df_jugadores
+
+def estadisticas_tiro_area_y_penalti_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade columnas al DataFrame de jugadores con estadísticas de tiros desde el área y penaltis:
+    - goles_penalti
+    - tiros_dentro_area
+    - tasa_conversion_dentro_area
+    """
+    df_jugadores = df_jugadores.copy()
+
+    df_jugadores['goles_penalti'] = 0
+    df_jugadores['tiros_dentro_area'] = 0
+    df_jugadores['tasa_conversion_dentro_area'] = 0.0
+
+    def es_dentro_area(loc):
+        if isinstance(loc, list) and len(loc) == 2:
+            x, y = loc
+            return x >= 102 and 18 <= y <= 62
+        return False
+
+    for jugador in df_jugadores['player']:
+        df_player = df_eventos[df_eventos['player'] == jugador]
+        df_shots = df_player[df_player['type'] == 'Shot']
+
+        # Si no hay columnas necesarias, salta al siguiente jugador
+        if df_shots.empty or 'shot_outcome' not in df_shots.columns or 'shot_type' not in df_shots.columns:
+            continue
+
+        # Goles desde penalti
+        goles_penalti = df_shots[
+            (df_shots['shot_type'] == 'Penalty') & 
+            (df_shots['shot_outcome'] == 'Goal')
+        ].shape[0]
+
+        # Tiros dentro del área
+        tiros_area = df_shots[df_shots['location'].apply(es_dentro_area)]
+        tiros_dentro_area = tiros_area.shape[0]
+
+        # Tasa de conversión dentro del área
+        goles_area = tiros_area[tiros_area['shot_outcome'] == 'Goal']
+        tasa_conversion = round(100 * goles_area.shape[0] / tiros_dentro_area, 2) if tiros_dentro_area > 0 else 0.0
+
+        # Guardar resultados
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'goles_penalti'] = goles_penalti
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'tiros_dentro_area'] = tiros_dentro_area
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'tasa_conversion_dentro_area'] = tasa_conversion
+
+    return df_jugadores
+
+def porcentaje_goles_por_parte_cuerpo_por_jugador(df_eventos, df_jugadores):
+    df_jugadores = df_jugadores.copy()
+
+    df_jugadores['goles_izquierda_pct'] = 0.0
+    df_jugadores['goles_derecha_pct'] = 0.0
+    df_jugadores['goles_cabeza_pct'] = 0.0
+
+    for jugador in df_jugadores['player']:
+        df_player = df_eventos[(df_eventos['player'] == jugador) & 
+                               (df_eventos['type'] == 'Shot') & 
+                               (df_eventos['shot_outcome'] == 'Goal')]
+
+        total = df_player.shape[0]
+        if total == 0:
+            continue
+
+        porcentaje = df_player['shot_body_part'].value_counts(normalize=True) * 100
+
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'goles_izquierda_pct'] = round(porcentaje.get('Left Foot', 0.0), 2)
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'goles_derecha_pct'] = round(porcentaje.get('Right Foot', 0.0), 2)
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'goles_cabeza_pct'] = round(porcentaje.get('Head', 0.0), 2)
+
+    return df_jugadores
+
+def goles_de_falta_por_jugador(df_eventos, df_jugadores):
+    df_jugadores = df_jugadores.copy()
+    df_jugadores['goles_de_falta'] = 0
+
+    for jugador in df_jugadores['player']:
+        df_player = df_eventos[(df_eventos['player'] == jugador) & 
+                               (df_eventos['type'] == 'Shot') & 
+                               (df_eventos['shot_type'] == 'Free Kick') & 
+                               (df_eventos['shot_outcome'] == 'Goal')]
+
+        goles = df_player.shape[0]
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'goles_de_falta'] = goles
 
     return df_jugadores

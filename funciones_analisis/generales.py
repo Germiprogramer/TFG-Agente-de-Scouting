@@ -51,3 +51,63 @@ def ordenar_partidos_cronologicamente(df_partidos):
     df_ordenado = df.sort_values(by='fecha_hora').reset_index(drop=True)
     
     return df_ordenado
+
+
+from statsbombpy import sb
+import pandas as pd
+
+def jugadores_faltantes_en_df(lista_match_ids, df_jugadores):
+    """
+    Obtiene todos los jugadores que han jugado al menos un partido, y los compara
+    con un DataFrame de jugadores.
+
+    Parámetros:
+    - lista_match_ids: lista de ints, ids de partidos
+    - df_jugadores: DataFrame con columnas 'player_id' y 'player'
+
+    Retorna:
+    - DataFrame con jugadores que han jugado pero no están en df_jugadores
+    """
+
+    jugadores_partidos = set()
+
+    for i, match_id in enumerate(lista_match_ids):
+        try:
+            partido = sb.events(match_id=match_id)
+
+            # Titulares
+            alineaciones = partido[partido['type'] == 'Starting XI']
+            for _, row in alineaciones.iterrows():
+                lineup = row.get('tactics', {}).get('lineup', [])
+                for jugador in lineup:
+                    if isinstance(jugador, dict) and 'player' in jugador:
+                        jugadores_partidos.add((
+                            jugador['player']['id'],
+                            jugador['player']['name']
+                        ))
+
+            # Sustituciones
+            sustituciones = partido[partido['type'] == 'Substitution']
+            for _, row in sustituciones.iterrows():
+                fuera = row.get('player')
+                dentro = row.get('substitution', {}).get('replacement')
+
+                if isinstance(fuera, dict):
+                    jugadores_partidos.add((fuera['id'], fuera['name']))
+                if isinstance(dentro, dict):
+                    jugadores_partidos.add((dentro['id'], dentro['name']))
+
+            if (i + 1) % 20 == 0:
+                print(f"✅ Procesados {i+1}/{len(lista_match_ids)} partidos")
+
+        except Exception as e:
+            print(f"❌ Error en partido {match_id}: {e}")
+            continue
+
+    # Convertir a DataFrame
+    df_partido = pd.DataFrame(jugadores_partidos, columns=['player_id', 'player'])
+
+    # Buscar los que faltan
+    df_faltantes = df_partido[~df_partido['player_id'].isin(df_jugadores['player_id'])]
+
+    return df_faltantes
