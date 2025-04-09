@@ -1045,3 +1045,236 @@ def goles_de_falta_por_jugador(df_eventos, df_jugadores):
         df_jugadores.loc[df_jugadores['player'] == jugador, 'goles_de_falta'] = goles
 
     return df_jugadores
+
+def estadisticas_porteros_por_jugador(df_eventos, df_jugadores):
+    """
+    Añade estadísticas de porteros al DataFrame de jugadores:
+    - paradas_reales
+    - porcentaje_paradas_exitosas
+    - indice_dominio_aereo
+    - penaltis_parados
+    - porcentaje_penaltis_parados
+    - keeper_sweeper_acciones
+    """
+    df_jugadores = df_jugadores.copy()
+
+    df_jugadores['paradas_reales'] = 0
+    df_jugadores['porcentaje_paradas_exitosas'] = 0.0
+    df_jugadores['indice_dominio_aereo'] = 0.0
+    df_jugadores['penaltis_parados'] = 0
+    df_jugadores['porcentaje_penaltis_parados'] = 0.0
+    df_jugadores['keeper_sweeper_acciones'] = 0
+
+    for jugador in df_jugadores['player']:
+        df_player = df_eventos[df_eventos['player'] == jugador]
+
+        # Asegurarse de que las columnas están limpias
+        if df_player.empty or 'goalkeeper_type' not in df_player.columns:
+            continue
+
+        tipos_validos = [
+            'Shot Saved', 'Shot Saved Off T', 'Shot Saved To Post',
+            'Saved To Post', 'Penalty Saved To Post', 'Penalty Saved'
+        ]
+        outcomes_validos = [
+            'Success', 'In Play Safe', 'In Play Danger',
+            'Saved Twice', 'Touched Out', 'Won'
+        ]
+
+        # 1. Paradas reales
+        paradas = df_player[
+            df_player['goalkeeper_type'].isin(tipos_validos) &
+            df_player['goalkeeper_outcome'].isin(outcomes_validos)
+        ].shape[0]
+
+        # 2. Porcentaje paradas exitosas
+        tipos_parada = tipos_validos
+        tipos_gol = ['Goal Conceded', 'Penalty Conceded']
+
+        n_paradas = df_player[df_player['goalkeeper_type'].isin(tipos_parada)].shape[0]
+        n_goles = df_player[df_player['goalkeeper_type'].isin(tipos_gol)].shape[0]
+        total_tiros = n_paradas + n_goles
+        pct_paradas = round(100 * n_paradas / total_tiros, 2) if total_tiros > 0 else 0.0
+
+        # 3. Dominio aéreo
+        claims = df_player[df_player['goalkeeper_outcome'] == 'Claim'].shape[0]
+        punches = df_player[df_player['goalkeeper_type'] == 'Punch'].shape[0]
+        collected_twice = df_player[df_player['goalkeeper_outcome'] == 'Collected Twice'].shape[0]
+        aerial_types = ['Collected', 'Punch', 'Claim', 'Collected Twice']
+        fails_aereos = df_player[
+            (df_player['goalkeeper_outcome'] == 'Fail') &
+            df_player['goalkeeper_type'].isin(aerial_types)
+        ].shape[0]
+        idap = (1.0 * claims) + (0.7 * punches) + (0.3 * collected_twice) - (1.0 * fails_aereos)
+        idap = round(idap, 2)
+
+        # 4. Penaltis parados
+        paradas_penalti = ['Penalty Saved', 'Penalty Saved To Post']
+        penaltis_parados = df_player[
+            df_player['goalkeeper_type'].isin(paradas_penalti)
+        ].shape[0]
+
+        # 5. % penaltis parados
+        tipos_penalti = ['Penalty Faced', 'Penalty Saved', 'Penalty Saved To Post', 'Penalty Conceded']
+        df_penales = df_player[df_player['goalkeeper_type'].isin(tipos_penalti)]
+        total_penales = df_penales.shape[0]
+        pct_penales = round((penaltis_parados / total_penales) * 100, 2) if total_penales > 0 else 0.0
+
+        # 6. Keeper Sweeper
+        keeper_sweeper = df_player[df_player['goalkeeper_type'] == 'Keeper Sweeper'].shape[0]
+
+        # Guardar en el dataset
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'paradas_reales'] = paradas
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_paradas_exitosas'] = pct_paradas
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'indice_dominio_aereo'] = idap
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'penaltis_parados'] = penaltis_parados
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_penaltis_parados'] = pct_penales
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'keeper_sweeper_acciones'] = keeper_sweeper
+
+    return df_jugadores
+
+def estadisticas_avanzadas_portero_por_jugador(df_eventos, df_jugadores, df_partidos):
+    """
+    Añade estadísticas avanzadas de portero al DataFrame de jugadores:
+    - PSxG (post-shot xG recibido)
+    - OPA (acciones defensivas fuera del área)
+    - imbatibilidades (porterías a cero)
+    """
+    from collections import defaultdict
+
+    df_jugadores = df_jugadores.copy()
+    df_jugadores['PSxG'] = 0.0
+    df_jugadores['OPA'] = 0
+    df_jugadores['imbatibilidades'] = 0
+
+    # 1. PSxG
+    tiros = df_eventos[
+        (df_eventos['type'] == 'Shot') &
+        (df_eventos['shot_outcome'].isin(['Goal', 'Saved', 'Saved To Post']))
+    ][['match_id', 'team', 'shot_statsbomb_xg']].copy()
+
+    porteros = df_eventos[df_eventos['type'] == 'Goal Keeper'][['match_id', 'player', 'team']].drop_duplicates()
+
+    psxg_dict = defaultdict(float)
+
+    for _, tiro in tiros.iterrows():
+        match_id = tiro['match_id']
+        equipo_tirador = tiro['team']
+        xg = tiro['shot_statsbomb_xg']
+        porteros_partido = porteros[(porteros['match_id'] == match_id) & (porteros['team'] != equipo_tirador)]
+        if not porteros_partido.empty:
+            portero = porteros_partido.iloc[0]['player']
+            psxg_dict[portero] += xg
+
+    for jugador in df_jugadores['player']:
+        if jugador in psxg_dict:
+            df_jugadores.loc[df_jugadores['player'] == jugador, 'PSxG'] = round(psxg_dict[jugador], 2)
+
+    # 2. OPA
+    acciones = df_eventos[
+        (df_eventos['player'].notnull()) &
+        (df_eventos['type'].isin(['Pressure', 'Ball Recovery', 'Interception', 'Duel']))
+    ].copy()
+
+    def fuera_del_area(loc):
+        if isinstance(loc, list) and len(loc) == 2:
+            x, y = loc
+            return x < 102 or y < 18 or y > 62
+        return False
+
+    acciones = acciones[acciones['location'].apply(fuera_del_area)]
+    opa_agrupado = acciones.groupby('player').size().reset_index(name='OPA')
+
+    for _, row in opa_agrupado.iterrows():
+        jugador = row['player']
+        valor = row['OPA']
+        df_jugadores.loc[df_jugadores['player'] == jugador, 'OPA'] = valor
+
+    # 3. Imbatibilidades
+    imbatibilidades = defaultdict(int)
+    match_ids = df_partidos['match_id'].unique()
+
+    for match_id in match_ids:
+        try:
+            eventos_partido = df_eventos[df_eventos['match_id'] == match_id]
+            alineaciones = eventos_partido[eventos_partido['type'] == 'Starting XI']
+            partido_info = df_partidos[df_partidos['match_id'] == match_id].iloc[0]
+            home_team = partido_info['home_team']
+            away_team = partido_info['away_team']
+            home_goals = partido_info['home_score']
+            away_goals = partido_info['away_score']
+
+            for _, row in alineaciones.iterrows():
+                equipo = row['team']
+                es_local = equipo == home_team
+                goles_en_contra = away_goals if es_local else home_goals
+                if goles_en_contra == 0:
+                    lineup = row.get('tactics', {}).get('lineup', [])
+                    for jugador in lineup:
+                        if isinstance(jugador, dict):
+                            if jugador['position']['name'] == 'Goalkeeper':
+                                pid = jugador['player']['id']
+                                imbatibilidades[pid] += 1
+        except:
+            continue
+
+    for pid, imba in imbatibilidades.items():
+        df_jugadores.loc[df_jugadores['player_id'] == pid, 'imbatibilidades'] = imba
+
+    return df_jugadores
+
+def añadir_goles_encajados_por_portero(df_eventos, df_jugadores):
+    """
+    Añade columna 'goles_encajados' al df_jugadores.
+    Se basa en tiros que terminan en gol, asignando el gol al portero rival del equipo que disparó.
+    """
+    from collections import defaultdict
+
+    df_jugadores = df_jugadores.copy()
+    df_jugadores["goles_encajados"] = 0
+
+    # Goles marcados por jugadores
+    tiros_gol = df_eventos[
+        (df_eventos["type"] == "Shot") &
+        (df_eventos["shot_outcome"] == "Goal")
+    ][["match_id", "team"]]
+
+    # Eventos de portero (para identificar porteros por equipo y partido)
+    porteros = df_eventos[df_eventos["type"] == "Goal Keeper"]
+    porteros = porteros[["match_id", "team", "player"]].drop_duplicates()
+
+    goles_por_portero = defaultdict(int)
+
+    for _, row in tiros_gol.iterrows():
+        match_id = row["match_id"]
+        equipo_tirador = row["team"]
+
+        portero_rival = porteros[
+            (porteros["match_id"] == match_id) & (porteros["team"] != equipo_tirador)
+        ]
+
+        if not portero_rival.empty:
+            portero = portero_rival.iloc[0]["player"]
+            goles_por_portero[portero] += 1
+
+    for player, goles in goles_por_portero.items():
+        df_jugadores.loc[df_jugadores["player"] == player, "goles_encajados"] = goles
+
+    return df_jugadores
+
+def añadir_diferencia_PSxG_y_goles(df_jugadores):
+    """
+    Añade una columna 'diferencia_PSxG_goles' que compara PSxG y goles encajados:
+    positivo si el portero ha parado más de lo esperado (bueno),
+    negativo si ha encajado más de lo esperado (malo).
+    """
+    df_jugadores = df_jugadores.copy()
+
+    if 'PSxG' not in df_jugadores.columns or 'goles_encajados' not in df_jugadores.columns:
+        raise ValueError("Faltan las columnas 'PSxG' o 'goles_encajados' en el DataFrame.")
+
+    df_jugadores["diferencia_PSxG_goles"] = round(
+        df_jugadores["PSxG"] - df_jugadores["goles_encajados"], 2
+    )
+
+    return df_jugadores
