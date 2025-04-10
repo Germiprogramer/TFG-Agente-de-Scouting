@@ -552,6 +552,17 @@ def estadisticas_pases_progresivos_por_jugador(df_eventos, df_jugadores):
         df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_pases_progresivos_completados'] = round(porcentaje, 2)
 
     return df_jugadores
+def es_pase_en_tercio_final(loc):
+    if isinstance(loc, list) and len(loc) == 2:
+        x, y = loc
+        return x >= 80
+    return False
+
+def es_pase_al_area(loc):
+    if isinstance(loc, list) and len(loc) == 2:
+        x, y = loc
+        return x >= 102 and 18 <= y <= 62
+    return False
 
 def estadisticas_pases_zonas_peligrosas_por_jugador(df_eventos, df_jugadores):
     """
@@ -560,40 +571,39 @@ def estadisticas_pases_zonas_peligrosas_por_jugador(df_eventos, df_jugadores):
     df_jugadores = df_jugadores.copy()
     df = df_eventos[df_eventos['type'] == 'Pass'].copy()
 
-    # Inicializar columnas
+    # Asegurar que pass_outcome es accesible como string (por si viene como dict)
+    if 'pass_outcome' in df.columns:
+        df['pass_outcome'] = df['pass_outcome'].apply(lambda x: x.get('name') if isinstance(x, dict) else x)
+
+    # Añadir columnas nuevas al DataFrame
     df_jugadores['pases_tercio_final'] = 0
     df_jugadores['porcentaje_tercio_final_completados'] = 0.0
     df_jugadores['pases_al_area'] = 0
     df_jugadores['porcentaje_pases_area_completados'] = 0.0
 
-    def es_en_area(loc):
-        if not isinstance(loc, list):
-            return False
-        x, y = loc
-        return x >= 102 and 18 <= y <= 62
-
     for jugador in df_jugadores['player']:
         df_player = df[df['player'] == jugador]
 
-        # Tercio final
-        en_tercio = df_player[df_player['pass_end_location'].apply(lambda loc: isinstance(loc, list) and loc[0] >= 80)]
+        # --- Tercio final ---
+        en_tercio = df_player[df_player['pass_end_location'].apply(es_pase_en_tercio_final)]
         total_tercio = en_tercio.shape[0]
-        completados_tercio = en_tercio['pass_outcome'].isnull().sum()
+        completados_tercio = en_tercio['pass_outcome'].isnull().sum() if 'pass_outcome' in en_tercio.columns else 0
         porcentaje_tercio = 100 * completados_tercio / total_tercio if total_tercio > 0 else 0
 
-        # Área rival
-        en_area = df_player[df_player['pass_end_location'].apply(es_en_area)]
+        # --- Área rival ---
+        en_area = df_player[df_player['pass_end_location'].apply(es_pase_al_area)]
         total_area = en_area.shape[0]
-        completados_area = en_area['pass_outcome'].isnull().sum()
+        completados_area = en_area['pass_outcome'].isnull().sum() if 'pass_outcome' in en_area.columns else 0
         porcentaje_area = 100 * completados_area / total_area if total_area > 0 else 0
 
-        # Asignar al jugador
+        # Asignar a jugador
         df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_tercio_final'] = total_tercio
         df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_tercio_final_completados'] = round(porcentaje_tercio, 2)
         df_jugadores.loc[df_jugadores['player'] == jugador, 'pases_al_area'] = total_area
         df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_pases_area_completados'] = round(porcentaje_area, 2)
 
     return df_jugadores
+
 
 import numpy as np
 
