@@ -1288,3 +1288,163 @@ def añadir_diferencia_PSxG_y_goles(df_jugadores):
     )
 
     return df_jugadores
+
+def renombrar_columnas_estadisticas(df):
+    """
+    Renombra las columnas de un DataFrame de estadísticas de jugadores usando el diccionario especificado.
+    """
+    columnas_traduccion = {
+        'tackles_exitosos_totales': 'tackles_successful',
+        'porcentaje_tackles_exitosos': 'tackle_success_rate',
+        'intercepciones_exitosas_totales': 'interceptions',
+        'porcentaje_intercepciones_exitosas': 'interception_success_rate',
+        'despejes_totales': 'clearances',
+        'bloqueos_totales': 'blocks',
+        'despejes_cabeza_totales': 'head_clearances',
+        'despejes_cabeza_ganados': 'head_clearances_won',
+        'porcentaje_despejes_cabeza_ganados': 'head_clearance_success_rate',
+        'veces_regateado': 'times_dribbled_past',
+        'recuperaciones': 'ball_recoveries',
+        'recuperaciones_ofensivas': 'offensive_recoveries',
+        'presiones': 'pressures',
+        'counterpress': 'counterpress',
+        'pases_totales': 'total_passes',
+        'pases_completados': 'completed_passes',
+        'pases_incompletos': 'incomplete_passes',
+        'pases_fuera': 'passes_out',
+        'pases_fuera_de_juego': 'offside_passes',
+        'pases_fallidos': 'failed_passes',
+        'porcentaje_pases_completados': 'pass_completion_rate',
+        'media_longitud_pase': 'avg_pass_length',
+        'media_angulo_pase': 'avg_pass_angle',
+        'ground_passes': 'ground_passes',
+        'low_passes': 'low_passes',
+        'high_passes': 'high_passes',
+        'porcentaje_ground': 'ground_pass_percentage',
+        'porcentaje_low': 'low_pass_percentage',
+        'porcentaje_high': 'high_pass_percentage',
+        'pases_miscommunication': 'miscommunication_passes',
+        'pases_deflected': 'deflected_passes',
+        'total_crosses': 'crosses_total',
+        'crosses_completados': 'crosses_completed',
+        'cutbacks': 'cutbacks_total',
+        'cutbacks_completados': 'cutbacks_completed',
+        'switches': 'switches_total',
+        'switches_completados': 'switches_completed',
+        'through_balls': 'through_balls_total',
+        'through_balls_completados': 'through_balls_completed',
+        'total_pases_con_body_part': 'passes_with_body_part',
+        'porcentaje_cabeza': 'head_pass_percentage',
+        'porcentaje_derecho': 'right_foot_pass_percentage',
+        'porcentaje_izquierdo': 'left_foot_pass_percentage',
+        'porcentaje_derecho_acertado': 'right_foot_pass_accuracy',
+        'porcentaje_izquierdo_acertado': 'left_foot_pass_accuracy',
+        'pases_campo_propio': 'passes_own_half',
+        'pases_campo_rival': 'passes_opposition_half',
+        'porcentaje_pases_campo_rival': 'passes_from_opposition_half_percentage',
+        'pases_progresivos_wyscout': 'progressive_passes',
+        'pases_progresivos_completados_wyscout': 'progressive_passes_completed',
+        'porcentaje_pases_progresivos_completados': 'progressive_passes_accuracy',
+        'pases_tercio_final': 'passes_final_third',
+        'porcentaje_tercio_final_completados': 'passes_final_third_accuracy',
+        'pases_al_area': 'passes_to_box',
+        'porcentaje_pases_area_completados': 'passes_to_box_accuracy',
+        'carries': 'carries',
+        'carries_progresivos': 'progressive_carries',
+        'porcentaje_carries_progresivos': 'progressive_carries_rate',
+        'distancia_media_carries': 'avg_carry_distance',
+        'goal_assists': 'goal_assists',
+        'key_passes': 'key_passes',
+        'chances_created': 'chances_created',
+        'tiros_cabeza_totales': 'headed_shots_total',
+        'tiros_cabeza_en_duelo': 'headed_shots_after_duel',
+        'porcentaje_tiros_cabeza_en_duelo': 'headed_shot_duel_rate',
+        'duelos_totales': 'duels_total',
+        'duelos_ganados': 'duels_won',
+        'porcentaje_duelos_ganados': 'duel_success_rate',
+        'tarjetas_amarillas': 'yellow_cards',
+        'expulsiones': 'red_cards',
+        'faltas_provocadas': 'fouls_won',
+        'faltas_cometidas': 'fouls_committed',
+        'penaltis_provocados': 'penalties_won',
+        'penaltis_cometidos': 'penalties_conceded',
+        'penaltis_parados': 'penalties_saved',
+        'porcentaje_penaltis_parados': 'penalty_save_percentage',
+        'imbatibilidades': 'clean_sheets',
+        'paradas_reales': 'saves',
+        'porcentaje_paradas_exitosas': 'save_percentage',
+        'indice_dominio_aereo': 'aerial_dominance_index',
+        'keeper_sweeper_acciones': 'keeper_sweeper',
+        'PSxG': 'PSxG',
+        'OPA': 'OPA',
+        'goles_encajados': 'goals_conceded',
+        'diferencia_PSxG_goles': 'psxg_minus_goals_conceded',
+        'xg_total': 'xg_total',
+        'xg_promedio': 'avg_xg',
+        'diferencia_goles_xg': 'goals_minus_xg',
+        'goles_marcados': 'goals_scored',
+        'goles_penalti': 'penalty_goals',
+        'goles_derecha_pct': 'right_foot_goal_percentage',
+        'goles_izquierda_pct': 'left_foot_goal_percentage',
+        'goles_cabeza_pct': 'headed_goal_percentage',
+        'minutos_jugados': 'minutes_played',
+        'player': 'player_name',
+        'player_id': 'player_id',
+        'competicion': 'competition',
+        'ultimo_equipo': 'team',
+        'ultimo_team_id': 'team_id',
+        'regates_completados': 'dribbles_completed',
+        'porcentaje_regates_completados': 'dribble_success_rate',
+        'tiros_intentados': 'shots_total',
+        'tiros_utiles': 'non_blocked_shots',
+        'tiros_a_puerta': 'shots_on_target',
+        'tiros_fuera': 'shots_off_target',
+        'tiros_bloqueados': 'blocked_shots',
+        'porcentaje_tiros_a_puerta': 'shot_accuracy',
+        'tiros_dentro_area': 'shots_inside_box',
+        'tasa_conversion_dentro_area': 'conversion_rate_inside_box',
+        'goles_de_falta': 'free_kick_goals'
+    }
+
+    return df.rename(columns=columnas_traduccion)
+
+def procesar_dataset_estadisticas(df):
+    """
+    - Elimina columnas marcadas como 'Eliminar'
+    - Normaliza por 90 minutos las columnas marcadas como 'Normalizar'
+    """
+    # Columnas a eliminar según documento
+    columnas_eliminar = [
+        'avg_pass_angle', 'miscommunication_passes', 'passes_with_body_part', 'OPA'
+    ]
+
+    # Columnas a normalizar (por 90 minutos)
+    columnas_normalizar = [
+        'tackles_successful', 'interceptions', 'clearances', 'blocks', 'head_clearances',
+        'head_clearances_won', 'times_dribbled_past', 'ball_recoveries', 'offensive_recoveries',
+        'pressures', 'counterpress', 'total_passes', 'completed_passes', 'incomplete_passes',
+        'passes_out', 'offside_passes', 'failed_passes', 'ground_passes', 'low_passes',
+        'high_passes', 'deflected_passes', 'crosses_total',
+        'crosses_completed', 'cutbacks_total', 'cutbacks_completed', 'switches_total',
+        'switches_completed', 'through_balls_total', 'through_balls_completed',
+        'passes_own_half', 'passes_opposition_half',
+        'progressive_passes', 'progressive_passes_completed', 'passes_final_third',
+        'passes_to_box', 'carries', 'progressive_carries', 'dribbles_completed', 'duels_total',
+        'duels_won', 'fouls_won', 'fouls_committed', 'penalties_won', 'penalties_conceded',
+        'penalties_saved', 'saves', 'keeper_sweeper', 'shots_total', 'non_blocked_shots',
+        'shots_on_target', 'shots_off_target', 'blocked_shots', 'shots_inside_box',
+        'free_kick_goals', 'goals_scored', 'penalty_goals', 'goal_assists', 'key_passes',
+        'chances_created', 'goals_conceded', 'xg_total', 'goals_minus_xg', 'PSxG', 'psxg_minus_goals_conceded', 'yellow_cards', 'red_cards'
+    ]
+
+    df = df.copy()
+
+    # Eliminar columnas
+    df.drop(columns=[col for col in columnas_eliminar if col in df.columns], inplace=True)
+
+    # Normalizar por 90 minutos
+    for col in columnas_normalizar:
+        if col in df.columns:
+            df[col + '_per90'] = df[col] / df['minutes_played'] * 90
+
+    return df
