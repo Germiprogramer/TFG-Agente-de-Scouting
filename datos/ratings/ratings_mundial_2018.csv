@@ -1,0 +1,570 @@
+,avg_rating,player,score,revisar,player_id,ultimo_equipo,ultimo_team_id,posiciones,partidos_jugados
+0,6.4433333333333325,Aaron Mooy,100.0,False,3281.0,Australia,792.0,"['Left Center Midfield', 'Right Center Midfield']",3.0
+1,5.935833333333334,Abdalla Mahmoud El Said Bekhit,69.56521739130434,True,5251.0,Egypt,774.0,"['Center Attacking Midfield', 'Left Center Midfield', 'Right Wing']",3.0
+2,5.9675,Abdiel Arroyo Molinar,76.47058823529412,True,6140.0,Panama,798.0,"['Right Wing', 'Left Center Midfield']",2.0
+3,5.0625,Abdullah Ibrahim Al Maiouf,68.18181818181819,True,5189.0,Saudi Arabia,799.0,['Goalkeeper'],1.0
+4,6.224166666666666,Abdullah Ibrahim Otayf,77.77777777777779,True,5173.0,Saudi Arabia,799.0,"['Left Center Midfield', 'Center Defensive Midfield']",3.0
+5,5.8475,Abdullahi Shehu,100.0,False,5471.0,Nigeria,775.0,['Right Back'],1.0
+6,5.6825,Abel Enrique Aguilar Tapia,63.1578947368421,True,6192.0,Colombia,769.0,['Right Defensive Midfield'],1.0
+7,5.754545454545454,Achraf Hakimi Mouh,83.87096774193549,True,5245.0,Morocco,788.0,"['Left Back', 'Left Wing Back']",3.0
+8,5.656000000000001,Adem Ljajić,90.9090909090909,False,5587.0,Serbia,786.0,"['Left Wing', 'Center Attacking Midfield', 'Left Midfield']",3.0
+9,5.9425,Adnan Januzaj,100.0,False,6330.0,Belgium,782.0,"['Left Wing', 'Right Wing']",1.0
+10,5.5725,Adolfo Abdiel Machado,80.0,True,6346.0,Panama,798.0,['Right Back'],1.0
+11,5.96,André Miguel Valente Silva,57.89473684210527,True,5218.0,Portugal,780.0,"['Right Center Forward', 'Center Forward']",3.0
+12,5.62,Mohamed Salah,58.33333333333333,True,3531.0,Egypt,774.0,"['Right Wing', 'Right Center Forward', 'Center Attacking Midfield', 'Center Forward']",2.0
+13,6.1025,Ahmed Elsayed Ali Elsayed Hegazy,50.0,True,4063.0,Egypt,774.0,['Left Center Back'],3.0
+14,5.595000000000001,Ahmed Khalil,100.0,False,6348.0,Tunisia,777.0,['Left Center Midfield'],1.0
+15,6.438,Ahmed Musa,100.0,False,5473.0,Nigeria,775.0,"['Right Center Forward', 'Left Center Forward', 'Left Defensive Midfield']",3.0
+16,6.38,Alan Dzagoev,100.0,False,5180.0,Russia,796.0,['Center Attacking Midfield'],2.0
+17,4.4399999999999995,Albert Gudmundsson,100.0,False,6306.0,Iceland,793.0,['Right Center Forward'],1.0
+18,5.87375,Alberto Junior Rodríguez Valdelomar,61.53846153846154,True,5532.0,Peru,784.0,['Left Center Back'],2.0
+19,5.755,Albin Ekdal,100.0,False,5624.0,Sweden,790.0,['Left Center Midfield'],5.0
+20,5.98,Aleksandar Kolarov,100.0,False,5596.0,Serbia,786.0,['Left Back'],3.0
+21,5.913333333333334,Aleksandar Mitrović,94.73684210526316,False,4269.0,Serbia,786.0,['Center Forward'],3.0
+22,6.0,Aleksandar Prijović,94.73684210526316,False,5583.0,Serbia,786.0,['Center Forward'],1.0
+23,5.95,Aleksandr Erokhin,100.0,False,6354.0,Russia,796.0,['Right Wing'],2.0
+24,6.385000000000001,Aleksandr Golovin,100.0,False,5177.0,Russia,796.0,"['Left Center Forward', 'Right Center Midfield', 'Left Midfield', 'Center Attacking Midfield']",4.0
+25,6.103125,Aleksandr Samedov,100.0,False,5182.0,Russia,796.0,"['Right Wing', 'Right Center Forward', 'Left Center Midfield', 'Right Midfield']",5.0
+26,5.6625,Aleksey Miranchuk,100.0,False,6299.0,Russia,796.0,"['Center Attacking Midfield', 'Left Wing']",1.0
+27,5.861666666666667,Alex Iwobi,100.0,False,3647.0,Nigeria,775.0,"['Center Attacking Midfield', 'Left Defensive Midfield', 'Right Midfield']",3.0
+28,5.8308333333333335,Alfreð Finnbogason,94.44444444444444,False,5514.0,Iceland,793.0,"['Right Center Forward', 'Center Forward']",3.0
+29,5.7875,Alfred John Momar N''Diaye,70.0,True,5671.0,Senegal,787.0,"['Left Center Midfield', 'Center Defensive Midfield']",2.0
+30,5.7075,Ali Gabr,100.0,False,5254.0,Egypt,774.0,['Right Center Back'],3.0
+31,5.9,Ali Albulayhi,83.87096774193549,True,5715.0,Saudi Arabia,799.0,['Left Center Back'],1.0
+32,5.185,Ali Maâloul,90.9090909090909,False,5647.0,Tunisia,777.0,"['Left Back', 'Left Wing Back']",2.0
+33,5.781818181818182,Alireza Safar Beiranvand,85.71428571428572,False,5227.0,Iran,797.0,['Goalkeeper'],3.0
+34,5.81,Alireza Jahanbakhsh,100.0,False,5239.0,Iran,797.0,"['Right Midfield', 'Left Wing']",3.0
+35,5.7545,Alisson Ramsés Becker,50.0,True,5547.0,Brazil,781.0,['Goalkeeper'],5.0
+36,5.576666666666667,Amine Harit,100.0,False,5243.0,Morocco,788.0,['Left Wing'],1.0
+37,5.887777777777778,Amr Medhat Warda,72.0,True,5253.0,Egypt,774.0,"['Right Midfield', 'Right Wing', 'Center Attacking Midfield']",3.0
+38,5.607142857142857,Anderson Santamaría Bardales,76.59574468085107,True,5738.0,Peru,784.0,['Left Center Back'],2.0
+39,6.159166666666667,André Martín Carrillo Díaz,65.0,True,3632.0,Peru,784.0,"['Right Midfield', 'Right Wing']",3.0
+40,5.831666666666667,André Miguel Valente Silva,59.45945945945945,True,5218.0,Portugal,780.0,"['Right Center Forward', 'Center Forward']",3.0
+41,5.7825,Andreas Christensen,100.0,False,3959.0,Denmark,776.0,"['Right Center Midfield', 'Left Center Back', 'Center Defensive Midfield']",4.0
+42,5.753,Andreas Evald Cornelius,85.0,False,5732.0,Denmark,776.0,['Center Forward'],3.0
+43,6.2005,Andreas Granqvist,100.0,False,5607.0,Sweden,790.0,['Left Center Back'],5.0
+44,5.832941176470588,Andrej Kramarić,93.33333333333333,False,5460.0,Croatia,785.0,"['Right Wing', 'Left Midfield', 'Left Center Forward', 'Center Attacking Midfield', 'Right Midfield', 'Center Forward']",7.0
+45,5.89,José Andrés Guardado Hernández,62.22222222222222,True,5563.0,Mexico,794.0,"['Left Defensive Midfield', 'Left Center Midfield', 'Left Midfield', 'Right Center Midfield']",4.0
+46,5.8580000000000005,Andrés Iniesta Luján,76.47058823529412,True,5216.0,Spain,772.0,"['Left Center Midfield', 'Center Attacking Midfield', 'Left Midfield']",4.0
+47,5.87625,Andrew Nabbout,100.0,False,5486.0,Australia,792.0,['Center Forward'],2.0
+48,6.0649999999999995,Andrija Živković,87.5,False,6318.0,Serbia,786.0,"['Center Attacking Midfield', 'Right Wing']",1.0
+49,5.8975,Ángel Fabián Di María Hernández,100.0,False,2995.0,Argentina,779.0,"['Right Wing', 'Left Wing', 'Left Midfield', 'Left Attacking Midfield']",3.0
+50,5.453333333333333,Aníbal Cesis Godoy,73.33333333333334,True,5646.0,Panama,798.0,"['Left Center Midfield', 'Right Center Midfield', 'Left Center Forward', 'Center Attacking Midfield']",3.0
+51,5.626363636363636,Anice Badri,100.0,False,5649.0,Tunisia,777.0,"['Left Center Midfield', 'Left Midfield', 'Left Center Forward', 'Right Wing', 'Left Wing']",3.0
+52,5.896,Ante Rebić,90.0,False,5465.0,Croatia,785.0,"['Right Wing', 'Right Midfield', 'Right Center Forward', 'Left Wing', 'Center Forward']",6.0
+53,6.182142857142857,Antoine Griezmann,100.0,False,5487.0,France,771.0,"['Center Attacking Midfield', 'Right Wing Back', 'Center Forward', 'Left Wing', 'Right Center Forward', 'Left Center Forward']",7.0
+54,5.8925,Antonio Rüdiger,93.33333333333333,False,3167.0,Germany,770.0,['Left Center Back'],1.0
+55,6.058333333333334,Antonio Rukavina,100.0,False,5588.0,Serbia,786.0,"['Right Back', 'Right Midfield']",2.0
+56,6.03,Ari Freyr Skúlason,94.44444444444444,False,5502.0,Iceland,793.0,"['Right Defensive Midfield', 'Left Midfield', 'Right Midfield']",2.0
+57,5.625,Arkadiusz Milik,100.0,False,5665.0,Poland,789.0,"['Center Attacking Midfield', 'Center Midfield']",1.0
+58,5.62125,Armando Enrique Cooper Whitaker,62.22222222222222,True,5645.0,Panama,798.0,"['Right Center Midfield', 'Left Center Midfield']",2.0
+59,5.824166666666667,Aron Einar Gunnarsson,83.33333333333334,True,5515.0,Iceland,793.0,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield']",3.0
+60,6.270714285714286,Artem Dzyuba,100.0,False,5195.0,Russia,796.0,"['Center Forward', 'Secondary Striker']",5.0
+61,5.98,Artur Jędrzejczyk,94.11764705882352,False,4685.0,Poland,789.0,['Left Back'],1.0
+62,5.8705,Ashley Young,100.0,False,3612.0,England,768.0,"['Left Midfield', 'Left Wing Back', 'Right Midfield', 'Left Back']",5.0
+63,5.8325,Axel Witsel,100.0,False,5642.0,Belgium,782.0,"['Left Center Midfield', 'Center Midfield', 'Center Defensive Midfield', 'Right Center Midfield', 'Left Defensive Midfield']",6.0
+64,5.645,Aymen Mathlouthi,100.0,False,6342.0,Tunisia,777.0,['Goalkeeper'],1.0
+65,5.772,Ayoub El Kaabi,100.0,False,5229.0,Morocco,788.0,"['Center Forward', 'Right Center Forward']",2.0
+66,5.8566666666666665,Aziz Eraltay Behich,73.33333333333334,True,5479.0,Australia,792.0,['Left Back'],3.0
+67,5.755,Aziz Bouhaddouz,100.0,False,5223.0,Morocco,788.0,"['Center Forward', 'Left Midfield']",2.0
+69,5.818,Bartosz Bereszyński,94.73684210526316,False,5673.0,Poland,789.0,"['Right Midfield', 'Right Wing Back', 'Right Back']",3.0
+70,6.04,Bassem Srarfi,100.0,False,3226.0,Tunisia,777.0,['Center Forward'],1.0
+71,5.06,Benjamin Mendy,100.0,False,3261.0,France,771.0,['Left Back'],1.0
+72,5.932916666666666,Benjamin Pavard,100.0,False,5476.0,France,771.0,['Right Back'],6.0
+73,5.905,Bernardo Mota Veiga de Carvalho e Silva,52.83018867924528,True,3193.0,Portugal,780.0,"['Right Midfield', 'Right Wing', 'Right Center Forward', 'Center Attacking Midfield']",4.0
+74,5.795833333333333,Birkir Bjarnason,100.0,False,5509.0,Iceland,793.0,"['Left Midfield', 'Right Defensive Midfield', 'Left Wing']",3.0
+75,5.803333333333334,Birkir Már Sævarsson,87.8048780487805,False,5508.0,Iceland,793.0,"['Right Back', 'Right Center Back']",3.0
+76,6.018,Björn Bergmann Sigurðarson,69.76744186046511,True,5500.0,Iceland,793.0,"['Left Center Forward', 'Center Attacking Midfield', 'Center Forward']",3.0
+77,5.9094444444444445,Blaise Matuidi,100.0,False,4375.0,France,771.0,"['Left Wing', 'Right Center Midfield', 'Left Midfield', 'Left Center Midfield']",5.0
+78,5.89125,Blas Antonio Miguel Pérez Ortega,42.85714285714286,True,5631.0,Panama,798.0,['Center Forward'],2.0
+79,5.703125,Blerim Džemaili,93.33333333333333,False,5554.0,Switzerland,773.0,"['Center Attacking Midfield', 'Right Wing']",4.0
+80,6.07875,Branislav Ivanović,94.44444444444444,False,5594.0,Serbia,786.0,['Right Back'],2.0
+81,6.391249999999999,Breel-Donald Embolo,77.41935483870968,True,5545.0,Switzerland,773.0,"['Left Wing', 'Center Attacking Midfield', 'Center Forward']",4.0
+82,5.835,Brian Oladapo Idowu,73.33333333333334,True,5462.0,Nigeria,775.0,"['Left Midfield', 'Left Back', 'Left Wing Back']",3.0
+83,5.696666666666666,Bruno Miguel Borges Fernandes,68.18181818181819,True,5204.0,Portugal,780.0,['Left Midfield'],2.0
+84,5.8,Bryan Oviedo,100.0,False,5836.0,Costa Rica,795.0,['Left Wing Back'],2.0
+85,5.756666666666667,Bryan Ruiz González,68.96551724137932,True,5592.0,Costa Rica,795.0,"['Left Wing', 'Right Wing', 'Left Center Midfield']",3.0
+86,5.722857142857143,Carlos Arturo Bacca Ahumada,61.53846153846154,True,5688.0,Colombia,769.0,"['Left Center Forward', 'Center Forward', 'Right Wing', 'Left Wing']",3.0
+87,6.169375,Carlos Joel Salcedo Hernández,65.11627906976744,True,5564.0,Mexico,794.0,"['Right Center Back', 'Right Back', 'Left Center Back', 'Center Back']",4.0
+89,6.07625,Carlos Alberto Vela Garrido,57.89473684210527,True,5560.0,Mexico,794.0,"['Center Attacking Midfield', 'Right Center Midfield', 'Left Wing', 'Right Wing']",4.0
+90,6.171875,Carlos Henrique Casimiro,43.75,True,5539.0,Brazil,781.0,"['Center Defensive Midfield', 'Right Defensive Midfield', 'Right Center Midfield']",4.0
+91,5.949166666666667,Cédric Ricardo Alves Soares,60.0,True,3329.0,Portugal,780.0,['Right Back'],3.0
+92,6.068333333333334,Celso Borges Mora,82.75862068965517,True,5582.0,Costa Rica,795.0,['Right Center Midfield'],3.0
+93,6.220000000000001,Cheikh N''Doye,96.2962962962963,False,5676.0,Senegal,787.0,"['Right Center Forward', 'Right Center Midfield']",2.0
+94,5.805,Cheikhou Kouyaté,93.75,False,3684.0,Senegal,787.0,"['Left Center Midfield', 'Right Center Midfield', 'Center Defensive Midfield']",3.0
+97,5.512,Christian Bolaños Navarro,76.19047619047619,True,5593.0,Costa Rica,795.0,"['Right Wing', 'Left Wing']",2.0
+98,5.795000000000001,Christian Alberto Cueva Bravo,68.18181818181819,True,5519.0,Peru,784.0,"['Center Attacking Midfield', 'Left Wing', 'Left Midfield']",3.0
+99,6.095625,Christian Dannemann Eriksen,77.27272727272727,True,3043.0,Denmark,776.0,"['Secondary Striker', 'Center Attacking Midfield', 'Right Center Midfield']",4.0
+100,5.860833333333333,Christian Guillermo Martín Ramos Garagay,54.54545454545454,True,5530.0,Peru,784.0,['Right Center Back'],3.0
+101,5.8707142857142856,Corentin Tolisso,100.0,False,5480.0,France,771.0,"['Left Wing', 'Right Center Midfield', 'Left Midfield', 'Left Center Midfield']",5.0
+102,6.103333333333334,Jesús Manuel Corona Ruíz,40.0,True,5985.0,Mexico,794.0,"['Left Wing', 'Right Center Midfield', 'Right Wing']",2.0
+103,5.771666666666667,Cristhian Ricardo Stuani Curbelo,66.66666666666667,True,6351.0,Uruguay,783.0,"['Left Center Forward', 'Right Center Forward']",2.0
+104,6.139166666666667,Cristian Gamboa Luna,85.71428571428572,False,5602.0,Costa Rica,795.0,['Right Wing Back'],3.0
+105,5.847272727272727,Cristian David Pavón,76.47058823529412,True,5496.0,Argentina,779.0,"['Left Wing', 'Right Wing', 'Right Midfield', 'Left Midfield', 'Left Attacking Midfield']",4.0
+106,5.770714285714286,Cristian Gabriel Rodríguez Barrotti,64.15094339622642,True,5256.0,Uruguay,783.0,"['Left Wing', 'Right Midfield', 'Left Center Midfield', 'Left Midfield']",5.0
+107,6.0,Cristian Eduardo Zapata Valencia,63.829787234042556,True,6360.0,Colombia,769.0,['Right Back'],1.0
+108,6.519375,Cristiano Ronaldo dos Santos Aveiro,65.38461538461539,True,5207.0,Portugal,780.0,"['Left Center Forward', 'Left Wing']",4.0
+109,5.786666666666666,Daler Kuzyaev,100.0,False,5179.0,Russia,796.0,"['Right Defensive Midfield', 'Right Center Midfield', 'Center Defensive Midfield', 'Right Midfield', 'Left Wing']",5.0
+110,5.861428571428571,Daniel Arzani,100.0,False,5483.0,Australia,792.0,"['Left Midfield', 'Left Wing']",3.0
+111,5.798181818181818,Daniel Carvajal Ramos,83.33333333333334,True,5721.0,Spain,772.0,['Right Back'],3.0
+112,5.6775,Daniel Colindres Solera,82.05128205128204,True,5585.0,Costa Rica,795.0,['Left Wing'],2.0
+113,5.75,Danijel Subašić,86.66666666666667,False,3444.0,Croatia,785.0,['Goalkeeper'],6.0
+114,5.595,Danilo Luiz da Silva,46.15384615384615,True,3063.0,Brazil,781.0,['Right Back'],1.0
+115,5.899285714285715,Danny Rose,100.0,False,3594.0,England,768.0,"['Left Midfield', 'Left Wing Back', 'Left Back']",5.0
+117,5.730833333333333,David Alberto Guzmán Pérez,57.89473684210527,True,5599.0,Costa Rica,795.0,"['Left Center Midfield', 'Left Midfield']",3.0
+118,5.63875,David Ospina Ramírez,75.0,True,4276.0,Colombia,769.0,['Goalkeeper'],4.0
+119,5.824166666666667,David Josué Jiménez Silva,61.111111111111114,True,3064.0,Spain,772.0,"['Right Wing', 'Center Attacking Midfield', 'Right Center Midfield']",4.0
+120,5.189375,David de Gea Quintana,72.72727272727273,True,3333.0,Spain,772.0,['Goalkeeper'],4.0
+121,5.778125,Davinson Sánchez Mina,81.08108108108108,True,3494.0,Colombia,769.0,"['Left Center Back', 'Right Center Back']",4.0
+122,5.555,Dawid Kownacki,100.0,False,5666.0,Poland,789.0,"['Left Wing', 'Right Wing']",2.0
+123,5.6933333333333325,Anga Dedryck Boyata,84.84848484848484,True,5639.0,Belgium,782.0,"['Center Back', 'Left Center Back']",3.0
+124,5.816666666666667,Dejan Lovren,100.0,False,3471.0,Croatia,785.0,"['Right Center Back', 'Left Center Back']",7.0
+125,5.870588235294117,Bamidele Alli,72.72727272727273,True,3094.0,England,768.0,"['Left Attacking Midfield', 'Left Center Midfield', 'Right Center Midfield']",5.0
+126,5.982857142857143,Denis Cheryshev,100.0,False,5186.0,Russia,796.0,"['Left Wing', 'Left Center Midfield', 'Left Midfield']",5.0
+127,5.605,Denis Lemi Zakaria Lako Lado,63.41463414634146,True,5538.0,Switzerland,773.0,"['Right Defensive Midfield', 'Right Center Midfield']",2.0
+128,5.94,Diafra Sakho,100.0,False,3962.0,Senegal,787.0,['Right Center Forward'],1.0
+129,5.980625,Diego da Silva Costa,70.96774193548387,True,5198.0,Spain,772.0,['Center Forward'],4.0
+130,6.181,Diego Roberto Godín Leal,57.14285714285714,True,5249.0,Uruguay,783.0,"['Left Center Back', 'Right Center Back']",5.0
+131,5.521333333333333,Diego Sebastián Laxalt Suárez,58.53658536585367,True,5717.0,Uruguay,783.0,"['Left Wing', 'Left Back']",4.0
+132,5.83,Djibril Sidibé,92.85714285714286,False,3446.0,France,771.0,['Right Back'],1.0
+133,5.9045000000000005,Domagoj Vida,100.0,False,5468.0,Croatia,785.0,"['Left Center Back', 'Right Center Back', 'Right Back']",6.0
+134,5.792,Douglas Costa de Souza,74.28571428571429,True,5837.0,Brazil,781.0,['Right Wing'],2.0
+135,6.039,Dries Mertens,100.0,False,5630.0,Belgium,782.0,"['Right Wing', 'Right Attacking Midfield', 'Right Center Forward', 'Center Forward']",6.0
+136,5.7875,Duje Ćaleta-Car,60.0,True,6307.0,Croatia,785.0,"['Left Center Back', 'Center Back']",1.0
+137,6.054166666666667,Dušan Tadić,81.81818181818181,True,3831.0,Serbia,786.0,"['Right Wing', 'Center Attacking Midfield', 'Right Midfield']",3.0
+138,5.6825,Duško Tošić,72.72727272727273,True,5580.0,Serbia,786.0,['Left Center Back'],2.0
+139,6.467142857142856,Dylan Daniel Mahmoud Bronn,59.45945945945945,True,5655.0,Tunisia,777.0,"['Right Back', 'Right Center Back']",2.0
+140,6.751,Eden Hazard,100.0,False,3621.0,Belgium,782.0,"['Left Attacking Midfield', 'Left Wing', 'Left Center Forward']",6.0
+141,6.44875,Edinson Roberto Cavani Gómez,66.66666666666667,True,4319.0,Uruguay,783.0,"['Left Center Forward', 'Right Center Forward', 'Secondary Striker']",4.0
+144,6.01125,Eduardo Antonio Salvio,77.77777777777779,True,5513.0,Argentina,779.0,"['Right Midfield', 'Right Back']",2.0
+145,6.081818181818182,Ehsan Hajsafi,85.71428571428572,False,5230.0,Iran,797.0,['Left Back'],3.0
+146,5.76625,Eiji Kawashima,100.0,False,3175.0,Japan,778.0,['Goalkeeper'],4.0
+147,5.656666666666666,Ellyes Joris Skhiri,81.25,True,3767.0,Tunisia,777.0,"['Center Defensive Midfield', 'Left Defensive Midfield']",3.0
+148,6.0275,Emil Peter Forsberg,81.25,True,5625.0,Sweden,790.0,"['Left Midfield', 'Left Wing']",5.0
+149,5.83375,Emil Hallfreðsson,94.11764705882352,False,5512.0,Iceland,793.0,"['Right Defensive Midfield', 'Left Center Midfield', 'Left Defensive Midfield']",2.0
+150,5.815,Emil Krafth,100.0,False,6358.0,Sweden,790.0,['Right Back'],2.0
+151,5.631666666666667,Enzo Nicolás Pérez,64.28571428571428,True,5741.0,Argentina,779.0,"['Right Center Midfield', 'Center Midfield', 'Right Defensive Midfield', 'Right Wing']",3.0
+152,5.55,Erick Javier Davis Grajales,54.054054054054056,True,5634.0,Panama,798.0,['Left Back'],2.0
+153,5.55,Eric Dier,100.0,False,10956.0,England,768.0,"['Left Attacking Midfield', 'Center Defensive Midfield']",5.0
+154,6.6825,Essam Kamal Tawfik El Hadary,69.76744186046511,True,6292.0,Egypt,774.0,['Goalkeeper'],1.0
+155,5.920000000000001,Éver Maximiliano David Banega,50.0,True,5504.0,Argentina,779.0,"['Left Center Midfield', 'Right Center Midfield', 'Right Defensive Midfield', 'Left Center Back']",3.0
+156,5.961,Fabian Delph,100.0,False,4597.0,England,768.0,"['Left Attacking Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Left Wing Back']",4.0
+157,5.871666666666666,Fabian Lukas Schär,73.33333333333334,True,5537.0,Switzerland,773.0,"['Right Center Back', 'Center Back']",3.0
+158,5.941875,Fágner Conserva Lemos,37.03703703703704,True,5838.0,Brazil,781.0,"['Right Back', 'Right Wing']",4.0
+159,5.81125,Fahad Mosaed Al Muwallad Al Harbi,68.0,True,5190.0,Saudi Arabia,799.0,"['Center Forward', 'Left Center Forward', 'Right Wing']",3.0
+160,6.1274999999999995,Fakhreddine Ben Youssef,100.0,False,5654.0,Tunisia,777.0,"['Right Midfield', 'Right Wing Back', 'Right Wing', 'Left Wing']",3.0
+161,5.17,Farouk Ben Mustapha,100.0,False,5648.0,Tunisia,777.0,['Goalkeeper'],2.0
+162,6.3875,Fayçal Fajr,90.9090909090909,False,5724.0,Morocco,788.0,"['Right Defensive Midfield', 'Left Center Midfield']",2.0
+163,5.04,Federico Julián Fazio,80.0,True,6349.0,Argentina,779.0,"['Left Center Back', 'Right Center Back']",1.0
+164,5.621111111111111,Fedor Kudryashov,100.0,False,5677.0,Russia,796.0,"['Left Back', 'Left Center Back', 'Left Midfield', 'Left Center Midfield']",4.0
+165,5.709166666666667,Fyodor Smolov,88.0,False,5194.0,Russia,796.0,"['Left Wing', 'Secondary Striker', 'Center Forward']",5.0
+166,7.15,Felipe Abdiel Baloy Ramírez,61.53846153846154,True,6139.0,Panama,798.0,['Left Center Back'],1.0
+167,5.851666666666667,Ferjani Sassi,100.0,False,5650.0,Tunisia,777.0,"['Right Center Midfield', 'Right Defensive Midfield', 'Left Center Midfield']",3.0
+168,5.8325,Fernando Luiz Rosa,62.06896551724138,True,3054.0,Brazil,781.0,"['Center Forward', 'Left Defensive Midfield', 'Right Center Midfield', 'Center Midfield', 'Left Center Midfield', 'Center Defensive Midfield']",5.0
+169,5.7535,Néstor Fernando Muslera Micol,71.11111111111111,True,5267.0,Uruguay,783.0,['Goalkeeper'],5.0
+170,5.620833333333334,Fidel Escobar Mendieta,74.28571428571429,True,5638.0,Panama,798.0,"['Left Center Back', 'Center Defensive Midfield', 'Left Center Midfield']",3.0
+171,6.18,Filip Bradarić,92.85714285714286,False,6310.0,Croatia,785.0,['Right Center Midfield'],1.0
+172,5.894,Filip Kostić,91.66666666666666,False,5591.0,Serbia,786.0,"['Left Wing', 'Left Midfield']",3.0
+173,6.054285714285714,Filipe Luís Kasmirski,62.5,True,6320.0,Brazil,781.0,['Left Back'],2.0
+174,5.88,Florian Thauvin,100.0,False,3254.0,France,771.0,['Right Wing'],1.0
+175,5.799166666666667,Francis Odinaka Uzoho,76.47058823529412,True,5454.0,Nigeria,775.0,['Goalkeeper'],3.0
+176,6.029999999999999,Francisco Javier Calvo Quesada,66.66666666666667,True,5600.0,Costa Rica,795.0,"['Left Center Back', 'Left Wing Back']",2.0
+177,5.25625,Franco Armani,100.0,False,6312.0,Argentina,779.0,['Goalkeeper'],2.0
+178,5.748333333333334,Gabriel Enrique Gómez Girón,60.0,True,5640.0,Panama,798.0,"['Center Defensive Midfield', 'Right Center Midfield']",3.0
+179,5.89,Gabriel Fernando de Jesus,68.42105263157895,True,3202.0,Brazil,781.0,"['Center Forward', 'Right Wing', 'Left Center Forward', 'Left Wing']",5.0
+180,5.924166666666667,Gabriel Iván Mercado,85.71428571428572,False,5742.0,Argentina,779.0,"['Right Back', 'Right Center Back']",3.0
+181,5.31,Gabriel Arturo Torres Tejada,66.66666666666667,True,5629.0,Panama,798.0,"['Right Wing', 'Center Forward']",2.0
+182,6.046875,Gaku Shibasaki,100.0,False,5693.0,Japan,778.0,"['Left Defensive Midfield', 'Right Center Midfield']",4.0
+183,6.154999999999999,Gary Cahill,100.0,False,3645.0,England,768.0,"['Left Center Back', 'Center Back']",1.0
+184,5.766666666666667,Gelson Dany Batalha Martins,68.29268292682926,True,5723.0,Portugal,780.0,['Right Midfield'],1.0
+185,6.083333333333333,Gen Shōji,88.88888888888889,False,5682.0,Japan,778.0,['Left Center Back'],3.0
+186,5.808333333333334,Genki Haraguchi,100.0,False,5697.0,Japan,778.0,"['Right Wing', 'Right Midfield']",3.0
+187,6.00875,Gerard Piqué Bernabéu,66.66666666666667,True,5213.0,Spain,772.0,['Right Center Back'],4.0
+188,6.08,Ghilane Chalali,96.7741935483871,False,6347.0,Tunisia,777.0,['Right Center Midfield'],1.0
+189,5.940833333333333,Giancarlo González Castro,79.06976744186046,True,5584.0,Costa Rica,795.0,['Center Back'],3.0
+190,5.984999999999999,Giorgian Daniel De Arrascaeta Benedetti,62.295081967213115,True,5258.0,Uruguay,783.0,"['Left Wing', 'Center Attacking Midfield']",2.0
+191,5.975,Giovani dos Santos Ramírez,81.81818181818181,True,5987.0,Mexico,794.0,"['Right Center Midfield', 'Left Center Midfield']",1.0
+192,5.980769230769231,Gonçalo Manuel Ganchinho Guedes,57.77777777777777,True,4367.0,Portugal,780.0,"['Right Center Forward', 'Left Midfield']",4.0
+193,5.475555555555555,Gonzalo Gerardo Higuaín,73.6842105263158,True,5497.0,Argentina,779.0,"['Center Forward', 'Right Center Forward', 'Left Center Forward', 'Left Wing']",3.0
+194,5.2475000000000005,Gotoku Sakai,100.0,False,6339.0,Japan,778.0,['Right Midfield'],1.0
+195,5.8725,Granit Xhaka,100.0,False,3500.0,Switzerland,773.0,"['Left Center Midfield', 'Left Defensive Midfield']",4.0
+196,5.993333333333333,Grzegorz Krychowiak,100.0,False,3637.0,Poland,789.0,"['Right Center Midfield', 'Right Defensive Midfield']",3.0
+197,6.14125,Francisco Guillermo Ochoa Magaña,63.829787234042556,True,5577.0,Mexico,794.0,['Goalkeeper'],4.0
+198,5.91625,Guillermo Varela Olivera,80.0,True,5264.0,Uruguay,783.0,['Right Back'],2.0
+199,5.664444444444444,Gustav Svensson,100.0,False,5611.0,Sweden,790.0,['Right Center Midfield'],3.0
+200,6.1025,Gylfi Þór Sigurðsson,83.33333333333334,True,3944.0,Iceland,793.0,"['Left Defensive Midfield', 'Center Attacking Midfield', 'Right Center Midfield', 'Secondary Striker']",3.0
+201,6.007272727272727,Hakim Ziyech,100.0,False,5237.0,Morocco,788.0,"['Left Wing', 'Right Wing', 'Left Midfield']",3.0
+202,5.858333333333333,Hamdi Nagguez,100.0,False,5936.0,Tunisia,777.0,['Right Back'],2.0
+203,5.725833333333334,Hannes Þór Halldórsson,84.44444444444444,True,5498.0,Iceland,793.0,['Goalkeeper'],3.0
+204,5.744,Haris Seferović,93.33333333333333,False,5543.0,Switzerland,773.0,"['Center Attacking Midfield', 'Left Center Forward', 'Secondary Striker', 'Center Forward']",3.0
+205,5.510000000000001,Harold Oshkaly Cummings Segura,66.66666666666667,True,6343.0,Panama,798.0,"['Left Center Back', 'Right Center Back']",1.0
+206,6.454166666666667,Harry Kane,100.0,False,10955.0,England,768.0,"['Left Center Forward', 'Right Center Forward']",6.0
+207,6.264814814814815,Harry Maguire,100.0,False,3336.0,England,768.0,['Left Center Back'],7.0
+208,5.949999999999999,Hattan Babhir,81.4814814814815,True,5188.0,Saudi Arabia,799.0,"['Right Wing', 'Right Midfield']",3.0
+209,5.83125,Héctor Alfredo Moreno Herrera,46.51162790697675,True,5573.0,Mexico,794.0,"['Left Center Back', 'Center Back']",3.0
+210,5.790833333333333,Héctor Alfredo Moreno Herrera,61.904761904761905,True,5573.0,Mexico,794.0,"['Left Center Back', 'Center Back']",3.0
+211,6.03875,Henrik Dalsgaard,100.0,False,4763.0,Denmark,776.0,['Right Back'],4.0
+212,5.921875,Hiroki Sakai,100.0,False,3530.0,Japan,778.0,['Right Back'],4.0
+213,6.253125,Hirving Rodrigo Lozano Bahena,65.11627906976744,True,5571.0,Mexico,794.0,"['Left Wing', 'Right Wing']",4.0
+214,5.9750000000000005,Chul Hong,100.0,False,5986.0,South Korea,791.0,['Left Back'],2.0
+215,5.691666666666666,Hörður Björgvin Magnússon,63.41463414634146,True,5501.0,Iceland,793.0,"['Left Back', 'Left Center Back']",3.0
+216,5.76,Hotaru Yamaguchi,100.0,False,5694.0,Japan,778.0,"['Left Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield']",3.0
+217,5.85125,Hugo Ayala Castro,74.07407407407408,True,5561.0,Mexico,794.0,"['Right Center Back', 'Left Center Back']",2.0
+218,5.771666666666667,Hugo Lloris,100.0,False,3099.0,France,771.0,['Goalkeeper'],6.0
+219,5.945,Hussain Al Mogahwi,55.55555555555556,True,5716.0,Saudi Arabia,799.0,"['Right Center Midfield', 'Left Center Midfield']",2.0
+220,6.07,Hee-Chan Hwang,100.0,False,5620.0,South Korea,791.0,"['Left Wing', 'Right Center Forward', 'Left Center Forward', 'Right Wing', 'Center Forward']",3.0
+221,5.997142857142857,Iago Aspas Juncal,74.07407407407408,True,5217.0,Spain,772.0,"['Center Forward', 'Left Center Forward']",3.0
+222,6.1,Ian Rey Smith Quiros,62.06896551724138,True,6329.0,Costa Rica,795.0,['Right Wing Back'],1.0
+223,5.709166666666667,Idrissa Gana Gueye,83.87096774193549,True,3436.0,Senegal,787.0,"['Right Center Midfield', 'Left Center Midfield']",3.0
+224,5.976875,Igor Akinfeev,100.0,False,5172.0,Russia,796.0,['Goalkeeper'],5.0
+225,4.46,Igor Smolnikov,100.0,False,6298.0,Russia,796.0,['Right Back'],1.0
+226,6.176666666666667,İlkay Gündoğan,78.57142857142857,True,10287.0,Germany,770.0,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Right Center Back']",1.0
+227,6.14875,Ilya Kutepov,100.0,False,5175.0,Russia,796.0,['Right Center Back'],5.0
+228,6.274,Isaac Kiese Thelin,80.0,True,5615.0,Sweden,790.0,"['Right Center Forward', 'Left Center Forward']",4.0
+230,5.385,Ismael Díaz De León,66.66666666666667,True,5644.0,Panama,798.0,['Left Wing'],1.0
+231,5.528333333333333,Ismaïla Sarr,91.66666666666666,False,2941.0,Senegal,787.0,['Right Wing'],3.0
+232,6.00375,Ivan Perišić,83.33333333333334,True,5474.0,Croatia,785.0,"['Left Wing', 'Left Midfield', 'Right Wing', 'Center Attacking Midfield']",7.0
+233,6.160952380952381,Ivan Rakitić,91.66666666666666,False,5470.0,Croatia,785.0,"['Left Attacking Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Right Center Midfield', 'Center Attacking Midfield', 'Left Defensive Midfield', 'Center Midfield']",7.0
+234,5.7335,Ivan Strinić,91.66666666666666,False,5457.0,Croatia,785.0,['Left Back'],6.0
+235,5.6975,Ja-Cheol Koo,100.0,False,5627.0,South Korea,791.0,"['Left Center Midfield', 'Center Attacking Midfield', 'Left Center Forward']",2.0
+236,5.905,Jacek Góralski,92.85714285714286,False,6195.0,Poland,789.0,"['Left Center Midfield', 'Left Defensive Midfield']",2.0
+237,5.918,Jackson Irvine,100.0,False,5490.0,Australia,792.0,"['Center Attacking Midfield', 'Secondary Striker']",3.0
+238,5.930833333333333,Jae-Sung Lee,100.0,False,5623.0,South Korea,791.0,"['Center Attacking Midfield', 'Left Midfield', 'Right Center Midfield', 'Right Midfield', 'Right Wing']",3.0
+239,5.695833333333333,Jaime Manuel Penedo Cano,66.66666666666667,True,5636.0,Panama,798.0,['Goalkeeper'],3.0
+240,5.635,Jakub Błaszczykowski,95.0,False,5663.0,Poland,789.0,['Right Wing'],1.0
+241,5.886363636363637,James David Rodríguez Rubio,66.66666666666667,True,5695.0,Colombia,769.0,"['Left Wing', 'Center Attacking Midfield', 'Right Wing']",3.0
+242,5.852222222222222,Jamie Vardy,100.0,False,10960.0,England,768.0,"['Right Center Forward', 'Left Center Forward']",4.0
+243,6.079999999999999,Jan Bednarek,100.0,False,4626.0,Poland,789.0,"['Center Back', 'Left Center Back']",3.0
+244,5.964583333333334,Jan Vertonghen,100.0,False,3077.0,Belgium,782.0,"['Left Center Back', 'Left Back', 'Left Wing Back']",6.0
+245,5.678333333333334,Hyun-Soo Jang,100.0,False,5606.0,South Korea,791.0,"['Right Center Back', 'Right Center Midfield', 'Center Midfield']",3.0
+246,5.620625,Javier Alejandro Mascherano,77.27272727272727,True,5506.0,Argentina,779.0,"['Center Defensive Midfield', 'Right Center Midfield', 'Left Center Midfield', 'Left Defensive Midfield', 'Right Defensive Midfield']",4.0
+247,5.867142857142857,Jefferson Agustín Farfán Guadalupe,60.0,True,5531.0,Peru,784.0,"['Center Attacking Midfield', 'Center Forward']",2.0
+248,5.815,Jefferson Andrés Lerma Solís,69.76744186046511,True,5678.0,Colombia,769.0,"['Left Center Midfield', 'Center Attacking Midfield', 'Right Center Midfield']",4.0
+249,5.6925,Jens Stryger Larsen,100.0,False,5524.0,Denmark,776.0,['Left Back'],3.0
+250,5.62375,Jérôme Boateng,85.71428571428572,False,5578.0,Germany,770.0,"['Right Center Back', 'Center Back']",2.0
+251,5.986086956521739,Jesse Lingard,100.0,False,3293.0,England,768.0,"['Right Attacking Midfield', 'Right Center Midfield', 'Left Center Midfield']",6.0
+252,6.129375,Jesús Daniel Gallardo Vasconcelos,55.319148936170215,True,5576.0,Mexico,794.0,['Left Back'],4.0
+253,5.505,Jimmy Durmaz,100.0,False,19988.0,Sweden,790.0,['Right Midfield'],1.0
+255,6.196666666666666,João Filipe Iria Santos Moutinho,53.333333333333336,True,3168.0,Portugal,780.0,"['Left Midfield', 'Right Center Midfield']",3.0
+256,6.3066666666666675,Joel Nathaniel Campbell Samuels,59.09090909090908,True,5581.0,Costa Rica,795.0,['Center Forward'],2.0
+257,5.9525,Johan Danon Djourou-Gbadjere,63.41463414634146,True,6359.0,Switzerland,773.0,['Right Center Back'],1.0
+258,5.76375,Johan Andrés Mojica Palacio,61.53846153846154,True,5691.0,Colombia,769.0,['Left Back'],4.0
+259,5.895,Johan Alberto Venegas Ulloa,65.0,True,5595.0,Costa Rica,795.0,"['Right Wing', 'Center Forward', 'Left Wing']",2.0
+260,5.855,Johann Berg Guðmunds­son,80.95238095238095,True,3720.0,Iceland,793.0,"['Right Wing', 'Right Midfield']",2.0
+261,5.76,John Guidetti,100.0,False,6038.0,Sweden,790.0,"['Right Center Forward', 'Left Center Forward']",2.0
+262,5.864166666666667,John Michael Nchekwube Obinna,60.46511627906976,True,5475.0,Nigeria,775.0,"['Center Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Left Center Midfield']",3.0
+263,6.085714285714286,John Stones,100.0,False,3244.0,England,768.0,"['Center Back', 'Right Center Back']",7.0
+264,5.645833333333333,Johnny Acosta Zamora,78.78787878787878,True,5590.0,Costa Rica,795.0,"['Right Center Back', 'Right Wing Back']",3.0
+265,5.9575,Jón Daði Böðvarsson,78.94736842105263,True,5829.0,Iceland,793.0,['Left Center Forward'],1.0
+266,5.95375,Jonas Hector,100.0,False,6040.0,Germany,770.0,['Left Back'],2.0
+267,5.855,Jonas Knudsen,100.0,False,6355.0,Denmark,776.0,['Left Back'],1.0
+268,6.0600000000000005,Jonathan Matías Urretaviscaya da Luz,75.86206896551724,True,6426.0,Uruguay,783.0,['Right Wing'],1.0
+269,5.406666666666666,Jonathan dos Santos Ramírez,82.6086956521739,True,6357.0,Mexico,794.0,['Center Defensive Midfield'],1.0
+270,5.9225,Jordan Brian Henderson,84.21052631578947,True,3532.0,England,768.0,"['Center Defensive Midfield', 'Left Center Midfield']",5.0
+271,5.8175,Jordan Pickford,100.0,False,3468.0,England,768.0,['Goalkeeper'],7.0
+272,5.851875,Jordi Alba Ramos,76.92307692307692,True,5211.0,Spain,772.0,['Left Back'],4.0
+273,6.195625,José Miguel da Rocha Fonte,55.55555555555556,True,3960.0,Portugal,780.0,['Left Center Back'],4.0
+274,6.1475,José María Giménez de Vargas,55.00000000000001,True,5259.0,Uruguay,783.0,"['Right Center Back', 'Left Center Back']",4.0
+275,5.39,José Heriberto Izquierdo Mena,65.11627906976744,True,3279.0,Colombia,769.0,"['Left Wing', 'Left Midfield']",1.0
+276,5.583333333333333,José Luis Rodríguez Francis,73.91304347826086,True,5628.0,Panama,798.0,"['Left Wing', 'Right Wing']",3.0
+277,5.767499999999999,Josh Risdon,100.0,False,5482.0,Australia,792.0,['Right Back'],3.0
+278,6.451666666666667,Joshua Kimmich,100.0,False,5579.0,Germany,770.0,"['Right Back', 'Right Center Back']",3.0
+279,5.996666666666666,Josip Drmic,100.0,False,5835.0,Switzerland,773.0,"['Center Forward', 'Right Center Forward']",2.0
+280,5.808888888888889,Josip Pivarić,92.3076923076923,False,6308.0,Croatia,785.0,"['Left Back', 'Left Wing Back']",4.0
+281,6.206,Se-Jong Ju,100.0,False,5988.0,South Korea,791.0,"['Right Defensive Midfield', 'Left Midfield', 'Right Midfield']",2.0
+282,6.035625,Juan Guillermo Cuadrado Bello,61.904761904761905,True,5689.0,Colombia,769.0,"['Right Center Forward', 'Right Wing', 'Left Wing', 'Right Midfield']",4.0
+283,5.89,Juan Fernando Quintero Paniagua,59.09090909090908,True,5692.0,Colombia,769.0,"['Center Attacking Midfield', 'Right Center Midfield', 'Right Wing', 'Left Center Midfield', 'Right Midfield']",4.0
+284,6.255,Julian Brandt,100.0,False,5555.0,Germany,770.0,"['Left Back', 'Left Midfield']",3.0
+285,5.8975,Julian Draxler,100.0,False,3186.0,Germany,770.0,"['Left Wing', 'Left Center Midfield']",2.0
+286,6.17,Woo-Young Jung,100.0,False,5618.0,South Korea,791.0,"['Right Midfield', 'Right Center Midfield', 'Left Center Midfield']",3.0
+288,5.839166666666666,Kalidou Koulibaly,100.0,False,5675.0,Senegal,787.0,['Left Center Back'],3.0
+289,6.272,Kamil Glik,100.0,False,3034.0,Poland,789.0,"['Left Center Back', 'Right Center Back']",2.0
+290,5.785454545454545,Kamil Grosicki,100.0,False,5667.0,Poland,789.0,"['Left Wing', 'Secondary Striker', 'Right Wing']",3.0
+292,6.087777777777777,Karim Ansarifard,100.0,False,5231.0,Iran,797.0,"['Center Defensive Midfield', 'Left Midfield', 'Left Wing']",3.0
+293,5.530909090909091,Karim El Ahmadi Al Aroos,76.92307692307692,True,5236.0,Morocco,788.0,"['Right Defensive Midfield', 'Center Defensive Midfield', 'Right Center Midfield']",3.0
+294,5.455,Kasper Dolberg,100.0,False,6302.0,Denmark,776.0,['Center Forward'],1.0
+295,6.368125,Kasper Schmeichel,100.0,False,3815.0,Denmark,776.0,['Goalkeeper'],4.0
+296,6.8133333333333335,Keisuke Honda,100.0,False,5683.0,Japan,778.0,"['Right Wing', 'Center Attacking Midfield', 'Right Midfield']",3.0
+297,5.993,Kelechi Promise Iheanacho,80.95238095238095,True,3708.0,Nigeria,775.0,"['Left Center Forward', 'Center Forward', 'Right Center Forward']",3.0
+298,6.2325,Kendall Jamaal Waston Manley,66.66666666666667,True,6328.0,Costa Rica,795.0,['Left Center Back'],1.0
+299,6.235,Kenneth Josiah Omeruo,80.0,True,5830.0,Nigeria,775.0,"['Left Center Back', 'Left Back']",2.0
+300,6.269583333333333,Kevin De Bruyne,100.0,False,3089.0,Belgium,782.0,"['Right Center Midfield', 'Secondary Striker', 'Right Center Forward', 'Left Center Midfield', 'Left Attacking Midfield', 'Right Wing', 'Center Attacking Midfield']",6.0
+301,5.7683333333333335,Keylor Navas Gamboa,77.41935483870968,True,5597.0,Costa Rica,795.0,['Goalkeeper'],3.0
+302,5.5775,Khadim N''Diaye,96.55172413793103,False,5659.0,Senegal,787.0,['Goalkeeper'],3.0
+303,5.6925,Khalid Boutaïb,92.85714285714286,False,5726.0,Morocco,788.0,['Center Forward'],2.0
+304,6.05125,Sung-Yeung Ki,92.3076923076923,False,3605.0,South Korea,791.0,"['Left Defensive Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Center Midfield']",2.0
+305,6.785416666666666,Kieran Trippier,100.0,False,3308.0,England,768.0,"['Right Midfield', 'Right Wing Back', 'Right Back']",6.0
+306,5.136666666666667,Min-Woo Kim,100.0,False,5610.0,South Korea,791.0,['Left Back'],2.0
+307,5.47,Shin-Wook Kim,100.0,False,5626.0,South Korea,791.0,['Center Forward'],1.0
+308,6.2775,Young-Gwon Kim,100.0,False,5604.0,South Korea,791.0,['Left Center Back'],3.0
+310,6.2235,Kyle Walker,100.0,False,3205.0,England,768.0,['Right Center Back'],5.0
+311,6.3624,Kylian Mbappé Lottin,72.72727272727273,True,3009.0,France,771.0,"['Right Wing', 'Right Midfield', 'Right Center Forward']",7.0
+312,5.505,Lamine Gassama,100.0,False,6335.0,Senegal,787.0,['Right Back'],1.0
+313,5.491,Lasse Schöne,91.66666666666666,False,5520.0,Denmark,776.0,"['Right Center Midfield', 'Right Defensive Midfield']",3.0
+314,5.62,Leander Dendoncker,100.0,False,6331.0,Belgium,782.0,['Right Center Back'],1.0
+315,6.04,Seung-Woo Lee,100.0,False,5616.0,South Korea,791.0,"['Left Midfield', 'Left Wing']",2.0
+316,6.1191666666666675,Yong Lee,100.0,False,5608.0,South Korea,791.0,['Right Back'],3.0
+317,5.863333333333333,Leon Aderemi Balogun,75.0,True,5467.0,Nigeria,775.0,"['Right Center Back', 'Left Center Back']",3.0
+318,6.449375,Lionel Andrés Messi Cuccittini,57.14285714285714,True,5503.0,Argentina,779.0,"['Center Forward', 'Secondary Striker', 'Right Attacking Midfield', 'Center Attacking Midfield', 'Right Center Forward']",4.0
+319,6.1825,Lovre Kalinić,92.3076923076923,False,6311.0,Croatia,785.0,['Goalkeeper'],1.0
+320,5.9325,Lucas Rodrigo Biglia,75.0,True,5510.0,Argentina,779.0,['Right Center Midfield'],1.0
+321,5.935357142857143,Lucas Hernández Pi,84.84848484848484,True,5484.0,France,771.0,['Left Back'],7.0
+322,5.96375,Lucas Torreira Di Pascua,73.6842105263158,True,5266.0,Uruguay,783.0,"['Right Center Midfield', 'Center Defensive Midfield', 'Left Center Midfield', 'Right Defensive Midfield']",5.0
+323,6.126666666666666,Lucas Vázquez Iglesias,68.57142857142857,True,5200.0,Spain,772.0,"['Right Wing', 'Right Midfield']",2.0
+324,5.8935,Ludwig Augustinsson,100.0,False,5621.0,Sweden,790.0,['Left Back'],5.0
+325,6.209166666666667,Luis Jan Piers Advíncula Castrillón,53.06122448979591,True,5521.0,Peru,784.0,['Right Back'],3.0
+326,5.398333333333333,Luis Fernando Muriel Fruto,59.45945945945945,True,6334.0,Colombia,769.0,"['Right Center Midfield', 'Center Attacking Midfield']",2.0
+327,5.78,Luis Carlos Ovalle Victoria,57.89473684210527,True,6344.0,Panama,798.0,['Left Back'],1.0
+328,6.053,Luis Alberto Suárez Díaz,57.14285714285714,True,5246.0,Uruguay,783.0,"['Right Center Forward', 'Left Center Forward', 'Right Wing']",5.0
+329,5.508,Luis Carlos Tejada Hansell,59.45945945945945,True,5643.0,Panama,798.0,"['Center Forward', 'Secondary Striker', 'Right Center Back']",2.0
+330,5.8175,Luka Milivojević,93.75,False,3455.0,Serbia,786.0,['Right Center Midfield'],2.0
+331,6.256666666666667,Luka Modrić,90.9090909090909,False,5463.0,Croatia,785.0,"['Right Attacking Midfield', 'Right Center Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield', 'Right Defensive Midfield', 'Right Midfield']",7.0
+332,6.1175,Łukasz Fabiański,87.5,False,3262.0,Poland,789.0,['Goalkeeper'],1.0
+333,5.7575,Łukasz Piszczek,53.333333333333336,True,5658.0,Poland,789.0,"['Right Center Back', 'Right Back', 'Right Wing Back']",2.0
+334,5.609999999999999,Łukasz Teodorczyk,58.82352941176471,True,6194.0,Poland,789.0,"['Right Midfield', 'Center Attacking Midfield']",2.0
+335,6.284166666666667,M''Baye Babacar Niang,72.72727272727273,True,5661.0,Senegal,787.0,"['Left Center Forward', 'Center Forward']",3.0
+336,5.8275,Maciej Rybus,100.0,False,5672.0,Poland,789.0,"['Left Midfield', 'Left Back', 'Left Wing Back']",2.0
+337,5.637142857142857,Makoto Hasebe,100.0,False,5681.0,Japan,778.0,"['Right Defensive Midfield', 'Center Defensive Midfield', 'Left Center Midfield']",4.0
+338,5.826,Mame Biram Diouf,100.0,False,3603.0,Senegal,787.0,"['Right Center Forward', 'Center Forward']",2.0
+339,5.72375,Manuel Obafemi Akanji,76.47058823529412,True,5549.0,Switzerland,773.0,['Left Center Back'],4.0
+340,6.4,Manuel Henrique Tavares Fernandes,65.3061224489796,True,6350.0,Portugal,780.0,['Right Center Midfield'],1.0
+341,5.570833333333333,Manuel Neuer,100.0,False,5570.0,Germany,770.0,['Goalkeeper'],3.0
+342,5.7188888888888885,Manuel Marouan da Costa Trinidade,62.5,True,5221.0,Morocco,788.0,"['Left Center Back', 'Right Center Back', 'Center Back']",3.0
+344,5.806315789473683,Marcelo Brozović,93.75,False,5469.0,Croatia,785.0,"['Center Midfield', 'Center Defensive Midfield', 'Center Attacking Midfield', 'Left Center Midfield', 'Left Defensive Midfield', 'Left Wing', 'Left Midfield']",6.0
+345,5.74875,Marco Asensio Willemsen,72.22222222222221,True,5719.0,Spain,772.0,['Right Midfield'],3.0
+346,6.05,Marco Jhonfai Fabián De La Mora,51.162790697674424,True,6317.0,Mexico,794.0,"['Left Center Midfield', 'Center Attacking Midfield', 'Left Back']",1.0
+347,5.801818181818182,Marco Reus,100.0,False,5559.0,Germany,770.0,"['Center Attacking Midfield', 'Right Center Midfield', 'Right Midfield', 'Left Wing']",3.0
+348,5.8775,Marcos Danilo Ureña Porras,54.054054054054056,True,5586.0,Costa Rica,795.0,['Center Forward'],2.0
+349,6.03,Marcos Javier Acuña,70.96774193548387,True,19597.0,Argentina,779.0,"['Left Midfield', 'Left Back']",1.0
+350,5.7375,Faustino Marcos Alberto Rojo,56.41025641025641,True,3602.0,Argentina,779.0,"['Left Center Back', 'Left Back']",3.0
+351,6.007,Marcus Berg,100.0,False,11098.0,Sweden,790.0,"['Right Center Forward', 'Left Center Forward']",5.0
+352,5.819285714285714,Marcus Rashford,100.0,False,3318.0,England,768.0,"['Right Center Back', 'Left Center Forward', 'Right Midfield', 'Secondary Striker', 'Right Center Forward']",6.0
+353,5.988,Mário Figueira Fernandes,71.7948717948718,True,5170.0,Russia,796.0,"['Right Back', 'Right Midfield']",5.0
+354,5.694285714285714,Mario Gavranović,93.75,False,5834.0,Switzerland,773.0,"['Secondary Striker', 'Center Forward']",2.0
+355,6.034000000000001,Mario Gómez García,68.96551724137932,True,5565.0,Germany,770.0,"['Left Wing', 'Center Forward', 'Right Center Forward', 'Secondary Striker']",3.0
+356,6.0905000000000005,Mario Mandžukić,86.66666666666667,False,5472.0,Croatia,785.0,"['Center Forward', 'Left Wing']",6.0
+357,5.785833333333334,Mark Milligan,100.0,False,5488.0,Australia,792.0,['Left Center Back'],3.0
+358,5.78,Marko Pjaca,100.0,False,5459.0,Croatia,785.0,"['Center Forward', 'Left Back', 'Right Wing']",3.0
+359,5.774444444444445,Marouane Fellaini-Bakkioui,79.06976744186046,True,3296.0,Belgium,782.0,"['Right Wing', 'Left Wing', 'Right Center Midfield', 'Right Attacking Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Center Attacking Midfield', 'Left Center Midfield']",5.0
+361,5.604615384615385,Martin Braithwaite Christensen,75.0,True,4447.0,Denmark,776.0,"['Left Wing', 'Right Wing', 'Right Midfield']",4.0
+362,5.769,José Martín Cáceres Silva,61.53846153846154,True,5248.0,Uruguay,783.0,"['Left Back', 'Right Back']",5.0
+363,5.797499999999999,Martin Olsson,100.0,False,3576.0,Sweden,790.0,"['Left Midfield', 'Left Wing']",2.0
+364,5.7425,Marvin Plattenhardt,100.0,False,5569.0,Germany,770.0,['Left Back'],1.0
+365,5.973333333333334,Marwan Mohsen,100.0,False,5252.0,Egypt,774.0,"['Center Forward', 'Left Center Forward']",3.0
+366,6.45,Masoud Shojaei Soleimani,73.6842105263158,True,5238.0,Iran,797.0,['Right Center Midfield'],1.0
+367,5.7875000000000005,Mathew Ryan,84.21052631578947,True,3240.0,Australia,792.0,['Goalkeeper'],3.0
+368,5.99,Mateo Kovačić,84.61538461538461,True,5456.0,Croatia,785.0,"['Center Defensive Midfield', 'Right Midfield', 'Right Wing', 'Left Midfield', 'Left Center Midfield', 'Center Attacking Midfield']",5.0
+369,5.712,Andrés Mateus Uribe Villa,64.86486486486487,True,6193.0,Colombia,769.0,"['Left Center Midfield', 'Right Defensive Midfield']",3.0
+370,5.760833333333333,Mathew Leckie,100.0,False,5481.0,Australia,792.0,"['Right Midfield', 'Right Wing']",3.0
+371,5.785,Matías Vecino Falero,72.72727272727273,True,5255.0,Uruguay,783.0,"['Right Center Midfield', 'Left Midfield', 'Left Center Midfield', 'Left Defensive Midfield']",5.0
+372,6.175,Mats Hummels,100.0,False,5572.0,Germany,770.0,['Left Center Back'],2.0
+373,5.805,Maximiliano Gómez González,55.55555555555556,True,6297.0,Uruguay,783.0,"['Left Center Forward', 'Right Center Forward']",2.0
+374,6.202500000000001,Maximiliano Eduardo Meza,80.0,True,5499.0,Argentina,779.0,"['Right Wing', 'Left Attacking Midfield', 'Left Midfield', 'Left Defensive Midfield', 'Right Midfield', 'Right Center Midfield', 'Left Wing', 'Left Back']",4.0
+375,5.956875,Maya Yoshida,100.0,False,3300.0,Japan,778.0,['Right Center Back'],4.0
+376,5.140000000000001,Medhi Amine El Mouttaqi Benatia,59.09090909090908,True,5244.0,Morocco,788.0,['Right Center Back'],2.0
+377,6.04,Mehdi Carcela-González,95.45454545454545,False,5725.0,Morocco,788.0,['Left Center Forward'],1.0
+378,5.957777777777778,Mehdi Taremi,100.0,False,5226.0,Iran,797.0,"['Left Midfield', 'Right Center Midfield', 'Right Wing']",3.0
+379,6.0325,Mesut Özil,90.0,False,3496.0,Germany,770.0,"['Center Attacking Midfield', 'Right Center Midfield', 'Left Center Midfield']",2.0
+380,6.225,Michael Krohn-Dehli,100.0,False,6356.0,Denmark,776.0,['Left Center Midfield'],1.0
+381,5.1425,Michael Lang,100.0,False,5546.0,Switzerland,773.0,"['Right Back', 'Right Center Back']",3.0
+382,5.5225,Michael Amir Murillo Bermudez,68.18181818181819,True,5641.0,Panama,798.0,['Right Back'],2.0
+383,5.91875,Michał Pazdan,92.3076923076923,False,5670.0,Poland,789.0,['Left Center Back'],2.0
+384,5.886666666666667,Michy Batshuayi Tunga,83.33333333333334,True,3457.0,Belgium,782.0,"['Center Forward', 'Left Center Forward', 'Right Back']",3.0
+385,5.98,Miguel Ángel Borja Hernández,60.0,True,6333.0,Colombia,769.0,['Center Forward'],1.0
+386,5.928666666666667,Miguel Arturo Layún Prado,59.45945945945945,True,5556.0,Mexico,794.0,"['Right Wing', 'Right Back', 'Right Midfield', 'Left Back']",4.0
+387,6.010000000000001,Miguel Ángel Trauco Saavedra,63.41463414634146,True,5518.0,Peru,784.0,['Left Back'],3.0
+388,6.388125,Mikael Lustig,100.0,False,5612.0,Sweden,790.0,['Right Back'],4.0
+389,5.518,Milad Mohammadi,100.0,False,5720.0,Iran,797.0,['Left Back'],2.0
+390,6.515000000000001,Milan Badelj,100.0,False,6305.0,Croatia,785.0,"['Right Attacking Midfield', 'Left Midfield', 'Center Defensive Midfield']",3.0
+391,5.988333333333333,Mile Jedinak,100.0,False,5489.0,Australia,792.0,"['Right Center Midfield', 'Left Center Midfield']",3.0
+392,5.6625,Milos Veljkovic,100.0,False,6321.0,Serbia,786.0,['Left Center Back'],1.0
+393,5.947,João Miranda de Souza Filho,41.17647058823529,True,5551.0,Brazil,781.0,['Left Center Back'],5.0
+394,6.04,Mohamed Amine Ben Amor,84.21052631578947,True,5657.0,Tunisia,777.0,['Right Midfield'],1.0
+395,5.80875,Mohamed Naser Elsayed Elneny,60.86956521739131,True,3568.0,Egypt,774.0,"['Right Center Midfield', 'Right Defensive Midfield']",3.0
+396,5.730833333333333,Mohamed Naser Elsayed Elneny,66.66666666666667,True,3568.0,Egypt,774.0,"['Right Center Midfield', 'Right Defensive Midfield']",3.0
+397,6.15,Mohammed Kanoo,88.88888888888889,False,5713.0,Saudi Arabia,799.0,['Right Wing'],1.0
+398,6.045,Mohamed Salah,100.0,False,3531.0,Egypt,774.0,"['Right Wing', 'Right Center Forward', 'Center Attacking Midfield', 'Center Forward']",2.0
+399,5.805833333333333,Mohamed Salah,76.92307692307692,True,3531.0,Egypt,774.0,"['Right Wing', 'Right Center Forward', 'Center Attacking Midfield', 'Center Forward']",2.0
+400,5.8075,Mohammed Khalil Al Owais,82.92682926829268,True,5714.0,Saudi Arabia,799.0,['Goalkeeper'],1.0
+401,5.928333333333334,Mohammed Al Burayk,94.44444444444444,False,5191.0,Saudi Arabia,799.0,['Right Back'],3.0
+402,5.701666666666667,Mohammed Khalil Al Owais,65.11627906976744,True,5714.0,Saudi Arabia,799.0,['Goalkeeper'],1.0
+403,5.665,Seon-Min Moon,100.0,False,5989.0,South Korea,791.0,"['Right Wing', 'Right Midfield', 'Left Midfield']",2.0
+404,5.485454545454545,Morteza Pouraliganji,100.0,False,5220.0,Iran,797.0,['Right Center Back'],3.0
+405,6.2275,Motaz Ali Hassan Hawsawi,70.27027027027026,True,6290.0,Saudi Arabia,799.0,['Left Center Back'],1.0
+406,5.61090909090909,Mbark Boussoufa,90.9090909090909,False,5232.0,Morocco,788.0,"['Left Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Right Midfield']",3.0
+407,6.843333333333334,Mouez Hassen,100.0,False,5653.0,Tunisia,777.0,['Goalkeeper'],1.0
+408,5.825,Mousa Sidi Yaya Dembélé,61.111111111111114,True,3037.0,Belgium,782.0,"['Right Center Midfield', 'Center Defensive Midfield', 'Left Center Midfield', 'Right Defensive Midfield']",4.0
+409,6.0175,Pape Moussa Konaté,77.41935483870968,True,3555.0,Senegal,787.0,"['Left Center Forward', 'Center Forward', 'Left Wing']",2.0
+410,5.889,Moussa Wagué,91.66666666666666,False,5674.0,Senegal,787.0,"['Right Back', 'Left Back']",3.0
+411,5.159000000000001,Munir Mohand Mohamedi,80.0,True,5233.0,Morocco,788.0,['Goalkeeper'],3.0
+412,5.82,N''Golo Kanté,88.0,False,3961.0,France,771.0,"['Right Center Midfield', 'Left Defensive Midfield', 'Center Defensive Midfield', 'Right Defensive Midfield', 'Center Midfield']",7.0
+413,5.98125,Nabil Dirar,100.0,False,5727.0,Morocco,788.0,['Right Back'],2.0
+414,5.947272727272727,Nabil Fekir,100.0,False,2948.0,France,771.0,"['Center Attacking Midfield', 'Right Wing Back', 'Left Wing', 'Right Midfield']",6.0
+415,5.715,Nacer Chadli,100.0,False,4831.0,Belgium,782.0,"['Right Midfield', 'Left Center Midfield', 'Left Wing Back', 'Right Back']",6.0
+417,5.880909090909091,Naïm Sliti,90.0,False,3557.0,Tunisia,777.0,"['Left Midfield', 'Right Center Midfield']",3.0
+418,5.777058823529411,Nahitan Michel Nández Acosta,61.904761904761905,True,5247.0,Uruguay,783.0,"['Right Wing', 'Right Center Midfield', 'Right Midfield']",5.0
+419,6.115833333333334,Nemanja Matić,92.3076923076923,False,3381.0,Serbia,786.0,"['Left Center Midfield', 'Right Center Midfield', 'Left Defensive Midfield']",3.0
+420,6.135,Nemanja Radonjić,93.75,False,5833.0,Serbia,786.0,['Left Wing'],2.0
+421,6.3235,Neymar da Silva Santos Junior,34.285714285714285,True,4320.0,Brazil,781.0,"['Left Wing', 'Right Center Forward', 'Center Forward']",5.0
+422,5.579,Nicolai Jørgensen,94.11764705882352,False,5522.0,Denmark,776.0,['Center Forward'],3.0
+423,5.9075,Nicolás Hernán Otamendi,76.92307692307692,True,3090.0,Argentina,779.0,"['Right Center Back', 'Left Center Back', 'Center Back']",4.0
+424,5.745,Nicolás Alejandro Tagliafico,73.91304347826086,True,5507.0,Argentina,779.0,"['Left Back', 'Left Center Back']",4.0
+425,5.7425,Niklas Süle,90.9090909090909,False,6322.0,Germany,770.0,['Right Center Back'],1.0
+426,5.985833333333333,Nikola Milenković,94.11764705882352,False,5603.0,Serbia,786.0,['Right Center Back'],3.0
+427,5.855,Nordin Amrabat,100.0,False,3302.0,Morocco,788.0,"['Right Wing', 'Left Wing', 'Right Midfield', 'Right Center Midfield', 'Right Back']",3.0
+428,5.73875,Odion Jude Ighalo,82.75862068965517,True,5458.0,Nigeria,775.0,"['Left Center Forward', 'Right Center Forward', 'Center Forward']",3.0
+429,6.2625,Oghenekaro Etebo,100.0,False,5466.0,Nigeria,775.0,"['Left Center Midfield', 'Left Midfield']",3.0
+430,6.026999999999999,Ola Toivonen,100.0,False,4417.0,Sweden,790.0,"['Left Center Forward', 'Right Center Forward']",5.0
+431,5.990384615384615,Olivier Giroud,100.0,False,3604.0,France,771.0,"['Center Forward', 'Left Center Forward']",7.0
+432,5.13,Osama Abdulrezag Hawsawi,61.111111111111114,True,5184.0,Saudi Arabia,799.0,['Right Center Back'],3.0
+433,5.944545454545454,Omid Ebrahimi,100.0,False,5225.0,Iran,797.0,"['Right Center Midfield', 'Center Defensive Midfield']",3.0
+434,5.94,Oribe Peralta Morones,76.47058823529412,True,6316.0,Mexico,794.0,['Right Center Forward'],1.0
+435,5.6816666666666675,Osama Abdulrezag Hawsawi,70.27027027027026,True,5184.0,Saudi Arabia,799.0,['Right Center Back'],3.0
+436,5.805,Óscar Esau Duarte Gaitán,61.111111111111114,True,5598.0,Costa Rica,795.0,"['Left Center Back', 'Right Center Back']",2.0
+437,6.025,Oscar Hiljemark,100.0,False,5605.0,Sweden,790.0,['Left Center Midfield'],2.0
+438,6.0425,Oscar Fabián Murillo Murillo,63.41463414634146,True,5680.0,Colombia,769.0,['Left Center Back'],1.0
+439,5.797272727272727,Ousmane Dembélé,86.66666666666667,False,5477.0,France,771.0,"['Right Wing', 'Left Wing']",4.0
+440,6.355,Oussama Haddadi,100.0,False,3252.0,Tunisia,777.0,['Left Back'],1.0
+441,6.181111111111111,José Paolo Guerrero Gonzáles,66.66666666666667,True,5535.0,Peru,784.0,"['Center Forward', 'Left Wing']",3.0
+442,6.255,Christopher Paolo César Hurtado Huertas,50.0,True,6315.0,Peru,784.0,['Right Defensive Midfield'],1.0
+443,6.343333333333334,Joo-Ho Park,100.0,False,5609.0,South Korea,791.0,['Left Back'],1.0
+444,6.23125,Paul Pogba,100.0,False,20004.0,France,771.0,"['Left Center Midfield', 'Right Defensive Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield']",6.0
+446,5.9,Paulo Bruno Exequiel Dybala,61.53846153846154,True,5743.0,Argentina,779.0,"['Right Midfield', 'Right Defensive Midfield']",1.0
+447,5.97375,Pedro Jesús Aquino Sánchez,63.1578947368421,True,5526.0,Peru,784.0,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Right Center Midfield']",3.0
+448,5.8475,Pedro David Gallese Quiróz,66.66666666666667,True,5528.0,Peru,784.0,['Goalkeeper'],3.0
+450,5.8075,Phil Jones,100.0,False,3314.0,England,768.0,['Right Center Back'],2.0
+451,6.2105,Philippe Coutinho Correia,80.95238095238095,True,3501.0,Brazil,781.0,"['Left Center Midfield', 'Left Attacking Midfield', 'Center Attacking Midfield', 'Left Midfield', 'Left Wing']",5.0
+452,6.020714285714285,Pione Sisto Ifolo Emirmija,59.45945945945945,True,5516.0,Denmark,776.0,"['Left Wing', 'Left Midfield']",4.0
+453,5.709166666666667,Piotr Zieliński,93.33333333333333,False,5660.0,Poland,789.0,"['Right Wing', 'Left Center Midfield', 'Left Defensive Midfield', 'Center Attacking Midfield']",3.0
+454,6.218,Pontus Jansson,100.0,False,4709.0,Sweden,790.0,"['Right Center Back', 'Right Back']",2.0
+455,5.895,Presnel Kimpembe,100.0,False,2999.0,France,771.0,['Left Center Back'],1.0
+456,5.859375,Radamel Falcao García Zárate,66.66666666666667,True,3445.0,Colombia,769.0,"['Left Center Forward', 'Right Center Forward', 'Center Forward']",4.0
+457,5.80875,Rafael Márquez Álvarez,72.22222222222221,True,5558.0,Mexico,794.0,"['Left Defensive Midfield', 'Center Defensive Midfield', 'Left Center Midfield', 'Right Defensive Midfield', 'Center Midfield']",3.0
+458,6.2775,Rafał Kurzawa,92.3076923076923,False,6336.0,Poland,789.0,['Left Wing'],1.0
+459,5.723333333333334,Ragnar Sigurðsson,94.11764705882352,False,5511.0,Iceland,793.0,['Left Center Back'],3.0
+460,5.904583333333334,Raheem Sterling,100.0,False,3233.0,England,768.0,"['Right Center Forward', 'Left Center Forward']",6.0
+461,6.0120000000000005,Ramadan Sobhi Ramadan Ahmed,65.0,True,3536.0,Egypt,774.0,"['Right Midfield', 'Left Midfield', 'Left Wing']",3.0
+462,5.6775,Rami Bedoui,100.0,False,6345.0,Tunisia,777.0,['Right Center Back'],1.0
+463,6.043636363636364,Ramin Rezaeian,100.0,False,5235.0,Iran,797.0,['Right Back'],3.0
+464,6.09,Rándall Azofeifa Corrales,73.17073170731707,True,6327.0,Costa Rica,795.0,['Left Center Midfield'],1.0
+465,6.09125,Raphaël Adelino José Guerreiro,68.08510638297872,True,5209.0,Portugal,780.0,['Left Back'],4.0
+466,5.941071428571428,Raphaël Varane,92.85714285714286,False,5485.0,France,771.0,['Right Center Back'],7.0
+467,5.706,Raúl Alonso Jiménez Rodríguez,48.78048780487805,True,5568.0,Mexico,794.0,"['Left Wing', 'Left Midfield', 'Center Forward']",2.0
+468,6.05,Raúl Mario Ruidíaz Misitich,51.28205128205128,True,5533.0,Peru,784.0,"['Left Wing', 'Center Forward']",2.0
+469,6.51,Renato Soares de Oliveira Augusto,59.57446808510638,True,5553.0,Brazil,781.0,"['Left Center Midfield', 'Right Midfield', 'Right Center Midfield']",3.0
+470,5.72875,Renato Fabrizio Tapia Cortijo,58.53658536585367,True,5523.0,Peru,784.0,"['Right Defensive Midfield', 'Right Center Midfield']",2.0
+471,5.796666666666667,Ricardo Guardia Avila,76.47058823529412,True,6138.0,Panama,798.0,"['Left Center Midfield', 'Right Center Midfield', 'Left Wing']",2.0
+472,5.6850000000000005,Ricardo Domingos Barbosa Pereira,63.829787234042556,True,6352.0,Portugal,780.0,['Right Back'],1.0
+473,6.19375,Ricardo Andrade Quaresma Bernardo,65.3061224489796,True,5215.0,Portugal,780.0,"['Right Midfield', 'Right Wing']",3.0
+474,5.998125,Ricardo Iván Rodríguez Araya,71.11111111111111,True,5544.0,Switzerland,773.0,"['Left Back', 'Left Midfield']",4.0
+475,5.670000000000001,Robbie Kruse,100.0,False,5494.0,Australia,792.0,"['Left Midfield', 'Left Wing']",3.0
+476,5.6675,Robert Lewandowski,100.0,False,5668.0,Poland,789.0,['Center Forward'],3.0
+477,6.12875,Roberto Firmino Barbosa de Oliveira,60.0,True,3535.0,Brazil,781.0,"['Right Attacking Midfield', 'Center Forward', 'Right Center Midfield', 'Center Attacking Midfield']",4.0
+478,5.9045000000000005,Robin Olsen,100.0,False,5622.0,Sweden,790.0,['Goalkeeper'],5.0
+479,4.99,Rodney Wallace,100.0,False,6326.0,Costa Rica,795.0,['Left Wing'],1.0
+480,5.863,Rodrigo Bentancur Colmán,82.92682926829268,True,5260.0,Uruguay,783.0,"['Left Center Midfield', 'Center Attacking Midfield']",5.0
+481,6.4125,Rodrigo Moreno Machado,77.77777777777779,True,5718.0,Spain,772.0,"['Right Midfield', 'Right Center Forward', 'Center Forward']",3.0
+482,5.718571428571429,Romain Saïss,91.66666666666666,False,5219.0,Morocco,788.0,['Left Center Back'],2.0
+483,5.701666666666667,Román Aureliano Torres Morcillo,51.162790697674424,True,5635.0,Panama,798.0,['Right Center Back'],3.0
+484,6.04125,Roman Zobnin,100.0,False,5171.0,Russia,796.0,"['Right Defensive Midfield', 'Left Defensive Midfield', 'Left Center Midfield', 'Right Midfield', 'Center Defensive Midfield', 'Right Center Midfield']",5.0
+485,5.9375,Romelu Lukaku Menama,78.78787878787878,True,3289.0,Belgium,782.0,"['Center Forward', 'Right Wing', 'Right Center Forward']",6.0
+486,5.933333333333334,Roozbeh Cheshmi,100.0,False,5222.0,Iran,797.0,['Left Center Back'],1.0
+487,6.060714285714285,Ruben Loftus-Cheek,100.0,False,3504.0,England,768.0,"['Right Attacking Midfield', 'Left Center Midfield', 'Right Center Midfield']",4.0
+488,5.668125,Rui Pedro dos Santos Patrício,53.65853658536586,True,5205.0,Portugal,780.0,['Goalkeeper'],4.0
+489,5.976666666666667,Rúrik Gíslason,85.71428571428572,False,5495.0,Iceland,793.0,"['Right Midfield', 'Left Midfield']",2.0
+490,5.835,Sadio Mané,90.0,False,3629.0,Senegal,787.0,"['Left Wing', 'Right Center Forward']",3.0
+491,5.77375,Saeid Ezatolahi Afagh,83.33333333333334,True,5722.0,Iran,797.0,['Center Defensive Midfield'],2.0
+492,5.8675,Saîf-Eddine Khaoui,94.44444444444444,False,2974.0,Tunisia,777.0,['Left Center Midfield'],1.0
+493,6.2299999999999995,Salem Mohammed Al Dawsari,78.04878048780488,True,5187.0,Saudi Arabia,799.0,"['Left Wing', 'Left Midfield', 'Center Attacking Midfield']",3.0
+494,5.7475,Salif Sané,90.0,False,5664.0,Senegal,787.0,['Right Center Back'],3.0
+495,6.235833333333333,Salman Mohammed Al Faraj,71.7948717948718,True,5178.0,Saudi Arabia,799.0,"['Center Attacking Midfield', 'Left Center Midfield', 'Left Wing']",3.0
+496,5.476666666666667,Sam Morsy,100.0,False,3878.0,Egypt,774.0,['Left Center Midfield'],1.0
+497,6.5600000000000005,Saman Ghoddos,100.0,False,5240.0,Iran,797.0,"['Right Midfield', 'Left Center Midfield']",3.0
+498,5.82125,Sami Khedira,100.0,False,5566.0,Germany,770.0,['Right Center Midfield'],2.0
+499,5.778333333333333,Samuel Yves Umtiti,83.87096774193549,True,5492.0,France,771.0,['Left Center Back'],6.0
+500,6.0425,Santiago Arias Naranjo,77.77777777777779,True,5696.0,Colombia,769.0,['Right Back'],4.0
+501,6.069090909090909,Sardar Azmoun,100.0,False,5224.0,Iran,797.0,['Center Forward'],3.0
+502,5.8625,Sebastián Coates Nión,81.08108108108108,True,6300.0,Uruguay,783.0,['Right Center Back'],1.0
+503,5.709375,Sebastian Larsson,100.0,False,5617.0,Sweden,790.0,['Right Center Midfield'],4.0
+504,5.467499999999999,Sebastian Rudy,100.0,False,6039.0,Germany,770.0,['Right Defensive Midfield'],1.0
+505,6.1375,Sergei Ignashevich,100.0,False,5174.0,Russia,796.0,"['Left Center Back', 'Center Back']",5.0
+506,5.850833333333333,Sergej Milinković-Savić,91.30434782608697,False,5589.0,Serbia,786.0,"['Center Attacking Midfield', 'Left Center Midfield', 'Right Defensive Midfield']",3.0
+507,6.005,Sergio Leonel Agüero del Castillo,52.17391304347826,True,3237.0,Argentina,779.0,"['Center Forward', 'Left Center Forward', 'Left Back']",4.0
+508,6.10375,Sergio Busquets i Burgos,76.92307692307692,True,5203.0,Spain,772.0,"['Center Defensive Midfield', 'Left Defensive Midfield', 'Center Midfield']",4.0
+509,5.861875,Sergio Ramos García,77.41935483870968,True,5201.0,Spain,772.0,['Left Center Back'],4.0
+510,5.56,Seyed Majid Hosseini,100.0,False,5228.0,Iran,797.0,"['Left Center Back', 'Center Defensive Midfield']",3.0
+511,5.715833333333333,Shinji Kagawa,100.0,False,5684.0,Japan,778.0,['Center Attacking Midfield'],3.0
+512,5.78875,Shinji Okazaki,100.0,False,3810.0,Japan,778.0,"['Left Center Forward', 'Center Forward', 'Right Midfield']",3.0
+513,5.836,Šime Vrsaljko,61.53846153846154,True,5461.0,Croatia,785.0,['Right Back'],6.0
+514,5.79,Simon Thorup Kjær,64.28571428571428,True,5534.0,Denmark,776.0,['Right Center Back'],4.0
+515,4.98,Sławomir Peszko,93.33333333333333,False,6340.0,Poland,789.0,['Left Wing'],1.0
+516,6.174166666666667,Heung-Min Son,100.0,False,3083.0,South Korea,791.0,"['Center Forward', 'Left Center Forward', 'Right Center Forward', 'Left Wing', 'Right Wing']",3.0
+517,5.6525,Stephan Lichtsteiner,100.0,False,5541.0,Switzerland,773.0,"['Right Back', 'Right Midfield']",3.0
+518,5.7775,Steve Mandanda,100.0,False,3543.0,France,771.0,['Goalkeeper'],1.0
+520,5.879166666666666,Steven Zuber,100.0,False,5548.0,Switzerland,773.0,['Left Wing'],3.0
+521,6.061666666666667,Sverrir Ingi Ingason,85.71428571428572,False,5831.0,Iceland,793.0,"['Left Center Back', 'Right Center Back', 'Center Back']",2.0
+522,5.4725,Taisir Jabir Al Jassim,71.7948717948718,True,5185.0,Saudi Arabia,799.0,['Right Center Midfield'],2.0
+523,6.076428571428571,Takashi Inui,100.0,False,5687.0,Japan,778.0,"['Left Wing', 'Left Midfield']",4.0
+524,6.156000000000001,Takashi Usami,100.0,False,6191.0,Japan,778.0,['Left Midfield'],2.0
+525,5.816363636363636,Tarek Hamed,100.0,False,5262.0,Egypt,774.0,"['Left Center Midfield', 'Left Defensive Midfield', 'Right Center Midfield']",3.0
+526,6.065,Thiago Alcântara do Nascimento,33.333333333333336,True,5208.0,Spain,772.0,"['Left Center Midfield', 'Right Midfield']",2.0
+527,5.625,Thiago Rangel Cionek,78.78787878787878,True,5662.0,Poland,789.0,['Right Center Back'],1.0
+528,6.078,Thiago Emiliano da Silva,66.66666666666667,True,3295.0,Brazil,781.0,['Right Center Back'],5.0
+529,5.909642857142857,Thibaut Courtois,100.0,False,3509.0,Belgium,782.0,['Goalkeeper'],7.0
+530,5.8306249999999995,Thomas Delaney,100.0,False,5527.0,Denmark,776.0,"['Left Center Midfield', 'Left Defensive Midfield']",4.0
+531,5.6375,Thomas Lemar,100.0,False,3245.0,France,771.0,['Left Wing'],1.0
+532,6.161,Thomas Meunier,100.0,False,3176.0,Belgium,782.0,"['Right Wing Back', 'Right Back', 'Right Midfield']",5.0
+533,6.015,Thomas Müller,92.3076923076923,False,5562.0,Germany,770.0,"['Right Wing', 'Right Center Forward', 'Secondary Striker']",3.0
+534,5.675,Thomas Vermaelen,100.0,False,6332.0,Belgium,782.0,"['Left Center Back', 'Left Wing Back']",3.0
+535,6.401999999999999,Thorgan Hazard,100.0,False,5632.0,Belgium,782.0,"['Left Midfield', 'Right Wing']",2.0
+536,5.596666666666667,Tim Cahill,100.0,False,6314.0,Australia,792.0,['Center Forward'],1.0
+537,5.674166666666667,Timo Werner,100.0,False,5557.0,Germany,770.0,"['Center Forward', 'Left Wing', 'Left Center Forward', 'Right Wing']",3.0
+538,5.58,Tin Jedvaj,100.0,False,6309.0,Croatia,785.0,"['Right Back', 'Right Wing Back']",1.0
+539,5.94875,Toby Alderweireld,100.0,False,20005.0,Belgium,782.0,"['Right Center Back', 'Right Back']",6.0
+540,5.976666666666667,Tom Rogić,80.0,True,5491.0,Australia,792.0,"['Center Attacking Midfield', 'Secondary Striker']",3.0
+541,5.73375,Tomi Jurić,90.0,False,5493.0,Australia,792.0,['Center Forward'],3.0
+542,6.2225,Tomoaki Makino,100.0,False,6338.0,Japan,778.0,['Left Center Back'],1.0
+543,6.675,Toni Kroos,100.0,False,5574.0,Germany,770.0,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Center Defensive Midfield', 'Right Center Midfield']",3.0
+544,5.915,Trent Alexander-Arnold,100.0,False,3664.0,England,768.0,['Right Midfield'],1.0
+545,5.8875,Trent Sainsbury,100.0,False,5478.0,Australia,792.0,['Right Center Back'],3.0
+547,5.45,Tyronne Ebuehi,100.0,False,5832.0,Nigeria,775.0,['Left Midfield'],1.0
+548,5.707272727272727,Vahid Amiri,100.0,False,5241.0,Iran,797.0,['Left Center Midfield'],3.0
+549,5.815625,Valon Behrami,100.0,False,5540.0,Switzerland,773.0,"['Right Center Midfield', 'Right Defensive Midfield']",4.0
+551,5.718125,Victor Nilsson Lindelöf,73.6842105263158,True,3702.0,Sweden,790.0,['Right Center Back'],4.0
+552,5.8741666666666665,Victor Moses,100.0,False,3963.0,Nigeria,775.0,"['Right Midfield', 'Right Wing', 'Right Wing Back', 'Right Back']",3.0
+553,6.081,Viktor Claesson,100.0,False,5613.0,Sweden,790.0,"['Right Wing', 'Right Midfield']",5.0
+554,5.326666666666667,Viktor Fischer,100.0,False,6303.0,Denmark,776.0,['Left Midfield'],1.0
+555,5.9688888888888885,Vincent Kompany,100.0,False,3101.0,Belgium,782.0,"['Center Back', 'Left Center Back']",5.0
+556,5.718333333333334,Vladimir Stojković,94.44444444444444,False,5601.0,Serbia,786.0,['Goalkeeper'],3.0
+557,6.321666666666666,Wahbi Khazri,100.0,False,3196.0,Tunisia,777.0,['Center Forward'],3.0
+558,6.09,Wilder José Cartagena Mendoza,71.11111111111111,True,6313.0,Peru,784.0,['Right Midfield'],1.0
+559,6.2,Onyinye Wilfred Ndidi,76.47058823529412,True,3338.0,Nigeria,775.0,"['Right Center Midfield', 'Center Midfield']",3.0
+560,6.060625,William Silva de Carvalho,78.04878048780488,True,5214.0,Portugal,780.0,"['Left Defensive Midfield', 'Left Center Midfield']",4.0
+561,5.4175,William Vitved Kvist Jørgensen,60.46511627906976,True,5517.0,Denmark,776.0,['Right Center Midfield'],1.0
+562,5.738333333333333,William Troost-Ekong,100.0,False,5455.0,Nigeria,775.0,"['Center Back', 'Right Center Back', 'Left Center Back']",3.0
+563,5.992,Willian Borges da Silva,46.666666666666664,True,3472.0,Brazil,781.0,['Right Wing'],5.0
+564,5.31,Wilfredo Daniel Caballero,65.0,True,3659.0,Argentina,779.0,['Goalkeeper'],2.0
+565,5.881818181818182,Wílmar Enrique Barrios Terán,61.904761904761905,True,5686.0,Colombia,769.0,"['Center Defensive Midfield', 'Left Wing', 'Left Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield']",3.0
+566,4.97,Wojciech Szczęsny,94.11764705882352,False,5669.0,Poland,789.0,['Goalkeeper'],2.0
+567,6.099375,Xherdan Shaqiri,100.0,False,3533.0,Switzerland,773.0,['Right Wing'],4.0
+568,5.264,Yehya Sulaiman Ali Al-Shehri,57.14285714285714,True,5192.0,Saudi Arabia,799.0,"['Right Midfield', 'Right Center Midfield']",2.0
+569,5.563125,Yann Sommer,100.0,False,5550.0,Switzerland,773.0,['Goalkeeper'],4.0
+570,5.761428571428572,Yannick Ferreira Carrasco,78.04878048780488,True,5633.0,Belgium,782.0,"['Left Wing Back', 'Left Midfield', 'Left Center Midfield']",4.0
+571,5.888333333333333,Yasir Gharsan Al Shahrani,69.76744186046511,True,5183.0,Saudi Arabia,799.0,['Left Back'],3.0
+572,5.922499999999999,Yasser Abdullah Al Mosailem,75.55555555555556,True,6291.0,Saudi Arabia,799.0,['Goalkeeper'],1.0
+573,5.650833333333334,Yassine Meriah,100.0,False,5651.0,Tunisia,777.0,['Left Center Back'],3.0
+574,5.68,Yeltsin Ignacio Tejeda Valverde,62.22222222222222,True,5839.0,Costa Rica,795.0,['Left Midfield'],1.0
+575,6.5125,Yerry Fernando Mina González,52.63157894736843,True,6196.0,Colombia,769.0,['Right Center Back'],3.0
+576,6.020833333333333,Edgar Yoel Bárcenas Herrera,60.0,True,5637.0,Panama,798.0,"['Right Wing', 'Left Wing', 'Right Center Forward']",3.0
+577,6.196666666666666,Yohan Benalouane,100.0,False,4826.0,Tunisia,777.0,['Right Center Back'],1.0
+578,5.761666666666667,Víctor Yoshimar Yotún Flores,61.904761904761905,True,5529.0,Peru,784.0,"['Left Defensive Midfield', 'Left Center Midfield']",3.0
+579,5.9375,Yoshinori Muto,100.0,False,6337.0,Japan,778.0,['Right Center Forward'],1.0
+580,5.655454545454545,Younès Belhanda,93.33333333333333,False,5242.0,Morocco,788.0,"['Center Attacking Midfield', 'Left Center Midfield', 'Left Wing']",3.0
+581,6.239090909090908,Youri Tielemans,100.0,False,2954.0,Belgium,782.0,"['Left Center Midfield', 'Right Attacking Midfield', 'Right Defensive Midfield']",4.0
+582,7.09,Youssef En-Nesyri,100.0,False,6301.0,Morocco,788.0,"['Center Forward', 'Left Midfield']",1.0
+583,5.734166666666667,Youssouf Sabaly,100.0,False,3404.0,Senegal,787.0,['Left Back'],3.0
+584,6.355,Young-Sun Yun,100.0,False,6323.0,South Korea,791.0,['Right Center Back'],1.0
+585,5.9325,Yury Gazinskiy,92.85714285714286,False,5181.0,Russia,796.0,"['Left Defensive Midfield', 'Right Defensive Midfield', 'Left Center Midfield', 'Right Center Midfield', 'Center Forward']",4.0
+586,5.98,Yuri Zhirkov,100.0,False,5193.0,Russia,796.0,"['Left Midfield', 'Left Back']",3.0
+587,6.052499999999999,Yussuf Yurary Poulsen,80.0,True,5536.0,Denmark,776.0,['Right Wing'],3.0
+588,5.824375,Yuto Nagatomo,100.0,False,5690.0,Japan,778.0,['Left Back'],4.0

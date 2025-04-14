@@ -194,15 +194,10 @@ def despejes_cabeza_por_jugador(df_eventos, df_jugadores):
     - despejes_cabeza_totales
     - despejes_cabeza_ganados
     - porcentaje_despejes_cabeza_ganados
-
-    Basado en:
-    - 'clearance_body_part' == 'Head'
-    - 'clearance_aerial_won' == True
     """
     df_jugadores = df_jugadores.copy()
     df = df_eventos.copy()
 
-    # Inicializar columnas
     df_jugadores['despejes_cabeza_totales'] = 0
     df_jugadores['despejes_cabeza_ganados'] = 0
     df_jugadores['porcentaje_despejes_cabeza_ganados'] = 0.0
@@ -210,14 +205,19 @@ def despejes_cabeza_por_jugador(df_eventos, df_jugadores):
     for jugador in df_jugadores['player']:
         df_player = df[df['player'] == jugador]
 
-        # Total de despejes con la cabeza
+        # Si no hay eventos para este jugador, pasa al siguiente
+        if df_player.empty or 'clearance_body_part' not in df_player.columns:
+            continue
+
         total = df_player[df_player['clearance_body_part'] == 'Head'].shape[0]
 
-        # Despejes aéreos ganados con la cabeza
-        ganados = df_player[
-            (df_player['clearance_body_part'] == 'Head') &
-            (df_player['clearance_aerial_won'] == True)
-        ].shape[0]
+        if 'clearance_aerial_won' in df_player.columns:
+            ganados = df_player[
+                (df_player['clearance_body_part'] == 'Head') &
+                (df_player['clearance_aerial_won'] == True)
+            ].shape[0]
+        else:
+            ganados = 0
 
         porcentaje = 100 * ganados / total if total > 0 else 0
 
@@ -226,6 +226,7 @@ def despejes_cabeza_por_jugador(df_eventos, df_jugadores):
         df_jugadores.loc[df_jugadores['player'] == jugador, 'porcentaje_despejes_cabeza_ganados'] = round(porcentaje, 2)
 
     return df_jugadores
+
 
 
 def tiros_cabeza_por_jugador(df_eventos, df_jugadores):

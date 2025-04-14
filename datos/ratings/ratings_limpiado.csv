@@ -1,0 +1,592 @@
+player,avg_rating,team,pos,pos_role
+Aaron Mooy,6.4433333333333325,Australia,MF,MC
+Abdallah El Said,5.935833333333334,Egypt,MF,"AMC, AMR"
+Abdiel Arroyo,5.9675,Panama,Sub,Sub
+Abdullah Al-Mayoof,5.0625,Saudi Arabia,GK,GK
+Abdullah Otayf,6.224166666666666,Saudi Arabia,MF,DMC
+Abdullahi Shehu,5.8475,Nigeria,DF,DR
+Abel Aguilar,5.6825,Colombia,MF,DMC
+Achraf Hakimi,5.754545454545454,Morocco,DF,DL
+Adem Ljajic,5.656000000000001,Serbia,"MF, Sub","AMC, AML, Sub"
+Adnan Januzaj,5.9425,Belgium,MF,AMC
+Adolfo Machado,5.5725,Panama,DF,DR
+Adrien Silva,5.96,Portugal,Sub,Sub
+Ahmed Fathy,5.62,Egypt,DF,DR
+Ahmed Hegazi,6.1025,Egypt,DF,DC
+Ahmed Khalil,5.595000000000001,Tunisia,Sub,Sub
+Ahmed Musa,6.438,Nigeria,"FW, Sub","FW, Sub"
+Alan Dzagoev,6.38,Russia,MF,AMC
+Albert Gudmundsson,4.4399999999999995,Iceland,Sub,Sub
+Alberto Rodriguez,5.87375,Peru,DF,DC
+Albin Ekdal,5.755,Sweden,MF,MC
+Aleksandar Kolarov,5.98,Serbia,DF,DL
+Aleksandar Mitrovic,5.913333333333334,Serbia,FW,FW
+Aleksandar Prijovic,6.0,Serbia,Sub,Sub
+Aleksandr Erokhin,5.95,Russia,Sub,Sub
+Aleksandr Golovin,6.385000000000001,Russia,MF,"AMC, AML"
+Aleksandr Samedov,6.103125,Russia,MF,"AMC, AMR"
+Aleksey Miranchuk,5.6625,Russia,MF,AMC
+Alex Iwobi,5.861666666666667,Nigeria,"MF, Sub","AMR, Sub"
+Alfred Finnbogason,5.8308333333333335,Iceland,FW,FW
+Alfred N'Diaye,5.7875,Senegal,MF,"DMC, MC"
+Ali Gabr,5.7075,Egypt,DF,DC
+Ali Hadi Albulayhi,5.9,Saudi Arabia,DF,DC
+Ali Maaloul,5.185,Tunisia,DF,DL
+Alireza Beiranvand,5.781818181818182,Iran,GK,GK
+Alireza Jahanbakhsh,5.81,Iran,"MF, Sub","MR, Sub"
+Alisson,5.7545,Brazil,GK,GK
+Amine Harit,5.576666666666667,Morocco,MF,AML
+Amr Warda,5.887777777777778,Egypt,"MF, Sub","AMR, Sub"
+Anderson Santamaria,5.607142857142857,Peru,"DF, Sub","DC, Sub"
+Andre Carrillo,6.159166666666667,Peru,MF,AMR
+Andre Silva,5.831666666666667,Portugal,"FW, Sub","FW, Sub"
+Andreas Christensen,5.7825,Denmark,"DF, MF","DC, DMC, MC"
+Andreas Cornelius,5.753,Denmark,"FW, Sub","FW, Sub"
+Andreas Granqvist,6.2005,Sweden,DF,DC
+Andrej Kramaric,5.832941176470588,Croatia,"FW, MF, Sub","AMC, FW, Sub"
+Andres Guardado,5.89,Mexico,MF,"DMC, MC"
+Andres Iniesta,5.8580000000000005,Spain,"MF, Sub","MC, Sub"
+Andrew Nabbout,5.87625,Australia,FW,FW
+Andrija Zivkovic,6.0649999999999995,Serbia,Sub,Sub
+Angel Di Maria,5.8975,Argentina,"FW, MF","AML, FWL, ML"
+Anibal Godoy,5.453333333333333,Panama,MF,MC
+Anice Badri,5.626363636363636,Tunisia,"FW, MF, Sub","FWL, MC, Sub"
+Ante Rebic,5.896,Croatia,MF,"AML, MR"
+Antoine Griezmann,6.182142857142857,France,"FW, MF","AMC, FW"
+Antonio Rudiger,5.8925,Germany,DF,DC
+Antonio Rukavina,6.058333333333334,Serbia,"DF, Sub","DR, Sub"
+Ari Freyr Skulason,6.03,Iceland,Sub,Sub
+Arkadiusz Milik,5.625,Poland,MF,AMC
+Armando Cooper,5.62125,Panama,MF,MC
+Aron Gunnarsson,5.824166666666667,Iceland,MF,"DMC, MC"
+Artem Dzyuba,6.270714285714286,Russia,"FW, Sub","FW, Sub"
+Artur Jedrzejczyk,5.98,Poland,DF,DL
+Ashley Young,5.8705,England,MF,ML
+Axel Witsel,5.8325,Belgium,MF,"DMC, MC"
+Aymen Mathlouthi,5.645,Tunisia,GK,GK
+Ayoub El Kaabi,5.772,Morocco,"FW, Sub","FW, Sub"
+Aziz Behich,5.8566666666666665,Australia,DF,DL
+Aziz Bouhaddouz,5.755,Morocco,Sub,Sub
+Badou Ndiaye,6.265000000000001,Senegal,MF,MC
+Bartosz Bereszynski,5.818,Poland,"DF, MF, Sub","DMR, DR, Sub"
+Bassem Srarfi,6.04,Tunisia,Sub,Sub
+Benjamin Mendy,5.06,France,Sub,Sub
+Benjamin Pavard,5.932916666666666,France,DF,DR
+Bernardo Silva,5.905,Portugal,MF,MR
+Birkir Bjarnason,5.795833333333333,Iceland,MF,"AML, ML"
+Birkir Mar Saevarsson,5.803333333333334,Iceland,DF,DR
+Bjorn Sigurdarson,6.018,Iceland,Sub,Sub
+Blaise Matuidi,5.9094444444444445,France,"MF, Sub","AML, ML, Sub"
+Blas Perez,5.89125,Panama,FW,FW
+Blerim Dzemaili,5.703125,Switzerland,MF,AMC
+Branislav Ivanovic,6.07875,Serbia,DF,DR
+Breel Embolo,6.391249999999999,Switzerland,"MF, Sub","AML, Sub"
+Brian Idowu,5.835,Nigeria,"DF, MF","DL, DML"
+Bruno Fernandes,5.696666666666666,Portugal,"MF, Sub","ML, Sub"
+Bryan Oviedo,5.8,Costa Rica,MF,DML
+Bryan Ruiz,5.756666666666667,Costa Rica,MF,AMC
+Carlos Bacca,5.722857142857143,Colombia,Sub,Sub
+Carlos Salcedo,6.169375,Mexico,DF,"DC, DR"
+Carlos Sanchez,5.528095238095238,"Colombia, Uruguay","MF, Sub","DMC, MC, MR, Sub"
+Carlos Vela,6.07625,Mexico,"FW, MF","AMC, FWL"
+Casemiro,6.171875,Brazil,MF,MC
+Cedric Soares,5.949166666666667,Portugal,DF,DR
+Celso Borges,6.068333333333334,Costa Rica,MF,MC
+Cheikh N'Doye,6.220000000000001,Senegal,Sub,Sub
+Cheikhou Kouyate,5.805,Senegal,"MF, Sub","MC, Sub"
+Chicharito,6.146875,Mexico,FW,FW
+Cho Hyun-Woo,6.109166666666667,South Korea,GK,GK
+Christian Bolanos,5.512,Costa Rica,Sub,Sub
+Christian Cueva,5.795000000000001,Peru,MF,AMC
+Christian Eriksen,6.095625,Denmark,MF,"AMC, MC"
+Christian Ramos,5.860833333333333,Peru,DF,DC
+Corentin Tolisso,5.8707142857142856,France,"MF, Sub","AML, MC, Sub"
+Corona,6.103333333333334,Mexico,Sub,Sub
+Cristhian Stuani,5.771666666666667,Uruguay,"FW, Sub","FW, Sub"
+Cristian Gamboa,6.139166666666667,Costa Rica,MF,DMR
+Cristian Pavon,5.847272727272727,Argentina,"FW, Sub","FWR, Sub"
+Cristian Rodriguez,5.770714285714286,Uruguay,"MF, Sub","ML, Sub"
+Cristian Zapata,6.0,Colombia,Sub,Sub
+Cristiano Ronaldo,6.519375,Portugal,FW,FW
+Daler Kuzyaev,5.786666666666666,Russia,"MF, Sub","MC, Sub"
+Daniel Arzani,5.861428571428571,Australia,Sub,Sub
+Daniel Carvajal,5.798181818181818,Spain,"DF, Sub","DR, Sub"
+Daniel Colindres,5.6775,Costa Rica,MF,AMC
+Danijel Subasic,5.75,Croatia,GK,GK
+Danilo,5.595,Brazil,DF,DR
+Danny Rose,5.899285714285715,England,"MF, Sub","ML, Sub"
+Danny Welbeck,6.07,England,Sub,Sub
+David Guzman,5.730833333333333,Costa Rica,MF,MC
+David Ospina,5.63875,Colombia,GK,GK
+David Silva,5.824166666666667,Spain,"FW, MF","AMC, FWR, MC"
+David de Gea,5.189375,Spain,GK,GK
+Davinson Sanchez,5.778125,Colombia,DF,DC
+Dawid Kownacki,5.555,Poland,"FW, Sub","FWL, Sub"
+Dedryck Boyata,5.6933333333333325,Belgium,DF,DC
+Dejan Lovren,5.816666666666667,Croatia,"DF, Sub","DC, Sub"
+Dele Alli,5.870588235294117,England,"MF, Sub","MC, Sub"
+Denis Cheryshev,5.982857142857143,Russia,"MF, Sub","AML, Sub"
+Denis Zakaria,5.605,Switzerland,Sub,Sub
+Diafra Sakho,5.94,Senegal,Sub,Sub
+Diego Costa,5.980625,Spain,FW,FW
+Diego Godin,6.181,Uruguay,DF,DC
+Diego Laxalt,5.521333333333333,Uruguay,"DF, Sub","DL, Sub"
+Djibril Sidibe,5.83,France,DF,DR
+Domagoj Vida,5.9045000000000005,Croatia,DF,DC
+Douglas Costa,5.792,Brazil,Sub,Sub
+Dries Mertens,6.039,Belgium,"MF, Sub","AMC, Sub"
+Duje Caleta-Car,5.7875,Croatia,DF,DC
+Dusan Tadic,6.054166666666667,Serbia,MF,AMR
+Dusko Tosic,5.6825,Serbia,DF,DC
+Dylan Bronn,6.467142857142856,Tunisia,DF,DR
+Eden Hazard,6.751,Belgium,"FW, MF","AMC, AML, FWL"
+Edinson Cavani,6.44875,Uruguay,FW,FW
+Edison Flores,5.801666666666667,Peru,MF,AML
+Edson Alvarez,5.5553333333333335,Mexico,"DF, Sub","DR, Sub"
+Eduardo Salvio,6.01125,Argentina,"DF, MF","DMR, DR"
+Ehsan Haji Safi,6.081818181818182,Iran,DF,DL
+Eiji Kawashima,5.76625,Japan,GK,GK
+Ellyes Skhiri,5.656666666666666,Tunisia,MF,"DMC, MC"
+Emil Forsberg,6.0275,Sweden,MF,ML
+Emil Hallfredsson,5.83375,Iceland,MF,"DMC, MC"
+Emil Krafth,5.815,Sweden,"DF, Sub","DR, Sub"
+Enzo Perez,5.631666666666667,Argentina,MF,"MC, MR"
+Eric Davis,5.55,Panama,DF,DL
+Eric Dier,5.55,England,"MF, Sub","DMC, Sub"
+Essam El Hadary,6.6825,Egypt,GK,GK
+Ever Banega,5.920000000000001,Argentina,"MF, Sub","MC, Sub"
+Fabian Delph,5.961,England,"MF, Sub","MC, Sub"
+Fabian Schar,5.871666666666666,Switzerland,DF,DC
+Fagner,5.941875,Brazil,DF,DR
+Fahad Al Muwallad,5.81125,Saudi Arabia,FW,FW
+Fakhreddine Ben Youssef,6.1274999999999995,Tunisia,MF,MR
+Farouk Ben Mustapha,5.17,Tunisia,"GK, Sub","GK, Sub"
+Faycal Fajr,6.3875,Morocco,Sub,Sub
+Federico Fazio,5.04,Argentina,Sub,Sub
+Fedor Kudryashov,5.621111111111111,Russia,"DF, Sub","DC, DL, Sub"
+Fedor Smolov,5.709166666666667,Russia,"FW, Sub","FW, Sub"
+Felipe Baloy,7.15,Panama,Sub,Sub
+Ferjani Sassi,5.851666666666667,Tunisia,MF,MC
+Fernandinho,5.8325,Brazil,"MF, Sub","MC, Sub"
+Fernando Muslera,5.7535,Uruguay,GK,GK
+Fidel Escobar,5.620833333333334,Panama,DF,DC
+Filip Bradaric,6.18,Croatia,Sub,Sub
+Filip Kostic,5.894,Serbia,"MF, Sub","AML, Sub"
+Filipe Luis,6.054285714285714,Brazil,"DF, Sub","DL, Sub"
+Florian Thauvin,5.88,France,Sub,Sub
+Francis Uzoho,5.799166666666667,Nigeria,GK,GK
+Francisco Calvo,6.029999999999999,Costa Rica,"MF, Sub","DML, Sub"
+Franco Armani,5.25625,Argentina,GK,GK
+Gabriel Gomez,5.748333333333334,Panama,MF,DMC
+Gabriel Jesus,5.89,Brazil,FW,FW
+Gabriel Mercado,5.924166666666667,Argentina,DF,"DC, DR"
+Gabriel Torres,5.31,Panama,"FW, Sub","FW, Sub"
+Gaku Shibasaki,6.046875,Japan,MF,"DMC, MC"
+Gary Cahill,6.154999999999999,England,DF,DC
+Gelson Martins,5.766666666666667,Portugal,Sub,Sub
+Gen Shoji,6.083333333333333,Japan,DF,DC
+Genki Haraguchi,5.808333333333334,Japan,MF,AMR
+Gerard Pique,6.00875,Spain,DF,DC
+Ghilane Chaalali,6.08,Tunisia,MF,MC
+Giancarlo Gonzalez,5.940833333333333,Costa Rica,DF,DC
+Giorgian de Arrascaeta,5.984999999999999,Uruguay,"MF, Sub","ML, Sub"
+Giovani dos Santos,5.975,Mexico,Sub,Sub
+Goncalo Guedes,5.980769230769231,Portugal,"FW, Sub","FW, Sub"
+Gonzalo Higuain,5.475555555555555,Argentina,"FW, Sub","FW, Sub"
+Gotoku Sakai,5.2475000000000005,Japan,MF,MR
+Granit Xhaka,5.8725,Switzerland,MF,DMC
+Grzegorz Krychowiak,5.993333333333333,Poland,MF,"DMC, MC"
+Guillermo Ochoa,6.14125,Mexico,GK,GK
+Guillermo Varela,5.91625,Uruguay,DF,DR
+Gustav Svensson,5.664444444444444,Sweden,"MF, Sub","MC, Sub"
+Gylfi Sigurdsson,6.1025,Iceland,MF,"AMC, MC"
+Hakim Ziyech,6.007272727272727,Morocco,MF,"AML, AMR, ML"
+Hamdi Nagguez,5.858333333333333,Tunisia,"DF, Sub","DR, Sub"
+Hannes Thor Halldorsson,5.725833333333334,Iceland,GK,GK
+Haris Seferovic,5.744,Switzerland,"FW, Sub","FW, Sub"
+Harold Cummings,5.510000000000001,Panama,Sub,Sub
+Harry Kane,6.454166666666667,England,FW,FW
+Harry Maguire,6.264814814814815,England,"DF, Sub","DC, Sub"
+Hattan Bahebri,5.949999999999999,Saudi Arabia,"MF, Sub","AMR, MR, Sub"
+Hector Herrera,5.83125,Mexico,MF,"DMC, MC"
+Hector Moreno,5.790833333333333,Mexico,DF,DC
+Henrik Dalsgaard,6.03875,Denmark,DF,DR
+Hiroki Sakai,5.921875,Japan,DF,DR
+Hirving Lozano,6.253125,Mexico,"FW, MF","AML, FWR"
+Hong Chul,5.9750000000000005,South Korea,"DF, Sub","DL, Sub"
+Hordur Magnusson,5.691666666666666,Iceland,DF,DL
+Hotaru Yamaguchi,5.76,Japan,"MF, Sub","MC, Sub"
+Hugo Ayala,5.85125,Mexico,DF,DC
+Hugo Lloris,5.771666666666667,France,GK,GK
+Hussain Al-Moqahwi,5.945,Saudi Arabia,"MF, Sub","MC, Sub"
+Hwang Hee-Chan,6.07,South Korea,"FW, MF","AML, FWR"
+Iago Aspas,5.997142857142857,Spain,Sub,Sub
+Ian Smith,6.1,Costa Rica,Sub,Sub
+Idrissa Gueye,5.709166666666667,Senegal,MF,MC
+Igor Akinfeev,5.976875,Russia,GK,GK
+Igor Smolnikov,4.46,Russia,DF,DR
+Ilkay Gundogan,6.176666666666667,Germany,Sub,Sub
+Ilya Kutepov,6.14875,Russia,DF,DC
+Isaac Thelin,6.274,Sweden,Sub,Sub
+Isco,6.7475000000000005,Spain,"FW, MF","AML, FWL, ML"
+Ismael Diaz,5.385,Panama,Sub,Sub
+Ismaila Sarr,5.528333333333333,Senegal,MF,MR
+Ivan Perisic,6.00375,Croatia,MF,"AMC, AMR, ML"
+Ivan Rakitic,6.160952380952381,Croatia,"MF, Sub","DMC, MC, Sub"
+Ivan Strinic,5.7335,Croatia,DF,DL
+Ja-Cheol Koo,5.6975,South Korea,"FW, MF","FW, MC"
+Jacek Goralski,5.905,Poland,MF,"DMC, MC"
+Jackson Irvine,5.918,Australia,Sub,Sub
+Jae-Sung Lee,5.930833333333333,South Korea,MF,"AMC, MC, MR"
+Jaime Penedo,5.695833333333333,Panama,GK,GK
+Jakub Blaszczykowski,5.635,Poland,MF,AMR
+James Rodriguez,5.886363636363637,Colombia,"MF, Sub","AML, Sub"
+Jamie Vardy,5.852222222222222,England,"FW, Sub","FW, Sub"
+Jan Bednarek,6.079999999999999,Poland,"DF, Sub","DC, Sub"
+Jan Vertonghen,5.964583333333334,Belgium,DF,"DC, DL"
+Jang Hyun-Soo,5.678333333333334,South Korea,"DF, MF","DC, MC"
+Javier Mascherano,5.620625,Argentina,MF,"DMC, MC"
+Jefferson Farfan,5.867142857142857,Peru,"FW, Sub","FW, Sub"
+Jefferson Lerma,5.815,Colombia,"MF, Sub","DMC, MC, Sub"
+Jens Stryger Larsen,5.6925,Denmark,DF,DL
+Jerome Boateng,5.62375,Germany,DF,DC
+Jesse Lingard,5.986086956521739,England,"MF, Sub","MC, Sub"
+Jesus Gallardo,6.129375,Mexico,DF,DL
+Jimmy Durmaz,5.505,Sweden,Sub,Sub
+Joao Mario,6.0407142857142855,Portugal,"MF, Sub","ML, Sub"
+Joao Moutinho,6.196666666666666,Portugal,"MF, Sub","MC, Sub"
+Joel Campbell,6.3066666666666675,Costa Rica,"FW, Sub","FW, Sub"
+Johan Djourou,5.9525,Switzerland,DF,DC
+Johan Mojica,5.76375,Colombia,DF,DL
+Johan Venegas,5.895,Costa Rica,MF,AMC
+Johann Gudmundsson,5.855,Iceland,MF,"AMR, MR"
+John Guidetti,5.76,Sweden,Sub,Sub
+John Obi Mikel,5.864166666666667,Nigeria,MF,"AMC, MC"
+John Stones,6.085714285714286,England,DF,DC
+Johnny Acosta,5.645833333333333,Costa Rica,DF,DC
+Jon Dadi Bodvarsson,5.9575,Iceland,FW,FW
+Jonas Hector,5.95375,Germany,DF,DL
+Jonas Knudsen,5.855,Denmark,DF,DL
+Jonathan Urretaviscaya,6.0600000000000005,Uruguay,Sub,Sub
+Jonathan dos Santos,5.406666666666666,Mexico,Sub,Sub
+Jordan Henderson,5.9225,England,MF,DMC
+Jordan Pickford,5.8175,England,GK,GK
+Jordi Alba,5.851875,Spain,DF,DL
+Jose Fonte,6.195625,Portugal,DF,DC
+Jose Gimenez,6.1475,Uruguay,DF,DC
+Jose Izquierdo,5.39,Colombia,MF,AML
+Jose Luis Rodriguez,5.583333333333333,Panama,MF,"ML, MR"
+Josh Risdon,5.767499999999999,Australia,DF,DR
+Joshua Kimmich,6.451666666666667,Germany,DF,DR
+Josip Drmic,5.996666666666666,Switzerland,"FW, Sub","FW, Sub"
+Josip Pivaric,5.808888888888889,Croatia,"DF, Sub","DL, Sub"
+Ju Se-Jong,6.206,South Korea,"MF, Sub","DMC, Sub"
+Juan Cuadrado,6.035625,Colombia,"FW, MF","AMR, FW"
+Juan Quintero,5.89,Colombia,MF,AMC
+Julian Brandt,6.255,Germany,Sub,Sub
+Julian Draxler,5.8975,Germany,MF,AML
+Jung Woo-Young,6.17,South Korea,Sub,Sub
+Kahraba,5.71,Egypt,Sub,Sub
+Kalidou Koulibaly,5.839166666666666,Senegal,DF,DC
+Kamil Glik,6.272,Poland,"DF, Sub","DC, Sub"
+Kamil Grosicki,5.785454545454545,Poland,"MF, Sub","AML, AMR, Sub"
+Kari Arnason,5.91125,Iceland,DF,DC
+Karim Ansarifard,6.087777777777777,Iran,"MF, Sub","ML, Sub"
+Karim El Ahmadi,5.530909090909091,Morocco,MF,DMC
+Kasper Dolberg,5.455,Denmark,Sub,Sub
+Kasper Schmeichel,6.368125,Denmark,GK,GK
+Keisuke Honda,6.8133333333333335,Japan,Sub,Sub
+Kelechi Iheanacho,5.993,Nigeria,"FW, Sub","FW, Sub"
+Kendall Waston,6.2325,Costa Rica,DF,DC
+Kenneth Omeruo,6.235,Nigeria,DF,DC
+Kevin De Bruyne,6.269583333333333,Belgium,"FW, MF","AMC, AMR, FW, MC"
+Keylor Navas,5.7683333333333335,Costa Rica,GK,GK
+Khadim N'Diaye,5.5775,Senegal,GK,GK
+Khalid Boutadb,5.6925,Morocco,FW,FW
+Ki Sung-Yueng,6.05125,South Korea,MF,"DMC, MC"
+Kieran Trippier,6.785416666666666,England,MF,MR
+Kim Min-Woo,5.136666666666667,South Korea,"DF, Sub","DL, Sub"
+Kim Shin-Wook,5.47,South Korea,FW,FW
+Kim Young-Gwon,6.2775,South Korea,DF,DC
+Koke,5.836,Spain,"MF, Sub","DMC, MC, Sub"
+Kyle Walker,6.2235,England,DF,DC
+Kylian Mbappe,6.3624,France,"FW, MF, Sub","AMR, FWR, MR, Sub"
+Lamine Gassama,5.505,Senegal,DF,DR
+Lasse Schone,5.491,Denmark,"MF, Sub","DMC, Sub"
+Leander Dendoncker,5.62,Belgium,DF,DC
+Lee Seung-Woo,6.04,South Korea,Sub,Sub
+Lee Yong,6.1191666666666675,South Korea,DF,DR
+Leon Balogun,5.863333333333333,Nigeria,DF,DC
+Lionel Messi,6.449375,Argentina,"FW, MF","AMC, FW"
+Lovre Kalinic,6.1825,Croatia,GK,GK
+Lucas Biglia,5.9325,Argentina,MF,DMC
+Lucas Hernandez,5.935357142857143,France,DF,DL
+Lucas Torreira,5.96375,Uruguay,"MF, Sub","DMC, Sub"
+Lucas Vazquez,6.126666666666666,Spain,"MF, Sub","MR, Sub"
+Ludwig Augustinsson,5.8935,Sweden,DF,DL
+Luis Advincula,6.209166666666667,Peru,DF,DR
+Luis Muriel,5.398333333333333,Colombia,Sub,Sub
+Luis Ovalle,5.78,Panama,DF,DL
+Luis Suarez,6.053,Uruguay,FW,FW
+Luis Tejada,5.508,Panama,Sub,Sub
+Luka Milivojevic,5.8175,Serbia,MF,DMC
+Luka Modric,6.256666666666667,Croatia,MF,"DMC, MC"
+Lukasz Fabianski,6.1175,Poland,GK,GK
+Lukasz Piszczek,5.7575,Poland,DF,"DC, DR"
+Lukasz Teodorczyk,5.609999999999999,Poland,Sub,Sub
+M'Baye Niang,6.284166666666667,Senegal,FW,FW
+Maciej Rybus,5.8275,Poland,"DF, MF","DL, DML"
+Makoto Hasebe,5.637142857142857,Japan,"MF, Sub","DMC, Sub"
+Mame Biram Diouf,5.826,Senegal,"FW, Sub","FW, Sub"
+Manuel Akanji,5.72375,Switzerland,DF,DC
+Manuel Fernandes,6.4,Portugal,Sub,Sub
+Manuel Neuer,5.570833333333333,Germany,GK,GK
+Manuel da Costa,5.7188888888888885,Morocco,"DF, Sub","DC, Sub"
+Marcelo,6.182142857142857,Brazil,DF,DL
+Marcelo Brozovic,5.806315789473683,Croatia,"MF, Sub","DMC, Sub"
+Marco Asensio,5.74875,Spain,"MF, Sub","AMR, Sub"
+Marco Fabian,6.05,Mexico,Sub,Sub
+Marco Reus,5.801818181818182,Germany,"MF, Sub","AMC, AML, Sub"
+Marco Urena,5.8775,Costa Rica,FW,FW
+Marcos Acuna,6.03,Argentina,MF,DML
+Marcos Rojo,5.7375,Argentina,DF,DC
+Marcus Berg,6.007,Sweden,FW,FW
+Marcus Rashford,5.819285714285714,England,"FW, Sub","FW, Sub"
+Mario Fernandes,5.988,Russia,"DF, MF, Sub","DMR, DR, Sub"
+Mario Gavranovic,5.694285714285714,Switzerland,"FW, Sub","FW, Sub"
+Mario Gomez,6.034000000000001,Germany,Sub,Sub
+Mario Mandzukic,6.0905000000000005,Croatia,FW,FW
+Mark Milligan,5.785833333333334,Australia,DF,DC
+Marko Pjaca,5.78,Croatia,"MF, Sub","AMC, Sub"
+Marouane Fellaini,5.774444444444445,Belgium,"MF, Sub","AMC, MC, Sub"
+Marquinhos,6.0600000000000005,Brazil,Sub,Sub
+Martin Braithwaite,5.604615384615385,Denmark,"MF, Sub","ML, MR, Sub"
+Martin Caceres,5.769,Uruguay,DF,"DL, DR"
+Martin Olsson,5.797499999999999,Sweden,Sub,Sub
+Marvin Plattenhardt,5.7425,Germany,DF,DL
+Marwan Mohsen,5.973333333333334,Egypt,FW,FW
+Masoud Shojaei,6.45,Iran,MF,MC
+Mat Ryan,5.7875000000000005,Australia,GK,GK
+Mateo Kovacic,5.99,Croatia,"MF, Sub","MC, Sub"
+Mateus Uribe,5.712,Colombia,"MF, Sub","DMC, Sub"
+Mathew Leckie,5.760833333333333,Australia,MF,MR
+Matias Vecino,5.785,Uruguay,MF,MC
+Mats Hummels,6.175,Germany,DF,DC
+Maxi Gomez,5.805,Uruguay,Sub,Sub
+Maximiliano Meza,6.202500000000001,Argentina,"MF, Sub","AMC, AMR, Sub"
+Maya Yoshida,5.956875,Japan,DF,DC
+Medhi Benatia,5.140000000000001,Morocco,DF,DC
+Mehdi Carcela-Gonzalez,6.04,Morocco,Sub,Sub
+Mehdi Taremi,5.957777777777778,Iran,"MF, Sub","ML, MR, Sub"
+Mesut Ozil,6.0325,Germany,MF,AMC
+Michael Krohn-Dehli,6.225,Denmark,Sub,Sub
+Michael Lang,5.1425,Switzerland,DF,DR
+Michael Murillo,5.5225,Panama,DF,DR
+Michal Pazdan,5.91875,Poland,DF,DC
+Michy Batshuayi,5.886666666666667,Belgium,"FW, Sub","FW, Sub"
+Miguel Borja,5.98,Colombia,Sub,Sub
+Miguel Layun,5.928666666666667,Mexico,"MF, Sub","AMR, Sub"
+Miguel Trauco,6.010000000000001,Peru,DF,DL
+Mikael Lustig,6.388125,Sweden,DF,DR
+Milad Mohammadi,5.518,Iran,Sub,Sub
+Milan Badelj,6.515000000000001,Croatia,"MF, Sub","MC, Sub"
+Mile Jedinak,5.988333333333333,Australia,MF,MC
+Milos Veljkovic,5.6625,Serbia,DF,DC
+Miranda,5.947,Brazil,DF,DC
+Mohamed Ben Amor,6.04,Tunisia,Sub,Sub
+Mohamed El-Shenawy,5.80875,Egypt,GK,GK
+Mohamed Elneny,5.730833333333333,Egypt,MF,DMC
+Mohamed Kanno,6.15,Saudi Arabia,Sub,Sub
+Mohamed Salah,6.045,Egypt,MF,"AMC, AMR"
+Mohamed Shafy,5.805833333333333,Egypt,DF,DL
+Mohammed Al Owais,5.8075,Saudi Arabia,GK,GK
+Mohammed Al-Burayk,5.928333333333334,Saudi Arabia,DF,DR
+Mohammed Al-Sahlawi,5.701666666666667,Saudi Arabia,"FW, Sub","FW, Sub"
+Moon Seon-Min,5.665,South Korea,MF,"AMR, ML"
+Morteza Pouraliganji,5.485454545454545,Iran,DF,DC
+Motaz Hawsawi,6.2275,Saudi Arabia,DF,DC
+Moubarak Boussoufa,5.61090909090909,Morocco,MF,"DMC, MC"
+Mouez Hassen,6.843333333333334,Tunisia,GK,GK
+Mousa Dembele,5.825,Belgium,"MF, Sub","DMC, MC, Sub"
+Moussa Konate,6.0175,Senegal,Sub,Sub
+Moussa Wague,5.889,Senegal,"DF, Sub","DR, Sub"
+Munir Mohamedi,5.159000000000001,Morocco,GK,GK
+N'Golo Kante,5.82,France,MF,"DMC, MC"
+Nabil Dirar,5.98125,Morocco,DF,DR
+Nabil Fekir,5.947272727272727,France,Sub,Sub
+Nacer Chadli,5.715,Belgium,"DF, MF, Sub","DML, DMR, DR, MC, Sub"
+Nacho,6.0024999999999995,Spain,DF,DR
+Nadm Sliti,5.880909090909091,Tunisia,"MF, Sub","ML, Sub"
+Nahitan Nandez,5.777058823529411,Uruguay,"MF, Sub","MC, MR, Sub"
+Nemanja Matic,6.115833333333334,Serbia,MF,DMC
+Nemanja Radonjic,6.135,Serbia,Sub,Sub
+Neymar,6.3235,Brazil,FW,FWL
+Nicolai Jrrgensen,5.579,Denmark,"FW, Sub","FW, Sub"
+Nicolas Otamendi,5.9075,Argentina,DF,DC
+Nicolas Tagliafico,5.745,Argentina,DF,"DC, DL"
+Niklas Sule,5.7425,Germany,DF,DC
+Nikola Milenkovic,5.985833333333333,Serbia,DF,DC
+Nordin Amrabat,5.855,Morocco,MF,"AMR, MR"
+Odion Ighalo,5.73875,Nigeria,"FW, Sub","FW, Sub"
+Oghenekaro Etebo,6.2625,Nigeria,MF,"DMC, MC"
+Ola Toivonen,6.026999999999999,Sweden,FW,FW
+Olivier Giroud,5.990384615384615,France,"FW, Sub","FW, Sub"
+Omar Hawsawi,5.13,Saudi Arabia,DF,DC
+Omid Ebrahimi,5.944545454545454,Iran,MF,"DMC, MC"
+Oribe Peralta,5.94,Mexico,Sub,Sub
+Osama Hawsawi,5.6816666666666675,Saudi Arabia,DF,DC
+Oscar Duarte,5.805,Costa Rica,DF,DC
+Oscar Hiljemark,6.025,Sweden,Sub,Sub
+Oscar Murillo,6.0425,Colombia,DF,DC
+Ousmane Dembele,5.797272727272727,France,"FW, MF, Sub","AMR, FWL, Sub"
+Oussama Haddadi,6.355,Tunisia,DF,DL
+Paolo Guerrero,6.181111111111111,Peru,"FW, Sub","FW, Sub"
+Paolo Hurtado,6.255,Peru,Sub,Sub
+Park Joo-Ho,6.343333333333334,South Korea,DF,DL
+Paul Pogba,6.23125,France,MF,"DMC, MC"
+Paulinho,5.89,Brazil,MF,MC
+Paulo Dybala,5.9,Argentina,Sub,Sub
+Pedro Aquino,5.97375,Peru,"MF, Sub","DMC, Sub"
+Pedro Gallese,5.8475,Peru,GK,GK
+Pepe,5.82625,Portugal,DF,DC
+Phil Jones,5.8075,England,DF,DC
+Philippe Coutinho,6.2105,Brazil,MF,MC
+Pione Sisto,6.020714285714285,Denmark,"MF, Sub","AML, ML, Sub"
+Piotr Zielinski,5.709166666666667,Poland,"FW, MF","AMC, DMC, FWR"
+Pontus Jansson,6.218,Sweden,"DF, Sub","DC, Sub"
+Presnel Kimpembe,5.895,France,DF,DC
+Radamel Falcao,5.859375,Colombia,FW,FW
+Rafael Marquez,5.80875,Mexico,"MF, Sub","MC, Sub"
+Rafal Kurzawa,6.2775,Poland,MF,AML
+Ragnar Sigurdsson,5.723333333333334,Iceland,DF,DC
+Raheem Sterling,5.904583333333334,England,FW,FW
+Ramadan Sobhi,6.0120000000000005,Egypt,Sub,Sub
+Rami Bedoui,5.6775,Tunisia,DF,DC
+Ramin Rezaeian,6.043636363636364,Iran,DF,DR
+Randall Azofeifa,6.09,Costa Rica,Sub,Sub
+Raphael Guerreiro,6.09125,Portugal,DF,DL
+Raphael Varane,5.941071428571428,France,DF,DC
+Raul Jimenez,5.706,Mexico,Sub,Sub
+Raul Ruidiaz,6.05,Peru,Sub,Sub
+Renato Augusto,6.51,Brazil,Sub,Sub
+Renato Tapia,5.72875,Peru,MF,DMC
+Ricardo Avila,5.796666666666667,Panama,"MF, Sub","MC, Sub"
+Ricardo Pereira,5.6850000000000005,Portugal,DF,DR
+Ricardo Quaresma,6.19375,Portugal,"MF, Sub","MR, Sub"
+Ricardo Rodriguez,5.998125,Switzerland,DF,DL
+Robbie Kruse,5.670000000000001,Australia,MF,ML
+Robert Lewandowski,5.6675,Poland,FW,FW
+Roberto Firmino,6.12875,Brazil,Sub,Sub
+Robin Olsen,5.9045000000000005,Sweden,GK,GK
+Rodney Wallace,4.99,Costa Rica,Sub,Sub
+Rodrigo Bentancur,5.863,Uruguay,MF,"AMC, MC"
+Rodrigo Moreno,6.4125,Spain,Sub,Sub
+Romain Sadss,5.718571428571429,Morocco,DF,DC
+Roman Torres,5.701666666666667,Panama,DF,DC
+Roman Zobnin,6.04125,Russia,MF,"DMC, MC"
+Romelu Lukaku,5.9375,Belgium,FW,"FW, FWR"
+Roozbeh Cheshmi,5.933333333333334,Iran,DF,DC
+Ruben Loftus-Cheek,6.060714285714285,England,"MF, Sub","MC, Sub"
+Rui Patricio,5.668125,Portugal,GK,GK
+Rurik Gislason,5.976666666666667,Iceland,"MF, Sub","MR, Sub"
+Sadio Mane,5.835,Senegal,"FW, MF","FW, ML"
+Saeid Ezatolahi,5.77375,Iran,MF,DMC
+Saif-Eddine Khaoui,5.8675,Tunisia,MF,MC
+Salem Al Dawsari,6.2299999999999995,Saudi Arabia,MF,"AML, ML"
+Salif Sane,5.7475,Senegal,DF,DC
+Salman Al-Faraj,6.235833333333333,Saudi Arabia,MF,"AMC, MC"
+Sam Morsy,5.476666666666667,Egypt,Sub,Sub
+Saman Ghoddos,6.5600000000000005,Iran,Sub,Sub
+Sami Khedira,5.82125,Germany,MF,DMC
+Samuel Umtiti,5.778333333333333,France,DF,DC
+Santiago Arias,6.0425,Colombia,DF,DR
+Sardar Azmoun,6.069090909090909,Iran,FW,FW
+Sebastian Coates,5.8625,Uruguay,DF,DC
+Sebastian Larsson,5.709375,Sweden,MF,MC
+Sebastian Rudy,5.467499999999999,Germany,MF,DMC
+Sergei Ignashevich,6.1375,Russia,DF,DC
+Sergej Milinkovic-Savic,5.850833333333333,Serbia,MF,"AMC, DMC"
+Sergio Aguero,6.005,Argentina,"FW, Sub","FW, Sub"
+Sergio Busquets,6.10375,Spain,MF,"DMC, MC"
+Sergio Ramos,5.861875,Spain,DF,DC
+Seyed Majid Hosseini,5.56,Iran,"DF, Sub","DC, Sub"
+Shinji Kagawa,5.715833333333333,Japan,MF,AMC
+Shinji Okazaki,5.78875,Japan,"FW, Sub","FW, Sub"
+Sime Vrsaljko,5.836,Croatia,DF,DR
+Simon Kjaer,5.79,Denmark,DF,DC
+Slawomir Peszko,4.98,Poland,Sub,Sub
+Son Heung-Min,6.174166666666667,South Korea,FW,"FW, FWL"
+Stephan Lichtsteiner,5.6525,Switzerland,DF,DR
+Steve Mandanda,5.7775,France,GK,GK
+Steven Nzonzi,5.868888888888889,France,"MF, Sub","DMC, Sub"
+Steven Zuber,5.879166666666666,Switzerland,MF,AML
+Sverrir Ingason,6.061666666666667,Iceland,"DF, Sub","DC, Sub"
+Taiseer Al Jassam,5.4725,Saudi Arabia,MF,"DMC, MC"
+Takashi Inui,6.076428571428571,Japan,"MF, Sub","AML, Sub"
+Takashi Usami,6.156000000000001,Japan,"MF, Sub","ML, Sub"
+Tarek Hamed,5.816363636363636,Egypt,MF,DMC
+Thiago,6.065,Spain,"MF, Sub","MC, Sub"
+Thiago Cionek,5.625,Poland,DF,DC
+Thiago Silva,6.078,Brazil,DF,DC
+Thibaut Courtois,5.909642857142857,Belgium,GK,GK
+Thomas Delaney,5.8306249999999995,Denmark,MF,"DMC, MC"
+Thomas Lemar,5.6375,France,MF,AML
+Thomas Meunier,6.161,Belgium,"DF, MF","DMR, DR"
+Thomas Muller,6.015,Germany,"MF, Sub","AMR, Sub"
+Thomas Vermaelen,5.675,Belgium,"DF, Sub","DC, Sub"
+Thorgan Hazard,6.401999999999999,Belgium,"MF, Sub","DML, Sub"
+Tim Cahill,5.596666666666667,Australia,Sub,Sub
+Timo Werner,5.674166666666667,Germany,FW,FW
+Tin Jedvaj,5.58,Croatia,DF,DR
+Toby Alderweireld,5.94875,Belgium,DF,DC
+Tomas Rogic,5.976666666666667,Australia,MF,AMC
+Tomi Juric,5.73375,Australia,"FW, Sub","FW, Sub"
+Tomoaki Makino,6.2225,Japan,DF,DC
+Toni Kroos,6.675,Germany,MF,DMC
+Trent Alexander-Arnold,5.915,England,MF,MR
+Trent Sainsbury,5.8875,Australia,DF,DC
+Trezeguet,5.873636363636364,Egypt,MF,AML
+Tyronne Ebuehi,5.45,Nigeria,Sub,Sub
+Vahid Amiri,5.707272727272727,Iran,MF,MC
+Valon Behrami,5.815625,Switzerland,MF,DMC
+Vedran Corluka,6.086666666666666,Croatia,"DF, Sub","DC, Sub"
+Victor Lindelof,5.718125,Sweden,DF,DC
+Victor Moses,5.8741666666666665,Nigeria,MF,"AML, DMR"
+Viktor Claesson,6.081,Sweden,MF,MR
+Viktor Fischer,5.326666666666667,Denmark,Sub,Sub
+Vincent Kompany,5.9688888888888885,Belgium,"DF, Sub","DC, Sub"
+Vladimir Stojkovic,5.718333333333334,Serbia,GK,GK
+Wahbi Khazri,6.321666666666666,Tunisia,FW,FW
+Wilder Cartagena,6.09,Peru,Sub,Sub
+Wilfred Ndidi,6.2,Nigeria,MF,"DMC, MC"
+William Carvalho,6.060625,Portugal,MF,MC
+William Kvist,5.4175,Denmark,MF,DMC
+William Troost-Ekong,5.738333333333333,Nigeria,DF,DC
+Willian,5.992,Brazil,FW,FWR
+Willy Caballero,5.31,Argentina,GK,GK
+Wilmar Barrios,5.881818181818182,Colombia,"MF, Sub","DMC, MC, Sub"
+Wojciech Szczesny,4.97,Poland,GK,GK
+Xherdan Shaqiri,6.099375,Switzerland,MF,AMR
+Yahya Alshehri,5.264,Saudi Arabia,"MF, Sub","MR, Sub"
+Yann Sommer,5.563125,Switzerland,GK,GK
+Yannick Carrasco,5.761428571428572,Belgium,"MF, Sub","DML, Sub"
+Yaseer Al-Shahrani,5.888333333333333,Saudi Arabia,DF,DL
+Yasser Al-Mosailem,5.922499999999999,Saudi Arabia,GK,GK
+Yassine Meriah,5.650833333333334,Tunisia,DF,DC
+Yeltsin Tejeda,5.68,Costa Rica,Sub,Sub
+Yerry Mina,6.5125,Colombia,DF,DC
+Yoel Barcenas,6.020833333333333,Panama,MF,"ML, MR"
+Yohan Benalouane,6.196666666666666,Tunisia,Sub,Sub
+Yoshimar Yotun,5.761666666666667,Peru,MF,DMC
+Yoshinori Muto,5.9375,Japan,FW,FW
+Youncs Belhanda,5.655454545454545,Morocco,MF,"AMC, MC"
+Youri Tielemans,6.239090909090908,Belgium,"MF, Sub","MC, Sub"
+Youssef En-Nesyri,7.09,Morocco,Sub,Sub
+Youssouf Sabaly,5.734166666666667,Senegal,DF,DL
+Yun Young-Sun,6.355,South Korea,DF,DC
+Yuri Gazinskiy,5.9325,Russia,MF,DMC
+Yuri Zhirkov,5.98,Russia,"DF, MF","DL, DML"
+Yussuf Poulsen,6.052499999999999,Denmark,MF,"AMR, MR"
+Yuto Nagatomo,5.824375,Japan,DF,DL
+Yuya Osako,5.926,Japan,"FW, Sub","FW, Sub"
+Zanka,5.71875,Denmark,DF,DC
