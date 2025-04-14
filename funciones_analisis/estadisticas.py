@@ -819,22 +819,28 @@ def estadisticas_faltas_por_jugador(df_eventos, df_jugadores):
 
     return df_jugadores
 
+from statsbombpy import sb
+
 def calcular_minutos_jugados_en_df(lista_partidos, df_jugadores):
     """
-    Calcula los minutos jugados por cada jugador en el dataset de jugadores.
+    Calcula los minutos jugados por cada jugador, considerando prórroga (hasta 120 minutos).
 
     Parámetros:
     - lista_partidos: lista de IDs de partidos
-    - df_jugadores: DataFrame con al menos las columnas 'player_id' y 'player'
+    - df_jugadores: DataFrame con 'player_id'
 
     Retorna:
-    - df_jugadores con una nueva columna 'minutos_jugados'
+    - df_jugadores con columna 'minutos_jugados'
     """
     minutos_totales = {}
 
     for i, match_id in enumerate(lista_partidos):
         try:
             partido = sb.events(match_id=match_id)
+
+            # Determinar duración total del partido
+            minuto_max = partido['minute'].max()
+            duracion_partido = max(90, minuto_max)  # Puede llegar hasta 120
 
             jugadores_partido = []
 
@@ -849,7 +855,7 @@ def calcular_minutos_jugados_en_df(lista_partidos, df_jugadores):
                             jugadores_partido.append({
                                 'player_id': jugador['player']['id'],
                                 'minuto_inicio': 0,
-                                'minuto_fin': 90
+                                'minuto_fin': duracion_partido
                             })
 
             # Sustituciones
@@ -868,16 +874,13 @@ def calcular_minutos_jugados_en_df(lista_partidos, df_jugadores):
                     jugadores_partido.append({
                         'player_id': jugador_dentro['id'],
                         'minuto_inicio': minuto_sustitucion,
-                        'minuto_fin': 90
+                        'minuto_fin': duracion_partido
                     })
 
             for jugador in jugadores_partido:
                 minutos = jugador['minuto_fin'] - jugador['minuto_inicio']
                 pid = jugador['player_id']
-
-                if pid not in minutos_totales:
-                    minutos_totales[pid] = 0
-                minutos_totales[pid] += minutos
+                minutos_totales[pid] = minutos_totales.get(pid, 0) + minutos
 
             if (i + 1) % 20 == 0:
                 print(f"✅ Procesados {i+1}/{len(lista_partidos)} partidos")
@@ -886,11 +889,12 @@ def calcular_minutos_jugados_en_df(lista_partidos, df_jugadores):
             print(f"❌ Error en partido {match_id}: {e}")
             continue
 
-    # Añadir los minutos al dataframe original de jugadores
+    # Asignar al dataframe de jugadores
     df_jugadores = df_jugadores.copy()
     df_jugadores["minutos_jugados"] = df_jugadores["player_id"].map(minutos_totales).fillna(0).astype(int)
 
     return df_jugadores
+
 
 def estadisticas_tiro_basicas_por_jugador(df_eventos, df_jugadores):
     """
