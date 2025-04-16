@@ -1453,3 +1453,22 @@ def procesar_dataset_estadisticas(df):
             df[col + '_per90'] = df[col] / df['minutes_played'] * 90
 
     return df
+
+def obtener_posicion_mas_jugada(df_eventos):
+    """
+    Devuelve un DataFrame con la posición más jugada para cada jugador, 
+    basándose en la frecuencia de aparición en los eventos.
+    """
+    # Filtrar filas válidas
+    df_valid = df_eventos[df_eventos['player'].notnull() & df_eventos['position'].notnull()].copy()
+
+    # Obtener la posición más frecuente por jugador
+    posicion_mas_jugada = (
+        df_valid
+        .groupby('player')['position']
+        .agg(lambda x: x.mode().iloc[0] if not x.mode().empty else None)
+        .reset_index()
+        .rename(columns={'player': 'player_name', 'position': 'posicion_mas_jugada'})
+    )
+
+    return posicion_mas_jugada
