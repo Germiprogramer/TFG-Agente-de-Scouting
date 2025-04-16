@@ -1,0 +1,30 @@
+StatsBombpy
+│
+├── competitions()
+│   ├── competition_id
+│   └── season_id
+│
+├── matches(competition_id, season_id)
+│   ├── match_id
+│   ├── match_date
+│   ├── kickoff
+│   ├── home_team / away_team
+│   └── home_score / away_score
+│
+├── lineups(match_id)
+│   ├── team_id
+│   └── lineup [array]
+│       ├── player_id
+│       ├── player_name
+│       ├── position (name, id)
+│       └── jersey_number
+│
+└── events(match_id)
+    ├── index
+    ├── timestamp / period / minute
+    ├── type (Pass, Shot, Duel, etc.)
+    ├── player / team
+    ├── location [x, y]
+    ├── duration (if present)
+    ├── outcome (Pass Complete, Shot Blocked...)
+    └── related_events / freeze_frame / shot details (if present)
