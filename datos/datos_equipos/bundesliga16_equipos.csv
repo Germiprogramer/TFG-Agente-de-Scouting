@@ -1,19 +1,19 @@
-team_id,team,presupuesto_fichajes,presupuesto_sueldos
-169,Bayern Munich,80000000,4115000
-171,Hamburger SV,6000000,934000
-172,Augsburg,6000000,852000
-173,Hertha Berlin,8000000,1029000
-904,Bayer Leverkusen,80000000,4115000
-175,Hoffenheim,15000000,1022000
-176,Werder Bremen,4500000,811000
-181,Schalke 04,21500000,1897000
-872,Darmstadt 98,2200000,437000
-178,Hannover 96,10000000,877000
-177,FSV Mainz 05,7000000,943000
-189,Ingolstadt,4000000,493000
-180,Borussia Dortmund,30000000,2150000
-185,Borussia Mönchengladbach,20000000,1177000
-179,Wolfsburg,50000000,2138000
-184,Eintracht Frankfurt,6000000,1020000
-174,VfB Stuttgart,11000000,931000
-186,FC Köln,8000000,788000
+team_id,team,presupuesto_fichajes,presupuesto_sueldos,competicion
+169,Bayern Munich,80000000,4115000,Germany - 1. Bundesliga
+171,Hamburger SV,6000000,934000,Germany - 1. Bundesliga
+172,Augsburg,6000000,852000,Germany - 1. Bundesliga
+173,Hertha Berlin,8000000,1029000,Germany - 1. Bundesliga
+904,Bayer Leverkusen,80000000,4115000,Germany - 1. Bundesliga
+175,Hoffenheim,15000000,1022000,Germany - 1. Bundesliga
+176,Werder Bremen,4500000,811000,Germany - 1. Bundesliga
+181,Schalke 04,21500000,1897000,Germany - 1. Bundesliga
+872,Darmstadt 98,2200000,437000,Germany - 1. Bundesliga
+178,Hannover 96,10000000,877000,Germany - 1. Bundesliga
+177,FSV Mainz 05,7000000,943000,Germany - 1. Bundesliga
+189,Ingolstadt,4000000,493000,Germany - 1. Bundesliga
+180,Borussia Dortmund,30000000,2150000,Germany - 1. Bundesliga
+185,Borussia Mönchengladbach,20000000,1177000,Germany - 1. Bundesliga
+179,Wolfsburg,50000000,2138000,Germany - 1. Bundesliga
+184,Eintracht Frankfurt,6000000,1020000,Germany - 1. Bundesliga
+174,VfB Stuttgart,11000000,931000,Germany - 1. Bundesliga
+186,FC Köln,8000000,788000,Germany - 1. Bundesliga
