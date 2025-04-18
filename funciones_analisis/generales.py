@@ -111,3 +111,38 @@ def jugadores_faltantes_en_df(lista_match_ids, df_jugadores):
     df_faltantes = df_partido[~df_partido['player_id'].isin(df_jugadores['player_id'])]
 
     return df_faltantes
+
+def calcular_eventos_por_partido(competition_id, season_id, verbose=False):
+    """
+    Calcula el número promedio de eventos por partido para una competición y temporada específica.
+
+    Parámetros:
+    - competition_id: ID de la competición (por ejemplo, 11 para La Liga)
+    - season_id: ID de la temporada (por ejemplo, 4 para 2015/2016)
+    - verbose: si True, imprime el progreso partido a partido
+
+    Devuelve:
+    - promedio (float): media de eventos por partido
+    - df_eventos (DataFrame): tabla con match_id y número de eventos por partido
+    """
+    matches = sb.matches(competition_id=competition_id, season_id=season_id)
+    match_ids = matches['match_id'].tolist()
+
+    eventos_por_partido = []
+
+    for i, match_id in enumerate(match_ids):
+        try:
+            eventos = sb.events(match_id=match_id)
+            eventos_por_partido.append({
+                "match_id": match_id,
+                "num_eventos": len(eventos)
+            })
+            if verbose:
+                print(f"✔️ {i+1}/{len(match_ids)} - {match_id} ({len(eventos)} eventos)")
+        except Exception as e:
+            print(f"❌ Error en match {match_id}: {e}")
+
+    df_eventos = pd.DataFrame(eventos_por_partido)
+    promedio = df_eventos["num_eventos"].mean()
+
+    return promedio, df_eventos
