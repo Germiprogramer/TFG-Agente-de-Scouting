@@ -1,4 +1,4 @@
-main_position,player_id,player_name,team,team_id,minutes_played,saves_per90,save_percentage,psxg_minus_goals_conceded_per90,keeper_sweeper_per90,penalty_save_percentage,aerial_dominance_index_per90,pass_completion_rate,rating
+main_position,player_id,player_name,team,team_id,minutes_played,saves_per90,save_percentage,xg_against_minus_goals_conceded_per90,keeper_sweeper_per90,penalty_save_percentage,aerial_dominance_index_per90,pass_completion_rate,rating
 Goalkeeper,3379,Alphonse Areola,Villarreal,222,2984,39.24914675767918,77.82696177062377,85.1063829787234,43.00518134715027,50.0,56.90607734806631,39.48876156897312,70.53842169602923
 Goalkeeper,4691,Claudio Andrés Bravo Muñoz,Barcelona,217,2957,39.931740614334466,92.87726358148895,96.80851063829789,13.471502590673579,0.0,6.0773480662983435,100.0,73.82397726199683
 Goalkeeper,5577,Francisco Guillermo Ochoa Magaña,Málaga,223,928,49.829351535836174,67.84708249496984,96.80851063829789,29.53367875647669,0.0,4.0055248618784525,40.788893785808725,66.39747397087385
