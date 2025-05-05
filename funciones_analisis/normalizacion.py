@@ -112,9 +112,8 @@ def calcular_rating(df):
             'xg_against_minus_goals_conceded_per90': 0.425,
             'keeper_sweeper_per90': 0.075,
             'penalty_save_percentage': 0.05,
-            'aerial_dominance_index_per90': 0.075,
-            'progressive_passes_per90': 0.05,
-            'pass_completion_rate': 0.05
+            'aerial_dominance_index_per90': 0.1,
+            'pass_completion_rate': 0.75
         },
         'center_back': {
             'interceptions_per90': 0.15,
