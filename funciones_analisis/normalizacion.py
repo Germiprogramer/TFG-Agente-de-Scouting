@@ -113,7 +113,7 @@ def calcular_rating(df):
             'keeper_sweeper_per90': 0.075,
             'penalty_save_percentage': 0.05,
             'aerial_dominance_index_per90': 0.1,
-            'pass_completion_rate': 0.75
+            'pass_completion_rate': 0.075
         },
         'center_back': {
             'interceptions_per90': 0.15,
