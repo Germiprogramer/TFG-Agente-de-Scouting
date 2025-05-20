@@ -78,20 +78,15 @@ def pizza_radar_jugador(player_name, df_percentils, df_total):
 
     # Obtener fila del jugador
     row = df_total[df_total["player_name"] == player_name].iloc[0]
-    position_label = row["main_position"]
+    rol = row["main_position"]
     team = row["team"]
     rating = round(float(row["rating"]), 2) if str(row["rating"]).replace('.', '', 1).isdigit() else "S.V"
-    #market_value = row["value_eur"] / 1000000
+    market_value = row["value_eur"] / 1000000
 
 
     # Determinar rol del jugador
-    rol = None
-    for key, etiquetas in etiquetas_posiciones.items():
-        if position_label in etiquetas:
-            rol = key
-            break
     if rol not in radar_config:
-        raise ValueError(f"No se ha definido radar para la posición: {position_label} (rol: {rol})")
+        raise ValueError(f"No se ha definido radar para la posición: {rol}")
 
     columnas, labels = radar_config[rol]
 
@@ -125,7 +120,7 @@ def pizza_radar_jugador(player_name, df_percentils, df_total):
 
     # Título y rating en el centro
     fig.text(0.5, 0.97, f"{player_name} - {team}", size=18, weight='bold', ha='center')
-    #fig.text(0.5, 0.94, f"Market value: {market_value} M€", size=12, weight='semibold', ha='center')
+    fig.text(0.5, 0.94, f"Market value: {market_value} M€", size=12, weight='semibold', ha='center')
     fig.text(0.5125, 0.485, f"{rating}", size=18, weight='bold', ha='center')
 
     st.pyplot(fig)
@@ -199,7 +194,7 @@ if st.button("Responder"):
     else:
         st.warning("⚠️ Introduce una consulta válida.")
 
-st.header("2️⃣ Radar de jugador")
+st.header("Radar de jugador")
 player_input = st.text_input("Introduce el nombre exacto del jugador")
 if player_input:
     try:
