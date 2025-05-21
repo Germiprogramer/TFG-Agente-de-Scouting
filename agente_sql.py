@@ -23,9 +23,7 @@ engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/scout
 # Crear objeto SQLDatabase
 sql_db = SQLDatabase(engine)
 
-llm = ChatOpenAI(model="gpt-3.5-turbo", max_tokens=300)
-
-prefix = prefix = """
+prefix = """
 Eres un agente experto en análisis de jugadores de fútbol. Solo puedes utilizar los datos que se encuentran en la base de datos PostgreSQL conectada.
 
 🗂️ Por defecto, deberás utilizar las tablas `player_profile`, 'player_stats' y `player_stats_per90` para responder a preguntas sobre jugadores, ya que contienen la información principal de rendimiento y características individuales.
