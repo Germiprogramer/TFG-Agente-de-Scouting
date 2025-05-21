@@ -12,32 +12,32 @@ def pizza_radar_jugador(player_name, df_percentils, df_total):
             ["Paradas /90", "Porcentaje paradas", "xG - Goles /90", "Sweeper /90", "Penaltis detenidos %",
             "Dominio aéreo", "Precisión pase %"]
         ),
-        "center_back": (
+        "center back": (
             ["tackles_successful_per90", "interceptions_per90", "clearances_per90",
             "blocks_per90", "times_dribbled_past_per90", "progressive_passes_per90",
             "duel_success_rate", "goals_scored_per90"],
             ["Tackles exitosos /90", "Intercepciones /90", "Despejes /90", "Bloqueos /90", "Regates sufridos /90",
             "Pases progresivos /90", "Duelos ganados %", "Goles /90"]
         ),
-        "side_back": (
+        "side back": (
             ["interception_success_rate", "pressures_per90", "duels_won_per90", "tackles_successful_per90",
             "progressive_carries_per90", "chances_created_per90", "goals_scored_per90", "fouls_committed_per90"],
             ["Intercepciones %", "Presiones /90", "Duelos ganados /90", "Tackles exitosos /90",
             "Conducciones progresivas /90", "Ocasiones creadas /90", "Goles /90", "Faltas cometidas /90"]
         ),
-        "defensive_midfield": (
+        "defensive midfield": (
             ["ball_recoveries_per90", "duels_won_per90", "duel_success_rate", "interceptions_per90",
             "pass_completion_rate", "progressive_passes_per90", "chances_created_per90", "fouls_committed_per90"],
             ["Recuperaciones /90", "Duelos ganados /90", "Duelos ganados %", "Intercepciones /90",
             "Precisión pase %", "Pases progresivos /90", "Ocasiones creadas /90", "Faltas cometidas /90"]
         ),
-        "center_midfield": (
+        "center midfield": (
             ["duels_won_per90", "pressures_per90", "dribble_success_rate", "pass_completion_rate",
             "progressive_passes_per90", "chances_created_per90", "goal_assists_per90", "goals_scored_per90"],
             ["Duelos ganados /90", "Presiones /90", "Éxito regate %", "Precisión pase %",
             "Pases progresivos /90", "Ocasiones creadas /90", "Asistencias /90", "Goles /90"]
         ),
-        "offensive_midfield": (
+        "offensive midfield": (
             ["pass_completion_rate", "goal_assists_per90", "chances_created_per90", "dribbles_completed_per90",
             "dribble_success_rate", "progressive_passes_per90", "fouls_won_per90", "goals_scored_per90"],
             ["Precisión pase %", "Asistencias /90", "Ocasiones creadas /90", "Regates completados /90",
