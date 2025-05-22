@@ -1472,3 +1472,92 @@ def obtener_posicion_mas_jugada(df_eventos):
     )
 
     return posicion_mas_jugada
+
+import pandas as pd
+from collections import defaultdict
+
+def calcular_goles_encajados_mientras_estaba_en_campo(lista_partidos, df_jugadores):
+    """
+    Calcula los goles encajados por el equipo de un jugador mientras este estaba en el campo.
+    
+    Parámetros:
+    - lista_partidos: lista de IDs de partidos
+    - sb: cliente statsbombpy ya autenticado
+    - df_jugadores: DataFrame con columna 'player_id'
+
+    Retorna:
+    - df_jugadores con columna 'goles_encajados_en_campo'
+    """
+    goles_encajados_por_jugador = defaultdict(int)
+
+    for i, match_id in enumerate(lista_partidos):
+        try:
+            partido = sb.events(match_id=match_id)
+            minuto_max = partido['minute'].max()
+            duracion_partido = max(90, minuto_max)
+
+            # Equipos
+            equipos = partido['team'].dropna().unique()
+            if len(equipos) != 2:
+                continue
+            equipo_1, equipo_2 = equipos
+
+            # Alineaciones y sustituciones
+            alineaciones = partido[partido['type'] == 'Starting XI']
+            sustituciones = partido[partido['type'] == 'Substitution']
+
+            jugadores_partido = []
+
+            for _, row in alineaciones.iterrows():
+                team = row['team']
+                lineup = row.get('tactics', {}).get('lineup', [])
+                for jugador in lineup:
+                    jugadores_partido.append({
+                        'player_id': jugador['player']['id'],
+                        'equipo': team,
+                        'minuto_inicio': 0,
+                        'minuto_fin': duracion_partido
+                    })
+
+            for _, row in sustituciones.iterrows():
+                jugador_fuera = row.get('player')
+                sustitucion = row.get('substitution', {})
+                jugador_dentro = sustitucion.get('replacement')
+                minuto_sustitucion = row.get('minute', 0)
+                team = row['team']
+
+                for jugador in jugadores_partido:
+                    if jugador['player_id'] == jugador_fuera['id']:
+                        jugador['minuto_fin'] = minuto_sustitucion
+
+                jugadores_partido.append({
+                    'player_id': jugador_dentro['id'],
+                    'equipo': team,
+                    'minuto_inicio': minuto_sustitucion,
+                    'minuto_fin': duracion_partido
+                })
+
+            # Filtrar goles
+            goles = partido[(partido['type'] == 'Shot') & (partido['shot_outcome'] == 'Goal')]
+
+            for _, gol in goles.iterrows():
+                equipo_anotador = gol['team']
+                minuto_gol = gol['minute']
+                equipo_que_recibe = equipo_1 if equipo_anotador == equipo_2 else equipo_2
+
+                for jugador in jugadores_partido:
+                    if jugador['equipo'] == equipo_que_recibe:
+                        if jugador['minuto_inicio'] <= minuto_gol < jugador['minuto_fin']:
+                            goles_encajados_por_jugador[jugador['player_id']] += 1
+
+            if (i + 1) % 20 == 0:
+                print(f"✅ Procesados {i+1}/{len(lista_partidos)} partidos")
+
+        except Exception as e:
+            print(f"❌ Error en partido {match_id}: {e}")
+            continue
+
+    df_resultado = df_jugadores.copy()
+    df_resultado["goles_recibidos_en_campo"] = df_resultado["player_id"].map(goles_encajados_por_jugador).fillna(0).astype(int)
+    
+    return df_resultado

@@ -116,30 +116,31 @@ def calcular_rating(df):
             'pass_completion_rate': 0.075
         },
         'center_back': {
-            'interceptions_per90': 0.15,
-            'clearances_per90': 0.15,
-            'blocks_per90': 0.10,
+            'progressive_carries_per90':0.15,
+            'interceptions_per90': 0.025,
+            'clearances_per90': 0.025,
+            'blocks_per90': 0.025,
             'tackle_success_rate': 0.05,
-            'duels_won_per90': 0.10,
-            'duel_success_rate': 0.10,
-            'interception_success_rate': 0.05,
+            'duels_won_per90': 0.025,
+            'duel_success_rate': 0.15,
+            'interception_success_rate': 0.075,
             'times_dribbled_past_per90': 0.10,  # ¡Invertir!
-            'passes_completed_per90': 0.025,
-            'progressive_passes_per90': 0.075,
-            'tackles_successful_per90': 0.05,
+            'passes_completed_per90': 0.175,
+            'progressive_passes_per90': 0.125,
+            'tackles_successful_per90': 0.025,
             'goals_scored_per90': 0.05
         },
         'side_back': {
-            'pressures_per90': 0.15,
-            'progressive_carries_per90': 0.15,
-            'crosses_completed_per90': 0.1,
-            'duels_won_per90': 0.10,
+            'pressures_per90': 0.10,
+            'progressive_carries_per90': 0.125,
+            'crosses_completed_per90': 0.075,
+            'duels_won_per90': 0.15,
             'tackle_success_rate': 0.10,
-            'interception_success_rate': 0.05,
+            'interception_success_rate': 0.125,
             'tackles_successful_per90': 0.05,
-            'fouls_committed_per90': 0.05,  # ¡Invertir!
-            'goal_assists_per90': 0.05,
-            'chances_created_per90': 0.1,
+            'fouls_committed_per90': 0.025,  # ¡Invertir!
+            'goal_assists_per90': 0.075,
+            'chances_created_per90': 0.125,
             'goals_scored_per90': 0.05
         },
         'defensive_midfield': {
