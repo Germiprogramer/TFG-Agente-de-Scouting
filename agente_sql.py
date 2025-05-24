@@ -16,7 +16,7 @@ st.set_page_config(page_title="Agente de Scouting", layout="centered")
 st.title("⚽ Agente Inteligente de Jugadores")
 
 # Crear motor SQLAlchemy
-engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/scouting_jugadores")
+engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/scoutingdb")
 
 # Crear objeto SQLDatabase
 sql_db = SQLDatabase(engine)
