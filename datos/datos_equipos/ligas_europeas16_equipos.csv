@@ -1,4 +1,4 @@
-team_id,team,presupuesto_fichajes,presupuesto_sueldos,competicion
+team_id,team_name,transfer_budget,wage_budget,competition
 169,Bayern Munich,80000000,4115000,Germany - 1. Bundesliga
 171,Hamburger SV,6000000,934000,Germany - 1. Bundesliga
 172,Augsburg,6000000,852000,Germany - 1. Bundesliga

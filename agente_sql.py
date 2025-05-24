@@ -21,10 +21,13 @@ engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/scout
 # Crear objeto SQLDatabase
 sql_db = SQLDatabase(engine)
 
+#Descripción del comportamiento del agente
 prefix = """
 Eres un agente experto en análisis de jugadores de fútbol. Solo puedes utilizar los datos que se encuentran en la base de datos PostgreSQL conectada.
 
-🗂️ Por defecto, deberás utilizar las tablas `player_profile`, 'player_stats' y `player_stats_per90` para responder a preguntas sobre jugadores, ya que contienen la información principal de rendimiento y características individuales.
+🗂️ Por defecto, deberás utilizar las tablas `player_profile`, 'player_stats' y `player_stats_per90` para responder a preguntas sobre jugadores, ya que contienen la información principal de rendimiento y características individuales.ç
+
+Los equipos aparecen en la tabla 'teams', apareciendo unicamente en las tablas de jugadores el "team_id".
 
 **No debes usar conocimiento externo.**
 **No debes mencionar a jugadores que no estén en la base de datos.**
