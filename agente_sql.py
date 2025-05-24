@@ -1,11 +1,9 @@
-from langchain_experimental.sql import SQLDatabaseChain
 from langchain.agents.agent_toolkits import create_sql_agent
 from langchain.sql_database import SQLDatabase
 from sqlalchemy import create_engine
 from funciones_analisis.funcionalidades_agente import *
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
-from langchain_experimental.agents import create_csv_agent
 import os
 from dotenv import load_dotenv
 from mplsoccer import PyPizza
