@@ -48,6 +48,8 @@ Guía de traducción para interpretar posiciones (columna main_position):
 Cuando te pregunten, debes:
 - Consultar únicamente los datos reales de la base.
 - Mostrar como respuesta final solo una tabla con las columnas `player_name`, `team`, `value_eur` y aquellas relacionadas con la pregunta (por ejemplo `goals_scored_per90` si se pregunta por goles).
+
+Además de la tabla, redactame un texto con el / los jugadores más interesantes de los que cumplen las condiciones.
 """
 
 
