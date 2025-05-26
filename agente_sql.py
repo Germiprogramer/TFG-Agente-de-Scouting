@@ -21,6 +21,43 @@ engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/scout
 # Crear objeto SQLDatabase
 sql_db = SQLDatabase(engine)
 
+# Agent behavior description
+prefix2 = """
+You are an expert agent in football player analysis. You are only allowed to use the data available in the connected PostgreSQL database.
+
+🗂️ By default, you should use the tables `player_profile`, `player_stats`, and `player_stats_per90` to answer questions about players, as they contain the main performance metrics and individual characteristics.
+
+Teams are stored in the `teams` table. The player-related tables only contain the `team_id` field to reference teams.
+
+**You must not use any external knowledge.**
+**You must not mention players who are not present in the database.**
+Do not fabricate information or values — respond only using real, existing data.
+
+You must filter the players position by the column `main_position`:
+goalkeeper
+side back
+center back
+defensive midfield
+center midfield
+offensive midfield
+winger
+striker
+
+⚠️ You must not use any information that is not explicitly available in the database tables.
+
+When you are asked a question:
+- Query only the actual data from the database.
+- As a final response, return only a table with the following columns: `player_name`, `team`, `value_eur`, and all other columns relevant to the question (e.g., `goals_scored_per90` if the question is about goals).
+Make sure not to omit any column that is relevant to the query.
+
+"Valor de mercado" means `value_eur`.
+
+When asked about rating, you must only return **numeric ratings**. If the rating is a string value like `"S.V"`, it means the player is unrated and must be excluded.
+
+When asked about the height in cm of a player, you must answer in base to the column height_cm.
+"""
+
+
 #Descripción del comportamiento del agente
 prefix = """
 Eres un agente experto en análisis de jugadores de fútbol. Solo puedes utilizar los datos que se encuentran en la base de datos PostgreSQL conectada.
@@ -47,7 +84,8 @@ Guía de traducción para interpretar posiciones (columna main_position):
 
 Cuando te pregunten, debes:
 - Consultar únicamente los datos reales de la base.
-- Mostrar como respuesta final solo una tabla con las columnas `player_name`, `team`, `value_eur` y aquellas relacionadas con la pregunta (por ejemplo `goals_scored_per90` si se pregunta por goles).
+- Mostrar como respuesta final solo una tabla con las columnas `player_name`, `team`, `value_eur` y todas aquellas relacionadas con la pregunta (por ejemplo `goals_scored_per90` si se pregunta por goles).
+No te dejes ninguna de las columnas relacionadas con la consulta.
 
 Valor de mercado -> value_eur
 
@@ -58,13 +96,13 @@ Cuando se pregunta por rating, debes responder únicamente con ratings numérico
 # --- CARGA DEL LLM Y AGENTE ---
 @st.cache_resource
 def cargar_agente():
-    llm = ChatOpenAI(model="gpt-3.5-turbo", max_tokens=250)
+    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, max_tokens=250)
     agent = create_sql_agent(
     llm=llm,
     db=sql_db,
     verbose=False,
     agent_type="openai-functions",
-    prefix=prefix
+    prefix=prefix2
 )
     return agent
 
@@ -82,6 +120,7 @@ if st.button("Responder"):
                 respuesta = agent.run(query)
                 st.success("✅ Consulta completada")
                 st.markdown(respuesta)
+                log_consulta_respuesta(query, respuesta)
             except Exception as e:
                 st.error(f"❌ Ha ocurrido un error: {e}")
     else:
