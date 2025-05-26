@@ -127,18 +127,12 @@ def draw_radar_from_sql(player_name):
 
     st.pyplot(fig)
 
-def log_consulta_respuesta(consulta, respuesta, archivo="datos/agente_log.csv"):
-    log_entry = {
-        "timestamp": datetime.now().isoformat(timespec="seconds"),
-        "consulta": consulta,
-        "respuesta": respuesta.strip()
-    }
+def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):
+    with open(archivo, "a", encoding="utf-8") as f:
+        f.write("=" * 60 + "\n")
+        f.write(f"[{datetime.now().isoformat(timespec='seconds')}]\n")
+        f.write("📝 Consulta:\n")
+        f.write(consulta.strip() + "\n\n")
+        f.write("✅ Respuesta:\n")
+        f.write(respuesta.strip() + "\n\n")
 
-    # Si el archivo existe, añadir; si no, crear
-    if os.path.exists(archivo):
-        df = pd.read_csv(archivo)
-        df = df.append(log_entry, ignore_index=True)
-    else:
-        df = pd.DataFrame([log_entry])
-
-    df.to_csv(archivo, index=False)

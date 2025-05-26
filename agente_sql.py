@@ -120,7 +120,7 @@ if st.button("Responder"):
                 respuesta = agent.run(query)
                 st.success("✅ Consulta completada")
                 st.markdown(respuesta)
-                log_consulta_respuesta(query, respuesta)
+                log_consulta_txt(query, respuesta)
             except Exception as e:
                 st.error(f"❌ Ha ocurrido un error: {e}")
     else:
