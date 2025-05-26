@@ -87,4 +87,10 @@ if st.button("Responder"):
     else:
         st.warning("⚠️ Introduce una consulta válida.")
 
-
+st.header("Radar de jugador")
+player_input = st.text_input("Introduce el nombre exacto del jugador")
+if player_input:
+    try:
+        draw_radar_from_sql(player_input)
+    except Exception as e:
+        st.error(str(e))
