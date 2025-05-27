@@ -9,11 +9,24 @@ from dotenv import load_dotenv
 from mplsoccer import PyPizza
 import pandas as pd
 from langchain.tools import Tool
+import pathlib
 
 load_dotenv()
 
+import base64
+
 # --- INTERFAZ ---
 st.set_page_config(page_title="Football Scouting Agent", layout="wide")
+
+def load_css(path):
+    with open(path) as f:
+        css = f.read()
+    st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
+
+
+css_path = pathlib.Path("style/style.css")
+#load_css(css_path)
+
 
 # --- HEADER ---
 st.markdown("<h1 style='text-align: center;'>⚽ Intelligent Football Scouting Agent</h1>", unsafe_allow_html=True)
