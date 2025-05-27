@@ -8,12 +8,17 @@ import os
 from dotenv import load_dotenv
 from mplsoccer import PyPizza
 import pandas as pd
+from langchain.tools import Tool
 
 load_dotenv()
 
-# --- CONFIGURACIÓN ---
-st.set_page_config(page_title="Agente de Scouting", layout="centered")
-st.title("⚽ Agente Inteligente de Jugadores")
+# --- INTERFAZ ---
+st.set_page_config(page_title="Football Scouting Agent", layout="wide")
+
+# --- HEADER ---
+st.markdown("<h1 style='text-align: center;'>⚽ Intelligent Football Scouting Agent</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-size: 18px;'>Ask questions, explore player data, and visualize performance with AI-powered radar charts.</p>", unsafe_allow_html=True)
+st.markdown("---")
 
 # Crear motor SQLAlchemy
 engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/scoutingdb")
@@ -21,86 +26,27 @@ engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/scout
 # Crear objeto SQLDatabase
 sql_db = SQLDatabase(engine)
 
-# Agent behavior description
-prefix2 = """
-You are an expert agent in football player analysis. You are only allowed to use the data available in the connected PostgreSQL database.
+def draw_radar_tool(player_name: str):
+    return draw_radar_from_sql(player_name)  # o guarda el gráfico y devuelve la ruta
 
-🗂️ By default, you should use the tables `player_profile`, `player_stats`, and `player_stats_per90` to answer questions about players, as they contain the main performance metrics and individual characteristics.
-
-Teams are stored in the `teams` table. The player-related tables only contain the `team_id` field to reference teams.
-
-**You must not use any external knowledge.**
-**You must not mention players who are not present in the database.**
-Do not fabricate information or values — respond only using real, existing data.
-
-You must filter the players position by the column `main_position`:
-goalkeeper
-side back
-center back
-defensive midfield
-center midfield
-offensive midfield
-winger
-striker
-
-⚠️ You must not use any information that is not explicitly available in the database tables.
-
-When you are asked a question:
-- Query only the actual data from the database.
-- As a final response, return only a table with the following columns: `player_name`, `team`, `value_eur`, and all other columns relevant to the question (e.g., `goals_scored_per90` if the question is about goals).
-Make sure not to omit any column that is relevant to the query.
-
-"Valor de mercado" means `value_eur`.
-
-When asked about rating, you must only return **numeric ratings**. If the rating is a string value like `"S.V"`, it means the player is unrated and must be excluded.
-
-When asked about the height in cm of a player, you must answer in base to the column height_cm.
-"""
-
-
-#Descripción del comportamiento del agente
-prefix = """
-Eres un agente experto en análisis de jugadores de fútbol. Solo puedes utilizar los datos que se encuentran en la base de datos PostgreSQL conectada.
-
-🗂️ Por defecto, deberás utilizar las tablas `player_profile`, 'player_stats' y `player_stats_per90` para responder a preguntas sobre jugadores, ya que contienen la información principal de rendimiento y características individuales.ç
-
-Los equipos aparecen en la tabla 'teams', apareciendo unicamente en las tablas de jugadores el "team_id".
-
-**No debes usar conocimiento externo.**
-**No debes mencionar a jugadores que no estén en la base de datos.**
-No inventes información ni valores, y responde solo a partir de los datos reales existentes.
-
-Guía de traducción para interpretar posiciones (columna main_position):
-- portero → goalkeeper
-- lateral → left back, right back
-- defensa central → center back
-- mediocentro defensivo → defensive midfield
-- mediocentro → center midfield
-- mediocentro ofensivo → offensive midfield
-- extremo → winger
-- delantero → striker
-
-⚠️ No debes usar información que no esté contenida en las tablas de la base de datos.
-
-Cuando te pregunten, debes:
-- Consultar únicamente los datos reales de la base.
-- Mostrar como respuesta final solo una tabla con las columnas `player_name`, `team`, `value_eur` y todas aquellas relacionadas con la pregunta (por ejemplo `goals_scored_per90` si se pregunta por goles).
-No te dejes ninguna de las columnas relacionadas con la consulta.
-
-Valor de mercado -> value_eur
-
-Cuando se pregunta por rating, debes responder únicamente con ratings numéricos. Los ratings strings "S.V" son sin valorar.
-"""
+tools = [
+    Tool(
+        name="generate_player_radar",
+        func=draw_radar_tool,
+        description="Generates a radar chart of player performance based on the player's exact name"
+    )
+]
 
 
 # --- CARGA DEL LLM Y AGENTE ---
 @st.cache_resource
 def cargar_agente():
-    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, max_tokens=250)
+    llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, max_tokens=1000)
     agent = create_sql_agent(
     llm=llm,
     db=sql_db,
     verbose=False,
+    extra_tools=tools,
     agent_type="openai-functions",
     prefix=prefix2
 )
@@ -108,28 +54,98 @@ def cargar_agente():
 
 agent = cargar_agente()
 
-# --- INTERFAZ ---
-st.subheader("Hazle una pregunta al agente")
+st.markdown("""
+Welcome to the **AI-powered Football Scouting Agent**!  
+This tool helps you explore player performance data and visualize key metrics through radar charts.
 
-query = st.text_area("✍️ Escribe tu consulta relacionada con los jugadores", height=100)
+### 🔍 What can you do here?
+You can ask questions about football players' performance using natural language. The agent will query the database, return a summary table, and generate a radar chart for the top player.
 
-if st.button("Responder"):
-    if query.strip() != "":
-        with st.spinner("💭 Pensando..."):
+### 🧾 Examples of queries you can try:
+- "Show me the striker with the most goals per 90 minutes"
+- "Who is the best left back in terms of duels won?"
+- "Compare central midfielders with the best pass completion rates"
+- "Give me the radar for Antoine Griezmann"
+""", unsafe_allow_html=True)
+
+# --- TABS ---
+tab_info, tab_query, tab_squads = st.tabs(["📘 How to Use", "🧠 Ask the Agent", "🏆 Competitions & Squads"])
+
+with tab_info:
+    st.header("🔍 What can you do?")
+    st.markdown("""
+    You can use this app to explore player statistics from a football scouting database. Ask questions in natural language, and the agent will:
+    
+    - Query the database
+    - Return a summary table with relevant players
+    - Generate a **radar chart** for the top player
+
+    **⚠️ Only players with more than 850 minutes played are eligible for radar charts.**
+    """)
+
+    st.header("📋 Example Queries")
+    st.success('"Show me the striker with the most goals per 90 minutes"')
+    st.success('"Who is the best left back in terms of duels won?"')
+    st.success('"Give me the radar chart for Antoine Griezmann"')
+    st.success('"Compare central midfielders with the best passing accuracy"')
+
+    with st.expander("💡 Tips for better results"):
+        st.markdown("""
+        - Always use the full player name (e.g. "Markel Susaeta Laskurain")
+        - Try different positions like "striker", "winger", "center back"
+        - Focus on per90 metrics for performance comparisons
+        """)
+
+with tab_query:
+    st.header("💬 Ask Your Question")
+    st.markdown("Write a query about player performance below and press **Run Analysis**.")
+
+    col1, col2 = st.columns([4, 1])
+    with col1:
+        query = st.text_area("📝 Your question", placeholder="e.g. Show me the winger with the most dribbles completed per 90 minutes", height=120)
+    with col2:
+        if st.button("🚀 Run Analysis"):
+            if query.strip():
+                with st.spinner("🔎 Analyzing..."):
+                    try:
+                        response = agent.run(query)
+                        st.success("✅ Done!")
+                        st.markdown(response)
+                        log_consulta_txt(query, response)
+                    except Exception as e:
+                        st.error(f"❌ Error: {e}")
+            else:
+                st.warning("Please enter a question before submitting.")
+
+with tab_squads:
+    st.header("🏟️ Explore Squads by Competition")
+
+    # Paso 1: Obtener competiciones únicas
+    with engine.connect() as conn:
+        result = conn.execute(text("SELECT DISTINCT competition FROM teams ORDER BY competition"))
+        competiciones = [row[0] for row in result if row[0] is not None]
+
+    if competiciones:
+        competicion_seleccionada = st.selectbox("Select a competition", competiciones)
+
+        # Paso 2: Equipos dentro de la competición seleccionada
+        query_equipos = text("SELECT team_id, team_name FROM teams WHERE competition = :comp ORDER BY team_name")
+        with engine.connect() as conn:
+            equipos = pd.read_sql(query_equipos, conn, params={"comp": competicion_seleccionada})
+
+        if not equipos.empty:
+            equipo_seleccionado = st.selectbox("Select a team", equipos["team_name"])
+
+            # Puedes recuperar el team_id por si lo necesitas más adelante
+            team_id = equipos.loc[equipos["team_name"] == equipo_seleccionado, "team_id"].values[0]
+
+            # Mostrar el gráfico en Streamlit
+            st.markdown(f"### 📋 Squad rating for **{equipo_seleccionado}**")
             try:
-                respuesta = agent.run(query)
-                st.success("✅ Consulta completada")
-                st.markdown(respuesta)
-                log_consulta_txt(query, respuesta)
+                generar_grafico_equipo_streamlit(equipo_seleccionado, engine)
             except Exception as e:
-                st.error(f"❌ Ha ocurrido un error: {e}")
+                st.error(f"❌ Could not generate squad graphic: {e}")
+        else:
+            st.warning("⚠️ No teams found for this competition.")
     else:
-        st.warning("⚠️ Introduce una consulta válida.")
-
-st.header("Radar de jugador")
-player_input = st.text_input("Introduce el nombre exacto del jugador")
-if player_input:
-    try:
-        draw_radar_from_sql(player_input)
-    except Exception as e:
-        st.error(str(e))
+        st.warning("⚠️ No competitions available in the database.")
