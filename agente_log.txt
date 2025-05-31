@@ -977,3 +977,117 @@ Here is the most relevant data for Markel Susaeta Laskurain:
 
 I have provided the relevant data for Markel Susaeta Laskurain.
 
+============================================================
+[2025-05-28T14:27:13]
+📝 Consulta:
+Give me 4 players where rating is more than 70, who have goals_scored_per90 above 0.4 and progressive_carries_per90 above 4. Their value_eur must be less than 70000000 €. Also, their dribble_success_rate must be higher than 50.
+
+✅ Respuesta:
+Here are 4 players who meet the criteria:
+
+1. **Antoine Griezmann**
+   - Team: Atlético Madrid
+   - Market Value: €33,000,000
+   - Goals Scored per 90: 0.59
+   - Progressive Carries per 90: 6.47
+   - Dribble Success Rate: 56.1
+
+2. **Gareth Frank Bale**
+   - Team: Real Madrid
+   - Market Value: €56,000,000
+   - Goals Scored per 90: 0.88
+   - Progressive Carries per 90: 10.02
+   - Dribble Success Rate: 50.72
+
+3. **Karim Benzema**
+   - Team: Real Madrid
+   - Market Value: €46,500,000
+   - Goals Scored per 90: 0.89
+   - Progressive Carries per 90: 4.9
+   - Dribble Success Rate: 55.1
+
+4. **Sergio Leonel Agüero del Castillo**
+   - Team: Manchester City
+   - Market Value: €47,500,000
+   - Goals Scored per 90: 0.79
+   - Progressive Carries per 90: 8.65
+   - Dribble Success Rate: 57.66
+
+I have generated a radar chart for Gareth Frank Bale based on his performance.
+
+============================================================
+[2025-05-28T14:29:46]
+📝 Consulta:
+Give me 4 players where rating is more than 70, who have goals_scored_per90 above 0.4 and progressive_carries_per90 above 4. Their value_eur must be less than 70000000 €. Also, their dribble_success_rate must be higher than 50.
+
+✅ Respuesta:
+Here are 4 players who meet the criteria:
+
+1. **Antoine Griezmann**
+   - Team: Atlético Madrid
+   - Market Value: €33,000,000
+   - Goals Scored per 90: 0.59
+   - Progressive Carries per 90: 6.47
+   - Dribble Success Rate: 56.1
+
+2. **Gareth Frank Bale**
+   - Team: Real Madrid
+   - Market Value: €56,000,000
+   - Goals Scored per 90: 0.88
+   - Progressive Carries per 90: 10.02
+   - Dribble Success Rate: 50.72
+
+3. **Karim Benzema**
+   - Team: Real Madrid
+   - Market Value: €46,500,000
+   - Goals Scored per 90: 0.89
+   - Progressive Carries per 90: 4.9
+   - Dribble Success Rate: 55.1
+
+4. **Sergio Leonel Agüero del Castillo**
+   - Team: Manchester City
+   - Market Value: €47,500,000
+   - Goals Scored per 90: 0.79
+   - Progressive Carries per 90: 8.65
+   - Dribble Success Rate: 57.66
+
+I have displayed the radar chart for Gareth Frank Bale, who has the highest market value among the selected players.
+
+============================================================
+[2025-05-31T16:23:57]
+📝 Consulta:
+Who is Barcelonas starting winger?
+
+✅ Respuesta:
+The starting winger for Barcelona is **Lionel Andrés Messi Cuccittini**. Here is his profile radar chart.
+
+============================================================
+[2025-05-31T16:24:24]
+📝 Consulta:
+Who is Barcelonas starting striker?
+
+✅ Respuesta:
+The starting striker for Barcelona is Luis Alberto Suárez Díaz. Here is a radar chart of his performance.
+
+============================================================
+[2025-05-31T16:29:00]
+📝 Consulta:
+Show me five players who play as winger, have more than 0,5 goals_scored_per90, more than 0,5 goal_assists_per90 and value_eur lower than 40000000. Thay must have played more than 850 minutes
+
+✅ Respuesta:
+Here are two players who play as wingers, have more than 0.5 goals scored per 90 minutes, more than 0.5 goal assists per 90 minutes, and a market value lower than 40,000,000 euros, and have played more than 850 minutes:
+
+1. **Jesé Rodríguez Ruiz**
+   - Team: Real Madrid
+   - Market Value: 12,000,000 euros
+   - Goals Scored per 90: 0.68
+   - Goal Assists per 90: 0.82
+
+2. **Dries Mertens**
+   - Team: Napoli
+   - Market Value: 22,000,000 euros
+   - Goals Scored per 90: 0.8
+   - Goal Assists per 90: 0.8
+
+I have generated a radar chart for Jesé Rodríguez Ruiz.
+

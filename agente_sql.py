@@ -4,18 +4,14 @@ from sqlalchemy import create_engine
 from funciones_analisis.funcionalidades_agente import *
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
-import os
 from dotenv import load_dotenv
 from mplsoccer import PyPizza
 import pandas as pd
 from langchain.tools import Tool
-import pathlib
 
 load_dotenv()
 
-import base64
-
-# --- INTERFAZ ---
+# --- INTERFAZ STREAMLIT---
 st.set_page_config(page_title="Football Scouting Agent", layout="wide")
 
 def load_css(path):
@@ -23,10 +19,8 @@ def load_css(path):
         css = f.read()
     st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
-
-css_path = pathlib.Path("style/style.css")
+#css_path = pathlib.Path("style/style.css")
 #load_css(css_path)
-
 
 # --- HEADER ---
 st.markdown("<h1 style='text-align: center;'>⚽ Intelligent Football Scouting Agent</h1>", unsafe_allow_html=True)
@@ -34,13 +28,14 @@ st.markdown("<p style='text-align: center; font-size: 18px;'>Ask questions, expl
 st.markdown("---")
 
 # Crear motor SQLAlchemy
-engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/scoutingdb")
+engine = create_engine("postgresql+psycopg2://postgres:1234@localhost:5432/scouting")
 
 # Crear objeto SQLDatabase
 sql_db = SQLDatabase(engine)
 
+# Convertir funcion grafico en tool para el agente
 def draw_radar_tool(player_name: str):
-    return draw_radar_from_sql(player_name)  # o guarda el gráfico y devuelve la ruta
+    return draw_radar_from_sql(player_name)
 
 tools = [
     Tool(
@@ -58,7 +53,7 @@ def cargar_agente():
     agent = create_sql_agent(
     llm=llm,
     db=sql_db,
-    verbose=False,
+    verbose=True,
     extra_tools=tools,
     agent_type="openai-functions",
     prefix=prefix2
@@ -112,12 +107,10 @@ with tab_info:
 with tab_query:
     st.header("💬 Ask Your Question")
     st.markdown("Write a query about player performance below and press **Run Analysis**.")
-
-    col1, col2 = st.columns([4, 1])
-    with col1:
-        query = st.text_area("📝 Your question", placeholder="e.g. Show me the winger with the most dribbles completed per 90 minutes", height=120)
-    with col2:
-        if st.button("🚀 Run Analysis"):
+    
+    query = st.text_area("📝 Your question", placeholder="e.g. Show me the winger with the most dribbles completed per 90 minutes", height=120)
+    
+    if st.button("🚀 Run Analysis"):
             if query.strip():
                 with st.spinner("🔎 Analyzing..."):
                     try:

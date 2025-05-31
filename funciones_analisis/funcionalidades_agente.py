@@ -9,8 +9,9 @@ from matplotlib import font_manager
 import io
 
 # Conexión a PostgreSQL
-engine = create_engine("postgresql+psycopg2://postgres@localhost:5432/scoutingdb")
+engine = create_engine("postgresql+psycopg2://postgres@localhost:5432/scouting")
 
+# RADAR DE JUGADORES
 # Consulta SQL para obtener perfil + estadísticas normalizadas
 query_radar = text("""
     SELECT 
@@ -30,7 +31,6 @@ query_radar = text("""
     WHERE p.player_name = :player_name
     LIMIT 1;
 """)
-
 
 # Configuración de radar por posición principal
 radar_config = {
@@ -145,7 +145,7 @@ def draw_radar_from_sql(player_name):
 
     st.pyplot(fig)
 
-
+# ARCHIVO PARA GUARDAR LAS COSULTAS
 def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):
     with open(archivo, "a", encoding="utf-8") as f:
         f.write("=" * 60 + "\n")
@@ -156,7 +156,7 @@ def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):
         f.write(respuesta.strip() + "\n\n")
 
 
-# Agent behavior description
+# Descripción del comportamiento del agente
 prefix2 = """
 You are an expert agent in football player analysis. You are only allowed to use the data available in the connected PostgreSQL database.
 
@@ -269,8 +269,8 @@ Remember!
 ❌ You must not guess or invent data. If you cannot find relevant results in the database, you must return an empty table or say that no matching players were found.
 
 """
-
-# Cargar fuente globalmente
+# GRÁFICO DE PLANTILLAS DE EQUIPO
+# Cargar fuentes
 dejavu_path = font_manager.findfont("DejaVu Sans")
 dejavu_font = ImageFont.truetype(dejavu_path, 18)
 dejavu_font_bold = ImageFont.truetype(dejavu_path, 22)
