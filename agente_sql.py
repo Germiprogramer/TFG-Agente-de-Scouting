@@ -135,15 +135,15 @@ with tab_squads:
         competicion_seleccionada = st.selectbox("Select a competition", competiciones)
 
         # Paso 2: Equipos dentro de la competición seleccionada
-        query_equipos = text("SELECT team_id, team_name FROM teams WHERE competition = :comp ORDER BY team_name")
+        query_equipos = text("SELECT team_id, team FROM teams WHERE competition = :comp ORDER BY team")
         with engine.connect() as conn:
             equipos = pd.read_sql(query_equipos, conn, params={"comp": competicion_seleccionada})
 
         if not equipos.empty:
-            equipo_seleccionado = st.selectbox("Select a team", equipos["team_name"])
+            equipo_seleccionado = st.selectbox("Select a team", equipos["team"])
 
             # Puedes recuperar el team_id por si lo necesitas más adelante
-            team_id = equipos.loc[equipos["team_name"] == equipo_seleccionado, "team_id"].values[0]
+            team_id = equipos.loc[equipos["team"] == equipo_seleccionado, "team_id"].values[0]
 
             # Mostrar el gráfico en Streamlit
             st.markdown(f"### 📋 Squad rating for **{equipo_seleccionado}**")

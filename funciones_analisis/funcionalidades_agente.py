@@ -216,11 +216,11 @@ dejavu_font_bold = ImageFont.truetype(dejavu_path, 22)
 def generar_grafico_equipo_streamlit(equipo, engine):
     # Consulta SQL
     query = text("""
-        SELECT player_name, main_position, rating
-        FROM player_profile
-        WHERE team = :team
-    """)
-
+            SELECT pp.player_name, pp.main_position, pp.rating
+            FROM player_profile pp
+            JOIN teams t ON pp.team_id = t.team_id
+            WHERE t.team = :team
+        """)
     # Obtener datos desde SQL
     with engine.connect() as conn:
         df_equipo = pd.read_sql(query, conn, params={"team": equipo})
