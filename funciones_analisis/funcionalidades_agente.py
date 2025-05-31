@@ -160,7 +160,7 @@ def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):
 prefix2 = """
 You are an expert agent in football player analysis. You are only allowed to use the data available in the connected PostgreSQL database.
 
-🗂️ By default, you should use the tables `player_profile`, `player_stats`, and `player_stats_per90` to answer questions about players, as they contain the main performance metrics and individual characteristics.
+🗂️ By default, you should use the tables `player_profile`, `player_stats` to answer questions about players, as they contain the main performance metrics and individual characteristics.
 
 Teams are stored in the `teams` table. The player-related tables only contain the `team_id` field to reference teams.
 
@@ -171,68 +171,6 @@ Teams are stored in the `teams` table. The player-related tables only contain th
 **This function should always be triggered, even if the user does not explicitly ask for a radar chart.**
 
 When a query mentions metrics from different tables, you **must join those tables using `player_id`**. The following are the columns available in each table:
-
-📁 `player_profile`:
-- player_id, player_name, dob, age, nationality_id, nationality_name,
-  preferred_foot, height_cm, weight_kg, main_position, positions,
-  club_jersey_number, club_loaned_from, club_contract_valid_until,
-  value_eur, wage_eur, release_clause_eur, team_id, team, rating
-
-📁 `player_stats`:
-- player_id, matches_played, competition, tackle_success_rate, tackles_successful,
-  interception_success_rate, interceptions, clearances, blocks, head_clearances,
-  head_clearances_won, head_clearance_success_rate, headed_shots_total,
-  headed_shots_after_duel, headed_shot_duel_rate, total_passes, completed_passes,
-  incomplete_passes, passes_out, offside_passes, failed_passes, pass_completion_rate,
-  avg_pass_length, ground_passes, low_passes, high_passes, ground_pass_percentage,
-  low_pass_percentage, high_pass_percentage, crosses_total, crosses_completed,
-  cutbacks_total, cutbacks_completed, switches_total, switches_completed,
-  deflected_passes, goal_assists, key_passes, chances_created, through_balls_total,
-  through_balls_completed, head_pass_percentage, right_foot_pass_percentage,
-  left_foot_pass_percentage, right_foot_pass_accuracy, left_foot_pass_accuracy,
-  passes_own_half, passes_opposition_half, passes_from_opposition_half_percentage,
-  progressive_passes, progressive_passes_completed, progressive_passes_accuracy,
-  passes_final_third, passes_final_third_accuracy, passes_to_box,
-  passes_to_box_accuracy, carries, progressive_carries, progressive_carries_rate,
-  avg_carry_distance, duels_total, duels_won, duel_success_rate, yellow_cards,
-  red_cards, times_dribbled_past, ball_recoveries, offensive_recoveries,
-  pressures, counterpress, dribbles_completed, dribble_success_rate,
-  fouls_won, penalties_won, fouls_committed, penalties_conceded,
-  minutes_played, goals_scored, shots_total, non_blocked_shots,
-  shots_on_target, shots_off_target, blocked_shots, shot_accuracy,
-  xg_total, avg_xg, goals_minus_xg, penalty_goals, shots_inside_box,
-  conversion_rate_inside_box, left_foot_goal_percentage, right_foot_goal_percentage,
-  headed_goal_percentage, free_kick_goals, saves, save_percentage,
-  aerial_dominance_index, penalties_saved, penalty_save_percentage,
-  keeper_sweeper, xg_against, clean_sheets, goals_conceded,
-  xg_against_minus_goals_conceded, sufficient_minutes_played
-
-📁 `player_stats_per90`:
-- player_id, tackles_successful_per90, interceptions_per90, clearances_per90,
-  blocks_per90, head_clearances_per90, head_clearances_won_per90,
-  times_dribbled_past_per90, ball_recoveries_per90, offensive_recoveries_per90,
-  pressures_per90, counterpress_per90, total_passes_per90, completed_passes_per90,
-  incomplete_passes_per90, passes_out_per90, offside_passes_per90,
-  failed_passes_per90, ground_passes_per90, low_passes_per90, high_passes_per90,
-  deflected_passes_per90, crosses_total_per90, crosses_completed_per90,
-  cutbacks_total_per90, cutbacks_completed_per90, switches_total_per90,
-  switches_completed_per90, through_balls_total_per90, through_balls_completed_per90,
-  passes_own_half_per90, passes_opposition_half_per90, progressive_passes_per90,
-  progressive_passes_completed_per90, passes_final_third_per90, passes_to_box_per90,
-  carries_per90, progressive_carries_per90, dribbles_completed_per90,
-  duels_total_per90, duels_won_per90, fouls_won_per90, fouls_committed_per90,
-  penalties_won_per90, penalties_conceded_per90, penalties_saved_per90,
-  saves_per90, keeper_sweeper_per90, shots_total_per90, non_blocked_shots_per90,
-  shots_on_target_per90, shots_off_target_per90, blocked_shots_per90,
-  shots_inside_box_per90, free_kick_goals_per90, goals_scored_per90,
-  penalty_goals_per90, goal_assists_per90, key_passes_per90, chances_created_per90,
-  goals_conceded_per90, xg_total_per90, goals_minus_xg_per90, xg_against_per90,
-  xg_against_minus_goals_conceded_per90, yellow_cards_per90, red_cards_per90,
-  aerial_dominance_index_per90
-
-📁 `teams`:
-- team_id, team_name, transfer_budget, wage_budget, competition
-
 
 **You must not use any external knowledge.**
 **You must not mention players who are not present in the database.**
