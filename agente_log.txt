@@ -1091,3 +1091,97 @@ Here are two players who play as wingers, have more than 0.5 goals scored per 90
 
 I have generated a radar chart for Jesé Rodríguez Ruiz.
 
+============================================================
+[2025-05-31T19:26:48]
+📝 Consulta:
+Find 6 winger players who are taller than 185 cm and have the most dribbles_completed_per90.
+
+✅ Respuesta:
+It seems I am still encountering the same issue with the query. Unfortunately, I am unable to retrieve the data at the moment. If you have any other questions or queries, feel free to ask.
+
+============================================================
+[2025-05-31T20:19:54]
+📝 Consulta:
+Find 6 winger players who are taller than 185 cm and have the most dribbles_completed_per90.
+
+✅ Respuesta:
+Here are 6 winger players who are taller than 185 cm and have the most dribbles completed per 90 minutes:
+
+1. **Player Name:** José Ignacio Peleteiro Ramallo
+   - **Team:** Eibar
+   - **Market Value:** €2,200,000
+   - **Dribbles Completed per 90:** 3.99
+   - **Height:** 188 cm
+
+2. **Player Name:** Jonathan Leko
+   - **Team:** West Bromwich Albion
+   - **Market Value:** €7,000,000
+   - **Dribbles Completed per 90:** 3.89
+   - **Height:** 189 cm
+
+3. **Player Name:** Jean-Eric Maxim Choupo-Moting
+   - **Team:** Schalke 04
+   - **Market Value:** €10,500,000
+   - **Dribbles Completed per 90:** 3.66
+   - **Height:** 191 cm
+
+4. **Player Name:** Mauro Matías Zárate
+   - **Team:** Fiorentina
+   - **Market Value:** €11,000,000
+   - **Dribbles Completed per 90:** 3.22
+   - **Height:** 188 cm
+
+5. **Player Name:** Melvyn Lorenzen
+   - **Team:** Werder Bremen
+   - **Market Value:** €650,000
+   - **Dribbles Completed per 90:** 2.93
+   - **Height:** 188 cm
+
+6. **Player Name:** Vadis Odjidja-Ofoe
+   - **Team:** Norwich City
+   - **Market Value:** €2,000,000
+   - **Dribbles Completed per 90:** 2.9
+   - **Height:** 186 cm
+
+I have generated a radar chart for José Ignacio Peleteiro Ramallo to visualize his overall performance.
+
+============================================================
+[2025-05-31T20:20:45]
+📝 Consulta:
+Tell me 5 players plays as a defensive_midfield with highest pass_completion_rate, and whose height_cm is more than 180, and whose value_eur is less than 2000000.0
+
+✅ Respuesta:
+Here are the top 5 defensive midfielders with the highest pass completion rate, a height greater than 180 cm, and a market value less than 2,000,000.0 euros:
+
+1. **Julian Weigl**
+   - Team: Borussia Dortmund
+   - Market Value: 1,500,000.0 euros
+   - Pass Completion Rate: 92.26%
+   - Height: 186 cm
+
+2. **Rodrigo Hernández Cascante**
+   - Team: Villarreal
+   - Market Value: 500,000.0 euros
+   - Pass Completion Rate: 88.0%
+   - Height: 182 cm
+
+3. **José Vicente Gómez Umpiérrez**
+   - Team: Las Palmas
+   - Market Value: 1,200,000.0 euros
+   - Pass Completion Rate: 87.73%
+   - Height: 188 cm
+
+4. **Seydou Kéita**
+   - Team: AS Roma
+   - Market Value: 1,700,000.0 euros
+   - Pass Completion Rate: 87.34%
+   - Height: 183 cm
+
+5. **Joan Jordán Moreno**
+   - Team: Espanyol
+   - Market Value: 600,000.0 euros
+   - Pass Completion Rate: 86.79%
+   - Height: 184 cm
+
+Among these players, Julian Weigl has the highest pass completion rate.
+

@@ -16,16 +16,15 @@ engine = create_engine("postgresql+psycopg2://postgres@localhost:5432/scouting")
 query_radar = text("""
     SELECT 
         p.player_name,
-        p.main_position,
-        p.team,
+        t.team AS team,
         CASE 
             WHEN p.rating ~ '^\\d+(\\.\\d+)?$' THEN ROUND(p.rating::numeric, 2)
             ELSE NULL
         END AS rating,
         ROUND((p.value_eur / 1000000.0)::numeric, 2) AS market_value,
-        s.minutes_played,
         n.*
     FROM player_profile p
+    LEFT JOIN teams t ON p.team_id = t.team_id
     LEFT JOIN normalized_stats_position n ON p.player_id = n.player_id
     LEFT JOIN player_stats s ON p.player_id = s.player_id
     WHERE p.player_name = :player_name
@@ -90,6 +89,7 @@ radar_config = {
 def get_player_data_for_radar(player_name):
     with engine.connect() as conn:
         df = pd.read_sql(query_radar, conn, params={"player_name": player_name})
+        df = df.loc[:, ~df.columns.duplicated()]
     if df.empty:
         raise ValueError(f"No se encontró al jugador '{player_name}' en la base de datos.")
     return df.iloc[0]
@@ -160,53 +160,46 @@ def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):
 prefix2 = """
 You are an expert agent in football player analysis. You are only allowed to use the data available in the connected PostgreSQL database.
 
-🗂️ By default, you should use the tables `player_profile`, `player_stats` to answer questions about players, as they contain the main performance metrics and individual characteristics.
+🗂️ By default, you should use the tables `player_profile` and `player_stats` to answer questions about players, as they contain the main performance metrics and individual characteristics.
 
-Teams are stored in the `teams` table. The player-related tables only contain the `team_id` field to reference teams.
+The table `teams` contains team-level information. Player-related tables only include the `team_id` column, which must be used to join with `teams`.
 
-**You also have a function called generate_player_radar that you must always use to visualize a player's profile with a radar chart.**
+⚠️ IMPORTANT: The column containing the team name is called `team` (not `team_name`) and is located in the `teams` table.
+Always refer to it as `t.team` when using SQL aliases.
 
-**After answering any query involving one or more players, you must always select one player among the results — preferably the one with the best performance based on the query — and call generate_player_radar using their name.**
+📊 You also have access to a function called `generate_player_radar`, which you must **always** use to visualize a player's profile with a radar chart.
 
-**This function should always be triggered, even if the user does not explicitly ask for a radar chart.**
+After answering any query involving one or more players, you must always select one player among the results — preferably the one with the best performance based on the query — and call `generate_player_radar` using their name.
+This function must always be triggered, even if the user does not explicitly request a radar chart.
 
-When a query mentions metrics from different tables, you **must join those tables using `player_id`**. The following are the columns available in each table:
+When a query mentions metrics from different tables, you **must join those tables using `player_id`**. Below are the rules you must follow:
 
-**You must not use any external knowledge.**
-**You must not mention players who are not present in the database.**
-**Do not fabricate information or values — respond only using real, existing data from the database.**
+🔒 STRICT RULES
+- You must not use any external knowledge.
+- You must not mention players who are not present in the database.
+- You must not fabricate information or values — respond only using real, existing data from the database.
+- If the required information is not present, you must return an empty table or explain that no matching players were found.
 
-You must filter the players position by the column `main_position`:
-goalkeeper
-side back
-center back
-defensive midfield
-center midfield
-offensive midfield
-winger
-striker
+🔎 POSITION FILTERING
+Filter players using the column `main_position`, which includes:
+goalkeeper, side back, center back, defensive midfield, center midfield, offensive midfield, winger, striker.
 
-⚠️ You must not use any information that is not explicitly available in the database tables.
+📝 RESPONSE FORMAT
+Your final response must always be a table that includes:
+- `player_name`
+- `team`
+- `value_eur`
+- All additional columns relevant to the query (e.g., `goals_scored_per90`, `height_cm`, etc.).
 
-When you are asked a question:
-- Query only the actual data from the database.
-- As a final response, return only a table with the following columns: `player_name`, `team`, `value_eur`, and all other columns relevant to the question (e.g., `goals_scored_per90` if the question is about goals).
-Make sure not to omit any column that is relevant to the query.
+💡 NOTES
+- “Market value” refers to the column `value_eur`.
+- The column for height is `height_cm`.
+- When asked about rating, only return **numeric ratings**. If the value is `"S.V"`, the player must be excluded from the result.
+- Never use the column `team_name` — it does not exist.
 
-"Market value" means `value_eur`.
-
-When asked about rating, you must only return **numeric ratings**. If the rating is a string value like `"S.V"`, it means the player is unrated and must be excluded.
-
-When asked about the height in cm of a player, you must answer in base to the column height_cm.
-
-Remember!
-**You must not use any external knowledge.**
-**You must not mention players who are not present in the database.**
-**Do not fabricate information or values — respond only using real, existing data from the database.**
-
-❌ You must not guess or invent data. If you cannot find relevant results in the database, you must return an empty table or say that no matching players were found.
-
+Remember! Be accurate, do not guess, and always base your answers strictly on the actual database schema and contents.
 """
+
 # GRÁFICO DE PLANTILLAS DE EQUIPO
 # Cargar fuentes
 dejavu_path = font_manager.findfont("DejaVu Sans")
