@@ -19,9 +19,6 @@ def load_css(path):
         css = f.read()
     st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
-#css_path = pathlib.Path("style/style.css")
-#load_css(css_path)
-
 # --- HEADER ---
 st.markdown("<h1 style='text-align: center;'>⚽ Intelligent Football Scouting Agent</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-size: 18px;'>Ask questions, explore player data, and visualize performance with AI-powered radar charts.</p>", unsafe_allow_html=True)
@@ -65,15 +62,6 @@ agent = cargar_agente()
 st.markdown("""
 Welcome to the **AI-powered Football Scouting Agent**!  
 This tool helps you explore player performance data and visualize key metrics through radar charts.
-
-### 🔍 What can you do here?
-You can ask questions about football players' performance using natural language. The agent will query the database, return a summary table, and generate a radar chart for the top player.
-
-### 🧾 Examples of queries you can try:
-- "Show me the striker with the most goals per 90 minutes"
-- "Who is the best left back in terms of duels won?"
-- "Compare central midfielders with the best pass completion rates"
-- "Give me the radar for Antoine Griezmann"
 """, unsafe_allow_html=True)
 
 # --- TABS ---
@@ -99,10 +87,14 @@ with tab_info:
 
     with st.expander("💡 Tips for better results"):
         st.markdown("""
-        - Always use the full player name (e.g. "Markel Susaeta Laskurain")
+        - Always use the full player name (e.g. "Markel Susaeta Laskurain"). You can check the player names in the 'Competitions & Squads' tab.
         - Try different positions like "striker", "winger", "center back"
         - Focus on per90 metrics for performance comparisons
         """)
+
+        # Mostrar la imagen con las métricas disponibles
+    st.image("imagenes/player_stats.png", caption="Categorías y métricas disponibles para preguntar", use_container_width=True)
+
 
 with tab_query:
     st.header("💬 Ask Your Question")

@@ -9,7 +9,7 @@ from matplotlib import font_manager
 import io
 
 # Conexión a PostgreSQL
-engine = create_engine("postgresql+psycopg2://postgres@localhost:5432/scouting")
+engine = create_engine("postgresql+psycopg2://postgres@localhost:5432/players_db")
 
 # RADAR DE JUGADORES
 # Consulta SQL para obtener perfil + estadísticas normalizadas
@@ -17,6 +17,8 @@ query_radar = text("""
     SELECT 
         p.player_name,
         t.team AS team,
+        p.main_position,
+        s.minutes_played,
         CASE 
             WHEN p.rating ~ '^\\d+(\\.\\d+)?$' THEN ROUND(p.rating::numeric, 2)
             ELSE NULL
@@ -25,8 +27,8 @@ query_radar = text("""
         n.*
     FROM player_profile p
     LEFT JOIN teams t ON p.team_id = t.team_id
-    LEFT JOIN normalized_stats_position n ON p.player_id = n.player_id
     LEFT JOIN player_stats s ON p.player_id = s.player_id
+    LEFT JOIN normalized_stats_position n ON p.player_id = n.player_id
     WHERE p.player_name = :player_name
     LIMIT 1;
 """)
@@ -158,47 +160,59 @@ def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):
 
 # Descripción del comportamiento del agente
 prefix2 = """
-You are an expert agent in football player analysis. You are only allowed to use the data available in the connected PostgreSQL database.
+🧠 You are an **expert agent in football player analysis**. You are ONLY allowed to use the data available in the **connected PostgreSQL database**.
 
-🗂️ By default, you should use the tables `player_profile` and `player_stats` to answer questions about players, as they contain the main performance metrics and individual characteristics.
+📊 By default, you must ALWAYS use the tables `player_profile` and `player_stats` to answer questions about players. These table `player_profile` contains the **individual characteristics** and `player_stats` contains the **main performance metrics**.
 
-The table `teams` contains team-level information. Player-related tables only include the `team_id` column, which must be used to join with `teams`.
+🏟️ The table `teams` contains team-level information. Player-related tables only include the `team_id` column, which you must use to JOIN with `teams`.
 
-⚠️ IMPORTANT: The column containing the team name is called `team` (not `team_name`) and is located in the `teams` table.
-Always refer to it as `t.team` when using SQL aliases.
+⚠️ CRITICAL: The column containing the team name is `team` (NOT `team_name`) and is located in the `teams` table.  
+🔁 ALWAYS refer to it as `t.team` when using SQL aliases.
 
-📊 You also have access to a function called `generate_player_radar`, which you must **always** use to visualize a player's profile with a radar chart.
+📈 You have access to a special function: `generate_player_radar`  
+✅ You MUST call this function **after any query that involves one or more players**, even if the user doesn’t explicitly ask for it.  
+👉 Select **the best performing player** from the result and run: `generate_player_radar("player_name")`
 
-After answering any query involving one or more players, you must always select one player among the results — preferably the one with the best performance based on the query — and call `generate_player_radar` using their name.
-This function must always be triggered, even if the user does not explicitly request a radar chart.
+🧩 If a query includes metrics from different tables, you **MUST** join them using `player_id`.
 
-When a query mentions metrics from different tables, you **must join those tables using `player_id`**. Below are the rules you must follow:
+────────────────────────────
+🔒 STRICT RULES (DO NOT BREAK):
+────────────────────────────
+🚫 DO NOT use any external knowledge.  
+🚫 DO NOT mention players who are NOT in the database.  
+🚫 DO NOT fabricate information or statistics.  
+✅ ONLY respond using **real, existing data**.  
+📭 If no results are found, return an **empty table** or a clear explanation.
 
-🔒 STRICT RULES
-- You must not use any external knowledge.
-- You must not mention players who are not present in the database.
-- You must not fabricate information or values — respond only using real, existing data from the database.
-- If the required information is not present, you must return an empty table or explain that no matching players were found.
+────────────────────────────
+📌 POSITION FILTERING:
+────────────────────────────
+Filter players using the column `main_position`, with possible values:  
+`goalkeeper`, `side back`, `center back`, `defensive midfield`, `center midfield`, `offensive midfield`, `winger`, `striker`.
 
-🔎 POSITION FILTERING
-Filter players using the column `main_position`, which includes:
-goalkeeper, side back, center back, defensive midfield, center midfield, offensive midfield, winger, striker.
+────────────────────────────
+📋 RESPONSE FORMAT:
+────────────────────────────
+Your FINAL answer must ALWAYS be a table with:
+- `player_name`  
+- `team`  
+- `value_eur`  
+- Any other **relevant columns** based on the question (e.g., `goals_scored_per90`, `height_cm`, etc.)
 
-📝 RESPONSE FORMAT
-Your final response must always be a table that includes:
-- `player_name`
-- `team`
-- `value_eur`
-- All additional columns relevant to the query (e.g., `goals_scored_per90`, `height_cm`, etc.).
+────────────────────────────
+📌 IMPORTANT NOTES:
+────────────────────────────
+- “Market value” = column `value_eur`
+- Height = column `height_cm`
+- For rating, return ONLY **numeric values** — exclude `"S.V"`
+- ❌ NEVER use `team_name` — it does not exist
 
-💡 NOTES
-- “Market value” refers to the column `value_eur`.
-- The column for height is `height_cm`.
-- When asked about rating, only return **numeric ratings**. If the value is `"S.V"`, the player must be excluded from the result.
-- Never use the column `team_name` — it does not exist.
-
-Remember! Be accurate, do not guess, and always base your answers strictly on the actual database schema and contents.
+🔁 REMEMBER: Be accurate. Do NOT guess. ALWAYS base your answer on the **actual database schema and contents**.
 """
+
+
+
+
 
 # GRÁFICO DE PLANTILLAS DE EQUIPO
 # Cargar fuentes

@@ -1185,3 +1185,173 @@ Here are the top 5 defensive midfielders with the highest pass completion rate, 
 
 Among these players, Julian Weigl has the highest pass completion rate.
 
+============================================================
+[2025-06-01T12:16:20]
+📝 Consulta:
+Tell me 5 players plays as a defensive_midfield with highest pass_completion_rate, and whose height_cm is more than 180, and whose value_eur is less than 2000000.0
+
+✅ Respuesta:
+Here are the top 5 defensive midfielders with the highest pass completion rate, height over 180 cm, and market value less than 2,000,000.0 euros:
+
+1. **Julian Weigl**
+   - Team: Borussia Dortmund
+   - Market Value: 1,500,000.0 euros
+   - Pass Completion Rate: 92.26%
+   - Height: 186 cm
+
+2. **Rodrigo Hernández Cascante**
+   - Team: Villarreal
+   - Market Value: 500,000.0 euros
+   - Pass Completion Rate: 88.0%
+   - Height: 182 cm
+
+3. **José Vicente Gómez Umpiérrez**
+   - Team: Las Palmas
+   - Market Value: 1,200,000.0 euros
+   - Pass Completion Rate: 87.73%
+   - Height: 188 cm
+
+4. **Seydou Kéita**
+   - Team: AS Roma
+   - Market Value: 1,700,000.0 euros
+   - Pass Completion Rate: 87.34%
+   - Height: 183 cm
+
+5. **Joan Jordán Moreno**
+   - Team: Espanyol
+   - Market Value: 600,000.0 euros
+   - Pass Completion Rate: 86.79%
+   - Height: 184 cm
+
+I will now generate the radar chart for Julian Weigl.
+Here is the radar chart for Julian Weigl's performance.
+
+============================================================
+[2025-06-01T16:36:51]
+📝 Consulta:
+Tell me 5 players plays as a defensive_midfield with highest pass_completion_rate, and whose height_cm is more than 180, and whose value_eur is less than 2000000.0
+
+✅ Respuesta:
+I apologize, but it seems there was an issue generating the radar chart for Julian Weigl. If you have any other requests or need further assistance, feel free to let me know!
+
+============================================================
+[2025-06-01T16:37:25]
+📝 Consulta:
+Tell me 5 players plays as a defensive_midfield with highest pass_completion_rate, and whose height_cm is more than 180, and whose value_eur is less than 2000000.0
+
+✅ Respuesta:
+Here are the top 5 defensive midfielders with the highest pass completion rate, height over 180 cm, and value less than 2,000,000.0 euros:
+
+1. **Julian Weigl**
+   - Team: Borussia Dortmund
+   - Market Value: 1,500,000.0 euros
+   - Pass Completion Rate: 92.26%
+   - Height: 186 cm
+
+2. **Rodrigo Hernández Cascante**
+   - Team: Villarreal
+   - Market Value: 500,000.0 euros
+   - Pass Completion Rate: 88.0%
+   - Height: 182 cm
+
+3. **José Vicente Gómez Umpiérrez**
+   - Team: Las Palmas
+   - Market Value: 1,200,000.0 euros
+   - Pass Completion Rate: 87.73%
+   - Height: 188 cm
+
+4. **Seydou Kéita**
+   - Team: AS Roma
+   - Market Value: 1,700,000.0 euros
+   - Pass Completion Rate: 87.34%
+   - Height: 183 cm
+
+5. **Joan Jordán Moreno**
+   - Team: Espanyol
+   - Market Value: 600,000.0 euros
+   - Pass Completion Rate: 86.79%
+   - Height: 184 cm
+
+I will now generate the radar chart for Julian Weigl.
+I am unable to generate the radar chart at the moment. If you have any other requests or questions, feel free to ask!
+
+============================================================
+[2025-06-01T16:41:20]
+📝 Consulta:
+Tell me 5 players plays as a defensive_midfield with highest pass_completion_rate, and whose height_cm is more than 180, and whose value_eur is less than 2000000.0
+
+✅ Respuesta:
+Here are the top 5 defensive midfielders with the highest pass completion rate, height over 180 cm, and market value less than 2,000,000.0 euros:
+
+1. **Julian Weigl**
+   - Team: Borussia Dortmund
+   - Market Value: 1,500,000.0 euros
+   - Pass Completion Rate: 92.26%
+   - Height: 186 cm
+
+2. **Rodrigo Hernández Cascante**
+   - Team: Villarreal
+   - Market Value: 500,000.0 euros
+   - Pass Completion Rate: 88.0%
+   - Height: 182 cm
+
+3. **José Vicente Gómez Umpiérrez**
+   - Team: Las Palmas
+   - Market Value: 1,200,000.0 euros
+   - Pass Completion Rate: 87.73%
+   - Height: 188 cm
+
+4. **Seydou Kéita**
+   - Team: AS Roma
+   - Market Value: 1,700,000.0 euros
+   - Pass Completion Rate: 87.34%
+   - Height: 183 cm
+
+5. **Joan Jordán Moreno**
+   - Team: Espanyol
+   - Market Value: 600,000.0 euros
+   - Pass Completion Rate: 86.79%
+   - Height: 184 cm
+
+I will now generate the radar chart for the best performing player, Julian Weigl.
+
+============================================================
+[2025-06-02T22:36:59]
+📝 Consulta:
+Tell me 5 players plays as a defensive_midfield with highest pass_completion_rate, and whose height_cm is more than 180, and whose value_eur is less than 2000000.0
+
+✅ Respuesta:
+Here are the top 5 defensive midfielders with the highest pass completion rate, a height greater than 180 cm, and a market value less than 2,000,000.0 euros:
+
+1. **Julian Weigl**
+   - Team: Borussia Dortmund
+   - Market Value: 1,500,000.0 euros
+   - Pass Completion Rate: 92.26%
+   - Height: 186 cm
+
+2. **Rodrigo Hernández Cascante**
+   - Team: Villarreal
+   - Market Value: 500,000.0 euros
+   - Pass Completion Rate: 88.0%
+   - Height: 182 cm
+
+3. **José Vicente Gómez Umpiérrez**
+   - Team: Las Palmas
+   - Market Value: 1,200,000.0 euros
+   - Pass Completion Rate: 87.73%
+   - Height: 188 cm
+
+4. **Seydou Kéita**
+   - Team: AS Roma
+   - Market Value: 1,700,000.0 euros
+   - Pass Completion Rate: 87.34%
+   - Height: 183 cm
+
+5. **Joan Jordán Moreno**
+   - Team: Espanyol
+   - Market Value: 600,000.0 euros
+   - Pass Completion Rate: 86.79%
+   - Height: 184 cm
+
+I will now generate the radar chart for Julian Weigl.
+
