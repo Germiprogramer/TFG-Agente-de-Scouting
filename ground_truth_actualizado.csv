@@ -1,0 +1,469 @@
+﻿question,expected_players,sql,sql_query
+"Who are the 5 defensive midfielders with the highest pass completion rate, taller than 180 cm, and worth under 2 million euros?","Julian Weigl, Rodrigo Hernández Cascante, José Vicente Gómez Umpiérrez, Seydou Keita, Joan Jordán Moreno","
+SELECT p.player_name, p.main_position, p.height_cm, p.value_eur, s.pass_completion_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'defensive midfield'
+  AND p.height_cm > 180
+  AND p.value_eur < 2000000
+ORDER BY s.pass_completion_rate DESC
+LIMIT 5;
+",
+Give me 5 center midfielders under 26 with the highest progressive carries per 90 minutes.,"László Kleinheisler, Panagiotis Giorgios Kone, Cameron Brannagan, İlkay Gündoğan, Panagiotis Tachtsidis","
+SELECT p.player_name, p.main_position, p.age, s.progressive_carries_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center midfield'
+  AND p.age < 26
+ORDER BY s.progressive_carries_per90 DESC
+LIMIT 5;
+",
+Show me the 5 strikers with the most non-blocked shots per 90 minutes and a value below 10 million euros.,"Marcello Trotta, Nikica Jelavić, Francesco Totti, Florian Niederlechner, Alberto Mateus Contreiras Gonçalves","
+SELECT p.player_name, p.main_position, p.value_eur, s.non_blocked_shots_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'striker'
+  AND p.value_eur < 10000000
+ORDER BY s.non_blocked_shots_per90 DESC
+LIMIT 5;
+",
+"Give me the 5 center backs with the highest number of ball recoveries per 90 minutes, aged 28 or older.","Medhi Amine El Mouttaqi Benatia, Dario Dainelli, Giovanni Marchese, Vasyl Pryyma, João Miranda de Souza Filho","
+SELECT p.player_name, p.main_position, p.age, s.ball_recoveries_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+  AND p.age >= 28
+ORDER BY s.ball_recoveries_per90 DESC
+LIMIT 5;
+",
+Find the top 5 offensive midfielders with the most chances created per 90 minutes.,"Alexander Baumjohann, Miloš Jojić, Kevin-Prince Boateng, Mesut Özil, Allan Saint-Maximin","
+SELECT p.player_name, p.main_position, s.chances_created_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+ORDER BY s.chances_created_per90 DESC
+LIMIT 5;
+",
+Show me 5 side backs under 25 years old with the highest number of crosses per 90 minutes.,"Federico Mattiello, Davide Zappacosta, Kieran Trippier, Gilberto Moraes Junior, Alex Sandro Lobo Silva","
+SELECT p.player_name, p.main_position, p.age, s.crosses_total_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+  AND p.age < 25
+ORDER BY s.crosses_total_per90 DESC
+LIMIT 5;
+",
+"Find the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes.","Jan Oblak, Gianluigi Buffon, Claudio Andrés Bravo Muñoz, Manuel Neuer, Koen Casteels","
+SELECT p.player_name, p.main_position, s.save_percentage
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+  AND s.minutes_played > 850
+ORDER BY s.save_percentage DESC
+LIMIT 5;
+",
+"List the top 5 wingers with the highest shot accuracy, who have played more than 850 minutes.","Gerard Deulofeu Lázaro, Andros Townsend, Wayne Routledge, Aaron Lennon, Lucas Vázquez Iglesias","
+SELECT p.player_name, p.main_position, s.shot_accuracy
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+  AND s.minutes_played > 850
+ORDER BY s.shot_accuracy DESC
+LIMIT 5;
+",
+Show me 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (minimum 850 minutes played).,"Hiroshi Kiyotake, Nadiem Amiri, Riccardo Saponara, Marco Asensio Willemsen","
+SELECT p.player_name, p.main_position, p.age, s.key_passes_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+  AND p.age < 24
+  AND s.minutes_played > 850
+ORDER BY s.key_passes_per90 DESC
+LIMIT 4;
+",
+"Find 6 central midfielders with the highest number of progressive passes completed per 90 and key passes per 90, who have played more than 850 minutes.","Andrés Iniesta Luján, Thiago Alcântara do Nascimento, İlkay Gündoğan, Michael Carrick, Luka Modrić, Marcelo Brozović","
+SELECT p.player_name, p.main_position, s.progressive_passes_completed_per90, s.key_passes_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center midfield'
+  AND s.minutes_played > 850
+ORDER BY s.progressive_passes_completed_per90 DESC, s.key_passes_per90 DESC
+LIMIT 6;
+",
+"Give me 3 strikers under 25 years old with the highest number of goals per 90 and the best shot accuracy, who have played more than 850 minutes.","Harry Kane, Paulo Bruno Exequiel Dybala, Christian Benteke Liolo","
+SELECT p.player_name, p.main_position, p.age, s.goals_scored_per90, s.shot_accuracy
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'striker'
+  AND p.age < 25
+  AND s.minutes_played > 850
+ORDER BY s.goals_scored_per90 DESC, s.shot_accuracy DESC
+LIMIT 3;
+",
+Show me 5 offensive midfielders worth less than 8 million euros with the highest number of goal assists and chances created per 90 minutes (minimum 850 minutes played).,"Hiroshi Kiyotake, Riccardo Saponara, Bamidele Alli, Matías Ariel Fernández Fernández, Marco Asensio Willemsen","
+SELECT p.player_name, p.main_position, p.value_eur, s.goal_assists_per90, s.chances_created_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+  AND p.value_eur < 8000000
+  AND s.minutes_played > 850
+ORDER BY s.goal_assists_per90 DESC, s.chances_created_per90 DESC
+LIMIT 5;
+",
+Find 4 center backs worth less than 4 million euros with the highest number of interceptions and clearances per 90 minutes (only players with more than 850 minutes played).,"Luis Hernández Rodríguez, Santiago Vergini, Pedro Bigas Rigo, Jamaal Lascelles","
+SELECT p.player_name, p.main_position, p.value_eur, s.interceptions_per90, s.clearances_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+  AND p.value_eur < 4000000
+  AND s.minutes_played > 850
+ORDER BY s.interceptions_per90 DESC, s.clearances_per90 DESC
+LIMIT 4;
+",
+"List 5 side backs who have completed the most progressive carries and dribbles per 90 minutes, with more than 850 minutes played.","Juan Guillermo Cuadrado Bello, Alex Sandro Lobo Silva, Davide Santon, Márcio Rafael Ferreira de Souza, Marcelo Vieira da Silva Júnior","
+SELECT p.player_name, p.main_position, s.progressive_carries_per90, s.dribbles_completed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+  AND s.minutes_played > 850
+ORDER BY s.progressive_carries_per90 DESC, s.dribbles_completed_per90 DESC
+LIMIT 5;
+",
+Show me 5 wingers with the highest overall rating who have also completed the most dribbles per 90 minutes (only players with more than 850 minutes played).,"Lucas Vázquez Iglesias, Lionel Andrés Messi Cuccittini, Gareth Frank Bale, Neymar da Silva Santos Junior, Dimitri Payet","
+SELECT p.player_name, p.main_position, p.rating, s.dribbles_completed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+  AND s.minutes_played > 850
+ORDER BY p.rating DESC, s.dribbles_completed_per90 DESC
+LIMIT 5;
+",
+Show me 4 side backs with the best pass completion rate and most duels won per 90 minutes (only players with more than 850 minutes played).,"Márcio Rafael Ferreira de Souza, Philipp Lahm, Juan Bernat Velasco, Facundo Sebastián Roncaglia","
+SELECT p.player_name, p.main_position, s.pass_completion_rate, s.duels_won_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+  AND s.minutes_played > 850
+ORDER BY s.pass_completion_rate DESC, s.duels_won_per90 DESC
+LIMIT 4;
+",
+Find 5 strikers with the best headed shot duel rate and who have played more than 850 minutes.,"Antonio Di Natale, Callum Wilson, Lucas Pérez Martínez, Nabil Ghilas, Antonio Cassano","
+SELECT p.player_name, p.main_position, s.headed_shot_duel_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'striker'
+  AND s.minutes_played > 850
+ORDER BY s.headed_shot_duel_rate DESC
+LIMIT 5;
+",
+Show me 4 goalkeepers with the most saves per 90 minutes and the best penalty save percentage (only players with more than 850 minutes played).,"Oliver Baumann, Ron-Robert Zieler, Costel Fane Pantilimon, Asmir Begović","
+SELECT p.player_name, p.main_position, s.saves_per90, s.penalty_save_percentage
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+  AND s.minutes_played > 850
+ORDER BY s.saves_per90 DESC, s.penalty_save_percentage DESC
+LIMIT 4;
+",
+"Find 3 offensive midfielders under 23 years old, valued under 5 million euros, with the highest number of chances created per 90 minutes (only players with more than 850 minutes played).","Hiroshi Kiyotake, Nadiem Amiri, Bamidele Alli","
+SELECT p.player_name, p.main_position, p.age, p.value_eur, s.chances_created_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+  AND p.age < 23
+  AND p.value_eur < 5000000
+  AND s.minutes_played > 850
+ORDER BY s.chances_created_per90 DESC
+LIMIT 3;
+",
+Find 5 wingers with the most progressive carries and completed crosses per 90 minutes (minimum 850 minutes played).,"Keita Baldé Diao, Jefferson Antonio Montero Vite, Eden Hazard, Yevhen Konoplyanka, Armindo Tué Na Bangna","
+SELECT p.player_name, p.main_position, s.progressive_carries_per90, s.crosses_completed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+  AND s.minutes_played > 850
+ORDER BY s.progressive_carries_per90 DESC, s.crosses_completed_per90 DESC
+LIMIT 5;
+",
+Show me 4 offensive midfielders with the most dribbles completed and fouls won per 90 minutes (minimum 850 minutes played).,"Éver Maximiliano David Banega, Alen Halilović, Daniel Ceballos Fernández, Franco Damián Vázquez","
+SELECT p.player_name, p.main_position, s.dribbles_completed_per90, s.fouls_won_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+  AND s.minutes_played > 850
+ORDER BY s.dribbles_completed_per90 DESC, s.fouls_won_per90 DESC
+LIMIT 4;
+",
+Show me 5 center backs with the highest head clearance success rate and aerial dominance index per 90 minutes (only players with more than 850 minutes played).,"Joshua Kimmich, Niko Bungert, Stefan Savić, Gustavo Daniel Cabral Cáceres, Leon Aderemi Balogun","
+SELECT p.player_name, p.main_position, s.head_clearance_success_rate, s.aerial_dominance_index_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+  AND s.minutes_played > 850
+ORDER BY s.head_clearance_success_rate DESC, s.aerial_dominance_index_per90 DESC
+LIMIT 5;
+",
+Find 5 center midfielders with the highest long pass completion rate and passes to final third accuracy (minimum 850 minutes played).,"Sung-Yeung Ki, Arturo Erasmo Vidal Pardo, Luka Modrić, Thiago Alcântara do Nascimento, Geoffrey Kondogbia","
+SELECT p.player_name, p.main_position, s.pass_completion_rate, s.passes_final_third_accuracy
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center midfield'
+  AND s.minutes_played > 850
+ORDER BY s.pass_completion_rate DESC, s.passes_final_third_accuracy DESC
+LIMIT 5;
+",
+Give me 4 center backs with the highest number of pressures and duels won per 90 minutes (only players with more than 850 minutes played).,"Thomas Heurtaux, Iván Rodrigo Piris Leguizamón, Ezequiel Muñoz, Matteo Bianchetti","
+SELECT p.player_name, p.main_position, s.pressures_per90, s.duels_won_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+  AND s.minutes_played > 850
+ORDER BY s.pressures_per90 DESC, s.duels_won_per90 DESC
+LIMIT 4;
+",
+Find 4 strikers with the highest expected goals per 90 minutes and shot accuracy (only players with more than 850 minutes played).,"Pierre-Emerick Aubameyang, Robert Lewandowski, Luis Alberto Suárez Díaz, Christian Benteke Liolo","
+SELECT p.player_name, p.main_position, s.xg_total_per90, s.shot_accuracy
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'striker'
+  AND s.minutes_played > 850
+ORDER BY s.xg_total_per90 DESC, s.shot_accuracy DESC
+LIMIT 4;
+",
+Give me 5 offensive midfielders valued under 4 million euros with the most goal assists and key passes per 90 minutes (minimum 850 minutes played).,"Hiroshi Kiyotake, Bamidele Alli, Wes Hoolahan, Shinji Kagawa, Nadiem Amiri","
+SELECT p.player_name, p.main_position, p.value_eur, s.goal_assists_per90, s.key_passes_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+  AND p.value_eur < 4000000
+  AND s.minutes_played > 850
+ORDER BY s.goal_assists_per90 DESC, s.key_passes_per90 DESC
+LIMIT 5;
+",
+Show me 4 goalkeepers worth less than 3 million euros with the highest save percentage and aerial dominance index per 90 minutes (minimum 850 minutes played).,"Jaume Doménech Sánchez, Albano Benjamín Bizzarri, Heurelho da Silva Gomes, Rune Almenning Jarstein","
+SELECT p.player_name, p.main_position, p.value_eur, s.save_percentage, s.aerial_dominance_index_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+  AND p.value_eur < 3000000
+  AND s.minutes_played > 850
+ORDER BY s.save_percentage DESC, s.aerial_dominance_index_per90 DESC
+LIMIT 4;
+",
+"Find 3 wingers under 24 years old, valued under 6 million euros, who have the highest number of progressive carries, key passes, and shot accuracy per 90 minutes. Only include players with more than 850 minutes played.","Jordon Ibe, Andros Townsend, Carlos Joaquín Correa","
+SELECT p.player_name, p.main_position, p.age, p.value_eur,
+       s.progressive_carries_per90, s.key_passes_per90, s.shot_accuracy
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+  AND p.age < 24
+  AND p.value_eur < 6000000
+  AND s.minutes_played > 850
+ORDER BY s.progressive_carries_per90 DESC,
+         s.key_passes_per90 DESC,
+         s.shot_accuracy DESC
+LIMIT 3;
+",
+Find 4 defensive midfielders with the highest duel success rate and the lowest number of fouls committed per 90 minutes (minimum 850 minutes played).,"Santiago Cazorla González, Gilbert Gianelli Imbula Wanga, Hernán Daniel Santana Trujillo, José Antonio García Rabasco","
+SELECT p.player_name, p.main_position, s.duel_success_rate, s.fouls_committed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'defensive midfield'
+  AND s.minutes_played > 850
+ORDER BY s.duel_success_rate DESC, s.fouls_committed_per90 ASC
+LIMIT 4;
+",
+Show me 5 goalkeepers under 24 years old with the highest penalty save percentage and total saves per 90 minutes (minimum 850 minutes played).,"Mattia Perin, Koen Casteels, Thibaut Courtois, Alphonse Areola, Marco Sportiello","
+SELECT p.player_name, p.main_position, p.age, s.penalty_save_percentage, s.saves_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+  AND p.age < 24
+  AND s.minutes_played > 850
+ORDER BY s.penalty_save_percentage DESC, s.saves_per90 DESC
+LIMIT 5;
+",
+"Find 3 center midfielders under 26 years old, with more than 850 minutes played, who rank highest in progressive passes completed, goal assists, ball recoveries per 90, and who also commit fewer than 1.5 fouls per 90.","İlkay Gündoğan, James David Rodríguez Rubio, Pascal Groß","
+SELECT p.player_name, p.main_position, p.age, s.progressive_passes_completed_per90,
+       s.goal_assists_per90, s.ball_recoveries_per90, s.fouls_committed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center midfield'
+  AND p.age < 26
+  AND s.minutes_played > 850
+  AND s.fouls_committed_per90 < 1.5
+ORDER BY s.progressive_passes_completed_per90 DESC,
+         s.goal_assists_per90 DESC,
+         s.ball_recoveries_per90 DESC
+LIMIT 3;
+",
+"Find 5 side backs under 25 years old, worth less than 5 million euros, with the most progressive carries and crosses completed per 90 minutes (minimum 850 minutes played).","Davide Zappacosta, Achraf Lazaar, Marcos Alonso Mendoza, Adam Smith, Jeffrey Schlupp","
+SELECT p.player_name, p.main_position, p.age, p.value_eur, 
+       s.progressive_carries_per90, s.crosses_completed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+  AND p.age < 25
+  AND p.value_eur < 5000000
+  AND s.minutes_played > 850
+ORDER BY s.progressive_carries_per90 DESC, s.crosses_completed_per90 DESC
+LIMIT 5;
+",
+"Find 4 center backs with the highest head clearance success rate and pass completion rate, and with fewer than 0.3 fouls committed per 90 minutes (minimum 850 minutes played).","Toby Alderweireld, Andrea Barzagli","
+SELECT p.player_name, p.main_position, 
+       s.head_clearance_success_rate, s.pass_completion_rate, s.fouls_committed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+  AND s.minutes_played > 850
+  AND s.fouls_committed_per90 < 0.3
+ORDER BY s.head_clearance_success_rate DESC, s.pass_completion_rate DESC
+LIMIT 4;
+",
+"Find 3 strikers under 25 years old, worth less than 4 million euros, who have the highest xG per 90 and shot accuracy (minimum 850 minutes played).","Borja González Tomás, Andrea Belotti, Arnaldo Antonio Sanabria Ayala","
+SELECT p.player_name, p.main_position, p.age, p.value_eur,
+       s.xg_total_per90, s.shot_accuracy
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'striker'
+  AND p.age < 25
+  AND p.value_eur < 4000000
+  AND s.minutes_played > 850
+ORDER BY s.xg_total_per90 DESC, s.shot_accuracy DESC
+LIMIT 3;
+",
+Find 5 wingers worth less than 2.5 million euros with the most goal assists and chances created per 90 minutes (minimum 850 minutes played).,"Diego Perotti, Leroy Sané, Joaquín Sánchez Rodríguez, Paweł Wszołek, Marc Albrighton","
+SELECT p.player_name, p.main_position, p.value_eur,
+       s.goal_assists_per90, s.chances_created_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+  AND p.value_eur < 2500000
+  AND s.minutes_played > 850
+ORDER BY s.goal_assists_per90 DESC, s.chances_created_per90 DESC
+LIMIT 5;
+",
+Find 4 center backs worth less than 3 million euros with the highest number of headed clearances won per 90 minutes and aerial duel success rate (minimum 850 minutes played).,"Jamaal Lascelles, Virgil van Dijk, Timm Klose, James Collins","
+SELECT p.player_name, p.main_position, p.value_eur,
+       s.head_clearances_won_per90, s.head_clearance_success_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+  AND p.value_eur < 3000000
+  AND s.minutes_played > 850
+ORDER BY s.head_clearances_won_per90 DESC, s.head_clearance_success_rate DESC
+LIMIT 4;
+",
+Find 4 center midfielders worth less than 3 million euros with the highest number of key passes and progressive passes completed per 90 minutes (minimum 850 minutes played).,"Franco Brienza, Joseph Alfred Duncan, Piotr Zieliński, Abraham González Casanova","
+SELECT p.player_name, p.main_position, p.value_eur,
+       s.key_passes_per90, s.progressive_passes_completed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center midfield'
+  AND p.value_eur < 3000000
+  AND s.minutes_played > 850
+ORDER BY s.key_passes_per90 DESC, s.progressive_passes_completed_per90 DESC
+LIMIT 4;
+",
+Find 3 goalkeepers worth under 2 million euros with the highest penalty save percentage and save percentage overall (minimum 850 minutes played).,"Jaume Doménech Sánchez, Albano Benjamín Bizzarri, Mark Bunn","
+SELECT p.player_name, p.main_position, p.value_eur,
+       s.penalty_save_percentage, s.save_percentage
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+  AND p.value_eur < 2000000
+  AND s.minutes_played > 850
+ORDER BY s.penalty_save_percentage DESC, s.save_percentage DESC
+LIMIT 3;
+",
+"Find 5 side backs under 24 years old, worth less than 4 million euros, with the most progressive carries per 90 minutes, crosses completed per 90, and pass completion rate (minimum 850 minutes played).","Achraf Lazaar, Jeffrey Schlupp, João Pedro Cavaco Cancelo, Ander Capa Rodríguez, Jacopo Sala","
+SELECT p.player_name, p.main_position, p.age, p.value_eur,
+       s.progressive_carries_per90, s.crosses_completed_per90, s.pass_completion_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+  AND p.age < 24
+  AND p.value_eur < 4000000
+  AND s.minutes_played > 850
+ORDER BY s.progressive_carries_per90 DESC, s.crosses_completed_per90 DESC, s.pass_completion_rate DESC
+LIMIT 5;
+",
+"Find 4 defensive midfielders under 24 years old, worth less than 3.5 million euros, with the most progressive passes completed and chances created per 90 minutes (minimum 850 minutes played).","Julian Weigl, Federico Viviani, Gastón Brugman, Leandro Daniel Paredes","
+SELECT p.player_name, p.main_position, p.age, p.value_eur,
+       s.progressive_passes_completed_per90, s.chances_created_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'defensive midfield'
+  AND p.age < 24
+  AND p.value_eur < 3500000
+  AND s.minutes_played > 850
+ORDER BY s.progressive_passes_completed_per90 DESC, s.chances_created_per90 DESC
+LIMIT 4;
+",
+Show me the 5 most valuable players from Valencia with the highest number of key passes per 90 minutes (minimum 850 minutes played).,"Sofiane Feghouli, Rodrigo Moreno Machado, Daniel Parejo Muñoz, Álvaro Negredo Sánchez, Francisco Alcácer García","
+SELECT p.player_name, p.main_position, p.value_eur,
+       s.key_passes_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+JOIN teams t ON p.team_id = t.team_id
+WHERE t.team = 'Valencia'
+  AND s.minutes_played > 850
+ORDER BY s.key_passes_per90 DESC, p.value_eur DESC
+LIMIT 5;
+",
+"Show me the top 5 rated players from Athletic Club, excluding those without a valid rating.","Íñigo Lekue Martínez, Beñat Etxebarria Urkiaga, Iñaki Williams Arthuer, Gorka Iraizoz Moreno, Óscar de Marcos Arana","
+SELECT p.player_name, p.main_position, p.rating
+FROM player_profile p
+JOIN teams t ON p.team_id = t.team_id
+WHERE t.team = 'Athletic Club'
+  AND p.rating ~ '^[0-9]+(\.[0-9]+)?$'
+ORDER BY CAST(p.rating AS FLOAT) DESC
+LIMIT 5;
+",
+"Show me the profile of Iñaki Williams Arthuer, including his position, age, minutes played and goals per 90 minutes.",Iñaki Williams Arthuer,"
+SELECT p.player_name, p.main_position, p.age, s.minutes_played, s.goals_scored_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.player_name = 'Iñaki Williams Arthuer';
+",
+"Give me Lionel Messi’s age, position, number of key passes per 90 minutes and goals scored per 90 minutes.",Lionel Andrés Messi Cuccittini,"
+SELECT p.player_name, p.main_position, p.age, 
+       s.key_passes_per90, s.goals_scored_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.player_name = 'Lionel Andrés Messi Cuccittini';
+",
+"What is the age, position, shot accuracy and non-blocked shots per 90 minutes of Robert Lewandowski?",Robert Lewandowski,"
+SELECT p.player_name, p.main_position, p.age, 
+       s.shot_accuracy, s.non_blocked_shots_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.player_name = 'Robert Lewandowski';
+",
+"Show me the offensive midfielders under 24 years old, with a value below 3 million euros, who have the most key passes per 90 and chances created per 90 minutes.","Allan Saint-Maximin, Hiroshi Kiyotake, Kevin Lasagna, Nadiem Amiri, Marco Jhonfai Fabián De La Mora","
+SELECT p.player_name, p.main_position, p.age, p.value_eur,
+       s.key_passes_per90, s.chances_created_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+  AND p.age < 24
+  AND p.value_eur < 3000000
+ORDER BY s.key_passes_per90 DESC, s.chances_created_per90 DESC
+LIMIT 5;
+",
+Show me the 5 defensive midfielders under 24 years old who have played more than 1000 minutes.,"Eric Dier, Fernando Lucas Martins, Gonzalo Escalante, Jorge Luiz Frello Filho, Amadou Diawara",,"SELECT 
+    pp.player_name, 
+    pp.main_position, 
+    pp.age, 
+    ps.minutes_played
+FROM 
+    player_profile pp
+JOIN 
+    player_stats ps ON pp.player_id = ps.player_id
+WHERE 
+    pp.main_position = 'defensive midfield' 
+    AND pp.age < 24 
+    AND ps.minutes_played > 1000
+ORDER BY 
+    ps.minutes_played DESC
+LIMIT 5;"

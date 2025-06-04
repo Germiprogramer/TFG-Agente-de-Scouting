@@ -1,4 +1,4 @@
-﻿question,expected_players,agent_answer,is_correct
+question,expected_players,agent_answer,is_correct
 "Who are the 5 defensive midfielders with the highest pass completion rate, taller than 180 cm, and worth under 2 million euros?","Julian Weigl, Rodrigo Hernández Cascante, José Vicente Gómez Umpiérrez, Seydou Keita, Joan Jordán Moreno",The radar chart for Julian Weigl has been generated based on his performance metrics.,True
 Give me 5 center midfielders under 26 with the highest progressive carries per 90 minutes.,"László Kleinheisler, Panagiotis Giorgios Kone, Cameron Brannagan, İlkay Gündoğan, Panagiotis Tachtsidis",The radar chart for László Kleinheisler has been generated based on his performance metrics.,True
 Show me the 5 strikers with the most non-blocked shots per 90 minutes and a value below 10 million euros.,"Marcello Trotta, Nikica Jelavić, Francesco Totti, Florian Niederlechner, Alberto Mateus Contreiras Gonçalves","Here are the top 5 strikers with the most non-blocked shots per 90 minutes and a market value below 10 million euros:

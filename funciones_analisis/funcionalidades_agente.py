@@ -7,6 +7,8 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 from matplotlib import font_manager
 import io
+from IPython.display import display, Image
+
 
 # Conexión a PostgreSQL
 engine = create_engine("postgresql+psycopg2://postgres@localhost:5432/players_db")
@@ -144,8 +146,18 @@ def draw_radar_from_sql(player_name):
     fig.text(0.5, 0.97, f"{row['player_name']} - {row['team']}", size=18, weight='bold', ha='center')
     fig.text(0.5, 0.94, f"Market value: {row['market_value']} M€", size=12, weight='semibold', ha='center')
     fig.text(0.5125, 0.485, f"{row['rating']}", size=18, weight='bold', ha='center')
+    
+    
+    buf = io.BytesIO()
+    fig.savefig(buf, format="png", dpi=150)
 
-    st.pyplot(fig)
+    # Crear columnas vacías a los lados para centrar
+    #col1, col2, col3 = st.columns([1, 1, 1])
+
+    #with col2:
+        #st.image(buf, use_container_width=False, width=700)  # ajusta el ancho aquí
+    buf.seek(0)
+    display(Image(data=buf.getvalue()))
 
 # ARCHIVO PARA GUARDAR LAS COSULTAS
 def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):
@@ -183,6 +195,7 @@ prefix2 = """
 🚫 DO NOT fabricate information or statistics.  
 ✅ ONLY respond using **real, existing data**.  
 📭 If no results are found, return an **empty table** or a clear explanation.
+🚫 DO NOT make any comments about the radar generation, just generate it.  
 
 ────────────────────────────
 📌 POSITION FILTERING:
