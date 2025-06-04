@@ -151,13 +151,14 @@ def draw_radar_from_sql(player_name):
     buf = io.BytesIO()
     fig.savefig(buf, format="png", dpi=150)
 
-    # Crear columnas vacías a los lados para centrar
-    #col1, col2, col3 = st.columns([1, 1, 1])
+    #Crear columnas vacías a los lados para centrar
+    col1, col2, col3 = st.columns([1, 1, 1])
 
-    #with col2:
-        #st.image(buf, use_container_width=False, width=700)  # ajusta el ancho aquí
-    buf.seek(0)
-    display(Image(data=buf.getvalue()))
+    with col2:
+        st.image(buf, use_container_width=False, width=700)  # ajusta el ancho aquí
+    #buf.seek(0)
+    #display(Image(data=buf.getvalue()))
+    return f"The radar chart for {player_name} has been generated successfully."
 
 # ARCHIVO PARA GUARDAR LAS COSULTAS
 def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):
@@ -174,7 +175,7 @@ def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):
 prefix2 = """
 🧠 You are an **expert agent in football player analysis**. You are ONLY allowed to use the data available in the **connected PostgreSQL database**.
 
-📊 By default, you must ALWAYS use the tables `player_profile` and `player_stats` to answer questions about players. These table `player_profile` contains the **individual characteristics** and `player_stats` contains the **main performance metrics**.
+📊 By default, you must ALWAYS use the tables `player_profile` and `player_stats` to answer questions about players. The table `player_profile` contains the **individual characteristics** and `player_stats` contains the **main performance metrics**.
 
 🏟️ The table `teams` contains team-level information. Player-related tables only include the `team_id` column, which you must use to JOIN with `teams`.
 
@@ -185,17 +186,22 @@ prefix2 = """
 ✅ You MUST call this function **after any query that involves one or more players**, even if the user doesn’t explicitly ask for it.  
 👉 Select **the best performing player** from the result and run: `generate_player_radar("player_name")`
 
+📝 Then, you MUST display the **written information** (in table format) of **ALL the players** included in the result — not just the selected one for the radar.  
+⚠️ The full player data must always be shown **after** the radar chart is generated.
+
 🧩 If a query includes metrics from different tables, you **MUST** join them using `player_id`.
 
 ────────────────────────────
 🔒 STRICT RULES (DO NOT BREAK):
 ────────────────────────────
+
 🚫 DO NOT use any external knowledge.  
 🚫 DO NOT mention players who are NOT in the database.  
 🚫 DO NOT fabricate information or statistics.  
 ✅ ONLY respond using **real, existing data**.  
-📭 If no results are found, return an **empty table** or a clear explanation.
+📭 If no results are found, return an **empty table** or a clear explanation.  
 🚫 DO NOT make any comments about the radar generation, just generate it.  
+✅ ALWAYS include the **complete written information of all players returned** by the query in a table format, and place it AFTER the radar.
 
 ────────────────────────────
 📌 POSITION FILTERING:
@@ -206,25 +212,44 @@ Filter players using the column `main_position`, with possible values:
 ────────────────────────────
 📋 RESPONSE FORMAT:
 ────────────────────────────
-Your FINAL answer must ALWAYS be a table with:
-- `player_name`  
-- `team`  
-- `value_eur`  
-- Any other **relevant columns** based on the question (e.g., `goals_scored_per90`, `height_cm`, etc.)
+Your FINAL answer must:
+1. First, call `generate_player_radar("player_name")`
+2. Then, write the table and explanation with:
+   - `player_name`  
+   - `team`  
+   - `value_eur`  
+   - Any other **relevant columns** based on the question (e.g., `goals_scored_per90`, `height_cm`, etc.)
 
 ────────────────────────────
-📌 IMPORTANT NOTES:
+📌 EXAMPLE (RADAR FIRST, THEN TEXT):
 ────────────────────────────
-- “Market value” = column `value_eur`
-- Height = column `height_cm`
-- For rating, return ONLY **numeric values** — exclude `"S.V"`
-- ❌ NEVER use `team_name` — it does not exist
+User asks:  
+"Find 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (min. 850 minutes played)."
 
-🔁 REMEMBER: Be accurate. Do NOT guess. ALWAYS base your answer on the **actual database schema and contents**.
+✅ Your response must look like this:
+
+```python
+generate_player_radar("Hiroshi Kiyotake")
+Here are 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes:
+
+player_name	team	value_eur	key_passes_per90
+Hiroshi Kiyotake	Hannover 96	550000.0	2.43
+Nadiem Amiri	Hoffenheim	650000.0	1.87
+Riccardo Saponara	Empoli	4600000.0	1.85
+Marco Asensio Willemsen	Espanyol	6500000.0	1.66
+
+────────────────────────────
+📌 FINAL INSTRUCTIONS:
+────────────────────────────
+
+The radar chart MUST appear first.
+
+The full explanation and player table MUST follow the radar.
+
+NEVER omit the textual response, even if the radar is displayed.
+
+🔁 REMEMBER: Be accurate. Do NOT guess. ALWAYS base your answer on the actual database schema and contents.
 """
-
-
-
 
 
 # GRÁFICO DE PLANTILLAS DE EQUIPO

@@ -2552,3 +2552,206 @@ Here are the 5 center midfielders under 26 with the highest progressive carries 
    - Market Value: €4,700,000
    - Progressive Carries per 90: 15.98
 
+============================================================
+[2025-06-04T23:20:04]
+📝 Consulta:
+Find the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes.
+
+✅ Respuesta:
+Here are the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes:
+
+| player_name                | team              | value_eur   | save_percentage |
+|----------------------------|-------------------|-------------|-----------------|
+| Jan Oblak                  | Atlético Madrid   | 19500000    | 82.35           |
+| Gianluigi Buffon           | Juventus          | 9000000     | 81.81           |
+| Claudio Andrés Bravo Muñoz | Barcelona         | 17500000    | 80.58           |
+| Manuel Neuer               | Bayern Munich     | 58000000    | 80.0            |
+| Koen Casteels              | Wolfsburg         | 3300000     | 79.59           |
+
+Now, let's generate the radar chart for the best performing player, Jan Oblak:
+
+```python
+generate_player_radar("Jan Oblak")
+```
+
+============================================================
+[2025-06-04T23:20:23]
+📝 Consulta:
+Find the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes.
+
+✅ Respuesta:
+The radar chart for Jan Oblak has been generated successfully.
+
+============================================================
+[2025-06-04T23:20:39]
+📝 Consulta:
+Find the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes.
+
+✅ Respuesta:
+The radar chart for Jan Oblak has been generated successfully.
+
+============================================================
+[2025-06-04T23:21:17]
+📝 Consulta:
+Find the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes.
+
+✅ Respuesta:
+Here are the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes:
+
+| player_name                | team              | value_eur   | save_percentage |
+|----------------------------|-------------------|-------------|-----------------|
+| Jan Oblak                  | Atlético Madrid   | 19500000    | 82.35           |
+| Gianluigi Buffon           | Juventus          | 9000000     | 81.81           |
+| Claudio Andrés Bravo Muñoz | Barcelona         | 17500000    | 80.58           |
+| Manuel Neuer               | Bayern Munich     | 58000000    | 80.0            |
+| Koen Casteels              | Wolfsburg         | 3300000     | 79.59           |
+
+Now, let's generate the radar chart for the best performing player, Jan Oblak:
+
+```python
+generate_player_radar("Jan Oblak")
+```
+
+============================================================
+[2025-06-04T23:21:34]
+📝 Consulta:
+Find the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes.
+
+✅ Respuesta:
+The radar chart for Jan Oblak has been generated successfully.
+
+============================================================
+[2025-06-04T23:23:30]
+📝 Consulta:
+Find the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes.
+
+✅ Respuesta:
+The radar chart for Jan Oblak has been generated successfully.
+
+============================================================
+[2025-06-04T23:30:51]
+📝 Consulta:
+List me 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (minimum 850 minutes played).
+
+✅ Respuesta:
+Here is the radar chart for Hiroshi Kiyotake's performance.
+
+============================================================
+[2025-06-04T23:31:07]
+📝 Consulta:
+List me 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (minimum 850 minutes played).
+
+✅ Respuesta:
+The radar chart for Hiroshi Kiyotake has been generated successfully.
+
+============================================================
+[2025-06-04T23:31:38]
+📝 Consulta:
+List me 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (minimum 850 minutes played).
+
+✅ Respuesta:
+Here is the radar chart for Hiroshi Kiyotake's performance.
+
+============================================================
+[2025-06-04T23:34:38]
+📝 Consulta:
+List me 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (minimum 850 minutes played).
+
+✅ Respuesta:
+The radar chart for Hiroshi Kiyotake has been generated successfully.
+
+============================================================
+[2025-06-04T23:47:05]
+📝 Consulta:
+List the top 5 wingers with the highest shot accuracy, who have played more than 850 minutes.
+
+✅ Respuesta:
+Radar chart generated for Gerard Deulofeu Lázaro.
+
+============================================================
+[2025-06-04T23:47:27]
+📝 Consulta:
+List the top 5 wingers with the highest shot accuracy, who have played more than 850 minutes.
+
+✅ Respuesta:
+Radar chart generated for Gerard Deulofeu Lázaro.
+
+============================================================
+[2025-06-04T23:47:59]
+📝 Consulta:
+List the top 5 wingers with the highest shot accuracy, who have played more than 850 minutes.
+
+✅ Respuesta:
+The radar chart has been generated for Gerard Deulofeu Lázaro, the best performing winger in terms of shot accuracy among the top 5 players.
+
+============================================================
+[2025-06-04T23:52:14]
+📝 Consulta:
+List me 5 side backs under 25 years old with the highest number of crosses per 90 minutes
+
+✅ Respuesta:
+Here is the radar chart for Federico Mattiello:
+
+Now, let's display the detailed information of all the players in the table:
+
+| player_name            | team         | value_eur  | crosses_completed_per90 |
+|------------------------|--------------|------------|-------------------------|
+| Federico Mattiello     | Chievo       | 2300000.0 | 1.93                    |
+| Danilo Teodoro Soares  | Ingolstadt   | 2400000.0 | 1.91                    |
+| Luca Bittante          | Empoli       | 400000.0  | 1.91                    |
+| Alex Sandro Lobo Silva  | Juventus     | 22000000.0| 1.67                    |
+| Daniel Carvajal Ramos  | Real Madrid  | 18500000.0| 1.53                    |
+
+============================================================
+[2025-06-04T23:52:45]
+📝 Consulta:
+"Find the top 5 goalkeepers with the highest save percentage, considering only those who have played more than 850 minutes.
+
+✅ Respuesta:
+Here is the radar chart for Jan Oblak:
+
+Now, let's display the detailed information of all the goalkeepers in the table format:
+
+| player_name                 | team             | value_eur  | save_percentage |
+|-----------------------------|------------------|------------|-----------------|
+| Jan Oblak                   | Atlético Madrid  | 19,500,000 | 82.35           |
+| Gianluigi Buffon            | Juventus         | 9,000,000  | 81.81           |
+| Claudio Andrés Bravo Muñoz  | Barcelona        | 17,500,000 | 80.58           |
+| Manuel Neuer                | Bayern Munich    | 58,000,000 | 80.0            |
+| Koen Casteels               | Wolfsburg        | 3,300,000  | 79.59           |
+
+============================================================
+[2025-06-04T23:53:23]
+📝 Consulta:
+List me 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (minimum 850 minutes played)
+
+✅ Respuesta:
+Here are 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes:
+
+| player_name          | team        | value_eur | key_passes_per90 |
+|----------------------|-------------|-----------|------------------|
+| Hiroshi Kiyotake     | Hannover 96 | 550000.0  | 2.43             |
+| Nadiem Amiri         | Hoffenheim  | 650000.0  | 1.87             |
+| Riccardo Saponara    | Empoli      | 4600000.0 | 1.85             |
+| Marco Asensio Willemsen | Espanyol  | 6500000.0 | 1.66             |
+
+After analyzing the data, Hiroshi Kiyotake from Hannover 96 has the highest number of key passes per 90 minutes among the selected attacking midfielders.
+
+============================================================
+[2025-06-04T23:59:35]
+📝 Consulta:
+Find 5 wingers worth less than 2.5 million euros with the most goal assists and chances created per 90 minutes (minimum 850 minutes played).
+
+✅ Respuesta:
+Here are 5 wingers worth less than 2.5 million euros with the most goal assists and chances created per 90 minutes (minimum 850 minutes played):
+
+| player_name              | team           | value_eur | goal_assists_per90 | chances_created_per90 |
+|--------------------------|----------------|-----------|---------------------|-----------------------|
+| Diego Perotti            | AS Roma        | 1500000.0 | 0.3                 | 2.29                  |
+| Leroy Sané               | Schalke 04     | 2300000.0 | 0.25                | 1.14                  |
+| Joaquín Sánchez Rodríguez| Real Betis     | 160000.0  | 0.21                | 2.32                  |
+| Paweł Wszołek            | Hellas Verona  | 1100000.0 | 0.2                 | 1.42                  |
+| Marc Albrighton          | Leicester City | 2000000.0 | 0.19                | 1.74                  |
+
+After analyzing the data, the radar chart for the best performing player, Diego Perotti from AS Roma, has been generated.
+

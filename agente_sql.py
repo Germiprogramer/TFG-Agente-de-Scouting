@@ -32,7 +32,8 @@ sql_db = SQLDatabase(engine)
 
 # Convertir funcion grafico en tool para el agente
 def draw_radar_tool(player_name: str):
-    return draw_radar_from_sql(player_name)
+    draw_radar_from_sql(player_name)
+    return ""
 
 tools = [
     Tool(

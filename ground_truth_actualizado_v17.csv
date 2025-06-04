@@ -18,7 +18,7 @@ WHERE p.main_position = 'center midfield'
 ORDER BY s.progressive_carries_per90 DESC
 LIMIT 5;
 ",
-Show me the 5 strikers with the most non-blocked shots per 90 minutes and a value below 10 million euros.,"Marcello Trotta, Nikica Jelavić, Francesco Totti, Florian Niederlechner, Alberto Mateus Contreiras Gonçalves","
+Give me the 5 strikers with the most non-blocked shots per 90 minutes and a value below 10 million euros.,"Marcello Trotta, Nikica Jelavić, Francesco Totti, Florian Niederlechner, Alberto Mateus Contreiras Gonçalves","
 SELECT p.player_name, p.main_position, p.value_eur, s.non_blocked_shots_per90
 FROM player_profile p
 JOIN player_stats s ON p.player_id = s.player_id
@@ -44,7 +44,7 @@ WHERE p.main_position = 'offensive midfield'
 ORDER BY s.chances_created_per90 DESC
 LIMIT 5;
 ",
-Show me 5 side backs under 25 years old with the highest number of crosses per 90 minutes.,"Federico Mattiello, Davide Zappacosta, Kieran Trippier, Gilberto Moraes Junior, Alex Sandro Lobo Silva","
+Give me 5 side backs under 25 years old with the highest number of crosses per 90 minutes.,"Federico Mattiello, Davide Zappacosta, Kieran Trippier, Gilberto Moraes Junior, Alex Sandro Lobo Silva","
 SELECT p.player_name, p.main_position, p.age, s.crosses_total_per90
 FROM player_profile p
 JOIN player_stats s ON p.player_id = s.player_id
@@ -71,7 +71,7 @@ WHERE p.main_position = 'winger'
 ORDER BY s.shot_accuracy DESC
 LIMIT 5;
 ",
-Show me 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (minimum 850 minutes played).,"Hiroshi Kiyotake, Nadiem Amiri, Riccardo Saponara, Marco Asensio Willemsen","
+Give me 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (minimum 850 minutes played).,"Hiroshi Kiyotake, Nadiem Amiri, Riccardo Saponara, Marco Asensio Willemsen","
 SELECT p.player_name, p.main_position, p.age, s.key_passes_per90
 FROM player_profile p
 JOIN player_stats s ON p.player_id = s.player_id
@@ -100,7 +100,7 @@ WHERE p.main_position = 'striker'
 ORDER BY s.goals_scored_per90 DESC, s.shot_accuracy DESC
 LIMIT 3;
 ",
-Show me 5 offensive midfielders worth less than 8 million euros with the highest number of goal assists and chances created per 90 minutes (minimum 850 minutes played).,"Hiroshi Kiyotake, Riccardo Saponara, Bamidele Alli, Matías Ariel Fernández Fernández, Marco Asensio Willemsen","
+Give me 5 offensive midfielders worth less than 8 million euros with the highest number of goal assists and chances created per 90 minutes (minimum 850 minutes played).,"Hiroshi Kiyotake, Riccardo Saponara, Bamidele Alli, Matías Ariel Fernández Fernández, Marco Asensio Willemsen","
 SELECT p.player_name, p.main_position, p.value_eur, s.goal_assists_per90, s.chances_created_per90
 FROM player_profile p
 JOIN player_stats s ON p.player_id = s.player_id
@@ -129,7 +129,7 @@ WHERE p.main_position = 'side back'
 ORDER BY s.progressive_carries_per90 DESC, s.dribbles_completed_per90 DESC
 LIMIT 5;
 ",
-Show me 5 wingers with the highest overall rating who have also completed the most dribbles per 90 minutes (only players with more than 850 minutes played).,"Lucas Vázquez Iglesias, Lionel Andrés Messi Cuccittini, Gareth Frank Bale, Neymar da Silva Santos Junior, Dimitri Payet","
+Give me 5 wingers with the highest overall rating who have also completed the most dribbles per 90 minutes (only players with more than 850 minutes played).,"Lucas Vázquez Iglesias, Lionel Andrés Messi Cuccittini, Gareth Frank Bale, Neymar da Silva Santos Junior, Dimitri Payet","
 SELECT p.player_name, p.main_position, p.rating, s.dribbles_completed_per90
 FROM player_profile p
 JOIN player_stats s ON p.player_id = s.player_id
@@ -138,7 +138,7 @@ WHERE p.main_position = 'winger'
 ORDER BY p.rating DESC, s.dribbles_completed_per90 DESC
 LIMIT 5;
 ",
-Show me 4 side backs with the best pass completion rate and most duels won per 90 minutes (only players with more than 850 minutes played).,"Márcio Rafael Ferreira de Souza, Philipp Lahm, Juan Bernat Velasco, Facundo Sebastián Roncaglia","
+Give me 4 side backs with the best pass completion rate and most duels won per 90 minutes (only players with more than 850 minutes played).,"Márcio Rafael Ferreira de Souza, Philipp Lahm, Juan Bernat Velasco, Facundo Sebastián Roncaglia","
 SELECT p.player_name, p.main_position, s.pass_completion_rate, s.duels_won_per90
 FROM player_profile p
 JOIN player_stats s ON p.player_id = s.player_id
