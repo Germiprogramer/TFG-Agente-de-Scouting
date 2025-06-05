@@ -7,7 +7,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 from matplotlib import font_manager
 import io
-from IPython.display import display, Image
+from IPython.display import display
 
 
 # Conexión a PostgreSQL
@@ -156,9 +156,7 @@ def draw_radar_from_sql(player_name):
 
     with col2:
         st.image(buf, use_container_width=False, width=700)  # ajusta el ancho aquí
-    #buf.seek(0)
-    #display(Image(data=buf.getvalue()))
-    return f"The radar chart for {player_name} has been generated successfully."
+
 
 # ARCHIVO PARA GUARDAR LAS COSULTAS
 def log_consulta_txt(consulta, respuesta, archivo="agente_log.txt"):

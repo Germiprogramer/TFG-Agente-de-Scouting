@@ -60,15 +60,19 @@ def cargar_agente():
 
 agent = cargar_agente()
 
+tab_label = st.radio(
+    "Navigation",
+    ["📘 How to Use", "🧠 Ask the Agent", "🏆 Competitions & Squads"],
+    horizontal=True
+)
+
+
 st.markdown("""
 Welcome to the **AI-powered Football Scouting Agent**!  
 This tool helps you explore player performance data and visualize key metrics through radar charts.
 """, unsafe_allow_html=True)
 
-# --- TABS ---
-tab_info, tab_query, tab_squads = st.tabs(["📘 How to Use", "🧠 Ask the Agent", "🏆 Competitions & Squads"])
-
-with tab_info:
+if tab_label == "📘 How to Use":
     st.header("🔍 What can you do?")
     st.markdown("""
     You can use this app to explore player statistics from a football scouting database. Ask questions in natural language, and the agent will:
@@ -96,27 +100,27 @@ with tab_info:
         # Mostrar la imagen con las métricas disponibles
     st.image("imagenes/player_stats.png", caption="Categorías y métricas disponibles para preguntar", use_container_width=True)
 
-
-with tab_query:
+elif tab_label == "🧠 Ask the Agent":
     st.header("💬 Ask Your Question")
     st.markdown("Write a query about player performance below and press **Run Analysis**.")
     
     query = st.text_area("📝 Your question", placeholder="e.g. Show me the winger with the most dribbles completed per 90 minutes", height=120)
     
     if st.button("🚀 Run Analysis"):
-            if query.strip():
-                with st.spinner("🔎 Analyzing..."):
-                    try:
+        st.session_state.active_tab = "query"  # para que no se resetee
+        if query.strip():
+            with st.spinner("🔎 Analyzing..."):
+                try:
                         response = agent.run(query)
                         st.success("✅ Done!")
                         st.markdown(response)
                         log_consulta_txt(query, response)
-                    except Exception as e:
+                except Exception as e:
                         st.error(f"❌ Error: {e}")
-            else:
-                st.warning("Please enter a question before submitting.")
+        else:
+            st.warning("Please enter a question before submitting.")
 
-with tab_squads:
+elif tab_label == "🏆 Competitions & Squads":
     st.header("🏟️ Explore Squads by Competition")
 
     # Paso 1: Obtener competiciones únicas
