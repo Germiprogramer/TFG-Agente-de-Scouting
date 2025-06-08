@@ -1,35 +1,26 @@
-/* Fondo completo */
-.stApp {
-    background-image: url("data:image/png;base64,{{BACKGROUND}}");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
+    background-color: #8aaee3;
 }
 
-/* Capa translúcida general */
-.main > div {
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+h1, h2, h3, h4 {
+    color: #003049;
 }
 
-/* Estilo de bloques destacados */
-.bloque {
-    background-color: rgba(255, 255, 255, 0.92);
-    padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
+button[kind="primary"] {
+    background-color: #d62828;
+    color: white;
     border-radius: 10px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    font-weight: bold;
 }
 
-/* Estilo de texto general */
-h1, h2, h3, h4, h5, h6, p, li {
-    color: #111111 !important;
-    background-color: rgba(255, 255, 255, 0.92);
-    padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
+textarea {
     border-radius: 10px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    border: 1px solid #ccc;
+    padding: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.css-1x8cf1d {
+    background-color: #e0e1dd;
+    border-radius: 6px;
 }

@@ -19,6 +19,8 @@ def load_css(path):
         css = f.read()
     st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
+load_css("style/style.css")
+
 # --- HEADER ---
 st.markdown("<h1 style='text-align: center;'>⚽ Intelligent Football Scouting Agent</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center; font-size: 18px;'>Ask questions, explore player data, and visualize performance with AI-powered radar charts.</p>", unsafe_allow_html=True)

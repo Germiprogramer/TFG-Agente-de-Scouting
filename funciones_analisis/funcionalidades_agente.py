@@ -200,6 +200,7 @@ prefix2 = """
 📭 If no results are found, return an **empty table** or a clear explanation.  
 🚫 DO NOT make any comments about the radar generation, just generate it.  
 ✅ ALWAYS include the **complete written information of all players returned** by the query in a table format, and place it AFTER the radar.
+🚫 DO NOT return players whose `rating` is `'N.R'` — only include players with a **numerical rating**.
 
 ────────────────────────────
 📌 POSITION FILTERING:
@@ -224,10 +225,10 @@ Your FINAL answer must:
 User asks:  
 "Find 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes (min. 850 minutes played)."
 
-✅ Your response must look like this:
+First you generate the radar of the selected player.
 
-```python
-generate_player_radar("Hiroshi Kiyotake")
+✅ Then, your textual response must look like this:
+
 Here are 4 attacking midfielders under 24 years old with the highest number of key passes per 90 minutes:
 
 player_name	team	value_eur	key_passes_per90
@@ -251,10 +252,12 @@ NEVER omit the textual response, even if the radar is displayed.
 
 
 # GRÁFICO DE PLANTILLAS DE EQUIPO
+
 # Cargar fuentes
 dejavu_path = font_manager.findfont("DejaVu Sans")
 dejavu_font = ImageFont.truetype(dejavu_path, 18)
 dejavu_font_bold = ImageFont.truetype(dejavu_path, 22)
+font_title = ImageFont.truetype(dejavu_path, 26)
 
 def generar_grafico_equipo_streamlit(equipo, engine):
     # Consulta SQL
@@ -264,7 +267,6 @@ def generar_grafico_equipo_streamlit(equipo, engine):
             JOIN teams t ON pp.team_id = t.team_id
             WHERE t.team = :team
         """)
-    # Obtener datos desde SQL
     with engine.connect() as conn:
         df_equipo = pd.read_sql(query, conn, params={"team": equipo})
 
@@ -282,23 +284,44 @@ def generar_grafico_equipo_streamlit(equipo, engine):
     bottom_row = positions[len(positions)//2:]
 
     cell_width = 260
-    row_height = 40
+    line_height = 22
+    player_spacing = 10
     title_height = 60
     header_height = 40
     padding = 20
 
-    max_players_top = max(len(grouped[pos]) for pos in top_row) if top_row else 0
-    max_players_bottom = max(len(grouped[pos]) for pos in bottom_row) if bottom_row else 0
+    def wrap_text(text, font, max_width, draw):
+        lines = []
+        words = text.split()
+        current_line = ""
+        for word in words:
+            test_line = current_line + (" " if current_line else "") + word
+            if draw.textlength(test_line, font=font) <= max_width:
+                current_line = test_line
+            else:
+                if current_line:
+                    lines.append(current_line)
+                current_line = word
+        if current_line:
+            lines.append(current_line)
+        return lines
+
+    def compute_column_height(group, draw, font, max_width):
+        height = header_height
+        for _, row in group.iterrows():
+            lines = wrap_text(row['player_name'], font, max_width, draw)
+            height += line_height * len(lines) + player_spacing
+        return height
+
+    draw_test = ImageDraw.Draw(Image.new("RGB", (1,1)))
+    max_players_top = max([compute_column_height(grouped[pos], draw_test, dejavu_font, cell_width - 70) for pos in top_row]) if top_row else 0
+    max_players_bottom = max([compute_column_height(grouped[pos], draw_test, dejavu_font, cell_width - 70) for pos in bottom_row]) if bottom_row else 0
 
     width = padding * 2 + max(len(top_row), len(bottom_row)) * cell_width
-    height = padding * 3 + title_height + (max_players_top + 1) * row_height + (max_players_bottom + 1) * row_height
+    height = padding * 3 + title_height + max_players_top + max_players_bottom
 
     img = Image.new("RGB", (width, height), "white")
     draw = ImageDraw.Draw(img)
-
-    font_small = dejavu_font
-    font_header = dejavu_font_bold
-    font_title = ImageFont.truetype(dejavu_path, 26)
 
     draw.text((padding, padding), f"{equipo} Squad Ratings", fill="black", font=font_title)
 
@@ -310,43 +333,32 @@ def generar_grafico_equipo_streamlit(equipo, engine):
         'defensive midfield': '#8064A2',
         'attacking midfield': '#C0504D',
         'striker': '#C00000',
-        'winger': '#1F4E79'
+        'winger': '#1F4E79',
+        'offensive midfield': '#D9D9D9'
     }
-
-    def truncate_name(name, max_width):
-        text_width = draw.textlength(name, font=font_small)
-        if text_width <= max_width:
-            return name
-        parts = name.split(" ")
-        truncated = ""
-        for i in range(len(parts)):
-            candidate = " ".join(parts[:len(parts)-i])
-            if draw.textlength(candidate + "...", font=font_small) <= max_width:
-                return candidate + "..."
-        return name[:10] + "..."
 
     def draw_column(pos, col_index, row_offset):
         x0 = padding + col_index * cell_width
-        y0 = padding + title_height + row_offset
+        y = padding + title_height + row_offset
 
         position_color = color_map.get(pos.lower(), "#D9D9D9")
-        draw.rectangle([x0, y0, x0 + cell_width, y0 + header_height], fill=position_color)
-        draw.text((x0 + 10, y0 + 10), pos.title(), fill="black", font=font_header)
+        draw.rectangle([x0, y, x0 + cell_width, y + header_height], fill=position_color)
+        draw.text((x0 + 10, y + 10), pos.title(), fill="black", font=dejavu_font_bold)
+        y += header_height
 
-        for i, (_, row) in enumerate(grouped[pos].iterrows()):
-            y = y0 + header_height + i * row_height
-            max_name_width = cell_width - 70
-            name = truncate_name(row['player_name'], max_name_width)
-            draw.text((x0 + 10, y), name, fill="black", font=font_small)
-            draw.text((x0 + cell_width - 50, y), row['rating_display'], fill="black", font=font_small)
+        for _, row in grouped[pos].iterrows():
+            name_lines = wrap_text(row['player_name'], dejavu_font, cell_width - 70, draw)
+            for j, line in enumerate(name_lines):
+                draw.text((x0 + 10, y + j * line_height), line, fill="black", font=dejavu_font)
+            draw.text((x0 + cell_width - 50, y), row['rating_display'], fill="black", font=dejavu_font)
+            y += line_height * len(name_lines) + player_spacing
 
     for i, pos in enumerate(top_row):
         draw_column(pos, i, 0)
 
     for i, pos in enumerate(bottom_row):
-        draw_column(pos, i, (max_players_top + 1) * row_height + padding)
+        draw_column(pos, i, max_players_top + padding)
 
-    # Mostrar imagen en Streamlit sin guardar a disco
     buffer = io.BytesIO()
     img.save(buffer, format="PNG")
     st.image(buffer.getvalue(), use_container_width=True)
