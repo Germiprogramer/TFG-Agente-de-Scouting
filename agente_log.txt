@@ -898,3 +898,83 @@ Now, let's display the detailed information of all the players:
 | Arnaldo Antonio Sanabria Ayala | Sporting Gijón | 3000000.0   | 0.40           |
 | Andrea Belotti               | Torino         | 2600000.0   | 0.40           |
 
+============================================================
+[2025-06-09T00:11:17]
+📝 Consulta:
+Find 5 center midfielders with highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played.
+
+✅ Respuesta:
+Here are the 5 center midfielders with the highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played:
+
+| player_name                     | team               | value_eur   | progressive_carries_per90 | progressive_passes_completed_per90 | minutes_played |
+|---------------------------------|--------------------|-------------|----------------------------|-------------------------------------|----------------|
+| İlkay Gündoğan                  | Borussia Dortmund  | 26000000.0 | 16.4                       | 15.87                               | 2024           |
+| Thiago Alcântara do Nascimento  | Bayern Munich      | 30000000.0 | 15.64                      | 16.25                               | 1467           |
+| Marek Hamšík                    | Napoli             | 26500000.0 | 14.83                      | 13.3                                | 3538           |
+| Francisco Román Alarcón Suárez  | Real Madrid        | 39000000.0 | 14.22                      | 8.22                                | 1948           |
+| Manuel Lanzini                  | West Ham United    | 7500000.0  | 13.53                      | 6.72                                | 2168           |
+
+============================================================
+[2025-06-09T00:19:23]
+📝 Consulta:
+Find 5 center midfielders with highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played.
+
+✅ Respuesta:
+Here are the 5 center midfielders with the highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played:
+
+| player_name                     | team               | value_eur  | progressive_carries_per90 | progressive_passes_completed_per90 | minutes_played |
+|---------------------------------|--------------------|------------|---------------------------|-------------------------------------|----------------|
+| İlkay Gündoğan                  | Borussia Dortmund  | 26000000.0 | 16.4                      | 15.87                               | 2024           |
+| Thiago Alcântara do Nascimento  | Bayern Munich      | 30000000.0 | 15.64                     | 16.25                               | 1467           |
+| Marek Hamšík                    | Napoli             | 26500000.0 | 14.83                     | 13.3                                | 3538           |
+| Francisco Román Alarcón Suárez  | Real Madrid        | 39000000.0 | 14.22                     | 8.22                                | 1948           |
+| Manuel Lanzini                  | West Ham United    | 7500000.0  | 13.53                     | 6.72                                | 2168           |
+
+============================================================
+[2025-06-09T00:20:58]
+📝 Consulta:
+Find 5 center midfielders with highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played.
+
+✅ Respuesta:
+Here are the 5 center midfielders with the highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played:
+
+| player_name                     | team               | value_eur   | progressive_carries_per90 | progressive_passes_completed_per90 | minutes_played |
+|---------------------------------|--------------------|-------------|----------------------------|-------------------------------------|----------------|
+| İlkay Gündoğan                  | Borussia Dortmund  | 26000000.0 | 16.4                       | 15.87                               | 2024           |
+| Thiago Alcântara do Nascimento  | Bayern Munich      | 30000000.0 | 15.64                      | 16.25                               | 1467           |
+| Marek Hamšík                    | Napoli             | 26500000.0 | 14.83                      | 13.3                                | 3538           |
+| Francisco Román Alarcón Suárez  | Real Madrid        | 39000000.0 | 14.22                      | 8.22                                | 1948           |
+| Manuel Lanzini                  | West Ham United    | 7500000.0  | 13.53                      | 6.72                                | 2168           |
+
+============================================================
+[2025-06-10T00:22:52]
+📝 Consulta:
+Find 5 center midfielders with highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played.
+
+✅ Respuesta:
+Here are the 5 center midfielders with the highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played:
+
+| player_name                    | team               | value_eur   | progressive_carries_per90 | progressive_passes_completed_per90 | minutes_played |
+|-------------------------------|-------------------|------------|--------------------------|-----------------------------------|----------------|
+| İlkay Gündoğan                | Borussia Dortmund | 26000000.0 | 16.4                     | 15.87                             | 2024           |
+| Thiago Alcântara do Nascimento | Bayern Munich     | 30000000.0 | 15.64                    | 16.25                             | 1467           |
+| Marek Hamšík                   | Napoli            | 26500000.0 | 14.83                    | 13.3                              | 3538           |
+| Francisco Román Alarcón Suárez | Real Madrid       | 39000000.0 | 14.22                    | 8.22                              | 1948           |
+| Manuel Lanzini                 | West Ham United   | 7500000.0  | 13.53                    | 6.72                              | 2168           |
+
+============================================================
+[2025-06-10T00:26:17]
+📝 Consulta:
+Find 5 center midfielders with highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played.
+
+✅ Respuesta:
+Here are the 5 center midfielders with the highest progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played:
+
+| player_name                    | team               | value_eur  | progressive_carries_per90 | progressive_passes_completed_per90 | minutes_played |
+|--------------------------------|--------------------|------------|---------------------------|-------------------------------------|----------------|
+| İlkay Gündoğan                 | Borussia Dortmund  | 26000000.0 | 16.4                      | 15.87                               | 2024           |
+| Thiago Alcântara do Nascimento | Bayern Munich      | 30000000.0 | 15.64                     | 16.25                               | 1467           |
+| Marek Hamšík                   | Napoli             | 26500000.0 | 14.83                     | 13.3                                | 3538           |
+| Francisco Román Alarcón Suárez | Real Madrid        | 39000000.0 | 14.22                     | 8.22                                | 1948           |
+| Manuel Lanzini                 | West Ham United    | 7500000.0  | 13.53                     | 6.72                                | 2168           |
+

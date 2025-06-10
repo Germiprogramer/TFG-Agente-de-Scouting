@@ -41,51 +41,51 @@ radar_config = {
         ["saves_per90", "save_percentage", "xg_against_minus_goals_conceded_per90",
          "keeper_sweeper_per90", "penalty_save_percentage", "aerial_dominance_index_per90",
          "pass_completion_rate"],
-        ["Paradas /90", "Porcentaje paradas", "xG - Goles /90", "Sweeper /90", "Penaltis detenidos %",
-         "Dominio aéreo", "Precisión pase %"]
+        ["Saves /90", "Save %", "xG - Goals /90", "Sweeper /90", "Penalties Saved %",
+         "Aerial Dominance", "Pass Accuracy %"]
     ),
     "center back": (
         ["tackles_successful_per90", "interceptions_per90", "clearances_per90",
          "blocks_per90", "times_dribbled_past_per90", "progressive_passes_per90",
          "duel_success_rate", "goals_scored_per90"],
-        ["Tackles exitosos /90", "Intercepciones /90", "Despejes /90", "Bloqueos /90", "Regates sufridos /90",
-         "Pases progresivos /90", "Duelos ganados %", "Goles /90"]
+        ["Successful Tackles /90", "Interceptions /90", "Clearances /90", "Blocks /90", "Dribbled Past /90",
+         "Progressive Passes /90", "Duels Won %", "Goals /90"]
     ),
     "side back": (
         ["interception_success_rate", "pressures_per90", "duels_won_per90", "tackles_successful_per90",
          "progressive_carries_per90", "chances_created_per90", "goals_scored_per90", "fouls_committed_per90"],
-        ["Intercepciones %", "Presiones /90", "Duelos ganados /90", "Tackles exitosos /90",
-         "Conducciones progresivas /90", "Ocasiones creadas /90", "Goles /90", "Faltas cometidas /90"]
+        ["Interception %", "Pressures /90", "Duels Won /90", "Successful Tackles /90",
+         "Progressive Carries /90", "Chances Created /90", "Goals /90", "Fouls Committed /90"]
     ),
     "defensive midfield": (
         ["ball_recoveries_per90", "duels_won_per90", "duel_success_rate", "interceptions_per90",
          "pass_completion_rate", "progressive_passes_per90", "chances_created_per90", "fouls_committed_per90"],
-        ["Recuperaciones /90", "Duelos ganados /90", "Duelos ganados %", "Intercepciones /90",
-         "Precisión pase %", "Pases progresivos /90", "Ocasiones creadas /90", "Faltas cometidas /90"]
+        ["Recoveries /90", "Duels Won /90", "Duels Won %", "Interceptions /90",
+         "Pass Accuracy %", "Progressive Passes /90", "Chances Created /90", "Fouls Committed /90"]
     ),
     "center midfield": (
         ["duels_won_per90", "pressures_per90", "dribble_success_rate", "pass_completion_rate",
          "progressive_passes_per90", "chances_created_per90", "goal_assists_per90", "goals_scored_per90"],
-        ["Duelos ganados /90", "Presiones /90", "Éxito regate %", "Precisión pase %",
-         "Pases progresivos /90", "Ocasiones creadas /90", "Asistencias /90", "Goles /90"]
+        ["Duels Won /90", "Pressures /90", "Dribble Success %", "Pass Accuracy %",
+         "Progressive Passes /90", "Chances Created /90", "Assists /90", "Goals /90"]
     ),
     "offensive midfield": (
         ["pass_completion_rate", "goal_assists_per90", "chances_created_per90", "dribbles_completed_per90",
          "dribble_success_rate", "progressive_passes_per90", "fouls_won_per90", "goals_scored_per90"],
-        ["Precisión pase %", "Asistencias /90", "Ocasiones creadas /90", "Regates completados /90",
-         "Éxito regate %", "Pases progresivos /90", "Faltas recibidas /90", "Goles /90"]
+        ["Pass Accuracy %", "Assists /90", "Chances Created /90", "Completed Dribbles /90",
+         "Dribble Success %", "Progressive Passes /90", "Fouls Won /90", "Goals /90"]
     ),
     "winger": (
         ["dribbles_completed_per90", "dribble_success_rate", "progressive_carries_per90", "chances_created_per90",
          "goal_assists_per90", "goals_scored_per90", "goals_minus_xg_per90", "fouls_won_per90"],
-        ["Regates completados /90", "Éxito regate %", "Conducciones progresivas /90", "Ocasiones creadas /90",
-         "Asistencias /90", "Goles /90", "Goles - xG /90", "Faltas recibidas /90"]
+        ["Completed Dribbles /90", "Dribble Success %", "Progressive Carries /90", "Chances Created /90",
+         "Assists /90", "Goals /90", "Goals - xG /90", "Fouls Won /90"]
     ),
     "striker": (
         ["goals_scored_per90", "goals_minus_xg_per90", "headed_shot_duel_rate", "dribbles_completed_per90",
          "chances_created_per90", "goal_assists_per90", "pass_completion_rate", "fouls_won_per90"],
-        ["Goles /90", "Goles - xG /90", "Duelos aéreos %", "Regates completados /90", "Ocasiones creadas /90",
-         "Asistencias /90", "Precisión pase %", "Faltas recibidas /90"]
+        ["Goals /90", "Goals - xG /90", "Headed Duel %", "Completed Dribbles /90", "Chances Created /90",
+         "Assists /90", "Pass Accuracy %", "Fouls Won /90"]
     )
 }
 
@@ -126,7 +126,7 @@ def draw_radar_from_sql(player_name):
 
     baker = PyPizza(
         params=etiquetas,
-        background_color="#EBEBE9",
+        background_color="#f5f9ff",
         straight_line_color="#EBEBE9",
         straight_line_lw=1,
         last_circle_lw=0,
