@@ -1,12 +1,12 @@
 # ⚽ TFG - Agente de Scouting Inteligente
 
-## 📂 Estructura del repositorio
+## Estructura del repositorio
 
 El repositorio está organizado en diferentes carpetas, cada una con un propósito específico dentro del flujo de trabajo del proyecto. A continuación, se detalla la función de cada componente:
 
 ---
 
-### 🔧 Carpetas principales
+### Carpetas principales
 
 - **`datos/`**  
   Contiene los archivos de entrada y resultados intermedios generados durante el proceso de análisis y construcción de la base de datos.
@@ -47,7 +47,7 @@ El repositorio está organizado en diferentes carpetas, cada una con un propósi
 
 ---
 
-### 🧠 Archivos principales
+### Archivos principales
 
 - **`agente_sql.py`**  
   Define la lógica del agente inteligente basado en LangChain y su conexión con la base de datos relacional (SQL).
