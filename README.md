@@ -30,7 +30,7 @@ El repositorio está organizado en diferentes carpetas, cada una con un propósi
     4. `Limpieza previa al almacenamiento.ipynb`: ajustes antes de migrar los datos.  
     5. `Almacenamiento.ipynb`: creación del esquema y exportación a PostgreSQL.  
     6. `Evaluación agente.ipynb`: testeo del agente con consultas de ejemplo.  
-  graficos.ipynb`: generación de gráficos radar y visualizaciones por plantilla.
+  'graficos.ipynb`: generación de gráficos radar y visualizaciones por plantilla.
 
   - **`intento_ratings/`**  
     Primeros experimentos con modelos de regresión para calcular el rating de los jugadores.
