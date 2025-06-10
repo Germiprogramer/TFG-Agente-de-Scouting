@@ -726,3 +726,225 @@ WHERE pp.main_position = 'center back'
   AND ps.minutes_played > 850
 ORDER BY ps.passes_to_box_per90 DESC
 LIMIT 5;",
+"Which 2 center backs have the most clearances per 90 minutes?","Steven Caulker, Marc Wilson","SELECT p.player_name, p.main_position, s.clearances_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+ORDER BY s.clearances_per90 DESC
+LIMIT 2;",
+"Find 2 defensive midfielders with the highest number of interceptions per 90 minutes.","Eddy Silvestre Pascual Israfilov, Gorka Elustondo Urkola","SELECT p.player_name, p.main_position, s.interceptions_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'defensive midfield'
+ORDER BY s.interceptions_per90 DESC
+LIMIT 2;",
+"Give me 2 wingers with the most dribbles completed per 90.","Nicolás Federico López Alonso, Demarai Gray","SELECT p.player_name, p.main_position, s.dribbles_completed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+ORDER BY s.dribbles_completed_per90 DESC
+LIMIT 2;",
+"Show me 2 goalkeepers with the most saves per 90 minutes.","Alberto Brignoli, Massimo Zenildo Zappino","SELECT p.player_name, p.main_position, s.saves_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+ORDER BY s.saves_per90 DESC
+LIMIT 2;",
+"Which 2 offensive midfielders draw the most fouls per 90 minutes?","Alexander Baumjohann, Sonny Kittel","SELECT p.player_name, p.main_position, s.fouls_won_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+ORDER BY s.fouls_won_per90 DESC
+LIMIT 2;",
+"Give me 2 side backs with the highest number of progressive carries per 90 minutes.","Wallace Oliveira dos Santos, Gilberto Moraes Junior","SELECT p.player_name, p.main_position, s.progressive_carries_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+ORDER BY s.progressive_carries_per90 DESC
+LIMIT 2;",
+"Find 2 center midfielders with the highest number of chances created per 90.","Andrea Lazzari, James David Rodríguez Rubio","SELECT p.player_name, p.main_position, s.chances_created_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center midfield'
+ORDER BY s.chances_created_per90 DESC
+LIMIT 2;",
+"Which 2 strikers have the best headed shot duel success rate?","Lucas Pérez Martínez, Enrique Sola Clemente","SELECT p.player_name, p.main_position, s.headed_shot_duel_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'striker'
+ORDER BY s.headed_shot_duel_rate DESC
+LIMIT 2;",
+"Tell me 2 wingers with the highest number of fouls won per 90.","Diego Ángel Capel Trinidad, Filippo Falco","SELECT p.player_name, p.main_position, s.fouls_won_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+ORDER BY s.fouls_won_per90 DESC
+LIMIT 2;",
+"Give me 2 center backs with the best duel success rate.","Diego Mainz García, Matt Miazga","SELECT p.player_name, p.main_position, s.duel_success_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+ORDER BY s.duel_success_rate DESC
+LIMIT 2;",
+"Give me 2 goalkeepers with the highest pass completion rate.","Norberto Murara Neto, Michel Vorm","SELECT p.player_name, p.main_position, s.pass_completion_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+ORDER BY s.pass_completion_rate DESC
+LIMIT 2;",
+"Show me 2 side backs with the highest number of successful tackles per 90.","Timothy Evans Fosu-Mensah, Leon Guwara","SELECT p.player_name, p.main_position, s.tackles_successful_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+ORDER BY s.tackles_successful_per90 DESC
+LIMIT 2;",
+"Which 2 offensive midfielders have the most assists per 90 minutes?","Alexander Baumjohann, Aras Özbiliz","SELECT p.player_name, p.main_position, s.goal_assists_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+ORDER BY s.goal_assists_per90 DESC
+LIMIT 2;",
+"Give me 2 center midfielders with the best dribble success rate.","Juan Domínguez Lamas, Darron Gibson","SELECT p.player_name, p.main_position, s.dribble_success_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center midfield'
+ORDER BY s.dribble_success_rate DESC
+LIMIT 2;",
+"Find 2 wingers with the highest number of progressive carries per 90 minutes.","Filippo Falco, Dries Mertens","SELECT p.player_name, p.main_position, s.progressive_carries_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+ORDER BY s.progressive_carries_per90 DESC
+LIMIT 2;",
+"Give me 2 side backs with the most duels won per 90 minutes.","Timothy Evans Fosu-Mensah, Leon Guwara","SELECT p.player_name, p.main_position, s.duels_won_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+ORDER BY s.duels_won_per90 DESC
+LIMIT 2;",
+"Which 2 defensive midfielders commit the most fouls per 90 minutes?","Eddy Silvestre Pascual İsrafilov, Giulio Migliaccio","SELECT p.player_name, p.main_position, s.fouls_committed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'defensive midfield'
+ORDER BY s.fouls_committed_per90 DESC
+LIMIT 2;",
+"Show me 2 goalkeepers with the lowest xG minus goals conceded per 90 minutes.","Iago Herrerín Buisán, Fabrizio Alastra","SELECT p.player_name, p.main_position, s.xg_against_minus_goals_conceded_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+ORDER BY s.xg_against_minus_goals_conceded_per90 ASC
+LIMIT 2;",
+"Give me 2 strikers with the highest goals minus expected goals per 90 minutes.","Francesco Totti, Jon Bautista Orgilles","SELECT p.player_name, p.main_position, s.goals_minus_xg_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'striker'
+ORDER BY s.goals_minus_xg_per90 DESC
+LIMIT 2;",
+"Find 2 center backs with the most interceptions per 90 minutes.","Felipe Trevizan Martins, Marc Wilson","SELECT p.player_name, p.main_position, s.interceptions_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+ORDER BY s.interceptions_per90 DESC
+LIMIT 2;",
+"Show me 2 wingers with the highest goals per 90 minutes.","Cristiano Ronaldo dos Santos Aveiro, Gareth Frank Bale","SELECT p.player_name, p.main_position, s.goals_scored_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+ORDER BY s.goals_scored_per90 DESC
+LIMIT 2;",
+"Give me 2 center midfielders with the most assists per 90.","Johannes Flum, Kevin Strootman","SELECT p.player_name, p.main_position, s.goal_assists_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center midfield'
+ORDER BY s.goal_assists_per90 DESC
+LIMIT 2;",
+"Which 2 goalkeepers act most as sweepers per 90 minutes?","Iago Herrerín Buisán, Luca Lezzerini","SELECT p.player_name, p.main_position, s.keeper_sweeper_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+ORDER BY s.keeper_sweeper_per90 DESC
+LIMIT 2;",
+"Find 2 strikers who win the most fouls per 90 minutes.","Robbie Kruse, Radamel Falcao García Zárate","SELECT p.player_name, p.main_position, s.fouls_won_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'striker'
+ORDER BY s.fouls_won_per90 DESC
+LIMIT 2;",
+"Give me 2 side backs with the highest interception success rate.","Luke Shaw, Mathieu Debuchy","SELECT p.player_name, p.main_position, s.interception_success_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+ORDER BY s.interception_success_rate DESC
+LIMIT 2;",
+"Find 2 defensive midfielders with the highest number of ball recoveries per 90 minutes.","Bryan Cristante, Eddy Silvestre Pascual İsrafilov","SELECT p.player_name, p.main_position, s.ball_recoveries_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'defensive midfield'
+ORDER BY s.ball_recoveries_per90 DESC
+LIMIT 2;",
+"Show me 2 offensive midfielders with the highest pass completion rate.","Kevin Nolan, Jack Wilshere","SELECT p.player_name, p.main_position, s.pass_completion_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+ORDER BY s.pass_completion_rate DESC
+LIMIT 2;",
+"Which 2 center backs block the most shots per 90 minutes?","David Kinsombi, Calum Chambers","SELECT p.player_name, p.main_position, s.blocks_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back'
+ORDER BY s.blocks_per90 DESC
+LIMIT 2;",
+"Find 2 wingers with the best dribble success rate.","Gaël Kakuta, Miguel Arturo Layún Prado","SELECT p.player_name, p.main_position, s.dribble_success_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger'
+ORDER BY s.dribble_success_rate DESC
+LIMIT 2;",
+"Give me 2 strikers with the highest pass completion rate.","Emmanuel Rivière, Alexandre Rodrigues da Silva","SELECT p.player_name, p.main_position, s.pass_completion_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'striker'
+ORDER BY s.pass_completion_rate DESC
+LIMIT 2;",
+"Show me 2 side backs who commit the fewest fouls per 90 minutes.","José Joaquín Matos García, Manuel Pablo García Díaz","SELECT p.player_name, p.main_position, s.fouls_committed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'side back'
+ORDER BY s.fouls_committed_per90 ASC
+LIMIT 2;",
+"Which 2 center midfielders apply the most pressures per 90 minutes?","Johannes Flum, Cameron Brannagan","SELECT p.player_name, p.main_position, s.pressures_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center midfield'
+ORDER BY s.pressures_per90 DESC
+LIMIT 2;",
+"Find 2 goalkeepers with the lowest save percentage.","Iago Herrerín Buisán, Ádám Bogdán","SELECT p.player_name, p.main_position, s.save_percentage
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper'
+ORDER BY s.save_percentage ASC
+LIMIT 2;",
+"Give me 2 offensive midfielders with the most dribbles completed per 90.","Allan Saint-Maximin, Alexander Baumjohann","SELECT p.player_name, p.main_position, s.dribbles_completed_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'offensive midfield'
+ORDER BY s.dribbles_completed_per90 DESC
+LIMIT 2;",
+"Who is the center back under 25 years old with the highest number of blocks per 90?","David Kinsombi","SELECT p.player_name, p.main_position, p.age, s.blocks_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'center back' AND p.age < 25
+ORDER BY s.blocks_per90 DESC
+LIMIT 1;",
+"Find the winger with the highest dribbles completed per 90 and a pass completion rate above 80%.","Lionel Andrés Messi Cuccittini","SELECT p.player_name, p.main_position, s.dribbles_completed_per90, s.pass_completion_rate
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'winger' AND s.pass_completion_rate > 80
+ORDER BY s.dribbles_completed_per90 DESC
+LIMIT 1;",
+"Show me the goalkeeper with the best save percentage who also has more than 1.5 sweeper actions per 90.","Roman Weidenfeller","SELECT p.player_name, p.main_position, s.save_percentage, s.keeper_sweeper_per90
+FROM player_profile p
+JOIN player_stats s ON p.player_id = s.player_id
+WHERE p.main_position = 'goalkeeper' AND s.keeper_sweeper_per90 > 1.5
+ORDER BY s.save_percentage DESC
+LIMIT 1;",
