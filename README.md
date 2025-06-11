@@ -1,6 +1,5 @@
 # ⚽ TFG - Agente de Scouting Inteligente
-
-Este Trabajo de Fin de Grado tiene como objetivo el desarrollo de un agente de inteligencia artificial capaz de asistir en tareas de **scouting deportivo**, automatizando el análisis de jugadores a partir de datos objetivos. El sistema permite realizar consultas personalizadas en lenguaje natural y obtener respuestas basadas en estadísticas avanzadas y visualizaciones gráficas.
+Como parte de un Trabajo de Fin de Grado, en este repositorio se muestra el desarrollo de un agente de inteligencia artificial capaz de asistir en tareas de **scouting deportivo**, automatizando el análisis de jugadores a partir de datos objetivos. El sistema permite realizar consultas personalizadas en lenguaje natural y obtener respuestas basadas en estadísticas avanzadas y visualizaciones gráficas.
 
 El proyecto se basa en dos fuentes de datos principales:
 
