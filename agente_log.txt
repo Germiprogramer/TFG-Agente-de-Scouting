@@ -1,0 +1,135 @@
+============================================================
+[2025-06-11T15:22:33]
+📝 Consulta:
+Find 5 center midfielders with more than 1.5 progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played.
+
+✅ Respuesta:
+Here are the 5 center midfielders who meet the criteria:
+
+1. **İlkay Gündoğan**
+   - Team: Borussia Dortmund
+   - Value: €26,000,000
+   - Progressive Carries per 90: 16.4
+   - Progressive Passes Completed per 90: 15.87
+   - Minutes Played: 2024
+
+2. **Thiago Alcântara do Nascimento**
+   - Team: Bayern Munich
+   - Value: €30,000,000
+   - Progressive Carries per 90: 15.64
+   - Progressive Passes Completed per 90: 16.25
+   - Minutes Played: 1467
+
+3. **Marek Hamšík**
+   - Team: Napoli
+   - Value: €26,500,000
+   - Progressive Carries per 90: 14.83
+   - Progressive Passes Completed per 90: 13.3
+   - Minutes Played: 3538
+
+4. **Francisco Román Alarcón Suárez**
+   - Team: Real Madrid
+   - Value: €39,000,000
+   - Progressive Carries per 90: 14.22
+   - Progressive Passes Completed per 90: 8.22
+   - Minutes Played: 1948
+
+5. **Manuel Lanzini**
+   - Team: West Ham United
+   - Value: €7,500,000
+   - Progressive Carries per 90: 13.53
+   - Progressive Passes Completed per 90: 6.72
+   - Minutes Played: 2168
+
+Radar chart for İlkay Gündoğan:
+
+============================================================
+[2025-06-11T15:22:53]
+📝 Consulta:
+Find 5 center midfielders with more than 1.5 progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played.
+
+✅ Respuesta:
+Here are the 5 center midfielders who meet the criteria:
+
+1. **İlkay Gündoğan**
+   - Team: Borussia Dortmund
+   - Value: €26,000,000
+   - Progressive Carries per 90: 16.4
+   - Progressive Passes Completed per 90: 15.87
+   - Minutes Played: 2024
+
+2. **Thiago Alcântara do Nascimento**
+   - Team: Bayern Munich
+   - Value: €30,000,000
+   - Progressive Carries per 90: 15.64
+   - Progressive Passes Completed per 90: 16.25
+   - Minutes Played: 1467
+
+3. **Marek Hamšík**
+   - Team: Napoli
+   - Value: €26,500,000
+   - Progressive Carries per 90: 14.83
+   - Progressive Passes Completed per 90: 13.3
+   - Minutes Played: 3538
+
+4. **Francisco Román Alarcón Suárez**
+   - Team: Real Madrid
+   - Value: €39,000,000
+   - Progressive Carries per 90: 14.22
+   - Progressive Passes Completed per 90: 8.22
+   - Minutes Played: 1948
+
+5. **Manuel Lanzini**
+   - Team: West Ham United
+   - Value: €7,500,000
+   - Progressive Carries per 90: 13.53
+   - Progressive Passes Completed per 90: 6.72
+   - Minutes Played: 2168
+
+Radar chart for İlkay Gündoğan:
+
+============================================================
+[2025-06-11T15:23:08]
+📝 Consulta:
+Find 5 center midfielders with more than 1.5 progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played.
+
+✅ Respuesta:
+Here are the 5 center midfielders who meet the criteria:
+
+1. **İlkay Gündoğan**
+   - Team: Borussia Dortmund
+   - Value: €26,000,000
+   - Progressive Carries per 90: 16.4
+   - Progressive Passes Completed per 90: 15.87
+   - Minutes Played: 2024
+
+2. **Thiago Alcântara do Nascimento**
+   - Team: Bayern Munich
+   - Value: €30,000,000
+   - Progressive Carries per 90: 15.64
+   - Progressive Passes Completed per 90: 16.25
+   - Minutes Played: 1467
+
+3. **Marek Hamšík**
+   - Team: Napoli
+   - Value: €26,500,000
+   - Progressive Carries per 90: 14.83
+   - Progressive Passes Completed per 90: 13.3
+   - Minutes Played: 3538
+
+4. **Francisco Román Alarcón Suárez**
+   - Team: Real Madrid
+   - Value: €39,000,000
+   - Progressive Carries per 90: 14.22
+   - Progressive Passes Completed per 90: 8.22
+   - Minutes Played: 1948
+
+5. **Manuel Lanzini**
+   - Team: West Ham United
+   - Value: €7,500,000
+   - Progressive Carries per 90: 13.53
+   - Progressive Passes Completed per 90: 6.72
+   - Minutes Played: 2168
+
+Radar chart for İlkay Gündoğan:
+

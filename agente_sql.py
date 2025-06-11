@@ -70,12 +70,12 @@ def lanzar_app():
         """)
         st.header("📋 Example Queries")
         st.success('"Show me the striker with the most goals per 90 minutes"')
-        st.success('"Who is the best left back in terms of duels won?"')
         st.success('"Give me the radar chart for Antoine Griezmann"')
-        st.success('"Compare central midfielders with the best passing accuracy"')
+        st.success('"Find 5 center midfielders with more than 1.5 progressive carries per 90, over 4 completed progressive passes per 90, and more than 850 minutes played."')
 
         with st.expander("💡 Tips for better results"):
             st.markdown("""
+            - Filter players in base of attributes such as market value, age, minutes played, rating, height...
             - Use full player names (e.g. "Markel Susaeta Laskurain").
             - Try different positions like "striker", "winger", "center back".
             - Focus on per90 metrics for performance comparisons.
