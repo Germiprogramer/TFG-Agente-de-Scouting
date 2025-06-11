@@ -149,26 +149,17 @@ def draw_radar_from_sql(player_name):
     fig.text(0.5, 0.94, f"Market value: {row['market_value']} M€", size=12, weight='semibold', ha='center')
     fig.text(0.5125, 0.485, f"{row['rating']}", size=18, weight='bold', ha='center')
     
-    plt.show() 
+    #plt.show() 
     
     buf = io.BytesIO()
     fig.savefig(buf, format="png", dpi=150)
 
-    buf.seek(0)
-    plt.close(fig)
-
-    # Mostrar desde el buffer
-    img = Image.open(buf)
-    plt.figure(figsize=(8, 8))
-    plt.imshow(np.asarray(img))
-    plt.axis('off')
-    plt.show()
 
     #Crear columnas vacías a los lados para centrar
-    #col1, col2, col3 = st.columns([1, 1, 1])
+    col1, col2, col3 = st.columns([1, 1, 1])
 
-    #with col2:
-        #st.image(buf, use_container_width=False, width=700)  # ajusta el ancho aquí
+    with col2:
+        st.image(buf, use_container_width=False, width=700)  # ajusta el ancho aquí
 
 
 # ARCHIVO PARA GUARDAR LAS COSULTAS
