@@ -8,60 +8,49 @@ El proyecto se basa en dos fuentes de datos principales:
 
 A partir de estas fuentes, se construye una base de datos estructurada que sirve como núcleo para el funcionamiento del agente inteligente, orientado a facilitar la detección de talento en el fútbol profesional.
 
-
-## Estructura del repositorio
-
-El repositorio está organizado en diferentes carpetas, cada una con un propósito específico dentro del flujo de trabajo del proyecto. A continuación, se detalla la función de cada componente:
-
----
-
-### Carpetas principales
+### 📁 Carpetas principales
 
 - **`datos/`**  
-  Contiene los archivos de entrada y resultados intermedios generados durante el proceso de análisis y construcción de la base de datos.
+  Archivos preliminares y resultados intermedios generales producidos durante las etapas de análisis hasta la construcción de la base de datos.
 
 - **`evaluacion_agente/`**  
-  Scripts y recursos utilizados para validar el rendimiento del agente, comparando los resultados obtenidos frente a las respuestas esperadas.
+  Incluye el *ground truth* y los resultados de la evaluación del rendimiento del agente.
 
 - **`funciones_analisis/`**  
-  Módulo que agrupa funciones personalizadas en Python para extraer estadísticas avanzadas a partir de los datos de eventos de partidos.
+  Carpeta que incluye las funciones que se han utilizado en los distintos cuadernos. Están agrupadas por funciones generales, extracción de estadísticas, normalización y funcionalidades del agente.
 
 - **`imagenes/`**  
-  Recursos gráficos y visualizaciones utilizadas en el desarrollo del TFG o en la interfaz del agente.
+  Visualizaciones empleadas tanto en el desarrollo del documento escrito del trabajo como en la interfaz del agente.
 
 - **`notebook/`**  
-  Contiene los notebooks que documentan paso a paso todo el proceso de desarrollo, divididos en subcarpetas.
+  Notebooks de desarrollo que muestran paso a paso las actividades del proyecto. Esta carpeta se divide en los siguientes archivos y subdirectorios:
 
-  Pipeline principal del proyecto, estructurado en fases claras:
-  
-  1. `Limpieza inicial.ipynb`: carga de datos originales y depuración básica.  
-  2. `Extracción de métricas.ipynb`: cálculo de estadísticas para evaluar el rendimiento.  
-  3. `Cálculo del rating.ipynb`: generación de la puntuación final de cada jugador.  
-  4. `Limpieza previa al almacenamiento.ipynb`: ajustes antes de migrar los datos.  
-  5. `Almacenamiento.ipynb`: creación del esquema y exportación a PostgreSQL.  
-  6. `Evaluación agente.ipynb`: testeo del agente con consultas de ejemplo.
-
-  Además, se incluye **`graficos.ipynb`**, un cuaderno dedicado exclusivamente a la generación de gráficos para enriquecer tanto el agente como el documento del proyecto.
+  1. `Limpieza inicial.ipynb`: carga de datos originales y primera depuración.  
+  2. `Extracción de métricas.ipynb`: cálculo de las métricas de rendimiento de jugadores.  
+  3. `Cálculo del rating.ipynb`: elaboración del rating y de la normalización de las estadísticas.  
+  4. `Limpieza previa al almacenamiento.ipynb`: limpieza de datos final antes de la carga en base de datos.  
+  5. `Almacenamiento.ipynb`: exportación de los datos a PostgreSQL.  
+  6. `Evaluación agente.ipynb`: pruebas funcionales del agente con consultas simuladas.  
+     `graficos.ipynb`: creación de visualizaciones utilizadas en la interfaz y el documento.
 
   - **`intento_ratings/`**  
-    Primeros experimentos con modelos de regresión para calcular el rating de los jugadores.
+    Primeros experimentos realizados con modelos de regresión para estimar el rating de los jugadores.
 
-  - **`modelos_de_agente/csv/`**  
-    Datos de ejemplo y archivos de apoyo usados en las pruebas del agente.
+  - **`modelos_de_agente/`**  
+    Archivos auxiliares utilizados durante los primeros intentos de elaboración del agente inteligente.
 
-  - **`notebook_auxiliares/`**
-    Otros cuadernos con lo que se desarrollaron partes del proyecto, pero sin relevancia excesiva.  
-    
+  - **`notebook_auxiliares/`**  
+    Cuadernos complementarios desarrollados durante el proyecto, sin relevancia directa en la versión final.
 
 - **`style/`**  
-  Archivos CSS aplicados a la interfaz desarrollada con Streamlit.
+  Contiene un archivo CSS para aplicar estilo a la interfaz construida con Streamlit.
 
 ---
 
-### Archivos principales
+### 📄 Archivos principales
 
 - **`agente_sql.py`**  
-  Define la lógica del agente inteligente basado en LangChain y su conexión con la base de datos relacional (SQL).
+  Lo respectivo al desarrollo del agente, incluyendo la función para lanzar la aplicación con Streamlit, que se ejecuta desde `main.py`.
 
 - **`main.py`**  
-  Punto de entrada de la aplicación. Ejecuta la interfaz de usuario en Streamlit para interactuar con el agente.
+  Archivo de ejecución del agente.
