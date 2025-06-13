@@ -38,7 +38,7 @@ def cargar_agente():
         verbose=True,
         extra_tools=tools,
         agent_type="openai-functions",
-        prefix=prefix2
+        prefix=prefix
     )
     return agent, engine
 
